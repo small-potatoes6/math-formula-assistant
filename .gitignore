@@ -1,0 +1,91 @@
+# Local dependencies
+node_modules/
+**/node_modules/
+
+# Historical backups and temporary working data
+/_backup/
+/_ui-preview/
+/_test/
+/_shot/
+/_shots/
+/_svg-probe/
+/_trash-verify/
+/_quarantine-verify-*/
+/tmp-*/
+/tmp-assets-test/
+/tmp-sprites/
+/miniprogram-preview/
+/prototype/_backup/
+/extract/build/
+/tmp-*
+/x.id
+
+# Internal handoff material and working notes
+/AGENTS.md
+/开发日志/
+/设计样张/
+/公式清晰度改造方案.md
+/公式排版优化方案.md
+/排版与体积改造-执行报告.md
+/交接-Codex接管.md
+
+# Local browser profiles and caches
+/tools/edge-profile-formulas/
+
+# Original reference documents: verify redistribution rights before publishing
+**/*.pdf
+/extract/img/
+/extract/crop/
+/extract/*.txt
+/extract/katex_errors.json
+
+# Experimental scripts that depend on local paths or local-only tooling
+/extract/_*.js
+/extract/ab_clarity.js
+/extract/build_formula_sprites.js
+/extract/build_formula_sprites_v2.js
+/extract/check_binary.js
+/extract/cmp_colors.js
+/extract/compare_visual.py
+/extract/cut_verify_bitmaps.py
+/extract/device_sim.js
+/extract/exp_palette.js
+/extract/make_dpr_compare.py
+/extract/measure_ink.js
+/extract/probe_wh.js
+/extract/render_formulas.html
+/extract/render_formulas.js
+/extract/render_formulas_svg.js
+/extract/smoke.js
+/extract/sprite_experiment.js
+/extract/try_layout.js
+/extract/zoom_cmp.js
+/extract/json/generate_partB2.py
+
+# Generated verification screenshots and preview links
+/verify-*.png
+/预览二维码.*
+/排版对比-*.png
+/真机等效对比.png
+/公式清晰度*.png
+
+# Local editor, agent and operating-system files
+/.vscode/
+/.idea/
+/.codex/
+/.agents/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local private configuration
+**/project.private.config.json
+.env
+.env.*
+*.local
+
+# Logs, temporary files and crash dumps
+*.log
+*.tmp
+*.dmp
+*.zip

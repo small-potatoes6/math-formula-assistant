@@ -1,0 +1,16 @@
+{
+  "name": "gsmath-formula-assistant",
+  "version": "0.1.0",
+  "description": "A WeChat mini program and web prototype for memorizing high-school mathematics formulas.",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node extract/validate_assets.js && node extract/smoke3.js && node extract/check_katex.js",
+    "validate": "node extract/validate_assets.js",
+    "smoke": "node extract/smoke3.js",
+    "check:katex": "node extract/check_katex.js"
+  }
+}

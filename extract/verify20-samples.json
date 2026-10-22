@@ -1,0 +1,373 @@
+[
+  {
+    "id": "S040",
+    "name": "等差型裂项相消",
+    "chapter": "数列",
+    "latex": "\\frac{1}{n(n+k)}=\\frac1k\\left(\\frac1n-\\frac1{n+k}\\right);\\ \\frac{1}{(2n-1)(2n+1)}=\\frac12\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right);\\ \\frac{n+1}{n^2(n+2)^2}=\\frac14\\left(\\frac1{n^2}-\\frac1{(n+2)^2}\\right);\\ \\frac{2n+1}{n^2(n+1)^2}=\\frac1{n^2}-\\frac1{(n+1)^2};\\ \\frac{1}{n(n+1)(n+2)}=\\frac12\\left(\\frac1{n(n+1)}-\\frac1{(n+1)(n+2)}\\right);\\ \\frac{1}{n(n^2-1)}=\\frac12\\left(\\frac1{(n-1)n}-\\frac1{n(n+1)}\\right);\\ n(n+1)=\\frac13[n(n+1)(n+2)-(n-1)n(n+1)];\\ n(n+1)(n+2)=\\frac14[n(n+1)(n+2)(n+3)-(n-1)n(n+1)(n+2)];\\ \\frac{1}{n(n+1)(n+2)(n+3)}=\\frac13\\left[\\frac1{n(n+1)(n+2)}-\\frac1{(n+1)(n+2)(n+3)}\\right]",
+    "why": "最宽（横滑）",
+    "w": 402,
+    "h": 535,
+    "image": "/assets/formulas/s040-formula.svg",
+    "blank": "/assets/formulas/s040-blank.svg",
+    "example": "",
+    "feats": [
+      "分数",
+      "自适应括号",
+      "不等号"
+    ]
+  },
+  {
+    "id": "S044",
+    "name": "数列求和放缩公式",
+    "chapter": "数列",
+    "latex": "\\frac1{n^2}>\\frac1{n(n+1)}=\\frac1n-\\frac1{n+1};\\quad \\frac1{n^2}<\\frac1{n^2-1}=\\frac12\\left(\\frac1{n-1}-\\frac1{n+1}\\right)\\ (n\\ge2);\\quad \\frac1{n^2}=\\frac4{4n^2}<\\frac4{4n^2-1}=2\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right);\\quad \\frac1{n^2}<\\frac1{(n-1)n}=\\frac1{n-1}-\\frac1n\\ (n\\ge2);\\quad \\frac1{\\sqrt n}>\\frac2{\\sqrt n+\\sqrt{n+1}}=2(\\sqrt{n+1}-\\sqrt n);\\quad \\frac1{\\sqrt n}<\\frac2{\\sqrt{n-1}+\\sqrt n}=2(\\sqrt n-\\sqrt{n-1})\\ (n\\ge2);\\quad \\frac1{\\sqrt n}<\\frac{2\\sqrt2}{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\sqrt2(\\sqrt{2n+1}-\\sqrt{2n-1});\\quad \\frac1{3^n-2^n}<\\frac1{3^{n-1}}\\ (n\\ge2);\\quad \\frac1{3^n-2^n}<\\frac1{2\\cdot3^{n-1}}\\ (n\\ge3);\\quad \\frac1{n\\sqrt n}<2\\left(\\frac1{\\sqrt{n-1}}-\\frac1{\\sqrt n}\\right);\\quad \\frac1{n\\sqrt n}>2\\left(\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}}\\right);\\quad \\frac{2^n}{(2^n-1)^2}<\\frac1{2^{n-1}-1}-\\frac1{2^n-1}\\ (n\\ge2);\\quad \\frac1{2^n-1}<\\frac1{2^{n-1}-1}-\\frac1{2^n-1}\\ (n\\ge2);\\quad \\frac1{n^3}<\\frac1{n^3-n}=\\frac12\\left[\\frac1{n(n-1)}-\\frac1{n(n+1)}\\right]\\ (n\\ge2)",
+    "why": "最高（纵向）",
+    "w": 247,
+    "h": 860,
+    "image": "/assets/formulas/s044-formula.svg",
+    "blank": "/assets/formulas/s044-blank.svg",
+    "example": "",
+    "feats": [
+      "根号",
+      "分数",
+      "自适应括号",
+      "拆行符",
+      "不等号",
+      "乘除号"
+    ]
+  },
+  {
+    "id": "C178",
+    "name": "焦点到渐近线距离",
+    "chapter": "圆锥曲线的方程",
+    "latex": "d=b",
+    "why": "最小",
+    "w": 57,
+    "h": 29,
+    "image": "/assets/formulas/c178-formula.svg",
+    "blank": "",
+    "example": "",
+    "feats": []
+  },
+  {
+    "id": "C180",
+    "name": "焦点三角形面积",
+    "chapter": "圆锥曲线的方程",
+    "latex": "S_{\\triangle F_{1}PF_{2}}=b^{2}\\tan\\frac{\\alpha}{2}\\text{（椭圆）};\\quad S_{\\triangle F_{1}PF_{2}}=\\frac{b^{2}}{\\tan\\frac{\\alpha}{2}}=b^{2}\\cot\\frac{\\alpha}{2}\\text{（双曲线，}\\theta=\\angle F_{1}MF_{2}\\text{）}",
+    "why": "补:中文+嵌套上下标+希腊字母+函数名",
+    "w": 224,
+    "h": 145,
+    "image": "/assets/formulas/c180-formula.svg",
+    "blank": "/assets/formulas/c180-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "嵌套上下标",
+      "拆行符",
+      "希腊字母",
+      "函数名"
+    ]
+  },
+  {
+    "id": "S021",
+    "name": "重心向量表示",
+    "chapter": "平面向量及其应用",
+    "latex": "\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=\\vec 0;\\quad \\overrightarrow{AO}=\\frac13(\\overrightarrow{AB}+\\overrightarrow{AC});\\quad \\overrightarrow{PO}=\\frac13(\\overrightarrow{PA}+\\overrightarrow{PB}+\\overrightarrow{PC});\\quad \\overrightarrow{AP}=\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC})\\text{ 或 }\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC})\\ (\\lambda\\ge 0)\\Rightarrow P\\text{ 过重心};\\quad \\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right)\\text{ 或 }\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right)\\ (\\lambda\\ge 0)\\Rightarrow P\\text{ 过重心}",
+    "why": "补:向量",
+    "w": 274,
+    "h": 427,
+    "image": "/assets/formulas/s021-formula.svg",
+    "blank": "/assets/formulas/s021-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "自适应括号",
+      "向量",
+      "拆行符",
+      "函数名",
+      "不等号"
+    ]
+  },
+  {
+    "id": "C204",
+    "name": "导数定义",
+    "chapter": "导数",
+    "latex": "f'(x_0)=\\lim_{\\Delta x\\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x} \\quad f'(x_0)=\\lim_{h\\to 0}\\frac{f(x_0+h)-f(x_0-h)}{2h} \\quad f'(x_0)=\\lim_{x\\to x_0}\\frac{f(x)-f(x_0)}{x-x_0}",
+    "why": "补:大算符",
+    "w": 270,
+    "h": 135,
+    "image": "/assets/formulas/c204-formula.svg",
+    "blank": "/assets/formulas/c204-blank.svg",
+    "example": "",
+    "feats": [
+      "分数",
+      "嵌套上下标",
+      "大算符",
+      "拆行符",
+      "希腊字母"
+    ]
+  },
+  {
+    "id": "S048",
+    "name": "指对不等式链",
+    "chapter": "一元二次函数、方程和不等式",
+    "latex": "\\begin{cases}e^x\\ge x+1\\\\ \\ln x\\le x-1\\end{cases}\\Rightarrow \\ln(x+1)\\le x\\le e^x-1\\ (\\text{当且仅当}x=0\\text{取等})",
+    "why": "补:多行结构",
+    "w": 198,
+    "h": 132,
+    "image": "/assets/formulas/s048-formula.svg",
+    "blank": "",
+    "example": "",
+    "feats": [
+      "中文",
+      "多行结构",
+      "函数名",
+      "不等号"
+    ]
+  },
+  {
+    "id": "C201",
+    "name": "常见裂项形式",
+    "chapter": "数列",
+    "latex": "\\frac{1}{n(n+k)}=\\frac{1}{k}\\left(\\frac{1}{n}-\\frac{1}{n+k}\\right) \\quad \\frac{1}{(2n-1)(2n+1)}=\\frac{1}{2}\\left(\\frac{1}{2n-1}-\\frac{1}{2n+1}\\right) \\quad \\frac{1}{\\sqrt{n}+\\sqrt{n+1}}=\\sqrt{n+1}-\\sqrt{n} \\quad \\frac{1}{n^2-1}=\\frac{1}{2}\\left(\\frac{1}{n-1}-\\frac{1}{n+1}\\right) \\quad \\frac{1}{n(n+1)(n+2)}=\\frac{1}{2}\\left(\\frac{1}{n(n+1)}-\\frac{1}{(n+1)(n+2)}\\right) \\quad \\frac{2n+1}{n^2(n+1)^2}=\\frac{1}{n^2}-\\frac{1}{(n+1)^2} \\quad \\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1} \\quad \\frac{n}{(n+1)!}=\\frac{1}{n!}-\\frac{1}{(n+1)!}",
+    "why": "补:类型多样性",
+    "w": 240,
+    "h": 437,
+    "image": "/assets/formulas/c201-formula.svg",
+    "blank": "/assets/formulas/c201-blank.svg",
+    "example": "",
+    "feats": [
+      "根号",
+      "分数",
+      "自适应括号",
+      "拆行符",
+      "不等号"
+    ]
+  },
+  {
+    "id": "S045",
+    "name": "导数构造模型",
+    "chapter": "导数",
+    "latex": "f'+g'>0\\Rightarrow F=f+g;\\ f'-g'>0\\Rightarrow F=f-g;\\ f'>k\\Rightarrow F=f-kx;\\ f'g+fg'>0\\Rightarrow F=fg;\\ f'g-fg'>0\\Rightarrow F=\\frac{f}{g};\\ xf'+f>0\\Rightarrow F=xf;\\ (x+a)f'+f>0\\Rightarrow F=(x+a)f;\\ xf'-f>0\\Rightarrow F=\\frac{f}{x};\\ (x+a)f'-f>0\\Rightarrow F=\\frac{f}{x+a};\\ xf'+nf>0\\Rightarrow F=x^nf;\\ xf'-nf>0\\Rightarrow F=\\frac{f}{x^n};\\ f'+f>0\\Rightarrow F=e^xf;\\ f'-f>0\\Rightarrow F=\\frac{f}{e^x};\\ f'+nf>0\\Rightarrow F=e^{nx}f;\\ f'-nf>0\\Rightarrow F=\\frac{f}{e^{nx}}",
+    "why": "补:类型多样性",
+    "w": 275,
+    "h": 375,
+    "image": "/assets/formulas/s045-formula.svg",
+    "blank": "/assets/formulas/s045-blank.svg",
+    "example": "",
+    "feats": [
+      "分数"
+    ]
+  },
+  {
+    "id": "C058",
+    "name": "诱导公式",
+    "chapter": "三角函数",
+    "latex": "\\sin(2k\\pi+\\alpha)=\\sin\\alpha,\\ \\cos(2k\\pi+\\alpha)=\\cos\\alpha,\\ \\tan(2k\\pi+\\alpha)=\\tan\\alpha;\\quad \\sin(\\pi-\\alpha)=\\sin\\alpha,\\ \\cos(\\pi-\\alpha)=-\\cos\\alpha,\\ \\tan(\\pi-\\alpha)=-\\tan\\alpha;\\quad \\sin(\\pi+\\alpha)=-\\sin\\alpha,\\ \\cos(\\pi+\\alpha)=-\\cos\\alpha,\\ \\tan(\\pi+\\alpha)=\\tan\\alpha;\\quad \\sin(-\\alpha)=-\\sin\\alpha,\\ \\cos(-\\alpha)=\\cos\\alpha,\\ \\tan(-\\alpha)=-\\tan\\alpha;\\quad \\sin(\\tfrac{\\pi}{2}-\\alpha)=\\cos\\alpha,\\ \\cos(\\tfrac{\\pi}{2}-\\alpha)=\\sin\\alpha,\\ \\tan(\\tfrac{\\pi}{2}-\\alpha)=\\cot\\alpha;\\quad \\sin(\\tfrac{\\pi}{2}+\\alpha)=\\cos\\alpha,\\ \\cos(\\tfrac{\\pi}{2}+\\alpha)=-\\sin\\alpha,\\ \\tan(\\tfrac{\\pi}{2}+\\alpha)=-\\cot\\alpha;\\quad \\sin(\\tfrac{3\\pi}{2}-\\alpha)=-\\cos\\alpha,\\ \\cos(\\tfrac{3\\pi}{2}-\\alpha)=-\\sin\\alpha,\\ \\tan(\\tfrac{3\\pi}{2}-\\alpha)=\\cot\\alpha;\\quad \\sin(\\tfrac{3\\pi}{2}+\\alpha)=-\\cos\\alpha,\\ \\cos(\\tfrac{3\\pi}{2}+\\alpha)=\\sin\\alpha,\\ \\tan(\\tfrac{3\\pi}{2}+\\alpha)=-\\cot\\alpha",
+    "why": "补:类型多样性",
+    "w": 279,
+    "h": 364,
+    "image": "/assets/formulas/c058-formula.svg",
+    "blank": "",
+    "example": "",
+    "feats": [
+      "分数",
+      "拆行符",
+      "希腊字母",
+      "函数名"
+    ]
+  },
+  {
+    "id": "S041",
+    "name": "根式型裂项",
+    "chapter": "数列",
+    "latex": "\\frac{1}{\\sqrt{n+1}+\\sqrt n}=\\sqrt{n+1}-\\sqrt n;\\quad \\frac{1}{\\sqrt{n+k}+\\sqrt n}=\\frac1k(\\sqrt{n+k}-\\sqrt n);\\quad \\frac{1}{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\frac12(\\sqrt{2n+1}-\\sqrt{2n-1});\\quad \\frac{1}{(n+1)\\sqrt n+n\\sqrt{n+1}}=\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}};\\quad \\sqrt{1+\\frac1{n^2}+\\frac1{(n+1)^2}}=\\frac{n(n+1)+1}{n(n+1)}=1+\\frac1n-\\frac1{n+1}",
+    "why": "补:类型多样性",
+    "w": 272,
+    "h": 364,
+    "image": "/assets/formulas/s041-formula.svg",
+    "blank": "/assets/formulas/s041-blank.svg",
+    "example": "",
+    "feats": [
+      "根号",
+      "分数",
+      "拆行符"
+    ]
+  },
+  {
+    "id": "S043",
+    "name": "对数阶乘三角裂项",
+    "chapter": "数列",
+    "latex": "\\log_a\\frac{a_{n+1}}{a_n}=\\log_a a_{n+1}-\\log_a a_n;\\quad n\\cdot n!=(n+1)!-n!;\\quad \\frac{n}{(n+1)!}=\\frac1{n!}-\\frac1{(n+1)!};\\quad \\frac{n+2}{n!+(n+1)!+(n+2)!}=\\frac1{(n+1)!}-\\frac1{(n+2)!};\\quad \\frac{\\sin 1}{\\cos n\\cos(n+1)}=\\tan(n+1)-\\tan n;\\quad \\tan(n+1)\\tan n=\\frac{\\tan(n+1)-\\tan n}{\\tan 1}-1",
+    "why": "补:类型多样性",
+    "w": 271,
+    "h": 316,
+    "image": "/assets/formulas/s043-formula.svg",
+    "blank": "/assets/formulas/s043-blank.svg",
+    "example": "",
+    "feats": [
+      "分数",
+      "拆行符",
+      "函数名",
+      "乘除号"
+    ]
+  },
+  {
+    "id": "C069",
+    "name": "倍角公式变形",
+    "chapter": "三角函数",
+    "latex": "1\\pm\\sin 2\\alpha=\\sin^2\\alpha+\\cos^2\\alpha\\pm\\sin 2\\alpha=(\\sin\\alpha\\pm\\cos\\alpha)^2;\\quad \\cos 2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha=(\\cos\\alpha+\\sin\\alpha)(\\cos\\alpha-\\sin\\alpha);\\quad 1+\\cos 2\\alpha=2\\cos^2\\alpha;\\quad 1-\\cos 2\\alpha=2\\sin^2\\alpha;\\quad \\cos^2\\alpha=\\frac{1+\\cos 2\\alpha}{2};\\quad \\sin^2\\alpha=\\frac{1-\\cos 2\\alpha}{2};\\quad \\sin\\alpha\\cos\\alpha=\\frac{1}{2}\\sin 2\\alpha;\\quad \\tan^2\\alpha=\\frac{1-\\cos 2\\alpha}{1+\\cos 2\\alpha}",
+    "why": "补:类型多样性",
+    "w": 270,
+    "h": 298,
+    "image": "/assets/formulas/c069-formula.svg",
+    "blank": "/assets/formulas/c069-blank.svg",
+    "example": "",
+    "feats": [
+      "分数",
+      "拆行符",
+      "希腊字母",
+      "函数名"
+    ]
+  },
+  {
+    "id": "S019",
+    "name": "外心向量表示",
+    "chapter": "平面向量及其应用",
+    "latex": "|\\overrightarrow{OA}|=|\\overrightarrow{OB}|=|\\overrightarrow{OC}|;\\quad (\\overrightarrow{OA}+\\overrightarrow{OB})\\cdot\\overrightarrow{AB}=(\\overrightarrow{OB}+\\overrightarrow{OC})\\cdot\\overrightarrow{BC}=(\\overrightarrow{OC}+\\overrightarrow{OA})\\cdot\\overrightarrow{CA}=0;\\quad \\overrightarrow{OP}=\\frac{\\overrightarrow{OB}+\\overrightarrow{OC}}{2}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right)\\ (\\lambda>0)\\Rightarrow P\\text{ 轨迹过外心}",
+    "why": "补:类型多样性",
+    "w": 277,
+    "h": 257,
+    "image": "/assets/formulas/s019-formula.svg",
+    "blank": "/assets/formulas/s019-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "自适应括号",
+      "向量",
+      "拆行符",
+      "函数名",
+      "不等号",
+      "乘除号"
+    ]
+  },
+  {
+    "id": "S020",
+    "name": "垂心向量表示",
+    "chapter": "平面向量及其应用",
+    "latex": "\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=\\overrightarrow{OB}\\cdot\\overrightarrow{OC}=\\overrightarrow{OC}\\cdot\\overrightarrow{OA};\\quad |\\overrightarrow{OA}|^2+|\\overrightarrow{BC}|^2=|\\overrightarrow{OB}|^2+|\\overrightarrow{CA}|^2=|\\overrightarrow{OC}|^2+|\\overrightarrow{AB}|^2;\\quad \\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right)\\ (\\lambda>0)\\Rightarrow P\\text{ 轨迹过垂心}",
+    "why": "补:类型多样性",
+    "w": 277,
+    "h": 239,
+    "image": "/assets/formulas/s020-formula.svg",
+    "blank": "/assets/formulas/s020-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "自适应括号",
+      "向量",
+      "拆行符",
+      "函数名",
+      "不等号",
+      "乘除号"
+    ]
+  },
+  {
+    "id": "C059",
+    "name": "正弦函数性质",
+    "chapter": "三角函数",
+    "latex": "\\text{定义域 }\\mathbf{R};\\quad \\text{值域 }[-1,1];\\quad \\text{奇函数};\\quad T=2\\pi;\\quad \\text{递增区间}\\left[-\\tfrac{\\pi}{2}+2k\\pi,\\ \\tfrac{\\pi}{2}+2k\\pi\\right];\\quad \\text{递减区间}\\left[\\tfrac{\\pi}{2}+2k\\pi,\\ \\tfrac{3\\pi}{2}+2k\\pi\\right];\\quad y_{\\max}=1\\ (x=\\tfrac{\\pi}{2}+2k\\pi);\\quad y_{\\min}=-1\\ (x=\\tfrac{3\\pi}{2}+2k\\pi);\\quad \\text{零点 }x=k\\pi;\\quad \\text{对称轴 }x=\\tfrac{\\pi}{2}+k\\pi;\\quad \\text{对称中心 }(k\\pi,0)",
+    "why": "补:类型多样性",
+    "w": 246,
+    "h": 253,
+    "image": "/assets/formulas/c059-formula.svg",
+    "blank": "",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "自适应括号",
+      "拆行符",
+      "希腊字母",
+      "不等号"
+    ]
+  },
+  {
+    "id": "C163",
+    "name": "圆的一般方程",
+    "chapter": "直线与圆的方程",
+    "latex": "x^{2}+y^{2}+Dx+Ey+F=0\\ (D^{2}+E^{2}-4F>0)\\Leftrightarrow\\left(x+\\frac{D}{2}\\right)^{2}+\\left(y+\\frac{E}{2}\\right)^{2}=\\frac{D^{2}+E^{2}-4F}{4};\\quad \\text{圆心}\\left(-\\frac{D}{2},-\\frac{E}{2}\\right),\\ r=\\frac{\\sqrt{D^{2}+E^{2}-4F}}{2}",
+    "why": "补:类型多样性",
+    "w": 279,
+    "h": 213,
+    "image": "/assets/formulas/c163-formula.svg",
+    "blank": "/assets/formulas/c163-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "根号",
+      "分数",
+      "自适应括号",
+      "拆行符",
+      "不等号"
+    ]
+  },
+  {
+    "id": "C082",
+    "name": "三角形四心向量",
+    "chapter": "平面向量及其应用",
+    "latex": "\\text{内心：}\\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}\\right);\\quad \\text{外心：}|\\overrightarrow{PA}|=|\\overrightarrow{PB}|=|\\overrightarrow{PC}|;\\quad \\text{垂心：}\\overrightarrow{PA}\\cdot\\overrightarrow{PB}=\\overrightarrow{PA}\\cdot\\overrightarrow{PC}=\\overrightarrow{PB}\\cdot\\overrightarrow{PC};\\quad \\text{重心：}\\overrightarrow{AP}=\\frac{1}{3}(\\overrightarrow{AB}+\\overrightarrow{AC})",
+    "why": "补:类型多样性",
+    "w": 258,
+    "h": 226,
+    "image": "/assets/formulas/c082-formula.svg",
+    "blank": "/assets/formulas/c082-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "自适应括号",
+      "向量",
+      "拆行符",
+      "不等号",
+      "乘除号"
+    ]
+  },
+  {
+    "id": "C172",
+    "name": "圆锥曲线标准方程",
+    "chapter": "圆锥曲线的方程",
+    "latex": "\\text{椭圆}:\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1(a>b>0)\\text{ 或 }\\frac{y^{2}}{a^{2}}+\\frac{x^{2}}{b^{2}}=1(a>b>0);\\quad \\text{双曲线}:\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1\\text{ 或 }\\frac{y^{2}}{a^{2}}-\\frac{x^{2}}{b^{2}}=1;\\quad \\text{抛物线}:y^{2}=\\pm2px\\text{ 或 }x^{2}=\\pm2py(p>0)",
+    "why": "补:类型多样性",
+    "w": 265,
+    "h": 219,
+    "image": "/assets/formulas/c172-formula.svg",
+    "blank": "/assets/formulas/c172-blank.svg",
+    "example": "",
+    "feats": [
+      "中文",
+      "分数",
+      "拆行符"
+    ]
+  },
+  {
+    "id": "C213",
+    "name": "导数构造法",
+    "chapter": "导数",
+    "latex": "f'g+fg'>0\\Rightarrow F=fg;\\quad f'-g'>0\\Rightarrow F=f-g;\\quad fg'+gf'>0\\Rightarrow F=fg;\\quad fg'-gf'>0\\Rightarrow F=\\frac{f}{g};\\quad xf'+f>0\\Rightarrow F=xf;\\quad xf'-f>0\\Rightarrow F=\\frac{f}{x};\\quad xf'+nf>0\\Rightarrow F=x^n f;\\quad xf'-nf>0\\Rightarrow F=\\frac{f}{x^n};\\quad f'+f>0\\Rightarrow F=e^x f;\\quad f'-f>0\\Rightarrow F=e^{-x}f",
+    "why": "补:类型多样性",
+    "w": 200,
+    "h": 281,
+    "image": "/assets/formulas/c213-formula.svg",
+    "blank": "/assets/formulas/c213-blank.svg",
+    "example": "",
+    "feats": [
+      "分数",
+      "拆行符"
+    ]
+  }
+]

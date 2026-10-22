@@ -1,0 +1,5 @@
+<package-loader
+  label="正在加载公式资源"
+  detail="约 1.6 MB · 之后打开会直接使用缓存"
+  progress="{{69}}"
+></package-loader>

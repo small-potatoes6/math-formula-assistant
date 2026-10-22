@@ -1,0 +1,42 @@
+name: Feature request
+description: Propose a focused improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user workflow is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: target
+    attributes:
+      label: Area
+      options:
+        - WeChat mini program
+        - Web prototype
+        - Formula content
+        - Build or validation script
+        - Documentation
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This request does not contain secrets or personal information.
+          required: true

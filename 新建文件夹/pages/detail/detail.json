@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "公式详情",
+  "usingComponents": {
+    "formula-image": "../../components/formula-image/formula-image"
+  }
+}

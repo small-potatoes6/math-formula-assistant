@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="Z3gRJvDBdWGtXTtKJShIRR">
+<head data-page-node-id="tywdO5fKeSoyGH3kFs24GP">
+<meta charset="UTF-8" data-page-node-id="NAXW99lQzWJxIspg3Wfwg4">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="Zl35XOFKqUN8tbuNlzu9Vm">
+<title>微信小程序《高中数学公式记忆助手》功能计划</title>
+<style>
+  body{font-family:"Microsoft YaHei",sans-serif;max-width:900px;margin:0 auto;padding:24px;line-height:1.7;color:#2c3e50;background:#fafafa;}
+  h1{color:#1a5276;border-bottom:3px solid #1a5276;padding-bottom:8px;}
+  h2{color:#21618c;margin-top:36px;border-left:5px solid #21618c;padding-left:12px;}
+  h3{color:#2874a6;margin-top:24px;}
+  .tag{display:inline-block;background:#eaf2f8;color:#1a5276;border-radius:4px;padding:1px 8px;font-size:13px;margin-right:6px;}
+  table{border-collapse:collapse;width:100%;margin:12px 0;background:#fff;}
+  th,td{border:1px solid #d5dbdb;padding:8px 10px;text-align:left;font-size:14px;}
+  th{background:#d6eaf8;}
+  .box{background:#fef9e7;border-left:4px solid #f39c12;padding:10px 14px;border-radius:4px;margin:14px 0;}
+  .good{background:#eafaf1;border-left:4px solid #27ae60;}
+  .warn{background:#fdedec;border-left:4px solid #e74c3c;}
+  ul{padding-left:22px;}
+  li{margin:4px 0;}
+  .phase{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;}
+  .phase div{flex:1;min-width:180px;background:#fff;border:1px solid #d5dbdb;border-radius:8px;padding:10px 14px;}
+  .phase b{color:#1a5276;display:block;margin-bottom:6px;}
+</style>
+</head>
+<body data-page-node-id="HD0arX4hPD7Je3uooUFxBj">
+
+<h1 data-page-node-id="Nv3ZdbdlqfZ8qdiw6zCHxX">微信小程序《高中数学公式记忆助手》<br data-page-node-id="s5D7e4JczyTAQXk0xXMhjL">功能计划书（头脑风暴版 v1）</h1>
+<p data-page-node-id="DSohnXQiBQQptTgZ75iZLU">
+<span class="tag" data-page-node-id="Aer1M2slMtid8aLhhSBMqg">定位</span>高中生 / 高考复习党的碎片化记忆工具<br data-page-node-id="Z240GGMjucEGDgcdiMqURE">
+<span class="tag" data-page-node-id="zmUo7tsocdABFcrfiHyRGE">一句话</span>把高中三年数学的「基础公式」和「二级结论」装进口袋，按年级分块，用测试和遗忘曲线帮你真正记住，而不是收藏了就忘。
+</p>
+
+<h2 data-page-node-id="JcDQSXx6WioLAjLCBa7IG9">一、核心内容组织（内容架构）</h2>
+<p data-page-node-id="LrGhH3zhrkW9JHYr88mtWA">内容是两层 × 三个年级的矩阵：</p>
+<table data-page-node-id="LUeb7mE7WyPXBJJ5yl5BZe">
+<tr data-page-node-id="qJYrr21Ok6vAxjREdcxsin"><th data-page-node-id="ckfiaxTQWdO1KEh1jpZx8V"></th><th data-page-node-id="hTrNHeHaTuKGxNVMcOPDoE">高一</th><th data-page-node-id="Q8q3lpBUnxBBbRr0s8jvOr">高二</th><th data-page-node-id="5PFptzvEgY2GPOIoJsCNss">高三</th></tr>
+<tr data-page-node-id="HsfSTVohhMDFulDSXWxAOW"><td data-page-node-id="l8KmBsoEJ80yYn1NSnGAho"><b data-page-node-id="qDyf6wdjuWt8aAkmtFmCht">基础公式</b></td>
+<td data-page-node-id="29cSu7RjbokvtHj4Fv17FM">集合与逻辑、不等式、函数性质、指数对数、三角函数诱导公式、平面向量、复数</td>
+<td data-page-node-id="tFXCLkKlKRpEV6nGcT7AXC">数列（等差等比通项/求和）、三角恒等变换、解三角形、立体几何（表面积体积、线面关系）、圆锥曲线基本定义、导数公式表</td>
+<td data-page-node-id="86g1bjXR7tMsVOZVoXcMRu">计数原理、二项式定理、概率分布（二项/超几何/正态）、统计、导数综合、圆锥曲线焦点弦等、圆锥曲线基本定义、导数公式表</td>
+</tr>
+<tr data-page-node-id="iDydcFa8EgmP8bsHRR5m9d"><td data-page-node-id="MfSAUD95agw23n2PPwaHM5"><b data-page-node-id="aBVvvkj5iN7pcTyS9F4YHR">二级结论</b></td>
+<td data-page-node-id="PTPYP4HgVU0acu80nU3YJu">函数图像平移口诀、均值不等式"一正二定三相等"、向量投影速算等</td>
+<td data-page-node-id="hwrWh8fATvaUhO5cuHiP12">等差等比性质链（m+n=p+q）、奇偶项求和技巧、焦点三角形面积、椭圆双曲线焦点弦结论、外接球八大模型等</td>
+<td data-page-node-id="XiGm3FIJJ3aKxRcnBCutMf">排列组合"至多至少"转化、正态分布 3σ 原则、圆锥曲线第三定义、定比分点弦长公式、常见放缩不等式等</td>
+</tr>
+</table>
+<div class="box good" data-page-node-id="48drDwgZlOoHVrQDAPscMX"><b data-page-node-id="VykhXJSghIn9bz1hxtE00I">关键设计：每条二级结论必须带「推导或例题」。</b>二级结论的价值在于理解来源，只背不用很快忘。每条结论配：① 原始推导（可折叠）② 一道典型例题 ③ 使用前提/易错点。</div>
+
+<h2 data-page-node-id="DgcNa8Jmz7vnNTMkCWM0rK">二、功能模块（头脑风暴清单）</h2>
+
+<h3 data-page-node-id="rsNxlH8JBsD09Qotoqsf0K">模块 1：公式浏览（基础盘）</h3>
+<ul data-page-node-id="VnAdfRZdxsY1SUABPeVmkJ">
+<li data-page-node-id="TQT6xerGJu412b9mZJpQD8">「年级 → 科目章节 → 具体公式」三级导航，每条公式一张卡片。</li>
+<li data-page-node-id="VngdK2yvt94rSIISEn34M6">卡片正面：公式 + 适用条件；背面（点开）：文字解释、一个最小例子、易错提醒。</li>
+<li data-page-node-id="FVaujFwN0k7brXaXlqnCZV">全文搜索：输入"焦点弦""均值不等式"直接跳到对应公式。</li>
+<li data-page-node-id="6dCyIjT30x01TkBAz3FOHe">收藏夹：常看公式单独一栏，支持自定义分组（比如"考前 10 分钟必看"）。</li>
+</ul>
+
+<h3 data-page-node-id="J8zm7sQp1ByOHDQisgyDa5">模块 2：记忆训练（核心差异化，重点做）</h3>
+<ul data-page-node-id="QQVH34BZVsnub2wOJvMY45">
+<li data-page-node-id="YIGlKsnmpeRV7wLKd7zb8l"><b data-page-node-id="Ep3rqtYuaCLrfrG1omKb3H">填空模式</b>：公式卡片挖空关键处（如 sin(A+B) = sinA□□B + □…），让你填。</li>
+<li data-page-node-id="bp4MMsKRRqzCBOwYxJTZtp"><b data-page-node-id="RGaY5fLYH1w6b1mxf3ALhO">选择题模式</b>：给题目选正确公式 / 给公式选适用条件。</li>
+<li data-page-node-id="xYm4jj9SH9vm6pHVl85DGx"><b data-page-node-id="rql5h3GWjdFPFXcrAup6ri">默写模式</b>：显示结论名称（如"椭圆焦点三角形面积公式"），自己默写后点击"显示答案"自评：会 / 模糊 / 不会。</li>
+<li data-page-node-id="vQfkRdakzCrDf1hf2FGiA8"><b data-page-node-id="eQpUCw1ZEJSh3P3L16ckcF">二级结论条件判断</b>：这是易错重灾区。题目给出一个"看似能用结论"的题，判断这个结论能不能直接用（考察使用前提）。</li>
+</ul>
+
+<h3 data-page-node-id="C3mVu8J79jlXUazfRadTnY">模块 3：遗忘曲线复习（留存关键）</h3>
+<ul data-page-node-id="gIDF7pISBI342ilbTH8AIf">
+<li data-page-node-id="hStwsnO9Pv0ECkULHJs1Kz">每条公式记录你的掌握状态（会/模糊/不会 + 上次测试时间）。</li>
+<li data-page-node-id="pZpFe5lQtAENR8XT6x5rOL">按艾宾浩斯间隔安排复习：1 天 → 3 天 → 7 天 → 15 天 → 30 天。</li>
+<li data-page-node-id="Mlde7W3gIb8vhOJlEFApGq">首页每天显示「今日待复习 N 条」，点进去直接开测，3~5 分钟完成，符合碎片化场景。</li>
+<li data-page-node-id="6vTHo4RrBSxRIPE6CpHHpn">掌握度可视化：每个章节一个进度环 + 整体"记忆热力图"（哪些章节薄弱一眼看出）。</li>
+</ul>
+
+<h3 data-page-node-id="VwH8pgLxrArOvZZGg61Lmb">模块 4：错题与薄弱点</h3>
+<ul data-page-node-id="aCxpQLZVID7OqW5FjXfBJh">
+<li data-page-node-id="CRHc52HE0JYKyfTNunaLIF">测试答错的公式自动进错题本，可重测。</li>
+<li data-page-node-id="GDk5HZ3z1onUBaTLeSlduy">"薄弱章节"排行：按错误率排序，一键生成针对训练。</li>
+</ul>
+
+<h3 data-page-node-id="nROiag3ojSjErHTrEDDwJg">模块 5：轻社区 / 激励（后期可选）</h3>
+<ul data-page-node-id="egc1lGEssAkfL3RyED3qj5">
+<li data-page-node-id="xd6CnN2STqeGkUXlD66DPY">连续打卡天数、周报（"本周掌握了 23 条公式"）。</li>
+<li data-page-node-id="a01IgRZBFTQKSLpAmgOVV7">公式背诵排行榜 / 好友对战（PK 模式：双人限时答题），微信生态里好友对战传播性强，但放二期。</li>
+</ul>
+
+<h3>模块 7：语音提问（听背模式）⭐ 新增</h3>
+<div class="box good"><b>场景价值</b>：走路、坐车、睡前这类「眼睛不方便看屏幕」的场景，是目前其他功能都覆盖不到的碎片时间。语音模式把可用时间再翻一倍。</div>
+<ul>
+<li><b>AI 出声提问</b>：进入「听背模式」后自动朗读问题，如"请问：椭圆的焦点三角形面积公式是什么？—— 5、4、3、2、1 —— 答案是：S = 2ab·sinθ / (a+b…)"，然后自动播下一条。全程免操作，像听播客一样过公式。</li>
+<li><b>技术方案</b>：用微信官方免费插件<b>「同声传译 WechatSI」</b>，提供文字转语音（TTS）朗读和语音识别，无需自建服务器、零费用。题目文字本来就在公式库 JSON 里，直接转语音即可。</li>
+<li><b>交互设计：只问不判，自评打分</b>：AI 提问 → 停顿（默认 10 秒，可调 10s / 20s / 30s / 不限时手动下一条）→ 倒数提示"3、2、1"（可关）→ 朗读标准答案 → 语音提示"请自评：会了请点 1，模糊点 2，不会点 3"（也可口头不评、跳过）。掌握状态由自评写入，与遗忘曲线复习打通。<br>
+<b>为什么不做语音作答比对</b>：语音转文字对数学术语识别不可靠（"sinθ"易转错）、同义答案无法穷举比对，且机器判定常有假阳性；用户自评（Anki 同款思路）数据更真实。砍掉识别比对后，整个语音功能只剩「TTS 朗读 + 定时器」，零技术风险、零费用，可提前到二期上线。</li>
+<li><b>播报节奏</b>：问题前短提示音（帮助集中注意力）；自评后 AI 给一句语音反馈（如"好，这条 7 天后再见"）补充仪式感。</li>
+<li><b>盲测模式（只提问、不给答案）</b>：播报流程里跳过「朗读答案」环节，一条接一条连播。适用场景：考前快速自测、提取练习（大脑主动检索比看答案更能巩固记忆，有独立价值，不是阉割版）。配套细节：① 听的过程中可「标记本条」（点击按钮或语音说"标记"），标过的条目自动进错题本，明日待复习优先出现；② 播完一组后给一句总结（"本组 15 条，你标了 4 条"）。实现上只是播报开关差异，成本≈0。</li>
+<li><b>内容适配</b>：语音模式只挑「文字友好」的条目提问（结论、条件、口诀类）；含分式/上下标的复杂公式念不出来，自动跳过或改为"报公式名称 → 你默想 → 报答案要点"。</li>
+<li><b>体验细节</b>：倍速（0.8x/1x/1.2x）、锁屏后台继续播、耳机线控切上一条/下一条、支持只听「今日待复习」或指定章节。</li>
+<li><b>排期建议</b>：技术门槛低（TTS 朗读 + 定时器 + 自评点击），随二期一起做，无需拖到三期。</li>
+</ul>
+
+<h3 data-page-node-id="c565pFTaGJFQ2LFHN7hPX6">模块 6：其他辅助</h3>
+<ul data-page-node-id="hcEp09nYI4IjfJyitwNsZg">
+<li data-page-node-id="O5Gj2MAflOW6dZaXNuAEQC">深色模式、字号调节（公式多为图片/LaTeX 渲染，注意清晰度）。</li>
+<li data-page-node-id="bqfsoBm7yACUBK8qL2Isbc">离线可用：公式内容本地缓存，没网也能背。</li>
+</ul>
+
+<h2 data-page-node-id="WZaTYR4OzIkUNiu5JGINHr">三、页面结构（草图逻辑）</h2>
+<table data-page-node-id="aXKil0M83F8ktExmamEVUO">
+<tr data-page-node-id="gt1XM3bW5F3WGZ7qI38N1f"><th data-page-node-id="tA9WhMTcl8DgyGiWR9WbsQ">Tab</th><th data-page-node-id="00DlOMXjwpjwlvO0ePBmqe">页面</th><th data-page-node-id="PWLJIxPlENP8KcxBpFccSE">内容</th></tr>
+<tr data-page-node-id="mpge6OojKMFeUpscOt6isX"><td data-page-node-id="cHOPiLllNKGcHJXsoPPZnH">① 首页</td><td data-page-node-id="v8SIlv8H3YOzDeIKep0YDJ">今日任务</td><td data-page-node-id="zgp2LJpm9DXNrd7Xr2XOTz">今日待复习数、连续打卡、薄弱章节提醒、快捷入口</td></tr>
+<tr data-page-node-id="PBPXFpZItXmYWJxEk9gExP"><td data-page-node-id="nvhdP7NxpoBQ6BHaShIB9F">② 公式库</td><td data-page-node-id="dTIZTF46Rthrskhn7NVpPW">浏览/搜索</td><td data-page-node-id="dbPGBiMVJ6XWbuub9SXcqB">年级切换 → 章节列表 → 公式卡片列表</td></tr>
+<tr data-page-node-id="sTYNDxtNXDT4CZzPSBOhet"><td data-page-node-id="Do5lRxgFuYCegAsqyAb5en">③ 练习</td><td data-page-node-id="dBTPlEGeKVTzj8n3jXcHHG">测试中心</td><td data-page-node-id="UxF9JqHVrTSskOmDLCkBpQ">选年级/章节/模式（填空/选择/默写）→ 开始测试</td></tr>
+<tr data-page-node-id="TyBT7fSr6Ox4rHrX58g1hq"><td data-page-node-id="nEA8DcuVzWPisUUwUzqmaT">④ 我的</td><td data-page-node-id="TjQY99MCMLMZDUSKjGZrJz">个人中心</td><td data-page-node-id="BwyBk6eD6jN5r9UFALkhnL">错题本、收藏夹、学习统计、复习计划设置</td></tr>
+</table>
+
+<h2 data-page-node-id="fRLDMpl2xnSUSWNM222ce0">四、技术方案建议</h2>
+<ul data-page-node-id="pVyJn8falXYGevsMawyBo1">
+<li data-page-node-id="qCHEKwqpDFTyzUJO5Iuwqi"><b data-page-node-id="QTbElaF8lAhRV1hFjxmxqw">原生小程序</b> 或 <b data-page-node-id="Qxri2MaaPmIXlSfbYxKEHs">Taro/uni-app</b>（如果以后想复用到 App/网页，选 uni-app）。</li>
+<li data-page-node-id="eg6RKcmeHOXhBsNtFyw3WL"><b data-page-node-id="RTApQKMHZ7DIVGwdBNep0m">公式渲染</b>：推荐 LaTeX 渲染（如 knitroom / wxmath 类方案），或直接用高清 SVG/图片素材（更稳，开发快）。建议一期用预渲染图片，二期换 LaTeX。</li>
+<li data-page-node-id="JHF1ayGn0g79VgtC2aHyjH"><b data-page-node-id="165Od3x6PGA7gbeIT82Us2">数据</b>：公式库做成结构化 JSON（年级/章节/公式/推导/例题/易错点/标签），一期可打包进小程序本地，方便离线；用户数据（掌握状态、错题）用微信云开发（云数据库 + 云函数），免自建服务器，成本几乎为零。</li>
+<li data-page-node-id="3a6HPKTow8H2TnHN1fYsKd"><b data-page-node-id="wAWPkDw0ppNeizxBhLQvEw">内容量预估</b>：基础公式约 300~400 条，二级结论约 150~200 条，工作量主要在内容整理，程序本身不复杂。</li>
+</ul>
+
+<h2 data-page-node-id="SkAtzcGejsVIuN3wAmdNoV">五、开发节奏建议（分期）</h2>
+<div class="phase" data-page-node-id="26zbZDbu3JoLM0TMvmwbIc">
+<div data-page-node-id="Vuoe5iU7phZbJbuTaJDylY"><b data-page-node-id="KbYJkwumAGVX7vH0jMPWLj">MVP（一期，2~3 周）</b>公式库浏览 + 收藏 + 搜索；填空/选择题测试；微信登录 + 掌握状态云端保存。先把"能查、能测"跑通。</div>
+<div data-page-node-id="Q13l0gA1reY1CvVra2yBAD"><b data-page-node-id="US2bZfSMd9Nxf6xcMCv9pn">二期（3~4 周）</b>遗忘曲线复习计划 + 今日待复习；错题本；默写模式；掌握度统计图表。</div>
+<div data-page-node-id="nQGj9XAWKh70CaaIhEE6BN"><b data-page-node-id="PaAP6scFCNcLMftYI7njYv">三期（可选）</b>好友 PK 对战、排行榜、打卡分享；二级结论社区投稿/纠错。</div>
+</div>
+
+<h2 data-page-node-id="pb6OKdm8TqN3s9jSeDeaj4">六、几个要想清楚的问题（我的观点）</h2>
+<div class="box warn" data-page-node-id="Km2EFRgjT3o9rzXmVcUfXj"><b data-page-node-id="H3acJ5Xyp6AsnDgtWxN7Du">1. 二级结论的"度"。</b>很多老师反对死背二级结论。建议产品定位上明确：二级结论是"加速器"，必须先掌握对应基础公式才解锁记忆训练（比如背"焦点弦结论"前要先通过圆锥曲线基础公式的测试）——这个设计既科学又有产品特色。</div>
+<div class="box good" data-page-node-id="aiZSuPhEh94cfETeA7kJEW"><b data-page-node-id="D22updA3ESf3xs0m628NDz">2. 内容先行，程序其次。</b>这个产品成败在内容质量：公式全不全、推导讲得清不清楚、易错点准不准。建议先花一周把高一的公式 JSON 整理出来当样板，再动工开发。</div>
+<div class="box" data-page-node-id="yuSaPIw6dH8hb8qhlUOqth"><b data-page-node-id="6OcpbsP8Q6P5y2D6ZBchGR">3. 差异化在哪。</b>市面上公式查询 App 不少，但"按遗忘曲线主动推复习 + 二级结论带推导"这个组合不多。首页"今日待复习"应该是打开率的核心抓手。</div>
+<div class="box" data-page-node-id="3bSZ610jM01O9TzCRWSoOa"><b data-page-node-id="n1t5o809G1ph71nqLarKhD">4. 合规。</b>小程序需要主体（个人或企业）认证；若面向未成年人注意隐私合规，不收集多余信息，一期可以完全匿名（不需要任何个人信息就能用）。</div>
+
+</body>
+</html>

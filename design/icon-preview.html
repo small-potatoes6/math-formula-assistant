@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公式记忆助手小程序图标</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: transparent;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <img src="miniprogram-icon-v1.svg" width="1024" height="1024" alt="">
+  <script>
+    const size = Math.min(1024, Math.max(48, Number(new URLSearchParams(location.search).get("size")) || 1024));
+    document.documentElement.style.width = size + "px";
+    document.documentElement.style.height = size + "px";
+    document.body.style.width = size + "px";
+    document.body.style.height = size + "px";
+    document.querySelector("img").style.width = size + "px";
+    document.querySelector("img").style.height = size + "px";
+  </script>
+</body>
+</html>

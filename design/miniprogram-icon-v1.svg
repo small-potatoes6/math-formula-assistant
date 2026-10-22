@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">公式记忆助手小程序图标</title>
+  <desc id="desc">深青色背景、暖白圆周率符号和珊瑚橙记忆确认标记。</desc>
+  <defs>
+    <filter id="pi-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#6B2E21" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g>
+    <rect width="1024" height="1024" fill="#D97757"/>
+    <circle cx="512" cy="520" r="354" fill="#C8664A" opacity="0.62"/>
+    <path d="M-28 832C185 724 342 792 516 875C700 963 862 968 1054 847V1066H-28Z" fill="#B4543B" opacity="0.62"/>
+
+    <g filter="url(#pi-shadow)">
+      <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" fill="none" stroke="#F8F3E8" stroke-width="94" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M376 366C355 427 346 496 350 568V714" fill="none" stroke="#F8F3E8" stroke-width="86" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" fill="none" stroke="#F8F3E8" stroke-width="86" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

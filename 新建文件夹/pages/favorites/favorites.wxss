@@ -1,0 +1,143 @@
+.favorites-content {
+  padding-top: 0;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rpx 20rpx;
+}
+
+.chapter-picker {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  min-height: 64rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #d6dce5;
+  border-radius: 14rpx;
+  background: #ffffff;
+  color: #344054;
+  font-size: 24rpx;
+  font-weight: 650;
+}
+
+.picker-arrow {
+  color: #25aa8d;
+  font-size: 29rpx;
+}
+
+.result-count {
+  color: #98a2b3;
+  font-size: 23rpx;
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.favorite-card {
+  padding: 26rpx;
+  border: 1rpx solid #e4e7ec;
+  border-radius: 16rpx;
+  background: #ffffff;
+  box-shadow: 0 5rpx 16rpx rgba(15, 23, 42, 0.025);
+}
+
+.favorite-head {
+  display: flex;
+  align-items: center;
+  min-height: 48rpx;
+}
+
+.id-pill {
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background: #fff0e9;
+  color: #b85f43;
+  font-size: 20rpx;
+  font-weight: 750;
+}
+
+.id-pill.conclusion {
+  background: #f0eeff;
+  color: #6656c7;
+}
+
+.favorite-chapter {
+  flex: 1;
+  margin-left: 14rpx;
+  overflow: hidden;
+  color: #98a2b3;
+  font-size: 22rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.favorite-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  margin: -8rpx -8rpx -8rpx 0;
+  border-radius: 50%;
+  color: #aab2bf;
+  font-size: 44rpx;
+  line-height: 1;
+  transition: color 0.14s ease, transform 0.14s ease, background-color 0.14s ease;
+}
+
+.favorite-star.active {
+  color: #6eafff;
+}
+
+.favorite-star:active {
+  background: #eaf3ff;
+  transform: scale(0.82);
+}
+
+.favorite-name {
+  margin-top: 14rpx;
+  color: #15171a;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.favorite-formula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 166rpx;
+  margin-top: 16rpx;
+  padding: 24rpx 8rpx 8rpx;
+  border-top: 1rpx solid #f0f2f5;
+}
+
+.favorite-foot {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+  font-size: 22rpx;
+}
+
+.favorite-type {
+  color: #98a2b3;
+  font-weight: 650;
+}
+
+.favorite-type.core {
+  color: #b85f43;
+}
+
+.favorite-type.conclusion {
+  color: #6656c7;
+}
+
+.empty-button {
+  width: 340rpx;
+  margin: 34rpx auto 0;
+}

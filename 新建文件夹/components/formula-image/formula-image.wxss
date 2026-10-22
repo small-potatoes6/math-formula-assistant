@@ -1,0 +1,28 @@
+.formula-image-root {
+  position: relative;
+  max-width: 100%;
+}
+
+.formula-image-root.is-fit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formula-image-root.is-scrollable {
+  overflow: hidden;
+}
+
+.formula-scroll,
+.formula-canvas {
+  position: relative;
+}
+
+.formula-canvas {
+  overflow: hidden;
+}
+
+.formula-svg {
+  display: block;
+  max-width: none;
+}

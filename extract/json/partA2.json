@@ -1,0 +1,1521 @@
+{
+  "items": [
+    {
+      "id": "C086",
+      "chapter": "解三角形",
+      "name": "余弦定理变形",
+      "latex": "b^{2}=a^{2}+c^{2}-2ac\\cos B;\\quad c^{2}=a^{2}+b^{2}-2ab\\cos C;\\quad \\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2bc};\\quad \\cos B=\\frac{a^{2}+c^{2}-b^{2}}{2ac};\\quad \\cos C=\\frac{a^{2}+b^{2}-c^{2}}{2ab}",
+      "condition": "在任意三角形ABC中",
+      "pitfall": "注意角与边的对应关系，不要把分子分母写反",
+      "example": "",
+      "voiceText": "余弦定理的变形公式：b平方等于a平方加c平方减2ac cos B，c平方等于a平方加b平方减2ab cos C，cos A等于b平方加c平方减a平方除以2bc，其余类似。",
+      "tags": [
+        "余弦定理",
+        "解三角形",
+        "边角关系"
+      ]
+    },
+    {
+      "id": "C087",
+      "chapter": "解三角形",
+      "name": "三角形面积公式",
+      "latex": "S_{\\triangle ABC}=\\frac{1}{2}ab\\sin C=\\frac{1}{2}bc\\sin A=\\frac{1}{2}ac\\sin B",
+      "condition": "任意三角形",
+      "pitfall": "注意两边夹的是对角，不要张冠李戴",
+      "example": "",
+      "voiceText": "三角形面积等于二分之一ab乘sin C，也等于二分之一bc乘sin A，还等于二分之一ac乘sin B。",
+      "tags": [
+        "三角形面积",
+        "正弦",
+        "解三角形"
+      ]
+    },
+    {
+      "id": "C088",
+      "chapter": "解三角形",
+      "name": "射影定理",
+      "latex": "a=b\\cos C+c\\cos B;\\quad b=a\\cos C+c\\cos A;\\quad c=a\\cos B+b\\cos A",
+      "condition": "任意三角形ABC中",
+      "pitfall": "记住每个边等于另两边在该边上的投影之和",
+      "example": "",
+      "voiceText": "射影定理：a等于b乘cos C加c乘cos B，其余两边轮换同理。",
+      "tags": [
+        "射影定理",
+        "解三角形",
+        "边角关系"
+      ]
+    },
+    {
+      "id": "C089",
+      "chapter": "解三角形",
+      "name": "内角三角函数关系",
+      "latex": "\\sin A=\\sin(B+C);\\quad \\cos A=-\\cos(B+C);\\quad \\tan A=-\\tan(B+C)",
+      "condition": "在三角形ABC中，A+B+C=180度",
+      "pitfall": "余弦和正切前有负号，不要漏掉",
+      "example": "",
+      "voiceText": "在三角形中，角A等于一百八十度减去角B加角C，所以sin A等于sin括号B加C反括，cos A等于负的cos括号B加C反括，tan A等于负的tan括号B加C反括。",
+      "tags": [
+        "三角形内角",
+        "诱导公式",
+        "解三角形"
+      ]
+    },
+    {
+      "id": "C090",
+      "chapter": "解三角形",
+      "name": "边角关系",
+      "latex": "a>b>c\\Leftrightarrow \\sin A>\\sin B>\\sin C\\Leftrightarrow \\angle A>\\angle B>\\angle C",
+      "condition": "任意三角形中",
+      "pitfall": "这是正弦定理单调性的体现，不要与余弦直接比较",
+      "example": "",
+      "voiceText": "大边对大角：边长大则对角的正弦值大，对角的度数也大。",
+      "tags": [
+        "大边对大角",
+        "正弦定理",
+        "解三角形"
+      ]
+    },
+    {
+      "id": "C091",
+      "chapter": "解三角形",
+      "name": "边角转化",
+      "latex": "a:b:c=\\sin A:\\sin B:\\sin C;\\quad a+2b=2c\\Leftrightarrow \\sin A+2\\sin B=2\\sin C;\\quad a+2b^{2}=2c\\Leftrightarrow \\sin A+2\\sin^{2}B=2\\sin C",
+      "condition": "必须在齐次式的前提下进行边与正弦的互换",
+      "pitfall": "只有齐次式才能直接把边换成正弦，非齐次式不能直接替换",
+      "example": "",
+      "voiceText": "边的比等于所对角正弦的比，边与正弦互换必须在齐次式的前提下进行，例如a加2b等于2c等价于sin A加2倍sin B等于2倍sin C。",
+      "tags": [
+        "边角转化",
+        "正弦定理",
+        "齐次式"
+      ]
+    },
+    {
+      "id": "C092",
+      "chapter": "解三角形",
+      "name": "三角形个数判定",
+      "latex": "\\sin B=\\frac{b\\sin A}{a};\\quad \\sin B>1\\Leftrightarrow \\text{无解};\\quad \\sin B=1\\Leftrightarrow \\text{一解};\\quad \\sin B<1\\Leftrightarrow \\text{一解或两解}",
+      "condition": "已知两边及其中一边对角时使用",
+      "pitfall": "sin B小于1时可能有一解或两解，需用「大边对大角」和「内角和180度」检验",
+      "example": "",
+      "voiceText": "已知两边及其中一边对角时，先求sin B等于b乘sin A除以a；若大于1无解，等于1一解，小于1可能一解也可能两解，需要进一步检验。",
+      "tags": [
+        "解三角形",
+        "多解",
+        "正弦定理"
+      ]
+    },
+    {
+      "id": "C093",
+      "chapter": "复数",
+      "name": "i的周期性",
+      "latex": "i^{4n+1}=i,\\quad i^{4n+2}=-1,\\quad i^{4n+3}=-i,\\quad i^{4n}=1",
+      "condition": "n为整数",
+      "pitfall": "注意指数除以4的余数，不要混淆i的几次方",
+      "example": "",
+      "voiceText": "虚数单位i的幂以4为周期：i的4n加1次方等于i，4n加2次方等于负1，4n加3次方等于负i，4n次方等于1。",
+      "tags": [
+        "虚数单位",
+        "周期性",
+        "复数"
+      ]
+    },
+    {
+      "id": "C094",
+      "chapter": "复数",
+      "name": "复数的模",
+      "latex": "|z|=|a+bi|=\\sqrt{a^{2}+b^{2}}",
+      "condition": "z=a+bi，a,b为实数",
+      "pitfall": "模是实数，等于实部平方加虚部平方再开方",
+      "example": "",
+      "voiceText": "复数z等于a加bi的模，等于根号下a平方加b平方。",
+      "tags": [
+        "复数模",
+        "复数",
+        "模长"
+      ]
+    },
+    {
+      "id": "C095",
+      "chapter": "复数",
+      "name": "共轭复数",
+      "latex": "z=a+bi(a,b\\in\\mathbf{R})\\text{ 的共轭复数是 }\\overline{z}=a-bi",
+      "condition": "a,b为实数",
+      "pitfall": "实部不变，虚部变号，不要同时变号",
+      "example": "",
+      "voiceText": "复数a加bi的共轭复数是a减bi，实部不变，虚部变号。",
+      "tags": [
+        "共轭复数",
+        "复数",
+        "虚部"
+      ]
+    },
+    {
+      "id": "C096",
+      "chapter": "复数",
+      "name": "共轭复数性质",
+      "latex": "z=\\overline{z}\\Leftrightarrow z\\in\\mathbf{R};\\quad |z|=|\\overline{z}|;\\quad z\\cdot\\overline{z}=|z|^{2}=|\\overline{z}|^{2}=a^{2}+b^{2}",
+      "condition": "",
+      "pitfall": "z乘z的共轭等于模的平方，不是等于2倍实部",
+      "example": "",
+      "voiceText": "共轭复数的性质：复数等于它自身的共轭当且仅当它是实数；复数的模等于共轭的模；复数乘它的共轭等于模的平方，也等于a平方加b平方。",
+      "tags": [
+        "共轭复数",
+        "复数模",
+        "复数"
+      ]
+    },
+    {
+      "id": "C097",
+      "chapter": "复数",
+      "name": "复数四则运算",
+      "latex": "(a+bi)+(c+di)=(a+c)+(b+d)i;\\quad (a+bi)-(c+di)=(a-c)+(b-d)i;\\quad (a+bi)(c+di)=(ac-bd)+(bc+ad)i;\\quad (a+bi)\\div(c+di)=\\frac{ac+bd}{c^{2}+d^{2}}+\\frac{bc-ad}{c^{2}+d^{2}}i",
+      "condition": "a,b,c,d均为实数，除法要求c+di不为零",
+      "pitfall": "除法要先分子分母同乘分母的共轭复数，注意分子实部和虚部的符号",
+      "example": "",
+      "voiceText": "复数加减法对应实部虚部分别相加减；乘法按多项式展开并把i平方换成负1；除法先分子分母同乘分母的共轭复数，再整理成a加bi的形式。",
+      "tags": [
+        "复数运算",
+        "复数",
+        "四则运算"
+      ]
+    },
+    {
+      "id": "C098",
+      "chapter": "复数",
+      "name": "复数加减法几何意义",
+      "latex": "|z_{1}-z_{2}|=|Z_{2}Z_{1}|;\\quad d=|z_{2}-z_{1}|=\\sqrt{(a-c)^{2}+(b-d)^{2}};\\quad |z-z_{0}|=r\\text{ 表示以 }z_{0}\\text{ 为圆心、}r\\text{ 为半径的圆}",
+      "condition": "z_{1}=a+bi，z_{2}=c+di对应复平面上的点",
+      "pitfall": "两点距离公式中坐标相减不要写错顺序",
+      "example": "",
+      "voiceText": "两个复数差的模等于复平面上对应两点间的距离；z减z0的模等于r表示复数z对应的点在以z0为圆心、r为半径的圆上。",
+      "tags": [
+        "复数几何",
+        "复平面",
+        "距离"
+      ]
+    },
+    {
+      "id": "C099",
+      "chapter": "立体几何初步",
+      "name": "斜二测画法",
+      "latex": "x'\\text{ 与 }y'\\text{ 轴夹角为 }45^{\\circ}\\text{ 或 }135^{\\circ};\\quad x\\text{ 轴方向线段长度不变},\\quad y\\text{ 轴方向线段长度变为一半}",
+      "condition": "绘制平面图形直观图",
+      "pitfall": "平行于y轴的线段长度减半，不是x轴",
+      "example": "",
+      "voiceText": "斜二测画法：画出的x撇轴和y撇轴夹角为45度或135度；平行于原x轴的线段长度不变，平行于原y轴的线段长度变为原来的一半。",
+      "tags": [
+        "斜二测",
+        "直观图",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C100",
+      "chapter": "立体几何初步",
+      "name": "斜二测面积关系",
+      "latex": "S_{\\text{直}}=\\frac{\\sqrt{2}}{4}S_{\\text{原}}",
+      "condition": "平面图形与其斜二测直观图的面积关系",
+      "pitfall": "直观图面积是原图面积的四分之根号二，不是二分之根号二",
+      "example": "",
+      "voiceText": "斜二测直观图的面积等于原图形面积乘以四分之根号二。",
+      "tags": [
+        "斜二测",
+        "面积",
+        "直观图"
+      ]
+    },
+    {
+      "id": "C101",
+      "chapter": "立体几何初步",
+      "name": "平面的基本事实",
+      "latex": "\\text{不共线三点确定一个平面};\\quad \\text{直线上两点在平面内则整条直线在平面内};\\quad \\text{两平面有一个公共点则有过该点的一条公共直线}",
+      "condition": "",
+      "pitfall": "三点必须不共线才能确定唯一平面",
+      "example": "",
+      "voiceText": "平面的三个基本事实：不共线的三点确定唯一一个平面；如果一条直线上有两点在一个平面内，那么整条直线都在这个平面内；如果两个不重合平面有一个公共点，那么它们有且只有一条过该点的公共直线。",
+      "tags": [
+        "平面",
+        "基本事实",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C102",
+      "chapter": "立体几何初步",
+      "name": "基本事实推论",
+      "latex": "A\\notin l\\Rightarrow A\\text{ 与 }l\\text{ 确定平面 }\\alpha;\\quad a\\cap b=A\\Rightarrow a,b\\text{ 确定平面 }\\alpha;\\quad a\\parallel b\\Rightarrow a,b\\text{ 确定平面 }\\alpha",
+      "condition": "",
+      "pitfall": "相交直线、平行直线、直线与直线外一点都能唯一确定一个平面",
+      "example": "",
+      "voiceText": "三个推论：直线和直线外一点确定一个平面；两条相交直线确定一个平面；两条平行直线确定一个平面。",
+      "tags": [
+        "平面",
+        "推论",
+        "确定平面"
+      ]
+    },
+    {
+      "id": "C103",
+      "chapter": "立体几何初步",
+      "name": "证明线线平行",
+      "latex": "\\text{同位角、内错角、同旁内角、中位线};\\quad l\\parallel\\alpha,\\ l\\subset\\beta,\\ \\alpha\\cap\\beta=m\\Rightarrow l\\parallel m;\\quad \\alpha\\parallel\\beta,\\ \\gamma\\cap\\alpha=a,\\ \\gamma\\cap\\beta=b\\Rightarrow a\\parallel b",
+      "condition": "",
+      "pitfall": "用线面平行性质时要先说明直线在平面内，且两平面相交",
+      "example": "",
+      "voiceText": "证明线线平行可用平面几何方法如同位角相等、中位线等，也可利用线面平行的性质定理，或面面平行的性质定理。",
+      "tags": [
+        "线线平行",
+        "立体几何",
+        "证明方法"
+      ]
+    },
+    {
+      "id": "C104",
+      "chapter": "立体几何初步",
+      "name": "线面平行判定定理",
+      "latex": "a\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b\\Rightarrow a\\parallel\\alpha",
+      "condition": "平面外一条直线与平面内一条直线平行",
+      "pitfall": "必须强调直线在平面外，否则直线可能在平面内",
+      "example": "",
+      "voiceText": "线面平行判定定理：平面外一条直线如果与平面内一条直线平行，那么这条直线与这个平面平行。",
+      "tags": [
+        "线面平行",
+        "判定定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C105",
+      "chapter": "立体几何初步",
+      "name": "线面平行性质定理",
+      "latex": "a\\parallel\\alpha,\\ a\\subset\\beta,\\ \\alpha\\cap\\beta=b\\Rightarrow a\\parallel b",
+      "condition": "",
+      "pitfall": "性质定理要先构造过直线的平面，再找交线",
+      "example": "",
+      "voiceText": "线面平行性质定理：如果一条直线与一个平面平行，那么过这条直线的任一平面与原平面的交线都与该直线平行。",
+      "tags": [
+        "线面平行",
+        "性质定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C106",
+      "chapter": "立体几何初步",
+      "name": "证明线面平行方法",
+      "latex": "l\\cap\\alpha=\\varnothing;\\quad a\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b\\Rightarrow a\\parallel\\alpha;\\quad \\alpha\\parallel\\beta,\\ l\\subset\\alpha\\Rightarrow l\\parallel\\beta",
+      "condition": "",
+      "pitfall": "常用构造平行四边形或中位线来找平行线；面面平行时其中一个平面内的任意直线都平行于另一平面",
+      "example": "",
+      "voiceText": "证明线面平行有三种常用方法：用定义说明没有公共点；用判定定理，常构造平行四边形或中位线找平行线；用面面平行的性质。",
+      "tags": [
+        "线面平行",
+        "证明方法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C107",
+      "chapter": "立体几何初步",
+      "name": "面面平行判定定理",
+      "latex": "a\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\cap b=P,\\ a\\parallel\\beta,\\ b\\parallel\\beta\\Rightarrow \\alpha\\parallel\\beta",
+      "condition": "一个平面内两条相交直线都平行于另一个平面",
+      "pitfall": "必须是两条相交直线，两条平行直线不足以判定",
+      "example": "",
+      "voiceText": "面面平行判定定理：如果一个平面内有两条相交直线都平行于另一个平面，那么这两个平面平行。",
+      "tags": [
+        "面面平行",
+        "判定定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C108",
+      "chapter": "立体几何初步",
+      "name": "面面平行性质定理",
+      "latex": "\\alpha\\parallel\\beta,\\ \\gamma\\cap\\alpha=a,\\ \\gamma\\cap\\beta=b\\Rightarrow a\\parallel b;\\quad \\alpha\\parallel\\beta,\\ l\\subset\\alpha\\Rightarrow l\\parallel\\beta",
+      "condition": "",
+      "pitfall": "被三个平行平面所截的直线，对应线段成比例，也常被考查",
+      "example": "",
+      "voiceText": "面面平行性质定理：两个平行平面同时被第三个平面所截，交线平行；一个平面内的任意直线都平行于另一个平面。",
+      "tags": [
+        "面面平行",
+        "性质定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C109",
+      "chapter": "立体几何初步",
+      "name": "证明面面平行方法",
+      "latex": "\\alpha\\cap\\beta=\\varnothing;\\quad a,b\\subset\\alpha,\\ a\\cap b=P,\\ a\\parallel\\beta,\\ b\\parallel\\beta\\Rightarrow\\alpha\\parallel\\beta;\\quad \\alpha\\parallel\\gamma,\\ \\beta\\parallel\\gamma\\Rightarrow\\alpha\\parallel\\beta",
+      "condition": "",
+      "pitfall": "判定定理中两条直线必须相交，传递性需三个平面关系",
+      "example": "",
+      "voiceText": "证明面面平行的方法：定义法说明没有公共点；用面面平行判定定理找两条相交直线都平行于另一平面；用平行于同一平面的两个平面互相平行。",
+      "tags": [
+        "面面平行",
+        "证明方法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C110",
+      "chapter": "立体几何初步",
+      "name": "线面垂直判定定理",
+      "latex": "l\\perp a,\\ l\\perp b,\\ a\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\cap b=P\\Rightarrow l\\perp\\alpha",
+      "condition": "直线与平面内两条相交直线都垂直",
+      "pitfall": "必须是两条相交直线，两条平行直线不能判定",
+      "example": "",
+      "voiceText": "线面垂直判定定理：如果一条直线与一个平面内的两条相交直线都垂直，那么这条直线垂直于这个平面。",
+      "tags": [
+        "线面垂直",
+        "判定定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C111",
+      "chapter": "立体几何初步",
+      "name": "线面垂直性质定理",
+      "latex": "l\\perp\\alpha,\\ a\\subset\\alpha\\Rightarrow l\\perp a;\\quad a\\perp b,\\ c\\perp b\\Rightarrow a\\parallel c;\\quad a\\perp\\alpha,\\ b\\perp\\alpha\\Rightarrow a\\parallel b",
+      "condition": "",
+      "pitfall": "垂直于同一平面的两条直线互相平行，不是垂直",
+      "example": "",
+      "voiceText": "线面垂直性质：直线垂直于平面则垂直于平面内所有直线；垂直于同一直线的两个平面平行；垂直于同一平面的两条直线平行。",
+      "tags": [
+        "线面垂直",
+        "性质定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C112",
+      "chapter": "立体几何初步",
+      "name": "证明线面垂直方法",
+      "latex": "l\\perp a,\\ l\\perp b,\\ a,b\\subset\\alpha,\\ a\\cap b=P\\Rightarrow l\\perp\\alpha;\\quad \\alpha\\perp\\beta,\\ l\\subset\\alpha,\\ l\\perp(\\alpha\\cap\\beta)\\Rightarrow l\\perp\\beta",
+      "condition": "",
+      "pitfall": "用面面垂直性质时，直线必须在其中一个平面内且垂直于交线",
+      "example": "",
+      "voiceText": "证明线面垂直常用两种方法：用判定定理证明直线垂直于平面内两条相交直线；利用面面垂直的性质定理，在其中一个平面内作交线的垂线。",
+      "tags": [
+        "线面垂直",
+        "证明方法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C113",
+      "chapter": "立体几何初步",
+      "name": "面面垂直判定定理",
+      "latex": "l\\perp\\beta,\\ l\\subset\\alpha\\Rightarrow\\alpha\\perp\\beta",
+      "condition": "一个平面过另一个平面的垂线",
+      "pitfall": "关键是找到一条在平面内且垂直于另一平面的直线",
+      "example": "",
+      "voiceText": "面面垂直判定定理：如果一个平面经过另一个平面的一条垂线，那么这两个平面互相垂直。",
+      "tags": [
+        "面面垂直",
+        "判定定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C114",
+      "chapter": "立体几何初步",
+      "name": "面面垂直性质定理",
+      "latex": "\\alpha\\perp\\beta,\\ l\\subset\\alpha,\\ l\\perp(\\alpha\\cap\\beta)\\Rightarrow l\\perp\\beta",
+      "condition": "两个平面垂直",
+      "pitfall": "必须强调直线在平面内且垂直于两平面的交线",
+      "example": "",
+      "voiceText": "面面垂直性质定理：两个平面垂直，那么在一个平面内垂直于交线的直线，垂直于另一个平面。",
+      "tags": [
+        "面面垂直",
+        "性质定理",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C115",
+      "chapter": "立体几何初步",
+      "name": "证明面面垂直方法",
+      "latex": "\\text{二面角为直二面角};\\quad \\alpha\\perp\\gamma,\\ \\beta\\parallel\\gamma\\Rightarrow\\alpha\\perp\\beta;\\quad l\\perp\\beta,\\ l\\subset\\alpha\\Rightarrow\\alpha\\perp\\beta",
+      "condition": "",
+      "pitfall": "最常用的是在一个平面内找一条垂直于另一个平面的直线",
+      "example": "",
+      "voiceText": "证明面面垂直的方法：定义法证明二面角是直二面角；若一平面与另一平面的垂面平行，则两平面垂直；最常用的是在一个平面内找一条直线垂直于另一个平面。",
+      "tags": [
+        "面面垂直",
+        "证明方法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C116",
+      "chapter": "立体几何初步",
+      "name": "证明线线垂直方法",
+      "latex": "\\text{夹角为 }90^{\\circ};\\quad a\\parallel b,\\ b\\perp c\\Rightarrow a\\perp c;\\quad l\\perp\\alpha,\\ a\\subset\\alpha\\Rightarrow l\\perp a",
+      "condition": "",
+      "pitfall": "证明空间中线线垂直常先证明线面垂直",
+      "example": "",
+      "voiceText": "证明线线垂直的方法：定义法即夹角为90度；平行转化；利用线面垂直的性质，直线垂直于平面则垂直于平面内所有直线。",
+      "tags": [
+        "线线垂直",
+        "证明方法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C117",
+      "chapter": "立体几何初步",
+      "name": "异面直线所成角",
+      "latex": "\\text{作平行线得相交直线}\\Rightarrow\\text{解三角形}\\Rightarrow\\theta\\in(0^{\\circ},90^{\\circ}]",
+      "condition": "求两条异面直线所成的角",
+      "pitfall": "取值范围是0度到90度，求出钝角要取补角",
+      "example": "",
+      "voiceText": "求异面直线所成角的方法是平移找相交，然后解三角形；所成角的范围是大于0度小于等于90度，钝角要取补角。",
+      "tags": [
+        "异面直线",
+        "所成角",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C118",
+      "chapter": "立体几何初步",
+      "name": "直线与平面所成角",
+      "latex": "\\text{找射影}\\Rightarrow\\text{解直角三角形}\\Rightarrow\\theta\\in[0^{\\circ},90^{\\circ}]",
+      "condition": "求直线与平面所成的角",
+      "pitfall": "向量法得到的是直线方向向量与法向量夹角的余弦，要转化为正弦；范围是0到90度",
+      "example": "",
+      "voiceText": "求直线与平面所成角：先找直线在平面上的射影，射影与直线所成的锐角即为所求；范围是0度到90度。",
+      "tags": [
+        "线面角",
+        "所成角",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C119",
+      "chapter": "立体几何初步",
+      "name": "二面角求法",
+      "latex": "\\text{定义法};\\quad \\text{垂面法};\\quad \\text{三垂线定理法};\\quad \\theta\\in[0^{\\circ},180^{\\circ}]",
+      "condition": "求两个平面所成的二面角",
+      "pitfall": "二面角范围是0度到180度，要结合图形判断是锐角还是钝角",
+      "example": "",
+      "voiceText": "求二面角的方法：定义法在两个半平面内分别作棱的垂线；垂面法作棱的垂面；三垂线定理法。二面角范围是0度到180度。",
+      "tags": [
+        "二面角",
+        "立体几何",
+        "平面角"
+      ]
+    },
+    {
+      "id": "C120",
+      "chapter": "立体几何初步",
+      "name": "点面距离求法",
+      "latex": "\\text{定义法：找垂线段};\\quad \\text{性质法：转化为交线距离};\\quad \\text{等体积法：}V=\\frac{1}{3}Sh\\Rightarrow h=\\frac{3V}{S}",
+      "condition": "求点到平面的距离",
+      "pitfall": "等体积法要合理选择三棱锥的底面，使体积和面积都好求",
+      "example": "",
+      "voiceText": "求点到平面距离的常用方法：定义法找垂线段；性质法转化为交线距离；等体积法利用三棱锥体积公式V等于三分之一Sh反求高h。",
+      "tags": [
+        "点面距",
+        "等体积法",
+        "立体几何"
+      ]
+    },
+    {
+      "id": "C121",
+      "chapter": "概率与统计",
+      "name": "分层抽样",
+      "latex": "\\text{抽样比}=\\frac{n}{N};\\quad \\text{各层抽取数量}=\\text{该层个体数}\\times\\frac{n}{N}",
+      "condition": "总体由差异明显的几部分组成",
+      "pitfall": "各层按相同抽样比抽取，注意总体容量N和样本量n的对应",
+      "example": "",
+      "voiceText": "分层抽样：先根据总体容量N和样本量n算出抽样比，再在各层中按比例抽取样本。",
+      "tags": [
+        "分层抽样",
+        "抽样比",
+        "统计"
+      ]
+    },
+    {
+      "id": "C122",
+      "chapter": "概率与统计",
+      "name": "频率分布直方图",
+      "latex": "\\text{频率}=\\frac{\\text{频数}}{\\text{样本容量}};\\quad \\text{小长方形面积}=\\frac{\\text{频率}}{\\text{组距}}\\times\\text{组距}=\\text{频率};\\quad \\text{总面积}=1",
+      "condition": "",
+      "pitfall": "纵轴是频率除以组距，不是频率；小长方形面积才等于频率",
+      "example": "",
+      "voiceText": "频率分布直方图：频率等于频数除以样本容量；小长方形的面积等于频率除以组距再乘组距，也就是频率；所有小长方形面积之和等于1。",
+      "tags": [
+        "频率分布直方图",
+        "频率",
+        "统计"
+      ]
+    },
+    {
+      "id": "C123",
+      "chapter": "概率与统计",
+      "name": "样本特征数",
+      "latex": "\\bar{x}=\\frac{1}{n}(x_{1}+x_{2}+\\cdots+x_{n});\\quad s^{2}=\\frac{1}{n}\\sum_{i=1}^{n}(x_{i}-\\bar{x})^{2};\\quad s=\\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(x_{i}-\\bar{x})^{2}}",
+      "condition": "",
+      "pitfall": "标准差是方差的算术平方根，注意分母是n不是n减1",
+      "example": "",
+      "voiceText": "样本特征数包括众数、中位数、平均数、方差和标准差；平均数是所有数据之和除以n，方差是各数据与平均数差的平方和除以n，标准差是方差的平方根。",
+      "tags": [
+        "样本特征数",
+        "方差",
+        "标准差"
+      ]
+    },
+    {
+      "id": "C124",
+      "chapter": "概率与统计",
+      "name": "百分位数",
+      "latex": "i=n\\times p\\%;\\quad \\text{若 }i\\text{ 不是整数，第百分位数为第}\\lceil i\\rceil\\text{项};\\quad \\text{若 }i\\text{ 是整数，为第}i\\text{项与第}(i+1)\\text{项的平均数}",
+      "condition": "数据已按从小到大排列",
+      "pitfall": "必须先排序；i为整数时取相邻两项平均数",
+      "example": "",
+      "voiceText": "求第p百分位数：先把数据从小到大排列，计算i等于n乘p百分号；如果i不是整数，就取比i大的最小整数对应的数据；如果i是整数，就取第i项和第i加1项的平均数。",
+      "tags": [
+        "百分位数",
+        "统计",
+        "数据特征"
+      ]
+    },
+    {
+      "id": "C125",
+      "chapter": "概率与统计",
+      "name": "直方图中位数",
+      "latex": "\\text{累积频率为 }0.5\\text{（即面积}=0.5\\text{）时的横坐标}",
+      "condition": "根据频率分布直方图",
+      "pitfall": "常需设未知数，利用面积为0.5建立方程求解",
+      "example": "",
+      "voiceText": "在频率分布直方图中，中位数是使累积频率达到0.5，也就是左侧小长方形面积之和等于0.5时对应的横坐标。",
+      "tags": [
+        "中位数",
+        "频率分布直方图",
+        "统计"
+      ]
+    },
+    {
+      "id": "C126",
+      "chapter": "概率与统计",
+      "name": "古典概型",
+      "latex": "P(A)=\\frac{\\text{A包含的基本事件数}}{\\text{总的基本事件个数}}",
+      "condition": "试验结果有限且每个结果等可能",
+      "pitfall": "必须满足有限性和等可能性两个条件",
+      "example": "",
+      "voiceText": "古典概型概率等于事件A包含的基本事件数除以总的基本事件个数，前提是试验结果有限且每个结果出现的可能性相等。",
+      "tags": [
+        "古典概型",
+        "概率",
+        "等可能"
+      ]
+    },
+    {
+      "id": "C127",
+      "chapter": "概率与统计",
+      "name": "互斥事件",
+      "latex": "A\\cap B=\\varnothing;\\quad P(A\\cup B)=P(A)+P(B)",
+      "condition": "两个事件不可能同时发生",
+      "pitfall": "互斥不一定对立，对立一定互斥",
+      "example": "",
+      "voiceText": "互斥事件是指不可能同时发生的事件，它们的并事件概率等于各自概率之和。",
+      "tags": [
+        "互斥事件",
+        "概率加法",
+        "概率"
+      ]
+    },
+    {
+      "id": "C128",
+      "chapter": "概率与统计",
+      "name": "对立事件",
+      "latex": "A\\cap B=\\varnothing,\\ A\\cup B=\\Omega;\\quad P(A)=1-P(B)",
+      "condition": "两个事件不同时发生且必有一个发生",
+      "pitfall": "对立事件的概率之和为1，常用这个公式求复杂事件概率",
+      "example": "",
+      "voiceText": "对立事件：两个事件不能同时发生，且必有一个发生；事件A的概率等于1减去其对立事件B的概率。",
+      "tags": [
+        "对立事件",
+        "概率",
+        "互补"
+      ]
+    },
+    {
+      "id": "C129",
+      "chapter": "概率与统计",
+      "name": "相互独立事件",
+      "latex": "A,B\\text{ 相互独立}\\Leftrightarrow P(AB)=P(A)P(B)",
+      "condition": "事件A发生与否不影响事件B发生的概率",
+      "pitfall": "独立与互斥是不同的概念，独立事件可以同时发生",
+      "example": "",
+      "voiceText": "两个事件相互独立的充要条件是它们同时发生的概率等于各自概率的乘积。",
+      "tags": [
+        "独立事件",
+        "概率乘法",
+        "概率"
+      ]
+    },
+    {
+      "id": "C130",
+      "chapter": "概率与统计",
+      "name": "独立事件乘法公式",
+      "latex": "P(A_{1}A_{2}\\cdots A_{n})=P(A_{1})P(A_{2})\\cdots P(A_{n})",
+      "condition": "A₁,A₂,...,Aₙ彼此相互独立",
+      "pitfall": "必须确认事件彼此独立才能连乘",
+      "example": "",
+      "voiceText": "如果多个事件彼此独立，那么它们同时发生的概率等于各个事件概率的乘积。",
+      "tags": [
+        "独立事件",
+        "乘法公式",
+        "概率"
+      ]
+    },
+    {
+      "id": "C131",
+      "chapter": "空间向量与立体几何",
+      "name": "向量共面定理",
+      "latex": "\\vec{a},\\vec{b}\\text{ 不共线},\\ \\vec{p}\\text{ 与 }\\vec{a},\\vec{b}\\text{ 共面}\\Leftrightarrow\\exists(x,y),\\ \\vec{p}=x\\vec{a}+y\\vec{b}",
+      "condition": "两个向量不共线",
+      "pitfall": "必须先说明两个基向量不共线",
+      "example": "",
+      "voiceText": "空间向量共面定理：如果两个向量不共线，那么第三个向量与它们共面的充要条件是存在实数x和y，使得这个向量等于x倍第一个向量加y倍第二个向量。",
+      "tags": [
+        "共面定理",
+        "空间向量",
+        "基底"
+      ]
+    },
+    {
+      "id": "C132",
+      "chapter": "空间向量与立体几何",
+      "name": "空间向量基本定理",
+      "latex": "\\vec{a},\\vec{b},\\vec{c}\\text{ 不共面}\\Rightarrow\\forall\\vec{p},\\ \\exists!(x,y,z),\\ \\vec{p}=x\\vec{a}+y\\vec{b}+z\\vec{c}",
+      "condition": "三个向量不共面",
+      "pitfall": "基底必须是不共面的三个向量，才有唯一分解",
+      "example": "",
+      "voiceText": "空间向量基本定理：如果三个向量不共面，那么任意空间向量都可以唯一地表示成这三个向量的线性组合。",
+      "tags": [
+        "空间向量",
+        "基本定理",
+        "基底"
+      ]
+    },
+    {
+      "id": "C133",
+      "chapter": "空间向量与立体几何",
+      "name": "空间向量模长",
+      "latex": "\\vec{a}=(x_{1},y_{1},z_{1})\\Rightarrow |\\vec{a}|=\\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}",
+      "condition": "",
+      "pitfall": "坐标平方和开方，不要漏掉某个坐标",
+      "example": "",
+      "voiceText": "空间向量的模：如果向量a的坐标是x1、y1、z1，那么它的模等于根号下x1平方加y1平方加z1平方。",
+      "tags": [
+        "空间向量",
+        "模长",
+        "坐标"
+      ]
+    },
+    {
+      "id": "C134",
+      "chapter": "空间向量与立体几何",
+      "name": "空间向量数量积",
+      "latex": "\\vec{a}=(x_{1},y_{1},z_{1}),\\ \\vec{b}=(x_{2},y_{2},z_{2})\\Rightarrow \\vec{a}\\cdot\\vec{b}=x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2}",
+      "condition": "",
+      "pitfall": "数量积结果是数，不是向量；对应坐标相乘再相加",
+      "example": "",
+      "voiceText": "空间向量的数量积等于对应坐标乘积之和，即x1乘x2加y1乘y2加z1乘z2。",
+      "tags": [
+        "数量积",
+        "空间向量",
+        "坐标运算"
+      ]
+    },
+    {
+      "id": "C135",
+      "chapter": "空间向量与立体几何",
+      "name": "空间向量平行",
+      "latex": "\\vec{a}=(x_{1},y_{1},z_{1}),\\ \\vec{b}=(x_{2},y_{2},z_{2})\\ (\\vec{b}\\neq\\vec{0})\\Rightarrow \\vec{a}\\parallel\\vec{b}\\Leftrightarrow x_{1}=\\lambda x_{2},\\ y_{1}=\\lambda y_{2},\\ z_{1}=\\lambda z_{2}(\\lambda\\in\\mathbf{R})",
+      "condition": "b为非零向量",
+      "pitfall": "坐标成比例，但不要忽略零坐标的情况",
+      "example": "",
+      "voiceText": "空间向量平行：两个向量平行的充要条件是它们的对应坐标成比例，也就是存在实数lambda使得第一个向量的每个坐标都等于lambda乘第二个向量的对应坐标。",
+      "tags": [
+        "向量平行",
+        "空间向量",
+        "坐标关系"
+      ]
+    },
+    {
+      "id": "C136",
+      "chapter": "空间向量与立体几何",
+      "name": "空间向量垂直",
+      "latex": "\\vec{a}\\perp\\vec{b}\\Leftrightarrow\\vec{a}\\cdot\\vec{b}=0\\Leftrightarrow x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2}=0",
+      "condition": "",
+      "pitfall": "数量积为零即可，不需要模长条件",
+      "example": "",
+      "voiceText": "空间向量垂直的充要条件是数量积等于零，也就是对应坐标乘积之和等于零。",
+      "tags": [
+        "向量垂直",
+        "数量积",
+        "空间向量"
+      ]
+    },
+    {
+      "id": "C137",
+      "chapter": "空间向量与立体几何",
+      "name": "向量夹角公式",
+      "latex": "\\cos\\langle\\vec{a},\\vec{b}\\rangle=\\frac{x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2}}{\\sqrt{x_{1}^{2}+y_{1}^{2}+z_{1}^{2}}\\cdot\\sqrt{x_{2}^{2}+y_{2}^{2}+z_{2}^{2}}}",
+      "condition": "两个向量均为非零向量",
+      "pitfall": "夹角范围是0到180度，余弦正负可判断锐角或钝角",
+      "example": "",
+      "voiceText": "两个空间向量夹角的余弦等于数量积除以两个向量模的乘积。",
+      "tags": [
+        "夹角公式",
+        "空间向量",
+        "数量积"
+      ]
+    },
+    {
+      "id": "C138",
+      "chapter": "空间向量与立体几何",
+      "name": "平面法向量求法",
+      "latex": "\\vec{n}=(x,y,z);\\quad \\vec{a},\\vec{b}\\subset\\alpha;\\quad \\vec{n}\\cdot\\vec{a}=0,\\quad \\vec{n}\\cdot\\vec{b}=0",
+      "condition": "a,b为平面内两个不共线向量",
+      "pitfall": "法向量不唯一，通常取一组简单整数解，可令某个坐标为1或负1",
+      "example": "",
+      "voiceText": "求平面法向量：设法向量为n等于x、y、z，找出平面内两个不共线向量a和b，列方程组n点乘a等于0，n点乘b等于0，解方程组取一个简单解即可。",
+      "tags": [
+        "法向量",
+        "空间向量",
+        "平面"
+      ]
+    },
+    {
+      "id": "C139",
+      "chapter": "空间向量与立体几何",
+      "name": "向量法判定线面关系",
+      "latex": "l\\parallel m\\Leftrightarrow\\vec{a}\\parallel\\vec{b};\\quad l\\parallel\\alpha\\Leftrightarrow\\vec{a}\\perp\\vec{u};\\quad \\alpha\\parallel\\beta\\Leftrightarrow\\vec{u}\\parallel\\vec{v};\\quad l\\perp m\\Leftrightarrow\\vec{a}\\perp\\vec{b};\\quad l\\perp\\alpha\\Leftrightarrow\\vec{a}\\parallel\\vec{u};\\quad \\alpha\\perp\\beta\\Leftrightarrow\\vec{u}\\perp\\vec{v}",
+      "condition": "",
+      "pitfall": "线面平行转化为方向向量与法向量垂直，线面垂直转化为方向向量与法向量平行",
+      "example": "",
+      "voiceText": "用向量法判定线面关系：方向向量平行则线线平行；方向向量与法向量垂直则线面平行；法向量平行则面面平行；方向向量垂直则线线垂直；方向向量与法向量平行则线面垂直；法向量垂直则面面垂直。",
+      "tags": [
+        "向量法",
+        "线面关系",
+        "法向量"
+      ]
+    },
+    {
+      "id": "C140",
+      "chapter": "空间向量与立体几何",
+      "name": "向量法求线线角",
+      "latex": "\\cos\\theta=\\frac{|\\vec{u}\\cdot\\vec{v}|}{|\\vec{u}||\\vec{v}|};\\quad \\theta\\in\\left[0,\\frac{\\pi}{2}\\right]",
+      "condition": "u,v为两条异面直线的方向向量",
+      "pitfall": "异面直线所成角范围是0到90度，余弦值取绝对值",
+      "example": "",
+      "voiceText": "用向量法求异面直线所成角：夹角余弦等于两方向向量数量积的绝对值除以两向量模的乘积，角的范围是0到90度。",
+      "tags": [
+        "线线角",
+        "异面直线",
+        "向量法"
+      ]
+    },
+    {
+      "id": "C141",
+      "chapter": "空间向量与立体几何",
+      "name": "向量法求线面角",
+      "latex": "\\sin\\varphi=\\frac{|\\vec{m}\\cdot\\vec{n}|}{|\\vec{m}||\\vec{n}|};\\quad \\varphi\\in\\left[0,\\frac{\\pi}{2}\\right]",
+      "condition": "m为直线方向向量，n为平面法向量",
+      "pitfall": "线面角与方向向量和法向量夹角互余，所以用正弦而不是余弦",
+      "example": "",
+      "voiceText": "用向量法求直线与平面所成角：角的正弦等于直线方向向量与平面法向量数量积的绝对值除以它们模的乘积，范围是0到90度。",
+      "tags": [
+        "线面角",
+        "向量法",
+        "法向量"
+      ]
+    },
+    {
+      "id": "C142",
+      "chapter": "空间向量与立体几何",
+      "name": "向量法求二面角",
+      "latex": "|\\cos\\theta|=\\frac{|\\vec{n}_{1}\\cdot\\vec{n}_{2}|}{|\\vec{n}_{1}||\\vec{n}_{2}|};\\quad \\theta\\in[0,\\pi]",
+      "condition": "n₁,n₂分别为两个平面的法向量",
+      "pitfall": "二面角可能是法向量夹角或其补角，要结合图形判断锐钝",
+      "example": "",
+      "voiceText": "用向量法求二面角：先求两个平面法向量夹角的余弦，取绝对值；二面角可能是这个角，也可能是它的补角，需要根据图形判断是锐二面角还是钝二面角。",
+      "tags": [
+        "二面角",
+        "向量法",
+        "法向量"
+      ]
+    },
+    {
+      "id": "C143",
+      "chapter": "空间向量与立体几何",
+      "name": "点到直线距离",
+      "latex": "d=\\sqrt{|\\overrightarrow{AB}|^{2}-\\left(\\frac{\\overrightarrow{AB}\\cdot\\vec{a}}{|\\vec{a}|}\\right)^{2}}",
+      "condition": "B为直线a上一点，a为直线方向向量",
+      "pitfall": "用向量投影公式，注意投影是AB在a方向上的投影长度",
+      "example": "",
+      "voiceText": "点到直线的距离：在直线上任取一点B，连接AB，用勾股定理，距离等于AB模的平方减去AB在直线上投影长度的平方，再开方。",
+      "tags": [
+        "点线距",
+        "空间向量",
+        "距离"
+      ]
+    },
+    {
+      "id": "C144",
+      "chapter": "空间向量与立体几何",
+      "name": "异面直线距离",
+      "latex": "d=\\frac{|\\overrightarrow{AB}\\cdot\\vec{n}|}{|\\vec{n}|};\\quad \\vec{n}\\perp a,\\ \\vec{n}\\perp b,\\ A\\in a,\\ B\\in b",
+      "condition": "n为两条异面直线的公共法向量",
+      "pitfall": "公共法向量同时垂直于两条直线的方向向量，AB是分别在两条直线上任取两点所得向量",
+      "example": "",
+      "voiceText": "异面直线之间的距离等于向量AB在公共法向量n上投影的绝对值，也就是AB点乘n的绝对值除以n的模，其中n同时垂直于两条直线。",
+      "tags": [
+        "异面直线",
+        "距离",
+        "法向量"
+      ]
+    },
+    {
+      "id": "C145",
+      "chapter": "空间向量与立体几何",
+      "name": "点到平面距离",
+      "latex": "d=\\frac{|\\overrightarrow{AB}\\cdot\\vec{n}|}{|\\vec{n}|};\\quad B\\in\\alpha,\\ \\vec{n}\\perp\\alpha",
+      "condition": "n为平面法向量，B为平面上一点",
+      "pitfall": "A为平面外一点，AB为平面上任意一条斜线段，投影到法向量上即为距离",
+      "example": "",
+      "voiceText": "点到平面的距离：在平面内任取一点B，向量AB在法向量n上投影的绝对值就是点A到平面的距离，等于AB点乘n的绝对值除以n的模。",
+      "tags": [
+        "点面距",
+        "空间向量",
+        "距离"
+      ]
+    },
+    {
+      "id": "C146",
+      "chapter": "直线与圆的方程",
+      "name": "倾斜角与斜率",
+      "latex": "k=\\tan\\alpha(\\alpha\\neq90^{\\circ})=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}(x_{1}\\neq x_{2})",
+      "condition": "",
+      "pitfall": "倾斜角为90度时斜率不存在；两点横坐标相等时不能用斜率公式",
+      "example": "",
+      "voiceText": "直线的斜率等于倾斜角的正切，也等于纵坐标之差除以横坐标之差；当倾斜角为90度时斜率不存在。",
+      "tags": [
+        "斜率",
+        "倾斜角",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C147",
+      "chapter": "直线与圆的方程",
+      "name": "点斜式方程",
+      "latex": "y-y_{0}=k(x-x_{0})",
+      "condition": "已知直线过定点P(x₀,y₀)且斜率存在",
+      "pitfall": "不能表示垂直于x轴的直线；k取不同值表示过定点的不同直线",
+      "example": "",
+      "voiceText": "直线的点斜式方程：y减y0等于k乘括号x减x0反括，其中x0、y0是直线上一点的坐标，k是斜率。",
+      "tags": [
+        "点斜式",
+        "直线方程",
+        "斜率"
+      ]
+    },
+    {
+      "id": "C148",
+      "chapter": "直线与圆的方程",
+      "name": "斜截式方程",
+      "latex": "y=kx+b",
+      "condition": "斜率存在",
+      "pitfall": "b是y轴截距，不是直线到原点的距离；不能表示垂直于x轴的直线",
+      "example": "",
+      "voiceText": "直线的斜截式方程：y等于kx加b，其中k是斜率，b是直线在y轴上的截距。",
+      "tags": [
+        "斜截式",
+        "直线方程",
+        "截距"
+      ]
+    },
+    {
+      "id": "C149",
+      "chapter": "直线与圆的方程",
+      "name": "两点式方程",
+      "latex": "\\frac{y-y_{1}}{y_{2}-y_{1}}=\\frac{x-x_{1}}{x_{2}-x_{1}};\\quad (y-y_{1})(x_{2}-x_{1})=(x-x_{1})(y_{2}-y_{1})",
+      "condition": "直线过两点P₁(x₁,y₁),P₂(x₂,y₂)且不与坐标轴垂直",
+      "pitfall": "两点式不能表示垂直于坐标轴的直线；整式形式适用于过任意两点的直线",
+      "example": "",
+      "voiceText": "直线的两点式方程：y减y1除以y2减y1等于x减x1除以x2减x1；去分母后的整式形式适用于过任意两点的直线。",
+      "tags": [
+        "两点式",
+        "直线方程",
+        "斜率"
+      ]
+    },
+    {
+      "id": "C150",
+      "chapter": "直线与圆的方程",
+      "name": "截距式方程",
+      "latex": "\\frac{x}{a}+\\frac{y}{b}=1",
+      "condition": "x轴截距为a，y轴截距为b",
+      "pitfall": "不能表示垂直于坐标轴和过原点的直线；截距可正可负",
+      "example": "",
+      "voiceText": "直线的截距式方程：x除以a加y除以b等于1，其中a是x轴截距，b是y轴截距。",
+      "tags": [
+        "截距式",
+        "直线方程",
+        "截距"
+      ]
+    },
+    {
+      "id": "C151",
+      "chapter": "直线与圆的方程",
+      "name": "横截式方程",
+      "latex": "x=my+a",
+      "condition": "直线过x轴上一点A(a,0)且不平行于x轴",
+      "pitfall": "可以表示垂直于x轴的直线，但不能表示平行于x轴的直线",
+      "example": "",
+      "voiceText": "直线的横截式方程：x等于m乘y加a，其中a是直线与x轴交点的横坐标。",
+      "tags": [
+        "横截式",
+        "直线方程",
+        "截距"
+      ]
+    },
+    {
+      "id": "C152",
+      "chapter": "直线与圆的方程",
+      "name": "一般式方程",
+      "latex": "Ax+By+C=0\\ (A,B\\text{ 不同时为 }0)",
+      "condition": "平面直角坐标系内任意直线",
+      "pitfall": "A、B不能同时为零，否则不是直线方程",
+      "example": "",
+      "voiceText": "直线的一般式方程：Ax加By加C等于0，其中A和B不同时为零，它可以表示平面内任意一条直线。",
+      "tags": [
+        "一般式",
+        "直线方程",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C153",
+      "chapter": "直线与圆的方程",
+      "name": "直线过定点问题",
+      "latex": "A_{1}x+B_{1}y+C_{1}+\\lambda(A_{2}x+B_{2}y+C_{2})=0;\\quad A_{1}x+B_{1}y+C_{1}=0,\\quad A_{2}x+B_{2}y+C_{2}=0",
+      "condition": "含参数的直线方程能整理成关于参数的恒等式",
+      "pitfall": "必须让参数系数和常数项分别等于零，解方程组得到定点",
+      "example": "",
+      "voiceText": "分离参数法求直线过定点：把含参数的直线方程整理成关于参数lambda的一次式，令lambda的系数和常数项都为零，解方程组得到定点坐标。",
+      "tags": [
+        "直线过定点",
+        "参数分离",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C154",
+      "chapter": "直线与圆的方程",
+      "name": "两直线平行",
+      "latex": "l_{1}\\parallel l_{2}\\Leftrightarrow k_{1}=k_{2}(b_{1}\\neq b_{2})\\text{ 或 }A_{1}B_{2}-A_{2}B_{1}=0",
+      "condition": "",
+      "pitfall": "用斜率相等时要排除截距也相等导致重合的情况；一般式用系数交叉乘积差为零",
+      "example": "",
+      "voiceText": "两条直线平行的条件：斜率相等且截距不等；或者用一般式，A1乘B2减A2乘B1等于零，同时要检验是否重合。",
+      "tags": [
+        "直线平行",
+        "斜率",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C155",
+      "chapter": "直线与圆的方程",
+      "name": "两直线垂直",
+      "latex": "l_{1}\\perp l_{2}\\Leftrightarrow k_{1}k_{2}=-1\\text{ 或 }A_{1}A_{2}+B_{1}B_{2}=0",
+      "condition": "",
+      "pitfall": "一条直线斜率为0，另一条斜率不存在时也垂直，此时用一般式更稳妥",
+      "example": "",
+      "voiceText": "两条直线垂直的条件：斜率之积等于负1，或者用一般式，A1乘A2加B1乘B2等于零。",
+      "tags": [
+        "直线垂直",
+        "斜率",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C156",
+      "chapter": "直线与圆的方程",
+      "name": "两点间距离",
+      "latex": "|AB|=\\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}",
+      "condition": "",
+      "pitfall": "横纵坐标分别相减再平方求和，不要直接用坐标平方和",
+      "example": "",
+      "voiceText": "两点间距离公式：A、B两点之间的距离等于横坐标差的平方加纵坐标差的平方，再开平方根。",
+      "tags": [
+        "两点距",
+        "距离公式",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C157",
+      "chapter": "直线与圆的方程",
+      "name": "点到直线距离",
+      "latex": "d=\\frac{|Ax_{0}+By_{0}+C|}{\\sqrt{A^{2}+B^{2}}}",
+      "condition": "",
+      "pitfall": "分子要带绝对值，分母是根号下A平方加B平方，直线要先化为一般式",
+      "example": "",
+      "voiceText": "点到直线的距离公式：分子是Ax0加By0加C的绝对值，分母是根号下A平方加B平方。",
+      "tags": [
+        "点线距",
+        "距离公式",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C158",
+      "chapter": "直线与圆的方程",
+      "name": "平行线间距离",
+      "latex": "d=\\frac{|C_{1}-C_{2}|}{\\sqrt{A^{2}+B^{2}}}",
+      "condition": "两直线平行，方程为Ax+By+C₁=0和Ax+By+C₂=0",
+      "pitfall": "必须先把x、y的系数化为相同，再用常数项差的绝对值除以系数平方和开方",
+      "example": "",
+      "voiceText": "两条平行线之间的距离等于C1减C2的绝对值除以根号下A平方加B平方，注意两条直线中x和y前面的系数要相同。",
+      "tags": [
+        "线线距",
+        "平行线",
+        "距离"
+      ]
+    },
+    {
+      "id": "C159",
+      "chapter": "直线与圆的方程",
+      "name": "平行直线系",
+      "latex": "Ax+By+\\lambda=0\\ (\\lambda\\neq C)",
+      "condition": "与直线Ax+By+C=0平行的所有直线",
+      "pitfall": "λ取值不同表示不同的平行直线，λ不能等于C",
+      "example": "",
+      "voiceText": "平行直线系：与Ax加By加C等于0平行的所有直线可以写成Ax加By加lambda等于0，其中lambda不等于C。",
+      "tags": [
+        "平行直线系",
+        "直线系",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C160",
+      "chapter": "直线与圆的方程",
+      "name": "垂直直线系",
+      "latex": "Bx-Ay+\\lambda=0",
+      "condition": "与直线Ax+By+C=0垂直的所有直线",
+      "pitfall": "把A、B互换并变一个符号，λ为任意常数",
+      "example": "",
+      "voiceText": "垂直直线系：与Ax加By加C等于0垂直的直线可以写成Bx减Ay加lambda等于0，就是把A和B互换并改变其中一个的符号。",
+      "tags": [
+        "垂直直线系",
+        "直线系",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C161",
+      "chapter": "直线与圆的方程",
+      "name": "交点直线系",
+      "latex": "A_{1}x+B_{1}y+C_{1}+\\lambda(A_{2}x+B_{2}y+C_{2})=0",
+      "condition": "过两条直线交点的所有直线",
+      "pitfall": "λ取任意实数，表示过两直线交点的直线系，但不包括第二条直线本身",
+      "example": "",
+      "voiceText": "交点直线系方程：过两条直线交点的所有直线可以写成第一条直线加lambda乘第二条直线等于0的形式。",
+      "tags": [
+        "交点直线系",
+        "直线系",
+        "直线方程"
+      ]
+    },
+    {
+      "id": "C162",
+      "chapter": "直线与圆的方程",
+      "name": "圆的标准方程",
+      "latex": "(x-a)^{2}+(y-b)^{2}=r^{2}",
+      "condition": "圆心为C(a,b)，半径为r",
+      "pitfall": "右边是半径的平方，不是半径",
+      "example": "",
+      "voiceText": "圆的标准方程：x减a的平方加y减b的平方等于r平方，圆心是a、b，半径是r。",
+      "tags": [
+        "圆",
+        "标准方程",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C163",
+      "chapter": "直线与圆的方程",
+      "name": "圆的一般方程",
+      "latex": "x^{2}+y^{2}+Dx+Ey+F=0\\ (D^{2}+E^{2}-4F>0)\\Leftrightarrow\\left(x+\\frac{D}{2}\\right)^{2}+\\left(y+\\frac{E}{2}\\right)^{2}=\\frac{D^{2}+E^{2}-4F}{4};\\quad \\text{圆心}\\left(-\\frac{D}{2},-\\frac{E}{2}\\right),\\ r=\\frac{\\sqrt{D^{2}+E^{2}-4F}}{2}",
+      "condition": "D²+E²-4F>0",
+      "pitfall": "配方时D、E前要加负号，半径是判别式开方后除以2",
+      "example": "",
+      "voiceText": "圆的一般方程：x平方加y平方加Dx加Ey加F等于0，当D平方加E平方减4F大于0时表示圆；圆心是负二分之D、负二分之E，半径等于根号下D平方加E平方减4F再除以2。",
+      "tags": [
+        "圆",
+        "一般方程",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C164",
+      "chapter": "直线与圆的方程",
+      "name": "圆的弦长公式",
+      "latex": "|AB|=2\\sqrt{r^{2}-d^{2}}",
+      "condition": "r为圆半径，d为圆心到弦的距离",
+      "pitfall": "常需先用点到直线距离公式求d，再用勾股定理求弦长",
+      "example": "",
+      "voiceText": "圆的弦长公式：弦长等于2倍根号下r平方减d平方，其中r是半径，d是圆心到弦的距离。",
+      "tags": [
+        "弦长",
+        "圆",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C165",
+      "chapter": "直线与圆的方程",
+      "name": "圆的切线长公式",
+      "latex": "|MP|=\\sqrt{|MO|^{2}-r^{2}}=\\sqrt{x_{0}^{2}+y_{0}^{2}+Dx_{0}+Ey_{0}+F}",
+      "condition": "点M(x₀,y₀)在圆x²+y²+Dx+Ey+F=0外",
+      "pitfall": "切线长是从圆外一点到切点的距离，等于该点到圆心距离平方减半径平方再开方",
+      "example": "",
+      "voiceText": "圆的切线长：圆外一点M到圆的切线长等于根号下MO平方减r平方，也等于根号下x0平方加y0平方加Dx0加Ey0加F。",
+      "tags": [
+        "切线长",
+        "圆",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C166",
+      "chapter": "直线与圆的方程",
+      "name": "圆的切线方程",
+      "latex": "(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2};\\quad x_{0}x+y_{0}y=r^{2}",
+      "condition": "点P(x₀,y₀)在圆上",
+      "pitfall": "只有当切点在圆上时才能用这个公式；圆心在原点时方程为x0x加y0y等于r平方",
+      "example": "",
+      "voiceText": "过圆上一点的切线方程：对于圆x减a平方加y减b平方等于r平方，过其上一点x0、y0的切线方程为x0减a乘x减a加y0减b乘y减b等于r平方；若圆心在原点，则切线方程为x0乘x加y0乘y等于r平方。",
+      "tags": [
+        "切线方程",
+        "圆",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C167",
+      "chapter": "直线与圆的方程",
+      "name": "圆与圆位置关系",
+      "latex": "\\text{相离}:d>R+r;\\quad \\text{外切}:d=R+r;\\quad \\text{相交}:R-r<d<R+r;\\quad \\text{内切}:d=R-r;\\quad \\text{内含}:0\\leq d<R-r",
+      "condition": "两圆半径分别为R、r，圆心距为d",
+      "pitfall": "相交时要求d大于半径差且小于半径和；内含包含同心圆情况",
+      "example": "",
+      "voiceText": "两圆位置关系由圆心距d和半径R、r决定：d大于R加r相离，等于R加r外切，介于R减r和R加r之间相交，等于R减r内切，小于R减r内含。",
+      "tags": [
+        "圆与圆",
+        "位置关系",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C168",
+      "chapter": "直线与圆的方程",
+      "name": "圆与直线交点圆系",
+      "latex": "x^{2}+y^{2}+Dx+Ey+F+\\lambda(ax+by+c)=0",
+      "condition": "圆C:x²+y²+Dx+Ey+F=0与直线l:ax+by+c=0相交",
+      "pitfall": "λ取不同值表示过圆与直线交点的不同圆，不包括直线本身",
+      "example": "",
+      "voiceText": "经过圆与直线两个交点的圆系方程：在圆的方程后面加上lambda乘直线方程等于0，表示过这两个交点的所有圆。",
+      "tags": [
+        "圆系方程",
+        "圆与直线",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C169",
+      "chapter": "直线与圆的方程",
+      "name": "两圆交点圆系",
+      "latex": "x^{2}+y^{2}+D_{1}x+E_{1}y+F_{1}+\\lambda(x^{2}+y^{2}+D_{2}x+E_{2}y+F_{2})=0",
+      "condition": "圆C₁、C₂相交",
+      "pitfall": "λ取不同值表示过两圆交点的圆系，λ=-1时退化为公共弦所在直线",
+      "example": "",
+      "voiceText": "经过两圆交点的圆系方程：第一个圆的方程加lambda乘第二个圆的方程等于0，表示过两圆交点的所有圆。",
+      "tags": [
+        "圆系方程",
+        "两圆相交",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C170",
+      "chapter": "直线与圆的方程",
+      "name": "两圆公共弦",
+      "latex": "(x^{2}+y^{2}+D_{1}x+E_{1}y+F_{1})-(x^{2}+y^{2}+D_{2}x+E_{2}y+F_{2})=0",
+      "condition": "两圆相交",
+      "pitfall": "公共弦所在直线方程由两圆一般方程相减得到",
+      "example": "",
+      "voiceText": "两相交圆的公共弦方程：把两个圆的一般方程相减，消去二次项，得到的一次方程就是公共弦所在的直线方程。",
+      "tags": [
+        "公共弦",
+        "两圆相交",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C171",
+      "chapter": "圆锥曲线的方程",
+      "name": "圆锥曲线定义",
+      "latex": "\\text{椭圆}:|PF_{1}|+|PF_{2}|=2a(2a>|F_{1}F_{2}|);\\quad \\text{双曲线}:||MF_{1}|-|MF_{2}||=2a(0<2a<|F_{1}F_{2}|);\\quad \\text{抛物线}:|PF|=d(P,l),\\ F\\notin l",
+      "condition": "",
+      "pitfall": "椭圆要求2a大于焦距，双曲线要求2a小于焦距，抛物线要求点F不在定直线l上",
+      "example": "",
+      "voiceText": "圆锥曲线定义：椭圆是到两定点距离之和为定值2a，且2a大于两焦点距离；双曲线是到两定点距离之差的绝对值为定值2a，且2a小于两焦点距离；抛物线是到定点和定直线距离相等。",
+      "tags": [
+        "圆锥曲线",
+        "椭圆",
+        "双曲线",
+        "抛物线"
+      ]
+    },
+    {
+      "id": "C172",
+      "chapter": "圆锥曲线的方程",
+      "name": "圆锥曲线标准方程",
+      "latex": "\\text{椭圆}:\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1(a>b>0)\\text{ 或 }\\frac{y^{2}}{a^{2}}+\\frac{x^{2}}{b^{2}}=1(a>b>0);\\quad \\text{双曲线}:\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1\\text{ 或 }\\frac{y^{2}}{a^{2}}-\\frac{x^{2}}{b^{2}}=1;\\quad \\text{抛物线}:y^{2}=\\pm2px\\text{ 或 }x^{2}=\\pm2py(p>0)",
+      "condition": "",
+      "pitfall": "椭圆焦点在长轴上，双曲线焦点在正项所对的轴上，抛物线一次项决定开口方向",
+      "example": "",
+      "voiceText": "圆锥曲线标准方程：椭圆x平方除以a平方加y平方除以b平方等于1，焦点在x轴上；若a和b互换则焦点在y轴上。双曲线是x平方除以a平方减y平方除以b平方等于1，焦点在x轴；互换则焦点在y轴。抛物线有四种开口方向，如y平方等于2px开口向右。",
+      "tags": [
+        "标准方程",
+        "圆锥曲线",
+        "解析几何"
+      ]
+    },
+    {
+      "id": "C173",
+      "chapter": "圆锥曲线的方程",
+      "name": "圆锥曲线关系",
+      "latex": "\\text{椭圆}:a^{2}=b^{2}+c^{2};\\quad \\text{双曲线}:c^{2}=a^{2}+b^{2}",
+      "condition": "a为长半轴或实半轴，b为短半轴或虚半轴，c为半焦距",
+      "pitfall": "椭圆是a最大且a平方等于b平方加c平方；双曲线是c最大且c平方等于a平方加b平方",
+      "example": "",
+      "voiceText": "圆锥曲线中a、b、c的关系：椭圆中a平方等于b平方加c平方，a最大；双曲线中c平方等于a平方加b平方，c最大。",
+      "tags": [
+        "a,b,c关系",
+        "圆锥曲线",
+        "离心率"
+      ]
+    },
+    {
+      "id": "C174",
+      "chapter": "圆锥曲线的方程",
+      "name": "离心率公式",
+      "latex": "e=\\frac{c}{a};\\quad \\text{椭圆}:e=\\sqrt{1-\\frac{b^{2}}{a^{2}}}\\in(0,1);\\quad \\text{双曲线}:e=\\sqrt{1+\\frac{b^{2}}{a^{2}}}\\in(1,+\\infty)",
+      "condition": "",
+      "pitfall": "椭圆离心率越接近1越扁，越接近0越圆；双曲线离心率一定大于1",
+      "example": "",
+      "voiceText": "离心率e等于c除以a。椭圆离心率等于根号下1减b平方除以a平方，取值在0到1之间；双曲线离心率等于根号下1加b平方除以a平方，取值大于1。",
+      "tags": [
+        "离心率",
+        "圆锥曲线",
+        "椭圆",
+        "双曲线"
+      ]
+    },
+    {
+      "id": "C175",
+      "chapter": "圆锥曲线的方程",
+      "name": "双曲线渐近线",
+      "latex": "\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1\\Rightarrow y=\\pm\\frac{b}{a}x;\\quad \\frac{y^{2}}{a^{2}}-\\frac{x^{2}}{b^{2}}=1\\Rightarrow y=\\pm\\frac{a}{b}x",
+      "condition": "",
+      "pitfall": "焦点在x轴时渐近线是b分之a，焦点在y轴时是a分之b，不要把a、b写反",
+      "example": "",
+      "voiceText": "双曲线渐近线方程：当焦点在x轴上时为y等于正负a分之b乘x；当焦点在y轴上时为y等于正负b分之a乘x。",
+      "tags": [
+        "渐近线",
+        "双曲线",
+        "圆锥曲线"
+      ]
+    },
+    {
+      "id": "C176",
+      "chapter": "圆锥曲线的方程",
+      "name": "等轴双曲线",
+      "latex": "x^{2}-y^{2}=a^{2}(a>0);\\quad e=\\sqrt{2};\\quad y=\\pm x",
+      "condition": "实轴和虚轴等长",
+      "pitfall": "等轴双曲线的渐近线互相垂直，离心率为根号2",
+      "example": "",
+      "voiceText": "等轴双曲线：实轴和虚轴长度相等的双曲线，方程可写成x平方减y平方等于a平方，离心率是根号2，渐近线是y等于正负x。",
+      "tags": [
+        "等轴双曲线",
+        "双曲线",
+        "渐近线"
+      ]
+    },
+    {
+      "id": "C177",
+      "chapter": "圆锥曲线的方程",
+      "name": "通径公式",
+      "latex": "\\text{椭圆}:\\frac{2b^{2}}{a};\\quad \\text{双曲线}:\\frac{2b^{2}}{a};\\quad \\text{抛物线}:2p",
+      "condition": "",
+      "pitfall": "椭圆和双曲线的通径长都是a分之2b平方，抛物线通径长为2p",
+      "example": "",
+      "voiceText": "圆锥曲线的通径：椭圆和双曲线的通径长都是2倍b平方除以a，抛物线的通径长是2p。",
+      "tags": [
+        "通径",
+        "圆锥曲线",
+        "焦点弦"
+      ]
+    },
+    {
+      "id": "C178",
+      "chapter": "圆锥曲线的方程",
+      "name": "焦点到渐近线距离",
+      "latex": "d=b",
+      "condition": "双曲线",
+      "pitfall": "焦点到渐近线的距离等于虚半轴长b，与a无关",
+      "example": "",
+      "voiceText": "双曲线的焦点到渐近线的距离等于b，也就是虚半轴的长度。",
+      "tags": [
+        "双曲线",
+        "渐近线",
+        "焦点"
+      ]
+    },
+    {
+      "id": "C179",
+      "chapter": "圆锥曲线的方程",
+      "name": "焦半径公式",
+      "latex": "\\text{椭圆}:|PF_{1}|=a+ex_{0},\\ |PF_{2}|=a-ex_{0};\\quad \\text{双曲线}:|PF_{1}|=|ex_{0}+a|,\\ |PF_{2}|=|ex_{0}-a|;\\quad \\text{抛物线}:|MF|=x_{0}+\\frac{p}{2}",
+      "condition": "P点横坐标为x₀，M在抛物线上",
+      "pitfall": "椭圆焦半径左加右减，双曲线要带绝对值，抛物线焦点在x轴正半轴时如此",
+      "example": "",
+      "voiceText": "焦半径公式：椭圆上一点到左焦点距离为a加e乘x0，到右焦点距离为a减e乘x0；双曲线要带绝对值；抛物线焦半径等于x0加二分之p。",
+      "tags": [
+        "焦半径",
+        "圆锥曲线",
+        "焦点"
+      ]
+    },
+    {
+      "id": "C180",
+      "chapter": "圆锥曲线的方程",
+      "name": "焦点三角形面积",
+      "latex": "S_{\\triangle F_{1}PF_{2}}=b^{2}\\tan\\frac{\\alpha}{2}\\text{（椭圆）};\\quad S_{\\triangle F_{1}PF_{2}}=\\frac{b^{2}}{\\tan\\frac{\\alpha}{2}}=b^{2}\\cot\\frac{\\alpha}{2}\\text{（双曲线，}\\theta=\\angle F_{1}MF_{2}\\text{）}",
+      "condition": "α为焦点三角形在P点的顶角",
+      "pitfall": "椭圆用正切，双曲线用余切，不要混淆",
+      "example": "",
+      "voiceText": "焦点三角形面积：椭圆中是b平方乘顶角一半的正切，双曲线中是b平方乘顶角一半的余切。",
+      "tags": [
+        "焦点三角形",
+        "面积",
+        "圆锥曲线"
+      ]
+    },
+    {
+      "id": "C181",
+      "chapter": "圆锥曲线的方程",
+      "name": "直线与双曲线交点",
+      "latex": "\\Delta=0\\text{ 或直线平行于渐近线}\\Rightarrow\\text{一个交点}",
+      "condition": "直线与双曲线",
+      "pitfall": "有一个交点不一定是相切，还可能是直线与渐近线平行",
+      "example": "",
+      "voiceText": "直线与双曲线有一个交点时，除了相切判别式等于0的情况，还包括直线与双曲线渐近线平行的情况。",
+      "tags": [
+        "双曲线",
+        "切线",
+        "渐近线"
+      ]
+    },
+    {
+      "id": "C182",
+      "chapter": "圆锥曲线的方程",
+      "name": "抛物线焦点弦长",
+      "latex": "|AF|=\\frac{p}{1-\\cos\\theta},\\ |BF|=\\frac{p}{1+\\cos\\theta};\\quad |AB|=x_{1}+x_{2}+p=\\frac{(y_{1}-y_{2})^{2}}{2p}=\\frac{2p}{\\sin^{2}\\theta}",
+      "condition": "抛物线y²=2px的焦点弦，倾斜角为θ",
+      "pitfall": "焦点弦长公式有多种形式，注意θ是焦点弦所在直线的倾斜角",
+      "example": "",
+      "voiceText": "抛物线焦点弦长：AF等于p除以1减cosθ，BF等于p除以1加cosθ，整个弦长AB等于x1加x2加p，也等于2p除以sinθ的平方。",
+      "tags": [
+        "抛物线",
+        "焦点弦",
+        "弦长"
+      ]
+    },
+    {
+      "id": "C183",
+      "chapter": "圆锥曲线的方程",
+      "name": "抛物线焦点弦圆",
+      "latex": "\\text{以焦点弦为直径的圆与准线相切}",
+      "condition": "抛物线焦点弦",
+      "pitfall": "这是抛物线的重要几何性质，便于解题时快速判断",
+      "example": "",
+      "voiceText": "抛物线的重要性质：以焦点弦为直径的圆一定与准线相切。",
+      "tags": [
+        "抛物线",
+        "焦点弦",
+        "准线"
+      ]
+    },
+    {
+      "id": "C184",
+      "chapter": "圆锥曲线的方程",
+      "name": "抛物线焦点弦性质",
+      "latex": "\\frac{1}{|AF|}+\\frac{1}{|BF|}=\\frac{2}{p}",
+      "condition": "AB为过抛物线焦点的弦",
+      "pitfall": "A、B到焦点距离倒数之和为定值p分之2",
+      "example": "",
+      "voiceText": "抛物线焦点弦性质：焦点弦两端点到焦点距离的倒数之和等于p分之2。",
+      "tags": [
+        "抛物线",
+        "焦点弦",
+        "性质"
+      ]
+    },
+    {
+      "id": "C185",
+      "chapter": "圆锥曲线的方程",
+      "name": "抛物线焦点弦韦达",
+      "latex": "x_{1}x_{2}=\\frac{p^{2}}{4},\\ x_{1}+x_{2}=\\frac{k^{2}+2}{k^{2}}p,\\ y_{1}y_{2}=-p^{2},\\ y_{1}+y_{2}=\\frac{2p}{k}",
+      "condition": "抛物线y²=2px的焦点弦所在直线斜率为k",
+      "pitfall": "韦达关系适用于焦点弦与抛物线交点的坐标，注意k=0时的退化情况",
+      "example": "",
+      "voiceText": "抛物线焦点弦的韦达关系：x1乘x2等于四分之p平方，x1加x2等于k平方分之k平方加2再乘p，y1乘y2等于负p平方，y1加y2等于k分之2p。",
+      "tags": [
+        "抛物线",
+        "焦点弦",
+        "韦达定理"
+      ]
+    },
+    {
+      "id": "C186",
+      "chapter": "圆锥曲线的方程",
+      "name": "弦长公式",
+      "latex": "",
+      "condition": "",
+      "pitfall": "图片中该条公式被截断，未显示完整内容",
+      "example": "",
+      "voiceText": "弦长公式：图片中第186条内容被截断，未显示完整公式。",
+      "tags": [
+        "弦长",
+        "圆锥曲线",
+        "截断"
+      ]
+    }
+  ]
+}

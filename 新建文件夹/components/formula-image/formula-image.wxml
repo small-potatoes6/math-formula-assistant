@@ -1,0 +1,39 @@
+<view
+  wx:if="{{ready}}"
+  class="formula-image-root {{scrollable ? 'is-scrollable' : 'is-fit'}}"
+  style="width: {{viewportWidth}}rpx; height: {{displayHeight}}rpx;"
+>
+  <scroll-view
+    wx:if="{{scrollable}}"
+    class="formula-scroll"
+    scroll-x
+    enhanced
+    show-scrollbar="{{false}}"
+    style="width: {{viewportWidth}}rpx; height: {{displayHeight}}rpx;"
+  >
+    <view
+      class="formula-canvas"
+      style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
+    >
+      <image
+        class="formula-svg"
+        src="{{imageAsset}}"
+        mode="aspectFit"
+        style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
+      />
+    </view>
+  </scroll-view>
+
+  <view
+    wx:else
+    class="formula-canvas"
+    style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
+  >
+    <image
+      class="formula-svg"
+      src="{{imageAsset}}"
+      mode="aspectFit"
+      style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
+    />
+  </view>
+</view>

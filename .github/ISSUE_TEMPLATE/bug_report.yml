@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include secrets, private AppIDs, tokens, or unauthorized source material.
+  - type: dropdown
+    id: target
+    attributes:
+      label: Area
+      options:
+        - WeChat mini program
+        - Web prototype
+        - Formula content
+        - Build or validation script
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Include the page, formula ID, and visible error message when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, WeChat DevTools version, Node.js version, or browser version.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I removed secrets and personal information from this report.
+          required: true
+        - label: I did not attach unauthorized full-page scans or PDFs.
+          required: true

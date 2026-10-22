@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>导出小程序图标</title>
+  <style>
+    body { font: 14px sans-serif; }
+    pre { white-space: pre-wrap; word-break: break-all; }
+  </style>
+</head>
+<body data-ready="false">
+  <canvas id="canvas" hidden></canvas>
+  <pre data-size="1024"></pre>
+  <pre data-size="512"></pre>
+  <pre data-size="256"></pre>
+  <pre data-size="144"></pre>
+  <pre data-size="48"></pre>
+  <script>
+    const image = new Image();
+    image.src = "miniprogram-icon-v1.svg";
+    image.onload = async () => {
+      await image.decode();
+      const canvas = document.querySelector("#canvas");
+      const context = canvas.getContext("2d");
+      for (const size of [1024, 512, 256, 144, 48]) {
+        canvas.width = size;
+        canvas.height = size;
+        context.clearRect(0, 0, size, size);
+        context.drawImage(image, 0, 0, size, size);
+        document.querySelector(`[data-size="${size}"]`).textContent = canvas.toDataURL("image/png").split(",")[1];
+      }
+      document.body.dataset.ready = "true";
+    };
+  </script>
+</body>
+</html>

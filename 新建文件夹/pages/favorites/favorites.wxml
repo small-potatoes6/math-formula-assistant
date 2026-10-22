@@ -1,0 +1,62 @@
+<view class="page-shell">
+  <view class="page-hero compact">
+    <view class="hero-eyebrow">MY FORMULAS</view>
+    <view class="hero-title">我的收藏</view>
+    <view class="hero-subtitle">收藏 {{allCount}} 条公式，离线随时查看</view>
+  </view>
+
+  <view class="page-content favorites-content">
+    <view wx:if="{{allCount}}" class="filter-row">
+      <picker mode="selector" range="{{chapterLabels}}" value="{{chapterIndex}}" bindchange="onChapterChange">
+        <view class="chapter-picker pressable">
+          <text>{{chapterLabels[chapterIndex]}}</text>
+          <text class="picker-arrow">⌄</text>
+        </view>
+      </picker>
+      <text class="result-count">当前 {{filteredCount}} 条</text>
+    </view>
+
+    <view wx:if="{{items.length}}" class="favorite-list">
+      <view
+        wx:for="{{items}}"
+        wx:key="id"
+        class="favorite-card pressable"
+        data-id="{{item.id}}"
+        bindtap="openDetail"
+      >
+        <view class="favorite-head">
+          <view class="id-pill {{item.type}}">{{item.id}}</view>
+          <text class="favorite-chapter">{{item.chapter}}</text>
+          <view
+            class="favorite-star active pressable"
+            data-id="{{item.id}}"
+            catchtap="removeFavorite"
+          >★</view>
+        </view>
+        <view class="favorite-name">{{item.name}}</view>
+        <view class="favorite-formula">
+          <formula-image
+            asset="{{item.formulaImage}}"
+            asset-width="{{item.formulaWidth}}"
+            asset-height="{{item.formulaHeight}}"
+            max-width="620"
+          ></formula-image>
+        </view>
+        <view class="favorite-foot">
+          <text class="favorite-type {{item.type}}">{{item.typeLabel}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:elif="{{allCount}}" class="empty-state">
+      <view class="empty-title">这个章节还没有收藏</view>
+      <view class="empty-copy">切换到其他章节，或返回公式页继续挑选。</view>
+    </view>
+
+    <view wx:else class="empty-state">
+      <view class="empty-title">还没有收藏公式</view>
+      <view class="empty-copy">在公式卡片或详情页点击收藏，之后会集中显示在这里。</view>
+      <button class="primary-button empty-button pressable" bindtap="browseFormulas">去挑几条公式</button>
+    </view>
+  </view>
+</view>

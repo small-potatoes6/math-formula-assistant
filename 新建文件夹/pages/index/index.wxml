@@ -1,0 +1,98 @@
+<view class="page-shell">
+  <view class="page-hero">
+    <view class="hero-top">
+      <view class="hero-copy">
+        <view class="hero-eyebrow">FORMULA LIBRARY</view>
+        <view class="hero-title">公式库</view>
+        <view class="hero-subtitle">366 条 · 离线可用 · 17 个章节</view>
+      </view>
+      <view class="hero-stats">
+        <view class="hero-stat due-stat" bindtap="openPractice">
+          <text class="hero-stat-value">{{summary.dueCount || 0}}</text>
+          <text class="hero-stat-label">今日待复习</text>
+        </view>
+        <view class="hero-stat favorite-stat" bindtap="openFavorites">
+          <text class="hero-stat-value">{{favoriteCount}}</text>
+          <text class="hero-stat-label">已收藏</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-content">
+    <view class="search-box">
+      <text class="search-icon">⌕</text>
+      <input
+        class="search-input"
+        value="{{keyword}}"
+        placeholder="搜索公式名、章节或关键词"
+        placeholder-class="search-placeholder"
+        confirm-type="search"
+        bindinput="onKeywordInput"
+      />
+      <view wx:if="{{keyword}}" class="search-clear pressable" bindtap="clearKeyword">×</view>
+    </view>
+
+    <view class="segment-control">
+      <view
+        wx:for="{{typeOptions}}"
+        wx:key="value"
+        class="segment-item {{activeType == item.value ? 'active' : ''}}"
+        data-value="{{item.value}}"
+        bindtap="onTypeTap"
+      >
+        <view wx:if="{{item.value != 'all'}}" class="segment-dot {{item.value}}"></view>
+        <text>{{item.label}}</text>
+      </view>
+    </view>
+
+    <view class="filter-row">
+      <picker mode="selector" range="{{chapterLabels}}" value="{{chapterIndex}}" bindchange="onChapterChange">
+        <view class="chapter-picker pressable">
+          <text>{{chapterLabels[chapterIndex]}}</text>
+          <text class="picker-arrow">⌄</text>
+        </view>
+      </picker>
+      <text class="result-count">共 {{filteredCount}} 条</text>
+    </view>
+
+    <view wx:if="{{items.length}}" class="formula-list">
+      <view
+        wx:for="{{items}}"
+        wx:key="id"
+        class="formula-card pressable"
+        data-id="{{item.id}}"
+        bindtap="openDetail"
+      >
+        <view class="card-head">
+          <view class="id-pill {{item.type}}">{{item.id}}</view>
+          <text class="card-chapter">{{item.chapter}}</text>
+          <view
+            class="favorite-star {{item.favorite ? 'active' : ''}}"
+            data-id="{{item.id}}"
+            catchtap="toggleFavorite"
+          >
+            {{item.favorite ? '★' : '☆'}}
+          </view>
+        </view>
+        <view class="formula-name">{{item.name}}</view>
+        <view class="formula-preview">
+          <formula-image
+            asset="{{item.formulaImage}}"
+            asset-width="{{item.formulaWidth}}"
+            asset-height="{{item.formulaHeight}}"
+            max-width="620"
+          ></formula-image>
+        </view>
+        <view class="card-foot">
+          <text class="type-label {{item.type}}">{{item.typeLabel}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="empty-state">
+      <view class="empty-title">没有找到相关公式</view>
+      <view class="empty-copy">换一个章节或关键词再试一次。</view>
+    </view>
+  </view>
+</view>

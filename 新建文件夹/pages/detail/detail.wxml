@@ -1,0 +1,73 @@
+<view wx:if="{{formula}}" class="detail-page">
+  <view class="detail-head">
+    <view class="detail-meta">
+      <text class="detail-id {{formula.type}}">{{formula.id}}</text>
+      <text class="detail-type {{formula.type}}">{{formula.typeLabel}}</text>
+      <text class="detail-dot">·</text>
+      <text>{{formula.chapter}}</text>
+    </view>
+    <view class="detail-title">{{formula.name}}</view>
+    <view class="mastery-line">
+      <text class="mastery-value">{{masteryLabel}}</text>
+      <text class="mastery-dot">·</text>
+      <text>{{formula.tags[0] || '数学公式'}}</text>
+    </view>
+  </view>
+
+  <view class="detail-content">
+    <view class="formula-panel {{formula.type}}">
+      <formula-image
+        asset="{{formula.formulaImage}}"
+        asset-width="{{formula.formulaWidth}}"
+        asset-height="{{formula.formulaHeight}}"
+        max-width="620"
+      ></formula-image>
+    </view>
+
+    <view
+      wx:if="{{formula.condition || formula.pitfall || formula.example || formula.tags.length}}"
+      class="info-panel"
+    >
+      <view wx:if="{{formula.condition}}" class="info-block">
+        <view class="info-label">适用条件</view>
+        <view class="info-text">{{formula.condition}}</view>
+      </view>
+
+      <view wx:if="{{formula.pitfall}}" class="info-block pitfall-block">
+        <view class="info-label">易错提醒</view>
+        <view class="info-text">{{formula.pitfall}}</view>
+      </view>
+
+      <view wx:if="{{formula.example}}" class="info-block">
+        <view class="info-label">例子</view>
+        <formula-image
+          wx:if="{{formula.exampleImage}}"
+          asset="{{formula.exampleImage}}"
+          asset-width="{{formula.exampleWidth}}"
+          asset-height="{{formula.exampleHeight}}"
+          max-width="620"
+        ></formula-image>
+        <view wx:else class="info-text">{{formula.example}}</view>
+      </view>
+
+      <view wx:if="{{formula.tags.length}}" class="tag-row">
+        <view wx:for="{{formula.tags}}" wx:key="*this" class="tag">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail-actions">
+    <button class="secondary-button action-button favorite-action pressable" bindtap="toggleFavorite">
+      <text class="action-star {{favorite ? 'active' : ''}}">{{favorite ? '★' : '☆'}}</text>
+      <text>{{favorite ? '已收藏' : '收藏'}}</text>
+    </button>
+    <button class="primary-button action-button pressable" bindtap="startPractice">
+      练习这个公式
+    </button>
+  </view>
+</view>
+
+<view wx:else class="empty-state detail-empty">
+  <view class="empty-title">没有找到这条公式</view>
+  <view class="empty-copy">返回公式列表后重新选择一条。</view>
+</view>

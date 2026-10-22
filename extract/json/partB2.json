@@ -1,0 +1,1081 @@
+{
+ "items": [
+  {
+   "id": "S046",
+   "chapter": "不等式",
+   "name": "指数不等式",
+   "latex": "e^x\\ge x+1\\ (\\text{当且仅当}x=0\\text{取等});\\quad e^x\\ge ex\\ (\\text{当且仅当}x=1\\text{取等});\\quad x\\ge0\\text{时},\\ e^x\\ge x^2+1,\\ e^x\\ge\\frac12x^2+x+1\\ (\\text{当且仅当}x=0\\text{取等})",
+   "condition": "x 为实数，后两式要求 x 大于等于 0",
+   "pitfall": "注意取等条件分别为 0 和 1；第三组不等式仅在非负区间成立",
+   "example": "",
+   "voiceText": "指数不等式：e 的 x 次方大于等于 x 加 1，当且仅当 x 等于 0 时取等；e 的 x 次方大于等于 e 乘 x，当且仅当 x 等于 1 时取等；x 大于等于 0 时，e 的 x 次方大于等于 x 平方加 1，且大于等于二分之一 x 平方加 x 加 1，当且仅当 x 等于 0 时取等",
+   "tags": [
+    "不等式",
+    "指数",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S047",
+   "chapter": "不等式",
+   "name": "对数不等式",
+   "latex": "\\ln x\\le x-1\\ (\\text{当且仅当}x=1\\text{取等});\\quad \\ln x\\le\\frac{x}{e}\\ (\\text{当且仅当}x=e\\text{取等});\\quad \\ln x\\le x^2-x\\ (\\text{当且仅当}x=1\\text{取等})",
+   "condition": "x 大于 0",
+   "pitfall": "注意定义域 x 大于 0；三个取等条件分别是 1、e、1",
+   "example": "",
+   "voiceText": "对数不等式：自然对数 x 小于等于 x 减 1，当且仅当 x 等于 1 时取等；自然对数 x 小于等于 e 分之 x，当且仅当 x 等于 e 时取等；自然对数 x 小于等于 x 平方减 x，当且仅当 x 等于 1 时取等",
+   "tags": [
+    "不等式",
+    "对数",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S048",
+   "chapter": "不等式",
+   "name": "指对不等式链",
+   "latex": "\\begin{cases}e^x\\ge x+1\\\\ \\ln x\\le x-1\\end{cases}\\Rightarrow \\ln(x+1)\\le x\\le e^x-1\\ (\\text{当且仅当}x=0\\text{取等})",
+   "condition": "x 大于负 1，且对数式中 x 大于 0",
+   "pitfall": "该不等式链在导数放缩中常用，注意中间的 x 同时连接对数和指数",
+   "example": "",
+   "voiceText": "指对不等式链：若 e 的 x 次方大于等于 x 加 1 且自然对数 x 小于等于 x 减 1，则可推出自然对数(x 加 1) 小于等于 x 小于等于 e 的 x 次方减 1，当且仅当 x 等于 0 时取等",
+   "tags": [
+    "不等式",
+    "指数对数",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S049",
+   "chapter": "不等式",
+   "name": "三角放缩不等式",
+   "latex": "x\\in\\left[0,\\frac\\pi2\\right)\\Rightarrow \\sin x\\le x\\le\\tan x\\ (\\text{当且仅当}x=0\\text{取等});\\quad x\\in\\left[0,\\frac\\pi2\\right)\\Rightarrow \\cos x\\ge1-\\frac12x^2\\ (\\text{当且仅当}x=0\\text{取等})",
+   "condition": "x 在 0 到 π/2 的左闭右开区间内，单位为弧度",
+   "pitfall": "仅在 0 到 π/2 区间成立；x 必须用弧度制",
+   "example": "",
+   "voiceText": "三角放缩：当 x 在 0 到 π/2 的左闭右开区间内时，sin x 小于等于 x 小于等于 tan x，当且仅当 x 等于 0 时取等；同区间内 cos x 大于等于 1 减二分之一 x 平方，当且仅当 x 等于 0 时取等",
+   "tags": [
+    "不等式",
+    "三角放缩",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S050",
+   "chapter": "二项式",
+   "name": "二项式系数和",
+   "latex": "\\mathrm C_n^0+\\mathrm C_n^1+\\cdots+\\mathrm C_n^n=2^n;\\quad \\mathrm C_n^0+\\mathrm C_n^2+\\cdots=\\mathrm C_n^1+\\mathrm C_n^3+\\cdots=2^{n-1}",
+   "condition": "n 为正整数",
+   "pitfall": "奇数项系数和等于偶数项系数和，都等于 2 的 n 减 1 次方",
+   "example": "",
+   "voiceText": "二项式系数和：所有二项式系数之和等于 2 的 n 次方；奇数项系数之和等于偶数项系数之和，都等于 2 的 n 减 1 次方",
+   "tags": [
+    "二项式定理",
+    "组合数",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S051",
+   "chapter": "概率统计",
+   "name": "期望与方差性质",
+   "latex": "Y=aX+b\\Rightarrow E(Y)=aE(X)+b,\\ D(Y)=a^2D(X);\\quad E(k)=k,\\ D(k)=0;\\quad E(X_1+X_2)=E(X_1)+E(X_2);\\quad D(X)=E(X^2)-[E(X)]^2",
+   "condition": "X 为随机变量，a、b、k 为常数",
+   "pitfall": "方差受系数平方影响，常数的方差为 0；注意 D(X)=E(X²) 减 E(X) 的平方",
+   "example": "",
+   "voiceText": "期望与方差的性质：Y 等于 aX 加 b 时，Y 的期望等于 a 倍 X 的期望加 b，Y 的方差等于 a 平方乘 X 的方差；常数的期望为自身、方差为 0；期望具有可加性；方差等于 X 平方的期望减去 X 期望的平方",
+   "tags": [
+    "概率统计",
+    "期望方差",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S052",
+   "chapter": "概率统计",
+   "name": "二项分布最大项",
+   "latex": "X\\sim B(n,p),\\ \\text{概率最大项为}\\ k\\Rightarrow (n+1)p-1\\le k\\le(n+1)p",
+   "condition": "X 服从参数为 n、p 的二项分布",
+   "pitfall": "当(n+1)p为整数时，k 可取该整数或其前一个整数；否则取区间内整数",
+   "example": "",
+   "voiceText": "二项分布概率最大项：若 X 服从二项分布 B(n,p)，概率最大项的 k 满足 (n 加 1) 乘 p 减 1 小于等于 k 小于等于 (n 加 1) 乘 p",
+   "tags": [
+    "概率统计",
+    "二项分布",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S053",
+   "chapter": "圆锥曲线",
+   "name": "椭圆通径",
+   "latex": "|MN|=\\frac{2b^2}{a}",
+   "condition": "椭圆标准方程，MN 为过焦点且垂直于长轴的弦",
+   "pitfall": "通径长为 2b²/a，不要误记为 b²/a 或 2b²/c",
+   "example": "",
+   "voiceText": "椭圆的通径长等于 2 倍 b 平方除以 a",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S054",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点距离最值",
+   "latex": "\\max |PF|=a+c,\\ \\min |PF|=a-c",
+   "condition": "P 为椭圆上一点，F 为椭圆焦点",
+   "pitfall": "最大距离在长轴远端顶点取得，最小距离在长轴近端顶点取得",
+   "example": "",
+   "voiceText": "椭圆上一点到焦点的距离最大值为 a 加 c，最小值为 a 减 c",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S055",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点三角形求离心率",
+   "latex": "\\angle F_1PF_2=\\theta,\\ \\angle PF_1F_2=\\alpha,\\ \\angle PF_2F_1=\\beta\\Rightarrow e=\\frac{\\sin\\theta}{\\sin\\alpha+\\sin\\beta}",
+   "condition": "P 为椭圆上异于长轴端点的点，F1、F2 为两焦点",
+   "pitfall": "三个角分别对应 P、F1、F2 处的角，不要对应错",
+   "example": "",
+   "voiceText": "椭圆焦点三角形中，若 P 处角为 θ，F1 处角为 α，F2 处角为 β，则离心率 e 等于 sin θ 除以 sin α 加 sin β",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "离心率",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S056",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦半径公式",
+   "latex": "\\text{焦点在}x\\text{轴}: |PF_1|=a+ex_0,\\ |PF_2|=a-ex_0;\\quad \\text{焦点在}y\\text{轴}: |PF_1|=a+ey_0,\\ |PF_2|=a-ey_0",
+   "condition": "P(x0,y0) 为椭圆上任意一点，F1、F2 为两焦点",
+   "pitfall": "焦点在 x 轴与 y 轴的公式不同，注意是用 x0 还是 y0；靠近左下焦点取加号",
+   "example": "",
+   "voiceText": "椭圆焦半径公式：焦点在 x 轴时，P 到左焦点距离为 a 加 e x0，到右焦点距离为 a 减 e x0；焦点在 y 轴时，到下方焦点距离为 a 加 e y0，到上方焦点距离为 a 减 e y0",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S057",
+   "chapter": "圆锥曲线",
+   "name": "椭圆短轴端点张角最大",
+   "latex": "P\\text{ 为椭圆短轴端点时},\\ \\angle F_1PF_2\\text{ 最大}",
+   "condition": "P 为椭圆上任意一点，F1、F2 为两焦点",
+   "pitfall": "P 在短轴端点时焦点张角最大，在长轴端点时张角为 0",
+   "example": "",
+   "voiceText": "椭圆上一点 P 到两焦点 F1、F2 的张角，当 P 位于短轴端点时达到最大",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦点三角形",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S058",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点三角形面积",
+   "latex": "\\angle F_1PF_2=\\alpha\\Rightarrow S_{\\triangle F_1PF_2}=b^2\\tan\\frac\\alpha2;\\quad |PF_1|\\cdot|PF_2|=\\frac{2b^2}{1+\\cos\\alpha}",
+   "condition": "P 为椭圆上异于长轴端点的点，F1、F2 为两焦点",
+   "pitfall": "原文 OCR 中乘积公式符号错位，已按标准形式重建；面积公式中是正切二分之 α",
+   "example": "",
+   "voiceText": "椭圆焦点三角形面积等于 b 平方乘 tan(α/2)，其中 α 是 P 处的张角；由余弦定理可得两焦半径乘积等于 2 倍 b 平方除以 1 加 cos α",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦点三角形",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S059",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦半径积范围",
+   "latex": "|PF_1|\\cdot|PF_2|\\in[b^2,a^2]",
+   "condition": "P 为椭圆上任意一点，F1、F2 为两焦点",
+   "pitfall": "P 在短轴端点时乘积最大为 a²，在长轴端点时最小为 b²",
+   "example": "",
+   "voiceText": "椭圆上任意一点 P 到两焦点的距离之积，取值范围是从 b 平方到 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S060",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点向量点积范围",
+   "latex": "\\overrightarrow{PF_1}\\cdot\\overrightarrow{PF_2}\\in[b^2-c^2,a^2-c^2]",
+   "condition": "P 为椭圆上任意一点，F1、F2 为两焦点",
+   "pitfall": "这是向量点积而非长度乘积；注意 c²=a²-b²，端点值也可化为 2b²-a² 和 b²",
+   "example": "",
+   "voiceText": "椭圆上任意一点 P，向量 PF1 与向量 PF2 的点积取值范围是从 b 平方减 c 平方到 a 平方减 c 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "向量",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S061",
+   "chapter": "圆锥曲线",
+   "name": "椭圆第二定义",
+   "latex": "\\frac{|PF|}{d}=e\\ (0<e<1);\\quad \\text{准线}: x=\\pm\\frac{a^2}{c}\\ (\\text{焦点在}x\\text{轴}),\\ y=\\pm\\frac{a^2}{c}\\ (\\text{焦点在}y\\text{轴})",
+   "condition": "P 为椭圆上一点，F 为焦点，d 为 P 到对应准线的距离",
+   "pitfall": "离心率 e 在 0 到 1 之间；左焦点对应左准线，右焦点对应右准线",
+   "example": "",
+   "voiceText": "椭圆第二定义：椭圆上一点到焦点的距离与到对应准线的距离之比等于离心率 e，e 在 0 到 1 之间；焦点在 x 轴时准线为 x 等于正负 a 平方除以 c",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "第二定义",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S062",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点弦长",
+   "latex": "|AF|=\\frac{b^2}{a-c\\cos\\theta},\\ |BF|=\\frac{b^2}{a+c\\cos\\theta}\\ (\\text{左焦点});\\quad |AF|=\\frac{b^2}{a+c\\cos\\theta},\\ |BF|=\\frac{b^2}{a-c\\cos\\theta}\\ (\\text{右焦点});\\quad |AF|=\\frac{b^2}{a\\pm c\\cos\\theta},\\ |BF|=\\frac{b^2}{a\\mp c\\cos\\theta}\\ (\\text{统一})",
+   "condition": "AB 为椭圆焦点弦，倾斜角为 θ，A 在 x 轴上方",
+   "pitfall": "左右焦点对应的公式符号相反；也可统一用弦的长短决定正负",
+   "example": "",
+   "voiceText": "椭圆焦点弦：左焦点时，AF 长为 b 平方除以 a 减 c cos θ，BF 长为 b 平方除以 a 加 c cos θ；右焦点时两者互换；也可统一写为分母 a 加减 c cos θ",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S063",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点弦倒数和",
+   "latex": "\\frac1{|AF|}+\\frac1{|BF|}=\\frac{2a}{b^2}",
+   "condition": "AB 为椭圆过焦点的弦，A、B 为直线与椭圆交点",
+   "pitfall": "定值与弦的倾斜角无关；分母是 b² 而非 a²",
+   "example": "",
+   "voiceText": "椭圆过焦点的弦 AB，1 除以 AF 长加 1 除以 BF 长等于 2a 除以 b 平方，为定值",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S064",
+   "chapter": "圆锥曲线",
+   "name": "圆锥曲线焦点弦向量关系",
+   "latex": "\\overrightarrow{AF}=\\lambda\\overrightarrow{FB}\\ (\\lambda>0)\\Rightarrow e=\\sqrt{1+k^2}\\cdot\\frac{|\\lambda-1|}{\\lambda+1},\\quad |e\\cos\\theta|=\\frac{|\\lambda-1|}{\\lambda+1}",
+   "condition": "圆锥曲线 C 焦点 F 在 x 轴上，过 F 斜率为 k 的直线交曲线于 A、B，θ 为倾斜角",
+   "pitfall": "原文 OCR 遗漏根号和绝对值，已按标准形式重建；抛物线 e 等于 1 时也适用",
+   "example": "",
+   "voiceText": "圆锥曲线焦点弦向量关系：若 AF 向量等于 λ 倍 FB 向量，则离心率 e 等于根号下 1 加 k 平方乘 λ 减 1 的绝对值除以 λ 加 1；也可写成 e 乘 cos θ 的绝对值等于 λ 减 1 的绝对值除以 λ 加 1",
+   "tags": [
+    "圆锥曲线",
+    "焦点弦",
+    "向量",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S065",
+   "chapter": "圆锥曲线",
+   "name": "椭圆中点弦斜率",
+   "latex": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\Rightarrow k_{AB}=-\\frac{b^2x_0}{a^2y_0},\\ k_{AB}\\cdot k_{OP}=-\\frac{b^2}{a^2};\\quad \\frac{y^2}{a^2}+\\frac{x^2}{b^2}=1\\Rightarrow k_{AB}=-\\frac{a^2x_0}{b^2y_0},\\ k_{AB}\\cdot k_{OP}=-\\frac{a^2}{b^2}",
+   "condition": "A、B 为椭圆上两不同点，P(x0,y0) 为弦 AB 中点",
+   "pitfall": "焦点在 x 轴与 y 轴时的系数互换；斜率积为负",
+   "example": "",
+   "voiceText": "椭圆中点弦斜率：焦点在 x 轴时，弦 AB 斜率为负的 b 平方 x0 除以 a 平方 y0，且 AB 斜率与 OP 斜率乘积为负的 b 平方除以 a 平方；焦点在 y 轴时 a 与 b 互换",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "中点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S066",
+   "chapter": "圆锥曲线",
+   "name": "椭圆顶点连线斜率积",
+   "latex": "k_{PA}\\cdot k_{PB}=-\\frac{b^2}{a^2}",
+   "condition": "A、B 为椭圆长轴两端点，P 为椭圆上异于 A、B 的任一点",
+   "pitfall": "A、B 必须是长轴的两个端点，结论才成立",
+   "example": "",
+   "voiceText": "椭圆长轴两个端点 A、B 与椭圆上任意另一点 P 的连线，其斜率之积为负的 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "斜率",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S067",
+   "chapter": "圆锥曲线",
+   "name": "椭圆对称点连线斜率积",
+   "latex": "k_{PA}\\cdot k_{PB}=-\\frac{b^2}{a^2}",
+   "condition": "A、B 为椭圆上关于原点对称的两点，P 为椭圆上异于 A、B 的任一点",
+   "pitfall": "A、B 必须关于原点对称，且 P 不同于 A、B",
+   "example": "",
+   "voiceText": "椭圆上关于原点对称的两点 A、B 与椭圆上任意另一点 P 的连线，其斜率之积为负的 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "斜率",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S068",
+   "chapter": "圆锥曲线",
+   "name": "椭圆切线斜率积",
+   "latex": "k_l\\cdot k_{OM}=-\\frac{b^2}{a^2}",
+   "condition": "l 为椭圆不垂直于对称轴的切线，M 为切点",
+   "pitfall": "切线斜率与切点和原点连线的斜率乘积为负 b²/a²",
+   "example": "",
+   "voiceText": "椭圆切线 l 与切点 M 和原点连线 OM 的斜率乘积为负的 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S069",
+   "chapter": "圆锥曲线",
+   "name": "椭圆切线方程",
+   "latex": "\\frac{x_0x}{a^2}+\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为椭圆上一点",
+   "pitfall": "用 x0x 替换 x²，y0y 替换 y² 即可得到切线方程",
+   "example": "",
+   "voiceText": "椭圆上一点 P(x0,y0) 处的切线方程为 x0x 除以 a 平方加 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S070",
+   "chapter": "圆锥曲线",
+   "name": "椭圆切点弦方程",
+   "latex": "\\frac{x_0x}{a^2}+\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为椭圆外一点",
+   "pitfall": "与切线方程形式相同，但 P 在椭圆外时表示两条切线的切点弦",
+   "example": "",
+   "voiceText": "从椭圆外一点 P(x0,y0) 引两条切线，其切点弦方程为 x0x 除以 a 平方加 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "切点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S071",
+   "chapter": "圆锥曲线",
+   "name": "椭圆极线轨迹",
+   "latex": "\\frac{x_0x}{a^2}+\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为椭圆内一点，过 P 作弦 AB，A、B 处切线交于 M",
+   "pitfall": "椭圆内一点的极线方程与切点弦、切线方程形式一致，但几何意义不同",
+   "example": "",
+   "voiceText": "椭圆内一点 P(x0,y0) 作弦 AB，过 A、B 的切线交点 M 的轨迹方程为 x0x 除以 a 平方加 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "极线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S072",
+   "chapter": "圆锥曲线",
+   "name": "椭圆中点弦方程",
+   "latex": "\\frac{x_0x}{a^2}+\\frac{y_0y}{b^2}=\\frac{x_0^2}{a^2}+\\frac{y_0^2}{b^2}",
+   "condition": "P(x0,y0) 为椭圆内一点，弦 AB 以 P 为中点",
+   "pitfall": "等式右边为 P 点代入椭圆方程左边的值，不是 1",
+   "example": "",
+   "voiceText": "以椭圆内一点 P(x0,y0) 为中点的弦所在直线方程为 x0x 除以 a 平方加 y0y 除以 b 平方等于 x0 平方除以 a 平方加 y0 平方除以 b 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "中点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S073",
+   "chapter": "圆锥曲线",
+   "name": "椭圆焦点弦等角性质",
+   "latex": "\\angle APF_2=\\angle BPF_2\\Rightarrow k_{PA}+k_{PB}=0",
+   "condition": "直线 l 过椭圆右焦点 F2(c,0) 交椭圆于 A、B，P(a²/c,0) 为准线与 x 轴交点",
+   "pitfall": "P 点是准线与 x 轴的交点，不是焦点；结论体现两直线关于 x 轴对称",
+   "example": "",
+   "voiceText": "椭圆中，过右焦点 F2 的弦 AB 与准线和 x 轴交点 P 相连，则角 APF2 等于角 BPF2，即 PA 斜率加 PB 斜率等于 0",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S074",
+   "chapter": "圆锥曲线",
+   "name": "椭圆蒙日圆",
+   "latex": "x^2+y^2=a^2+b^2",
+   "condition": "过椭圆上任意不同两点 A、B 的切线互相垂直且交于 P",
+   "pitfall": "蒙日圆半径平方为 a²+b²，不是 a² 或 b²",
+   "example": "",
+   "voiceText": "过椭圆上两点 A、B 的切线互相垂直且交于 P，则 P 的轨迹为蒙日圆，方程为 x 平方加 y 平方等于 a 平方加 b 平方",
+   "tags": [
+    "圆锥曲线",
+    "椭圆",
+    "蒙日圆",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S075",
+   "chapter": "圆锥曲线",
+   "name": "双曲线通径",
+   "latex": "|MN|=\\frac{2b^2}{a}",
+   "condition": "双曲线标准方程，MN 为过焦点且垂直于实轴的弦",
+   "pitfall": "双曲线通径长同样为 2b²/a，与椭圆形式相同",
+   "example": "",
+   "voiceText": "双曲线的通径长等于 2 倍 b 平方除以 a",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S076",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦半径范围",
+   "latex": "F\\text{ 为左焦点}: |PF|\\in[c-a,+\\infty);\\quad F\\text{ 为右焦点}: |PF|\\in[c+a,+\\infty)",
+   "condition": "P 为双曲线上一点，F 为双曲线焦点",
+   "pitfall": "左右焦点的取值范围不同，右焦点最小值为 c+a，左焦点为 c-a；在顶点处取最值",
+   "example": "",
+   "voiceText": "双曲线上一点到左焦点的距离范围是 c 减 a 到正无穷，到右焦点的距离范围是 c 加 a 到正无穷",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S077",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦点到渐近线距离",
+   "latex": "d=b",
+   "condition": "双曲线焦点到其渐近线的距离",
+   "pitfall": "距离等于虚半轴长 b，不是 a 也不是 c",
+   "example": "",
+   "voiceText": "双曲线的一个焦点到其渐近线的距离等于虚半轴长 b",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "渐近线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S078",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦半径公式",
+   "latex": "\\text{焦点在}x\\text{轴}: |PF_1|=|ex_0+a|,\\ |PF_2|=|ex_0-a|;\\quad \\text{焦点在}y\\text{轴}: |PF_1|=|ey_0+a|,\\ |PF_2|=|ey_0-a|",
+   "condition": "P(x0,y0) 为双曲线上任意一点，F1、F2 为两焦点",
+   "pitfall": "双曲线焦半径含绝对值，焦点在 x 轴与 y 轴形式不同",
+   "example": "",
+   "voiceText": "双曲线焦半径公式：焦点在 x 轴时，P 到左焦点距离为 e x0 加 a 的绝对值，到右焦点距离为 e x0 减 a 的绝对值；焦点在 y 轴时把 x0 换成 y0",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S079",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦点三角形面积",
+   "latex": "\\angle F_1MF_2=\\theta\\Rightarrow S_{\\triangle F_1MF_2}=\\frac{b^2}{\\tan\\frac\\theta2}=b^2\\cot\\frac\\theta2;\\quad |MF_1|\\cdot|MF_2|=\\frac{2b^2}{1-\\cos\\theta}",
+   "condition": "M 为双曲线上动点，F1、F2 为两焦点",
+   "pitfall": "原文 OCR 中乘积公式符号错位，已按标准形式重建；双曲线面积公式是 b² 除以 tan(θ/2)，与椭圆不同",
+   "example": "",
+   "voiceText": "双曲线焦点三角形面积等于 b 平方除以 tan(θ/2)，也等于 b 平方乘 cot(θ/2)；由余弦定理可得两焦半径乘积等于 2 倍 b 平方除以 1 减 cos θ",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦点三角形",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S080",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦半径积范围",
+   "latex": "|PF_1|\\cdot|PF_2|\\in[b^2,+\\infty)",
+   "condition": "P 为双曲线上任意一点，F1、F2 为两焦点",
+   "pitfall": "P 在顶点处取得最小值 b²，向无穷远时乘积趋于正无穷",
+   "example": "",
+   "voiceText": "双曲线上任意一点 P 到两焦点的距离之积，取值范围是从 b 平方到正无穷",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦半径",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S081",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦点向量点积范围",
+   "latex": "\\overrightarrow{PF_1}\\cdot\\overrightarrow{PF_2}\\in[-b^2,+\\infty)",
+   "condition": "P 为双曲线上任意一点，F1、F2 为两焦点",
+   "pitfall": "原文 OCR 中范围表述错位，已按标准形式重建；注意这是向量点积，顶点处取最小值负 b 平方",
+   "example": "",
+   "voiceText": "双曲线上任意一点 P，向量 PF1 与向量 PF2 的点积取值范围是从负 b 平方到正无穷",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "向量",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S082",
+   "chapter": "圆锥曲线",
+   "name": "双曲线第二定义",
+   "latex": "\\frac{|PF|}{d}=e\\ (e>1);\\quad \\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\Rightarrow x=\\pm\\frac{a^2}{c};\\quad \\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1\\Rightarrow y=\\pm\\frac{a^2}{c}",
+   "condition": "P 为双曲线上一点，F 为焦点，d 为 P 到对应准线距离",
+   "pitfall": "双曲线离心率 e 大于 1；焦点与准线一一对应",
+   "example": "",
+   "voiceText": "双曲线第二定义：双曲线上一点到焦点的距离与到对应准线的距离之比等于离心率 e，e 大于 1；焦点在 x 轴时准线为 x 等于正负 a 平方除以 c",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "第二定义",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S083",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦点弦长",
+   "latex": "|AF|=\\frac{b^2}{a-c\\cos\\theta},\\ |BF|=\\frac{b^2}{a+c\\cos\\theta}\\ (\\text{右焦点});\\quad |AF|=\\frac{b^2}{a+c\\cos\\theta},\\ |BF|=\\frac{b^2}{a-c\\cos\\theta}\\ (\\text{左焦点});\\quad |AF|=\\frac{b^2}{a\\pm c\\cos\\theta},\\ |BF|=\\frac{b^2}{a\\mp c\\cos\\theta}\\ (\\text{统一})",
+   "condition": "AB 为双曲线同一支的焦点弦，倾斜角为 θ，A 在 x 轴上方",
+   "pitfall": "双曲线焦点弦公式与椭圆形式相同，但要注意 A、B 在同一支上；正负由弦长决定",
+   "example": "",
+   "voiceText": "双曲线同一支的焦点弦：右焦点时 AF 长为 b 平方除以 a 减 c cos θ，BF 长为 b 平方除以 a 加 c cos θ；左焦点时互换；可统一写为分母 a 加减 c cos θ",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S084",
+   "chapter": "圆锥曲线",
+   "name": "双曲线焦点弦倒数和",
+   "latex": "\\frac1{|AF|}+\\frac1{|BF|}=\\frac{2a}{b^2}",
+   "condition": "AB 为双曲线过焦点的弦，A、B 为直线与双曲线两交点",
+   "pitfall": "定值与弦的倾斜角无关；注意双曲线中是 2a 除以 b²",
+   "example": "",
+   "voiceText": "双曲线过焦点的弦 AB，1 除以 AF 长加 1 除以 BF 长等于 2a 除以 b 平方，为定值",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S085",
+   "chapter": "圆锥曲线",
+   "name": "双曲线中点弦斜率",
+   "latex": "\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\Rightarrow k_{AB}=\\frac{b^2x_0}{a^2y_0},\\ k_{AB}\\cdot k_{OP}=\\frac{b^2}{a^2};\\quad \\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1\\Rightarrow k_{AB}=\\frac{a^2x_0}{b^2y_0},\\ k_{AB}\\cdot k_{OP}=\\frac{a^2}{b^2}",
+   "condition": "A、B 为双曲线上两不同点，P(x0,y0) 为弦 AB 中点",
+   "pitfall": "双曲线中点弦斜率积为正，与椭圆符号相反；焦点在 y 轴时 a、b 互换",
+   "example": "",
+   "voiceText": "双曲线中点弦斜率：焦点在 x 轴时，弦 AB 斜率为 b 平方 x0 除以 a 平方 y0，且 AB 斜率与 OP 斜率乘积为 b 平方除以 a 平方；焦点在 y 轴时 a 与 b 互换",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "中点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S086",
+   "chapter": "圆锥曲线",
+   "name": "双曲线顶点连线斜率积",
+   "latex": "k_{PA}\\cdot k_{PB}=\\frac{b^2}{a^2}",
+   "condition": "A、B 为双曲线实轴两端点，P 为双曲线上异于 A、B 的任一点",
+   "pitfall": "A、B 必须是实轴的两个端点；斜率积为正",
+   "example": "",
+   "voiceText": "双曲线实轴两个端点 A、B 与双曲线上任意另一点 P 的连线，其斜率之积为 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "斜率",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S087",
+   "chapter": "圆锥曲线",
+   "name": "双曲线对称点连线斜率积",
+   "latex": "k_{PA}\\cdot k_{PB}=\\frac{b^2}{a^2}",
+   "condition": "A、B 为双曲线上关于原点对称的两点，P 为双曲线上异于 A、B 的任一点",
+   "pitfall": "A、B 必须关于原点对称，且 P 不同于 A、B；积为正",
+   "example": "",
+   "voiceText": "双曲线上关于原点对称的两点 A、B 与双曲线上任意另一点 P 的连线，其斜率之积为 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "斜率",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S088",
+   "chapter": "圆锥曲线",
+   "name": "双曲线切线斜率积",
+   "latex": "k_l\\cdot k_{OM}=\\frac{b^2}{a^2}",
+   "condition": "l 为双曲线不垂直于对称轴的切线，M 为切点",
+   "pitfall": "双曲线切线斜率与 OM 斜率乘积为正 b²/a²，与椭圆符号相反",
+   "example": "",
+   "voiceText": "双曲线切线 l 与切点 M 和原点连线 OM 的斜率乘积为 b 平方除以 a 平方",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S089",
+   "chapter": "圆锥曲线",
+   "name": "双曲线切线方程",
+   "latex": "\\frac{x_0x}{a^2}-\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为双曲线上一点",
+   "pitfall": "与椭圆切线方程类似，但 y 项前为减号",
+   "example": "",
+   "voiceText": "双曲线上一点 P(x0,y0) 处的切线方程为 x0x 除以 a 平方减 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S090",
+   "chapter": "圆锥曲线",
+   "name": "双曲线切点弦方程",
+   "latex": "\\frac{x_0x}{a^2}-\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为双曲线外一点",
+   "pitfall": "与切线方程形式相同，但 P 在双曲线外时表示切点弦",
+   "example": "",
+   "voiceText": "从双曲线外一点 P(x0,y0) 引两条切线，其切点弦方程为 x0x 除以 a 平方减 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "切点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S091",
+   "chapter": "圆锥曲线",
+   "name": "双曲线极线轨迹",
+   "latex": "\\frac{x_0x}{a^2}-\\frac{y_0y}{b^2}=1",
+   "condition": "P(x0,y0) 为双曲线内一点，过 P 作弦 AB，A、B 处切线交于 M",
+   "pitfall": "双曲线内一点的极线方程与切点弦、切线形式一致，但几何意义不同",
+   "example": "",
+   "voiceText": "双曲线内一点 P(x0,y0) 作弦 AB，过 A、B 的切线交点 M 的轨迹方程为 x0x 除以 a 平方减 y0y 除以 b 平方等于 1",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "极线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S092",
+   "chapter": "圆锥曲线",
+   "name": "双曲线中点弦方程",
+   "latex": "\\frac{x_0x}{a^2}-\\frac{y_0y}{b^2}=\\frac{x_0^2}{a^2}-\\frac{y_0^2}{b^2}",
+   "condition": "P(x0,y0) 为双曲线内一点，弦 AB 以 P 为中点",
+   "pitfall": "等式右边为 P 点代入双曲线方程左边的值；注意 y 项为减号",
+   "example": "",
+   "voiceText": "以双曲线内一点 P(x0,y0) 为中点的弦所在直线方程为 x0x 除以 a 平方减 y0y 除以 b 平方等于 x0 平方除以 a 平方减 y0 平方除以 b 平方",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "中点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S093",
+   "chapter": "圆锥曲线",
+   "name": "双曲线蒙日圆",
+   "latex": "x^2+y^2=a^2-b^2\\ (a>b>0,\\ a\\le b\\text{ 时轨迹不存在})",
+   "condition": "过双曲线上任意不同两点 A、B 的切线互相垂直且交于 P",
+   "pitfall": "双曲线蒙日圆半径平方为 a²-b²，必须 a 大于 b 才存在",
+   "example": "",
+   "voiceText": "过双曲线上两点 A、B 的切线互相垂直且交于 P，当 a 大于 b 时 P 的轨迹为蒙日圆，方程为 x 平方加 y 平方等于 a 平方减 b 平方；a 小于等于 b 时不存在",
+   "tags": [
+    "圆锥曲线",
+    "双曲线",
+    "蒙日圆",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S094",
+   "chapter": "圆锥曲线",
+   "name": "抛物线通径",
+   "latex": "|MN|=2p",
+   "condition": "抛物线标准方程，MN 为过焦点且垂直于对称轴的弦",
+   "pitfall": "抛物线通径长为 2p，不是 p 或 p/2",
+   "example": "",
+   "voiceText": "抛物线的通径长等于 2p",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S095",
+   "chapter": "圆锥曲线",
+   "name": "抛物线直径所对直角",
+   "latex": "y^2=2px\\ (p>0),\\ \\text{过}(2p,0)\\text{的直线交抛物线于}A,B\\Rightarrow OA\\perp OB",
+   "condition": "抛物线 y²=2px，直线过点 (2p,0) 且与抛物线交于 A、B",
+   "pitfall": "该结论可逆：若 OA 垂直 OB，则直线 AB 必过定点 (2p,0)",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 中，过定点 (2p,0) 的直线与抛物线交于 A、B 两点，则 OA 垂直于 OB；反之亦然",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S096",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦长",
+   "latex": "|AB|=x_1+x_2+p",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，A(x1,y1), B(x2,y2)",
+   "pitfall": "焦点弦长等于两 x 坐标之和加 p；该结论由定义直接得到",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 的焦点弦 AB 的长度等于 x1 加 x2 加 p",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S097",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦坐标积",
+   "latex": "y_1y_2=-p^2,\\quad x_1x_2=\\frac{p^2}{4}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，A(x1,y1), B(x2,y2)",
+   "pitfall": "y1y2 为负 p²，x1x2 为正 p²/4，符号不要记反",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 的焦点弦两端点 A、B，满足 y1 乘 y2 等于负 p 平方，x1 乘 x2 等于 p 平方除以 4",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S098",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦半径公式",
+   "latex": "|AF|=\\frac{p}{1-\\cos\\theta},\\ |BF|=\\frac{p}{1+\\cos\\theta},\\ |AB|=\\frac{2p}{\\sin^2\\theta}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，倾斜角为 θ",
+   "pitfall": "A 通常取 x 轴上方，AF 对应 1 减 cos θ；AB 长为 2p 除以 sin²θ",
+   "example": "",
+   "voiceText": "抛物线焦点弦中，AF 长为 p 除以 1 减 cos θ，BF 长为 p 除以 1 加 cos θ，弦 AB 总长为 2p 除以 sin 平方 θ",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S099",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦半径倒数和",
+   "latex": "\\frac1{|AF|}+\\frac1{|BF|}=\\frac{2}{p}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦",
+   "pitfall": "定值与弦的倾斜角无关；右侧是 2 除以 p",
+   "example": "",
+   "voiceText": "抛物线焦点弦 AB，1 除以 AF 长加 1 除以 BF 长等于 2 除以 p，为定值",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S100",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦面积",
+   "latex": "S_{\\triangle AOB}=S_{\\triangle COD}=\\frac{p}{4}|y_1-y_2|=\\frac{p^2}{2\\sin\\theta}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，C、D 分别为 A、B 在准线上的投影",
+   "pitfall": "两个三角形面积相等；最终结果可用 p²/(2sinθ) 表示",
+   "example": "",
+   "voiceText": "抛物线焦点弦相关三角形面积：三角形 AOB 与三角形 COD 面积相等，都等于 p 除以 4 乘 y1 减 y2 的绝对值，也等于 p 平方除以 2 倍 sin θ",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S101",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦三垂直",
+   "latex": "CF\\perp FD,\\ NF\\perp AB,\\ AN\\perp BN",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，C、D 为 A、B 在准线上的投影，N 为准线与 x 轴交点",
+   "pitfall": "三个垂直关系在焦点弦几何图中同时成立，注意各点位置",
+   "example": "",
+   "voiceText": "抛物线焦点弦图形中有三个垂直关系：CF 垂直于 FD，NF 垂直于 AB，AN 垂直于 BN",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S102",
+   "chapter": "圆锥曲线",
+   "name": "抛物线中点 R",
+   "latex": "R\\text{ 为线段}MN\\text{的中点}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，M、N 分别为 AB、CD 中点",
+   "pitfall": "R 是 MN 与抛物线的交点，且平分 MN",
+   "example": "",
+   "voiceText": "抛物线焦点弦中，MN 被抛物线平分，即 R 为线段 MN 的中点",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S103",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点到 R 距离",
+   "latex": "|RF|=\\frac12|MN|=\\frac14|AB|",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，R 为 MN 与抛物线交点",
+   "pitfall": "RF 是焦点到 R 的距离，等于 MN 的一半或 AB 的四分之一",
+   "example": "",
+   "voiceText": "抛物线焦点弦中，焦点 F 到点 R 的距离等于 MN 长度的一半，也等于 AB 长度的四分之一",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S104",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦角平分线",
+   "latex": "\\angle APF=\\angle BPF;\\quad CF\\text{ 平分}\\angle AFP,\\ DF\\text{ 平分}\\angle BFP",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，P 为准线与 x 轴交点",
+   "pitfall": "利用抛物线光学性质可得反射角相等；注意点 P 是准线与 x 轴交点",
+   "example": "",
+   "voiceText": "抛物线焦点弦中，角 APF 等于角 BPF；CF 平分角 AFP，DF 平分角 BFP",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S105",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦共线性",
+   "latex": "A,D,O\\text{ 三点共线};\\quad B,C,O\\text{ 三点共线}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，C、D 为 A、B 在准线上的投影",
+   "pitfall": "利用相似三角形或斜率相等证明共线；注意 A 对应 D，B 对应 C",
+   "example": "",
+   "voiceText": "抛物线焦点弦中，A、D、O 三点共线，且 B、C、O 三点共线",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S106",
+   "chapter": "圆锥曲线",
+   "name": "抛物线焦点弦相切圆",
+   "latex": "\\text{以}AB\\text{为直径的圆与准线相切};\\ \\text{以}CD\\text{为直径的圆与}AB\\text{切于}F;\\ \\text{以}BF\\text{为直径的圆与}y\\text{轴相切};\\ \\text{以}AF\\text{为直径的圆与}y\\text{轴相切}",
+   "condition": "AB 为抛物线 y²=2px 的焦点弦，F 为焦点，C、D 为 A、B 在准线上的投影",
+   "pitfall": "四个相切圆结论需结合图形记忆，注意直径所在线段",
+   "example": "",
+   "voiceText": "抛物线焦点弦的四个相切圆结论：以 AB 为直径的圆与准线相切；以 CD 为直径的圆与 AB 切于焦点 F；以 BF 为直径的圆与 y 轴相切；以 AF 为直径的圆与 y 轴相切",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "焦点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S107",
+   "chapter": "圆锥曲线",
+   "name": "抛物线外点切线定点 x²=2py",
+   "latex": "x^2=2py\\ (p>0),\\ M(x_0,m)\\ (m\\neq0)\\Rightarrow AB\\text{过定点}N(0,-m),\\ x_0=\\frac{x_A+x_B}{2},\\ k_{AB}\\cdot k_{MN}=\\frac{2m}{p}",
+   "condition": "M 在直线 y=m(m≠0) 上且在抛物线 x²=2py 外",
+   "pitfall": "该结论适用于开口向上的抛物线 x²=2py；切点弦 AB 过定点 (0,-m)",
+   "example": "",
+   "voiceText": "抛物线 x 平方等于 2py 外一点 M 横坐标为 x0、纵坐标为 m，向抛物线引两条切线，切点弦 AB 必过定点 (0, 负 m)，且 x0 等于 A、B 横坐标平均值，AB 斜率与 MN 斜率乘积为 2m 除以 p",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S108",
+   "chapter": "圆锥曲线",
+   "name": "抛物线外点切线定点 y²=2px",
+   "latex": "y^2=2px\\ (p>0),\\ M(x_0,y_0)\\text{ 在直线}x=m\\ (m\\neq0)\\Rightarrow AB\\text{过定点}N(-m,0),\\ y_0=\\frac{y_A+y_B}{2},\\ k_{AB}\\cdot k_{MN}=\\frac{p}{2m}",
+   "condition": "M 在直线 x=m(m≠0) 上且在抛物线 y²=2px 外",
+   "pitfall": "该结论适用于开口向右的抛物线 y²=2px；切点弦 AB 过定点 (-m,0)",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 外一点 M 在直线 x 等于 m 上，向抛物线引两条切线，切点弦 AB 必过定点 (负 m, 0)，且 M 的纵坐标等于 A、B 纵坐标平均值，AB 斜率与 MN 斜率乘积为 p 除以 2m",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S109",
+   "chapter": "圆锥曲线",
+   "name": "抛物线弦中点斜率",
+   "latex": "y^2=2px\\Rightarrow k_{AB}=\\frac{p}{y_0};\\quad y^2=-2px\\Rightarrow k_{AB}=-\\frac{p}{y_0};\\quad x^2=2py\\Rightarrow k_{AB}=\\frac{x_0}{p};\\quad x^2=-2py\\Rightarrow k_{AB}=-\\frac{x_0}{p}",
+   "condition": "C(x0,y0) 为抛物线弦 AB 的中点",
+   "pitfall": "注意抛物线开口方向：y²=±2px 用 p/y0，x²=±2py 用 x0/p，符号由开口方向决定",
+   "example": "",
+   "voiceText": "抛物线弦中点斜率：y 平方等于 2px 时为 p 除以 y0；y 平方等于负 2px 时为负 p 除以 y0；x 平方等于 2py 时为 x0 除以 p；x 平方等于负 2py 时为负 x0 除以 p",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "中点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S110",
+   "chapter": "圆锥曲线",
+   "name": "抛物线切线斜率",
+   "latex": "y^2=2px\\Rightarrow k=\\frac{p}{y_0};\\quad y^2=-2px\\Rightarrow k=-\\frac{p}{y_0};\\quad x^2=2py\\Rightarrow k=\\frac{x_0}{p};\\quad x^2=-2py\\Rightarrow k=-\\frac{x_0}{p}",
+   "condition": "A(x0,y0) 为抛物线上一点且切线斜率存在",
+   "pitfall": "注意抛物线开口方向与符号；切线斜率不存在时对应 y 轴或 x 轴方向",
+   "example": "",
+   "voiceText": "抛物线上一点处切线斜率：y 平方等于 2px 时为 p 除以 y0；y 平方等于负 2px 时为负 p 除以 y0；x 平方等于 2py 时为 x0 除以 p；x 平方等于负 2py 时为负 x0 除以 p",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S111",
+   "chapter": "圆锥曲线",
+   "name": "抛物线切线方程",
+   "latex": "y_0y=p(x+x_0)",
+   "condition": "P(x0,y0) 为抛物线 y²=2px 上一点",
+   "pitfall": "切线方程用 y0y 替换 y²，p(x+x0) 替换 2px",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 上一点 P(x0,y0) 处的切线方程为 y0 乘 y 等于 p 乘 (x 加 x0)",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "切线",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S112",
+   "chapter": "圆锥曲线",
+   "name": "抛物线切点弦方程",
+   "latex": "y_0y=p(x+x_0)",
+   "condition": "P(x0,y0) 为抛物线 y²=2px 外一点",
+   "pitfall": "与切线方程形式相同，但 P 在抛物线外时表示两条切线的切点弦",
+   "example": "",
+   "voiceText": "从抛物线 y 平方等于 2px 外一点 P(x0,y0) 引两条切线，其切点弦方程为 y0 乘 y 等于 p 乘 (x 加 x0)",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "切点弦",
+    "二级结论"
+   ]
+  },
+  {
+   "id": "S113",
+   "chapter": "圆锥曲线",
+   "name": "抛物线极线轨迹",
+   "latex": "y_0y=p(x+x_0)",
+   "condition": "P(x0,y0) 为抛物线 y²=2px 内一点，过 P 作弦 AB，A、B 处切线交于 M",
+   "pitfall": "抛物线内一点的极线方程与切线、切点弦形式一致，但几何意义不同",
+   "example": "",
+   "voiceText": "抛物线 y 平方等于 2px 内一点 P(x0,y0) 作弦 AB，过 A、B 的切线交点 M 的轨迹方程为 y0 乘 y 等于 p 乘 (x 加 x0)",
+   "tags": [
+    "圆锥曲线",
+    "抛物线",
+    "极线",
+    "二级结论"
+   ]
+  }
+ ]
+}

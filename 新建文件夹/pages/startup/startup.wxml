@@ -1,0 +1,5 @@
+<package-loader
+  label="正在整理公式库"
+  detail="首次打开会稍慢一些"
+  progress="{{2}}"
+></package-loader>

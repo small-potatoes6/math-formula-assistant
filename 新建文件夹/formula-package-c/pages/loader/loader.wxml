@@ -1,0 +1,5 @@
+<package-loader
+  label="马上进入公式库"
+  detail="全部资源已经准备好"
+  progress="{{100}}"
+></package-loader>

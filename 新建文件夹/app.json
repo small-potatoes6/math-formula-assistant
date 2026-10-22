@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/startup/startup",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/favorites/favorites",
+    "pages/practice/practice"
+  ],
+  "subPackages": [
+    {
+      "root": "formula-package-a",
+      "name": "formulaA",
+      "pages": [
+        "pages/loader/loader"
+      ]
+    },
+    {
+      "root": "formula-package-b",
+      "name": "formulaB",
+      "pages": [
+        "pages/loader/loader"
+      ]
+    },
+    {
+      "root": "formula-package-c",
+      "name": "formulaC",
+      "pages": [
+        "pages/loader/loader"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "公式记忆助手",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F7F8FA",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#7B8494",
+    "selectedColor": "#25AA8D",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "公式"
+      },
+      {
+        "pagePath": "pages/favorites/favorites",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/practice/practice",
+        "text": "练习"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

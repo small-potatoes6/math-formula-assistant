@@ -1,0 +1,688 @@
+{
+  "items": [
+    {
+      "id": "S001",
+      "chapter": "集合",
+      "name": "有限集子集个数",
+      "latex": "2^n,\\ 2^n-1,\\ 2^n-2",
+      "condition": "非空集合 A 含有 n 个元素",
+      "pitfall": "注意区分子集、真子集、非空真子集三种计数",
+      "example": "",
+      "voiceText": "含有 n 个元素的有限集合，子集个数为 2 的 n 次方，真子集个数为 2 的 n 次方减 1，非空真子集个数为 2 的 n 次方减 2",
+      "tags": [
+        "集合",
+        "子集",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S002",
+      "chapter": "函数",
+      "name": "斜率构造单调性",
+      "latex": "\\forall x_1,x_2\\in D,\\ \\frac{f(x_1)-f(x_2)}{x_1-x_2}>k\\Rightarrow g(x)=f(x)-kx\\text{ 在 }D\\text{ 上单调递增}",
+      "condition": "x_1,x_2 为区间 D 上任意两点且 x_1\\neq x_2",
+      "pitfall": "原文仅写“单调”，按条件应为单调递增；注意分母 x_1-x_2 的符号",
+      "example": "",
+      "voiceText": "若对定义域内任意两点 x1、x2，函数值差与自变量差的商大于 k，则函数 f(x) 减去 kx 在该区间上单调递增",
+      "tags": [
+        "函数",
+        "单调性",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S003",
+      "chapter": "函数",
+      "name": "一次分式函数中心",
+      "latex": "f(x)=\\frac{ax+b}{cx+d}\\ (c\\neq 0),\\ x=-\\frac{d}{c},\\ y=\\frac{a}{c},\\ \\left(-\\frac{d}{c},\\frac{a}{c}\\right)",
+      "condition": "一次分式函数 y=(ax+b)/(cx+d) 且 c 不等于 0",
+      "pitfall": "竖直渐近线、水平渐近线与对称中心不要记反；分母不为零",
+      "example": "",
+      "voiceText": "形如 ax 加 b 除以 cx 加 d 的一次分式函数，竖直渐近线为 x 等于负的 c 分之 d，水平渐近线为 y 等于 c 分之 a，对称中心为这两点坐标",
+      "tags": [
+        "函数",
+        "分式函数",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S004",
+      "chapter": "函数",
+      "name": "奇偶函数四则运算",
+      "latex": "\\text{奇}\\pm\\text{奇}=\\text{奇};\\ \\text{偶}\\pm\\text{偶}=\\text{偶};\\ \\text{偶}\\times/\\div\\text{偶}=\\text{偶};\\ \\text{奇}\\times/\\div\\text{奇}=\\text{偶};\\ \\text{奇}\\times/\\div\\text{偶}=\\text{奇}",
+      "condition": "运算前后函数的定义域均关于原点对称",
+      "pitfall": "除法需保证分母不为零；记忆口诀可概括为“同偶异奇”",
+      "example": "",
+      "voiceText": "奇函数加减奇函数仍为奇函数，偶函数加减偶函数仍为偶函数；偶乘偶、奇乘奇得偶函数，奇乘偶得奇函数",
+      "tags": [
+        "函数",
+        "奇偶性",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S005",
+      "chapter": "函数",
+      "name": "复合函数奇偶性",
+      "latex": "f\\text{ 奇},g\\text{ 奇}\\Rightarrow g[f(x)]\\text{ 奇};\\quad f\\text{ 奇},g\\text{ 偶}\\Rightarrow g[f(x)]\\text{ 偶};\\quad f\\text{ 偶},g\\text{ 奇}\\Rightarrow g[f(x)]\\text{ 偶};\\quad f\\text{ 偶},g\\text{ 偶}\\Rightarrow g[f(x)]\\text{ 偶}",
+      "condition": "内层函数的值域包含在外层函数定义域内",
+      "pitfall": "口诀“全奇则奇，有偶则偶”；注意复合函数定义域对称",
+      "example": "",
+      "voiceText": "复合函数奇偶性：内层外层全是奇函数时复合函数为奇函数，只要有一层是偶函数，复合函数就是偶函数",
+      "tags": [
+        "函数",
+        "奇偶性",
+        "复合函数",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S006",
+      "chapter": "函数",
+      "name": "常见奇函数",
+      "latex": "y=kx^\\alpha\\ (\\alpha\\text{ 为奇数});\\ y=A\\sin\\omega x;\\ y=a^x-a^{-x};\\ y=\\log_a\\frac{m+nx}{m-nx};\\ y=\\log_a\\left(\\sqrt{1+b^2x^2}\\pm bx\\right);\\ y=\\frac{a^x-1}{a^x+1};\\ y=\\frac{a^x-a^{-x}}{a^x+a^{-x}};\\ y=\\frac{1}{a^x-1}+\\frac12;\\ y=\\frac{1}{a^x+1}-\\frac12",
+      "condition": "各式定义域关于原点对称",
+      "pitfall": "注意对数型奇函数的真数结构与分式型奇函数的定义域限制",
+      "example": "",
+      "voiceText": "常见奇函数包括 x 的奇次方、正弦函数、a 的 x 次方减 a 的负 x 次方、特定对数函数和分式函数等九类",
+      "tags": [
+        "函数",
+        "奇函数",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S007",
+      "chapter": "函数",
+      "name": "常见偶函数",
+      "latex": "y=|x|;\\ y=kx^\\alpha\\ (\\alpha\\text{ 为偶数});\\ y=A\\cos\\omega x+C;\\ y=a^x+a^{-x};\\ y=\\log_a(b+x)+\\log_a(b-x)",
+      "condition": "各式定义域关于原点对称",
+      "pitfall": "余弦函数加常数仍为偶函数；对数型偶函数要求 |x|<b",
+      "example": "",
+      "voiceText": "常见偶函数包括绝对值函数、x 的偶次方、余弦函数加常数、a 的 x 次方加 a 的负 x 次方、以及特定对数函数",
+      "tags": [
+        "函数",
+        "偶函数",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S008",
+      "chapter": "函数",
+      "name": "函数周期性结论",
+      "latex": "f(x+a)=f(x)\\Rightarrow T=a;\\ f(x+a)=f(x+b)\\Rightarrow T=|a-b|;\\ f(x+a)=-f(x)\\Rightarrow T=2a;\\ f(x+a)=-\\frac{1}{f(x)}\\Rightarrow T=2a;\\ f(x+a)=\\frac{1}{f(x)}\\Rightarrow T=2a;\\ f(x+a)+f(x-a)=b\\Rightarrow T=4a;\\ f(a+x)+f(b+x)=c\\ \\text{或}\\ f(a+x)f(b+x)=c\\Rightarrow T=2|b-a|",
+      "condition": "函数在相应区间有定义且等式恒成立",
+      "pitfall": "最后两类中分式与乘积形式需保证 f(x)\\neq 0；周期取最小正周期的倍数",
+      "example": "",
+      "voiceText": "函数周期性：f(x+a)等于 f(x) 时周期为 a；f(x+a)等于负 f(x) 或正负 f(x) 分之一时周期为 2a；两对称结构周期常为 2 倍或 4 倍距离",
+      "tags": [
+        "函数",
+        "周期性",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S009",
+      "chapter": "函数",
+      "name": "函数轴对称结论",
+      "latex": "f(a+x)=f(a-x)\\Leftrightarrow y=f(x)\\text{ 关于直线 }x=a\\text{ 对称};\\quad f(a+x)=f(b-x)\\Leftrightarrow y=f(x)\\text{ 关于直线 }x=\\frac{a+b}{2}\\text{ 对称}",
+      "condition": "函数在相应区间有定义",
+      "pitfall": "括号内 x 的系数符号相反时关于轴对称；对称轴为两常数平均值",
+      "example": "",
+      "voiceText": "若 f(a+x)等于 f(a-x)，则函数图像关于直线 x 等于 a 对称；若 f(a+x)等于 f(b-x)，则对称轴为 x 等于 a 加 b 除以 2",
+      "tags": [
+        "函数",
+        "轴对称",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S010",
+      "chapter": "函数",
+      "name": "函数中心对称结论",
+      "latex": "f(a+x)+f(a-x)=0\\Leftrightarrow y=f(x)\\text{ 关于点 }(a,0)\\text{ 中心对称};\\quad f(a+x)+f(a-x)=2b\\Leftrightarrow y=f(x)\\text{ 关于点 }(a,b)\\text{ 中心对称};\\quad f(a+x)+f(b-x)=c\\Leftrightarrow y=f(x)\\text{ 关于点 }\\left(\\frac{a+b}{2},\\frac{c}{2}\\right)\\text{ 中心对称}",
+      "condition": "函数在相应区间有定义",
+      "pitfall": "和为定值时为中心对称；对称中心横坐标为两常数平均值，纵坐标为定值的一半",
+      "example": "",
+      "voiceText": "若 f(a+x)加 f(a-x)等于 0，图像关于点 (a,0) 中心对称；若和为 2b，关于点 (a,b) 对称；若 f(a+x)加 f(b-x)等于 c，关于点 ((a+b)/2, c/2) 对称",
+      "tags": [
+        "函数",
+        "中心对称",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S011",
+      "chapter": "函数",
+      "name": "对称性与周期性",
+      "latex": "f(x)\\text{ 关于 }(a,0),(b,0)\\text{ 对称}\\Rightarrow T=2|a-b|;\\quad f(x)\\text{ 关于 }x=a,x=b\\text{ 对称}\\Rightarrow T=2|a-b|;\\quad f(x)\\text{ 关于 }(a,0)\\text{ 对称且关于 }x=b\\text{ 对称}\\Rightarrow T=4|a-b|",
+      "condition": "函数同时具有题设的对称中心或对称轴",
+      "pitfall": "两中心或两轴对称周期为 2 倍距离；一中心一轴对称周期为 4 倍距离",
+      "example": "",
+      "voiceText": "函数关于两个点中心对称或关于两条轴对称时，周期为两点或两轴距离的 2 倍；若一个中心对称加一个轴对称，周期为距离的 4 倍",
+      "tags": [
+        "函数",
+        "周期性",
+        "对称性",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S012",
+      "chapter": "函数",
+      "name": "对数换底与连乘",
+      "latex": "\\log_a b=\\frac{1}{\\log_b a};\\quad \\log_a b\\cdot\\log_b c\\cdot\\log_c d\\cdots\\log_m n=\\log_a n",
+      "condition": "各对数有意义且底数均大于 0 不等于 1",
+      "pitfall": "连乘公式中中间底数可全部约去，最终等于首尾底真之比",
+      "example": "",
+      "voiceText": "对数换底公式的推论：a 为底 b 的对数等于 b 为底 a 的对数的倒数；一串对数连乘时，中间项约去，结果等于以第一个底为底、最后一个真数为真数的对数",
+      "tags": [
+        "函数",
+        "对数",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S013",
+      "chapter": "三角",
+      "name": "三角不等式",
+      "latex": "0<x<\\frac{\\pi}{2}\\Rightarrow \\sin x<x<\\tan x",
+      "condition": "x 为弧度制下的锐角",
+      "pitfall": "仅在 0 到 π/2 开区间成立；x 必须用弧度",
+      "example": "",
+      "voiceText": "当 x 在 0 到 π/2 之间时，正弦 x 小于 x，x 小于正切 x",
+      "tags": [
+        "三角",
+        "不等式",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S014",
+      "chapter": "三角",
+      "name": "万能公式",
+      "latex": "\\sin\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}},\\quad \\cos\\alpha=\\frac{1-\\tan^2\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}},\\quad \\tan\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1-\\tan^2\\frac{\\alpha}{2}}",
+      "condition": "α 不等于 π+2kπ 等使正切无意义的角",
+      "pitfall": "正切万能公式分母为 1 减 tan²(α/2)，与正弦余弦不同",
+      "example": "",
+      "voiceText": "万能公式：sin α 等于 2 倍 tan(α/2) 除以 1 加 tan²(α/2)；cos α 等于 1 减 tan²(α/2) 除以 1 加 tan²(α/2)；tan α 等于 2 倍 tan(α/2) 除以 1 减 tan²(α/2)",
+      "tags": [
+        "三角",
+        "万能公式",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S015",
+      "chapter": "平面向量",
+      "name": "向量三角不等式",
+      "latex": "\\bigl||\\vec a|-|\\vec b|\\bigr|\\le |\\vec a+\\vec b|\\le |\\vec a|+|\\vec b|",
+      "condition": "任意两个平面向量",
+      "pitfall": "左边是绝对值外层再取绝对值，不要漏外层绝对值",
+      "example": "",
+      "voiceText": "向量三角不等式：两向量模之差的绝对值小于等于和向量的模，小于等于两向量模之和",
+      "tags": [
+        "平面向量",
+        "三角不等式",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S016",
+      "chapter": "平面向量",
+      "name": "极化恒等式",
+      "latex": "\\vec a\\cdot\\vec b=\\frac{1}{4}\\left(|\\vec a+\\vec b|^2-|\\vec a-\\vec b|^2\\right)",
+      "condition": "任意两个平面向量",
+      "pitfall": "系数是 1/4，注意是和平方减差平方",
+      "example": "",
+      "voiceText": "极化恒等式：向量 a 点乘向量 b 等于四分之一倍的 a 加 b 的模的平方减去 a 减 b 的模的平方",
+      "tags": [
+        "平面向量",
+        "极化恒等式",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S017",
+      "chapter": "平面向量",
+      "name": "定比分点向量",
+      "latex": "|\\overrightarrow{BD}|:|\\overrightarrow{CD}|=m:n\\Rightarrow \\overrightarrow{AD}=\\frac{m}{m+n}\\overrightarrow{AC}+\\frac{n}{m+n}\\overrightarrow{AB}",
+      "condition": "D 在 BC 上且分 BC 为 m:n",
+      "pitfall": "分子与对顶线段对应，即 BD 对 AC、CD 对 AB",
+      "example": "",
+      "voiceText": "在三角形 ABC 中，若 D 在 BC 上且 BD 比 CD 等于 m 比 n，则 AD 向量等于 m 除以 m 加 n 倍的 AC 向量加 n 除以 m 加 n 倍的 AB 向量",
+      "tags": [
+        "平面向量",
+        "定比分点",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S018",
+      "chapter": "平面向量",
+      "name": "内心向量表示",
+      "latex": "AB=c,\\ AC=b,\\ BC=a\\Rightarrow a\\overrightarrow{OA}+b\\overrightarrow{OB}+c\\overrightarrow{OC}=\\vec 0;\\quad \\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}\\right)\\ (\\lambda>0)\\Rightarrow P\\text{ 轨迹过内心}",
+      "condition": "O 为三角形 ABC 内心，P 为平面内任意点",
+      "pitfall": "系数为对边长度；角平分线方向由单位向量之和决定",
+      "example": "",
+      "voiceText": "三角形内心向量表示：a 倍 OA 向量加 b 倍 OB 向量加 c 倍 OC 向量等于零向量；若 AP 向量等于 λ 倍的两边单位向量之和，则 P 的轨迹过内心",
+      "tags": [
+        "平面向量",
+        "内心",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S019",
+      "chapter": "平面向量",
+      "name": "外心向量表示",
+      "latex": "|\\overrightarrow{OA}|=|\\overrightarrow{OB}|=|\\overrightarrow{OC}|;\\quad (\\overrightarrow{OA}+\\overrightarrow{OB})\\cdot\\overrightarrow{AB}=(\\overrightarrow{OB}+\\overrightarrow{OC})\\cdot\\overrightarrow{BC}=(\\overrightarrow{OC}+\\overrightarrow{OA})\\cdot\\overrightarrow{CA}=0;\\quad \\overrightarrow{OP}=\\frac{\\overrightarrow{OB}+\\overrightarrow{OC}}{2}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right)\\ (\\lambda>0)\\Rightarrow P\\text{ 轨迹过外心}",
+      "condition": "O 为三角形 ABC 外心，P 为平面内任意点",
+      "pitfall": "外心到三顶点距离相等；第三式分母含 cos B、cos C，注意符号",
+      "example": "",
+      "voiceText": "三角形外心向量表示：外心到三个顶点距离相等；三组向量和与对边向量点乘为零；特定含余弦分母的参数式轨迹过外心",
+      "tags": [
+        "平面向量",
+        "外心",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S020",
+      "chapter": "平面向量",
+      "name": "垂心向量表示",
+      "latex": "\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=\\overrightarrow{OB}\\cdot\\overrightarrow{OC}=\\overrightarrow{OC}\\cdot\\overrightarrow{OA};\\quad |\\overrightarrow{OA}|^2+|\\overrightarrow{BC}|^2=|\\overrightarrow{OB}|^2+|\\overrightarrow{CA}|^2=|\\overrightarrow{OC}|^2+|\\overrightarrow{AB}|^2;\\quad \\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right)\\ (\\lambda>0)\\Rightarrow P\\text{ 轨迹过垂心}",
+      "condition": "O 为三角形 ABC 垂心，P 为平面内任意点",
+      "pitfall": "垂心满足两组等式；参数式与外心式形似但含义不同",
+      "example": "",
+      "voiceText": "三角形垂心向量表示：OA 点乘 OB 等于 OB 点乘 OC 等于 OC 点乘 OA；顶点到垂心距离平方加对边平方相等；特定含余弦分母的参数式轨迹过垂心",
+      "tags": [
+        "平面向量",
+        "垂心",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S021",
+      "chapter": "平面向量",
+      "name": "重心向量表示",
+      "latex": "\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=\\vec 0;\\quad \\overrightarrow{AO}=\\frac13(\\overrightarrow{AB}+\\overrightarrow{AC});\\quad \\overrightarrow{PO}=\\frac13(\\overrightarrow{PA}+\\overrightarrow{PB}+\\overrightarrow{PC});\\quad \\overrightarrow{AP}=\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC})\\text{ 或 }\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC})\\ (\\lambda\\ge 0)\\Rightarrow P\\text{ 过重心};\\quad \\overrightarrow{AP}=\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right)\\text{ 或 }\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right)\\ (\\lambda\\ge 0)\\Rightarrow P\\text{ 过重心}",
+      "condition": "O 为三角形 ABC 重心，P 为平面内任意点",
+      "pitfall": "重心向量式系数多为 1/3；参数式分母为正弦时对应面积坐标",
+      "example": "",
+      "voiceText": "三角形重心向量表示：OA 加 OB 加 OC 等于零向量；AO 等于三分之一倍的 AB 加 AC；多种参数式轨迹都经过重心",
+      "tags": [
+        "平面向量",
+        "重心",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S022",
+      "chapter": "平面向量",
+      "name": "奔驰定理",
+      "latex": "S_{\\triangle OBC}\\overrightarrow{OA}+S_{\\triangle OAC}\\overrightarrow{OB}+S_{\\triangle OAB}\\overrightarrow{OC}=\\vec 0",
+      "condition": "O 为三角形 ABC 内任意一点",
+      "pitfall": "系数为 O 所对三角形面积，顶点顺序不要放错",
+      "example": "",
+      "voiceText": "奔驰定理：三角形内任意一点 O，满足 OBC 面积乘 OA 向量加 OAC 面积乘 OB 向量加 OAB 面积乘 OC 向量等于零向量",
+      "tags": [
+        "平面向量",
+        "面积",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S023",
+      "chapter": "解三角形",
+      "name": "三角形正切恒等式",
+      "latex": "A+B+C=n\\pi\\ (n\\in\\mathbb Z),\\ A,B,C\\neq\\frac\\pi2\\Rightarrow \\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C",
+      "condition": "A、B、C 之和为 π 的整数倍且均不为 π/2",
+      "pitfall": "n 通常取 1；注意 A,B,C 均不能取 π/2，否则正切无意义",
+      "example": "",
+      "voiceText": "若三角形三内角和为 π 且都不等于 π/2，则 tan A 加 tan B 加 tan C 等于 tan A 乘 tan B 乘 tan C",
+      "tags": [
+        "解三角形",
+        "正切",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S024",
+      "chapter": "解三角形",
+      "name": "射影定理",
+      "latex": "a=b\\cos C+c\\cos B;\\quad b=a\\cos C+c\\cos A;\\quad c=a\\cos B+b\\cos A",
+      "condition": "任意三角形 ABC",
+      "pitfall": "边 a 对应角 A，射影定理体现边在另外两边上的投影和",
+      "example": "",
+      "voiceText": "三角形射影定理：边 a 等于 b 乘 cos C 加 c 乘 cos B；其余两边类似",
+      "tags": [
+        "解三角形",
+        "射影定理",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S025",
+      "chapter": "解三角形",
+      "name": "边角大小关系",
+      "latex": "a>b>c\\Leftrightarrow \\sin A>\\sin B>\\sin C\\Leftrightarrow \\angle A>\\angle B>\\angle C",
+      "condition": "任意三角形 ABC",
+      "pitfall": "大边对大角、大角对大边，由正弦定理联系",
+      "example": "",
+      "voiceText": "三角形中边的大小关系、对角正弦的大小关系、角的大小关系三者等价，即大边对大角、大角对大边",
+      "tags": [
+        "解三角形",
+        "边角关系",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S026",
+      "chapter": "立体几何",
+      "name": "直观图面积关系",
+      "latex": "S_{\\text{直}}=\\frac{\\sqrt2}{4}S_{\\text{原}}",
+      "condition": "平面多边形用斜二测画法得到的直观图",
+      "pitfall": "直观图面积小于原图；系数为 √2/4，不要与 √2/2 混淆",
+      "example": "",
+      "voiceText": "斜二测画法中，直观图面积等于原图面积乘以根号 2 除以 4",
+      "tags": [
+        "立体几何",
+        "斜二测",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S027",
+      "chapter": "立体几何",
+      "name": "面积射影定理",
+      "latex": "\\cos\\theta=\\frac{S'}{S}",
+      "condition": "平面多边形与其射影所成锐二面角为 θ",
+      "pitfall": "S' 为射影面积，S 为原图形面积；θ 为两平面所成锐二面角",
+      "example": "",
+      "voiceText": "面积射影定理：平面图形射影面积与原图形面积之比等于两平面所成锐二面角的余弦值",
+      "tags": [
+        "立体几何",
+        "射影",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S028",
+      "chapter": "立体几何",
+      "name": "正四面体度量",
+      "latex": "h=\\frac{\\sqrt6}{3}a,\\quad V=\\frac{\\sqrt2}{12}a^3",
+      "condition": "正四面体棱长为 a",
+      "pitfall": "高与体积的系数不同，注意分子分别为 √6 和 √2",
+      "example": "",
+      "voiceText": "棱长为 a 的正四面体，高等于根号 6 除以 3 乘 a，体积等于根号 2 除以 12 乘 a 的立方",
+      "tags": [
+        "立体几何",
+        "正四面体",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S029",
+      "chapter": "立体几何",
+      "name": "正四面体与球",
+      "latex": "r_{\\text{内切}}=\\frac{\\sqrt6}{12}a,\\quad r_{\\text{外接}}=\\frac{\\sqrt6}{4}a,\\quad r_{\\text{棱切}}=\\frac{\\sqrt2}{4}a",
+      "condition": "正四面体棱长为 a",
+      "pitfall": "外接球半径等于 3 倍内切球半径；棱切球半径与内切、外接球半径区分开",
+      "example": "",
+      "voiceText": "棱长为 a 的正四面体，内切球半径为根号 6 a 除以 12，外接球半径为根号 6 a 除以 4，棱切球半径为根号 2 a 除以 4",
+      "tags": [
+        "立体几何",
+        "正四面体",
+        "球",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S030",
+      "chapter": "立体几何",
+      "name": "四面体内切球",
+      "latex": "r=\\frac{3V}{S}",
+      "condition": "四面体体积为 V，表面积为 S",
+      "pitfall": "与一般锥体内切球公式相同；S 为全面积",
+      "example": "",
+      "voiceText": "任意四面体的内切球半径等于 3 倍体积除以表面积",
+      "tags": [
+        "立体几何",
+        "内切球",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S031",
+      "chapter": "立体几何",
+      "name": "棱锥外接球",
+      "latex": "R=\\sqrt{r^2+\\left(\\frac h2\\right)^2};\\quad R=\\frac{r^2+h^2}{2h};\\quad R=\\sqrt{r_1^2+r_2^2-\\frac{l^2}{4}}",
+      "condition": "分别对应侧棱垂直底面、正棱锥或顶点投影为底面外心、两相邻面互相垂直",
+      "pitfall": "第二种情形分母为 2h；第三种中 l 为两垂直面交线长",
+      "example": "",
+      "voiceText": "棱锥外接球半径有三种常用公式：侧棱垂直底面时用根号下 r 方加 h 除以 2 的平方；正棱锥时用 r 方加 h 方除以 2h；两相邻面垂直时用根号下 r1 方加 r2 方减 l 方除以 4",
+      "tags": [
+        "立体几何",
+        "外接球",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S032",
+      "chapter": "立体几何",
+      "name": "欧拉定理",
+      "latex": "V+F-E=2",
+      "condition": "简单多面体",
+      "pitfall": "V 顶点数、F 面数、E 棱数；仅对简单多面体成立",
+      "example": "",
+      "voiceText": "简单多面体的欧拉定理：顶点数加面数减棱数等于 2",
+      "tags": [
+        "立体几何",
+        "欧拉定理",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S033",
+      "chapter": "解析几何",
+      "name": "直线夹角公式",
+      "latex": "\\tan\\theta=\\left|\\frac{k_1-k_2}{1+k_1k_2}\\right|",
+      "condition": "两直线斜率均存在且 1+k1k2\\neq 0",
+      "pitfall": "夹角取锐角，故取绝对值；注意区分夹角与到角",
+      "example": "",
+      "voiceText": "两条直线的夹角 θ 满足 tan θ 等于两斜率差的绝对值除以 1 加两斜率乘积的绝对值",
+      "tags": [
+        "解析几何",
+        "直线夹角",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S034",
+      "chapter": "解析几何",
+      "name": "两圆公共弦方程",
+      "latex": "C_1:x^2+y^2+D_1x+E_1y+F_1=0,\\ C_2:x^2+y^2+D_2x+E_2y+F_2=0\\Rightarrow (D_1-D_2)x+(E_1-E_2)y+(F_1-F_2)=0",
+      "condition": "两圆相交",
+      "pitfall": "两圆方程相减即得公共弦方程；需先化为一般式且二次项系数相同",
+      "example": "",
+      "voiceText": "两圆一般方程相减，所得一次方程就是两相交圆的公共弦方程",
+      "tags": [
+        "解析几何",
+        "圆",
+        "公共弦",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S035",
+      "chapter": "解析几何",
+      "name": "圆的切线长公式",
+      "latex": "\\sqrt{x_0^2+y_0^2-r^2};\\quad \\sqrt{(x_0-a)^2+(y_0-b)^2-r^2};\\quad \\sqrt{x_0^2+y_0^2+Dx_0+Ey_0+F}",
+      "condition": "点 P(x0,y0) 在圆外",
+      "pitfall": "切线长是点代入圆方程左边再开方；点在圆上时切线长为 0",
+      "example": "",
+      "voiceText": "圆的切线长公式：标准方程下为根号下 x0 方加 y0 方减 r 方；一般方程下为根号下 x0 方加 y0 方加 D x0 加 E y0 加 F",
+      "tags": [
+        "解析几何",
+        "圆",
+        "切线长",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S036",
+      "chapter": "解析几何",
+      "name": "圆的切线与切点弦",
+      "latex": "P(x_0,y_0)\\text{ 在圆上}\\Rightarrow x_0x+y_0y=r^2\\text{ 或 }(x_0-a)(x-a)+(y_0-b)(y-b)=r^2\\text{ 为切线};\\quad P(x_0,y_0)\\text{ 在圆外}\\Rightarrow \\text{上述方程为切点弦 }AB;\\quad P(x_0,y_0)\\text{ 在圆内}\\Rightarrow \\text{上述方程为过 }P\\text{ 的弦 }AB\\text{ 对应两切线交点轨迹}",
+      "condition": "点 P 与圆的位置关系明确",
+      "pitfall": "同一代数式因 P 的位置不同而几何意义不同；圆外为切点弦最常用",
+      "example": "",
+      "voiceText": "点 P 在圆上时，替换方程表示切线；点 P 在圆外时，表示两条切线的切点弦；点 P 在圆内时，表示过 P 的弦对应的切线交点轨迹",
+      "tags": [
+        "解析几何",
+        "圆",
+        "切点弦",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S037",
+      "chapter": "数列",
+      "name": "等差数列片段和性质",
+      "latex": "S_k,\\ S_{2k}-S_k,\\ S_{3k}-S_{2k},\\cdots\\text{ 成公差 }k^2d\\text{ 的等差数列};\\quad \\left\\{\\frac{S_n}{n}\\right\\}\\text{ 成公差 }\\frac d2\\text{ 的等差数列};\\quad \\frac{a_n}{b_n}=\\frac{S_{2n-1}}{T_{2n-1}},\\quad \\frac{a_m}{b_n}=\\frac{2n-1}{2m-1}\\cdot\\frac{S_{2m-1}}{T_{2n-1}}",
+      "condition": "等差数列 {a_n},{b_n}，前 n 项和分别为 S_n,T_n",
+      "pitfall": "原文表述 a_m/b_n 的系数为 (2m-1)/(2n-1)，印刷有误，已重建为正确形式；片段和公差为 k²d 而非 kd",
+      "example": "",
+      "voiceText": "等差数列中依次 k 项之和构成公差为 k 方 d 的等差数列；S_n 除以 n 也成等差数列；两等差数列对应项之比等于奇数项和之比",
+      "tags": [
+        "数列",
+        "等差数列",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S038",
+      "chapter": "数列",
+      "name": "等比数列片段和性质",
+      "latex": "S_{m+n}=S_n+q^nS_m;\\quad S_k,\\ S_{2k}-S_k,\\ S_{3k}-S_{2k},\\cdots\\text{ 成公比 }q^k\\text{ 的等比数列}",
+      "condition": "等比数列 q 不等于 1",
+      "pitfall": "S_{m+n} 公式中为 q^n S_m 而非 q^m S_n；片段和公比为 q^k",
+      "example": "",
+      "voiceText": "等比数列前 m 加 n 项和等于 S_n 加 q 的 n 次方乘 S_m；依次 k 项片段和构成公比为 q 的 k 次方的等比数列",
+      "tags": [
+        "数列",
+        "等比数列",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S039",
+      "chapter": "数列",
+      "name": "错位相减速算",
+      "latex": "C_n=(an+b)q^n\\Rightarrow S_n=(An+B)q^{n+1}-Bq,\\quad A=\\frac{a}{q-1},\\quad B=\\frac{b-A}{q-1}",
+      "condition": "差比数列求和，q\\neq 1",
+      "pitfall": "结果形式为 (An+B)q^{n+1}-Bq；用 S_1,S_2 代入求 A,B 更稳妥",
+      "example": "",
+      "voiceText": "差比数列通项为 (an+b) 乘 q 的 n 次方时，前 n 项和可写成 (An+B) 乘 q 的 n+1 次方减 Bq，其中 A 等于 a 除以 q 减 1，B 等于 b 减 A 除以 q 减 1",
+      "tags": [
+        "数列",
+        "错位相减",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S040",
+      "chapter": "数列",
+      "name": "等差型裂项相消",
+      "latex": "\\frac{1}{n(n+k)}=\\frac1k\\left(\\frac1n-\\frac1{n+k}\\right);\\ \\frac{1}{(2n-1)(2n+1)}=\\frac12\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right);\\ \\frac{n+1}{n^2(n+2)^2}=\\frac14\\left(\\frac1{n^2}-\\frac1{(n+2)^2}\\right);\\ \\frac{2n+1}{n^2(n+1)^2}=\\frac1{n^2}-\\frac1{(n+1)^2};\\ \\frac{1}{n(n+1)(n+2)}=\\frac12\\left(\\frac1{n(n+1)}-\\frac1{(n+1)(n+2)}\\right);\\ \\frac{1}{n(n^2-1)}=\\frac12\\left(\\frac1{(n-1)n}-\\frac1{n(n+1)}\\right);\\ n(n+1)=\\frac13[n(n+1)(n+2)-(n-1)n(n+1)];\\ n(n+1)(n+2)=\\frac14[n(n+1)(n+2)(n+3)-(n-1)n(n+1)(n+2)];\\ \\frac{1}{n(n+1)(n+2)(n+3)}=\\frac13\\left[\\frac1{n(n+1)(n+2)}-\\frac1{(n+1)(n+2)(n+3)}\\right]",
+      "condition": "裂项相消求和，注意各式定义域",
+      "pitfall": "裂项时注意系数与括号，相消后常剩余首尾若干项",
+      "example": "",
+      "voiceText": "等差型裂项相消包括分式 n(n+k) 分之一、奇数项乘积分之一、连乘积形式以及多项式差分等多种常见形式，裂开后逐项相消",
+      "tags": [
+        "数列",
+        "裂项相消",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S041",
+      "chapter": "数列",
+      "name": "根式型裂项",
+      "latex": "\\frac{1}{\\sqrt{n+1}+\\sqrt n}=\\sqrt{n+1}-\\sqrt n;\\quad \\frac{1}{\\sqrt{n+k}+\\sqrt n}=\\frac1k(\\sqrt{n+k}-\\sqrt n);\\quad \\frac{1}{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\frac12(\\sqrt{2n+1}-\\sqrt{2n-1});\\quad \\frac{1}{(n+1)\\sqrt n+n\\sqrt{n+1}}=\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}};\\quad \\sqrt{1+\\frac1{n^2}+\\frac1{(n+1)^2}}=\\frac{n(n+1)+1}{n(n+1)}=1+\\frac1n-\\frac1{n+1}",
+      "condition": "根式型裂项相消求和",
+      "pitfall": "分母有理化时注意符号；最后一式可化为 1 加 n 分之一减 n+1 分之一",
+      "example": "",
+      "voiceText": "根式型裂项：根号 n 加 1 加根号 n 分之一等于根号 n 加 1 减根号 n；含 k 步差的根式裂项系数为 1/k；还有特殊根式可化为 1 加 n 分之一减 n 加 1 分之一",
+      "tags": [
+        "数列",
+        "裂项相消",
+        "根式",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S042",
+      "chapter": "数列",
+      "name": "指数型裂项",
+      "latex": "\\frac{2^n}{(2^n-1)(2^{n+1}-1)}=\\frac1{2^n-1}-\\frac1{2^{n+1}-1};\\quad \\frac{2^n(4n-1)}{n(n+1)}=\\frac{2^{n+1}}{n+1}-\\frac{2^n}{n};\\quad \\frac{2n+3}{(2n-1)(2n+1)2^{n+2}}=\\frac1{(2n-1)2^{n+1}}-\\frac1{(2n+1)2^{n+2}}",
+      "condition": "指数型裂项相消求和",
+      "pitfall": "原文表述第三条左端为 (n+1)/[(2n-1)(2n+1)2^n]，印刷有误，已按裂项规则重建为分子 2n+3、分母 (2n-1)(2n+1)2^{n+2} 的标准形式",
+      "example": "",
+      "voiceText": "指数型裂项：2 的 n 次方除以相邻两项差乘积可拆成两项倒数之差；含 n 的指数分式裂项需核对分子系数",
+      "tags": [
+        "数列",
+        "裂项相消",
+        "指数型",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S043",
+      "chapter": "数列",
+      "name": "对数阶乘三角裂项",
+      "latex": "\\log_a\\frac{a_{n+1}}{a_n}=\\log_a a_{n+1}-\\log_a a_n;\\quad n\\cdot n!=(n+1)!-n!;\\quad \\frac{n}{(n+1)!}=\\frac1{n!}-\\frac1{(n+1)!};\\quad \\frac{n+2}{n!+(n+1)!+(n+2)!}=\\frac1{(n+1)!}-\\frac1{(n+2)!};\\quad \\frac{\\sin 1}{\\cos n\\cos(n+1)}=\\tan(n+1)-\\tan n;\\quad \\tan(n+1)\\tan n=\\frac{\\tan(n+1)-\\tan n}{\\tan 1}-1",
+      "condition": "各式在定义域内成立",
+      "pitfall": "阶乘裂项注意 n·n! = (n+1)!-n!；正切裂项利用 tan(A-B) 公式",
+      "example": "",
+      "voiceText": "对数、阶乘与三角函数裂项：对数商等于对数差；n 乘 n 的阶乘等于 n+1 的阶乘减 n 的阶乘；正切差公式可用于余弦乘积倒数裂项",
+      "tags": [
+        "数列",
+        "裂项相消",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S044",
+      "chapter": "数列",
+      "name": "数列求和放缩公式",
+      "latex": "\\frac1{n^2}>\\frac1{n(n+1)}=\\frac1n-\\frac1{n+1};\\quad \\frac1{n^2}<\\frac1{n^2-1}=\\frac12\\left(\\frac1{n-1}-\\frac1{n+1}\\right)\\ (n\\ge2);\\quad \\frac1{n^2}=\\frac4{4n^2}<\\frac4{4n^2-1}=2\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right);\\quad \\frac1{n^2}<\\frac1{(n-1)n}=\\frac1{n-1}-\\frac1n\\ (n\\ge2);\\quad \\frac1{\\sqrt n}>\\frac2{\\sqrt n+\\sqrt{n+1}}=2(\\sqrt{n+1}-\\sqrt n);\\quad \\frac1{\\sqrt n}<\\frac2{\\sqrt{n-1}+\\sqrt n}=2(\\sqrt n-\\sqrt{n-1})\\ (n\\ge2);\\quad \\frac1{\\sqrt n}<\\frac{2\\sqrt2}{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\sqrt2(\\sqrt{2n+1}-\\sqrt{2n-1});\\quad \\frac1{3^n-2^n}<\\frac1{3^{n-1}}\\ (n\\ge2);\\quad \\frac1{3^n-2^n}<\\frac1{2\\cdot3^{n-1}}\\ (n\\ge3);\\quad \\frac1{n\\sqrt n}<2\\left(\\frac1{\\sqrt{n-1}}-\\frac1{\\sqrt n}\\right);\\quad \\frac1{n\\sqrt n}>2\\left(\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}}\\right);\\quad \\frac{2^n}{(2^n-1)^2}<\\frac1{2^{n-1}-1}-\\frac1{2^n-1}\\ (n\\ge2);\\quad \\frac1{2^n-1}<\\frac1{2^{n-1}-1}-\\frac1{2^n-1}\\ (n\\ge2);\\quad \\frac1{n^3}<\\frac1{n^3-n}=\\frac12\\left[\\frac1{n(n-1)}-\\frac1{n(n+1)}\\right]\\ (n\\ge2)",
+      "condition": "数列求和放缩证明不等式",
+      "pitfall": "放缩方向与裂项系数要仔细核对；n≥2 或 n≥3 的条件不可忽略",
+      "example": "",
+      "voiceText": "数列求和放缩常用公式包括 n 平方分之一、根号 n 分之一、n 倍根号 n 分之一、3 的 n 次方减 2 的 n 次方分之一、2 的 n 次方相关分式以及 n 立方分之一等的上下界裂项形式",
+      "tags": [
+        "数列",
+        "放缩",
+        "裂项",
+        "二级结论"
+      ]
+    },
+    {
+      "id": "S045",
+      "chapter": "导数",
+      "name": "导数构造模型",
+      "latex": "f'+g'>0\\Rightarrow F=f+g;\\ f'-g'>0\\Rightarrow F=f-g;\\ f'>k\\Rightarrow F=f-kx;\\ f'g+fg'>0\\Rightarrow F=fg;\\ f'g-fg'>0\\Rightarrow F=\\frac{f}{g};\\ xf'+f>0\\Rightarrow F=xf;\\ (x+a)f'+f>0\\Rightarrow F=(x+a)f;\\ xf'-f>0\\Rightarrow F=\\frac{f}{x};\\ (x+a)f'-f>0\\Rightarrow F=\\frac{f}{x+a};\\ xf'+nf>0\\Rightarrow F=x^nf;\\ xf'-nf>0\\Rightarrow F=\\frac{f}{x^n};\\ f'+f>0\\Rightarrow F=e^xf;\\ f'-f>0\\Rightarrow F=\\frac{f}{e^x};\\ f'+nf>0\\Rightarrow F=e^{nx}f;\\ f'-nf>0\\Rightarrow F=\\frac{f}{e^{nx}}",
+      "condition": "用于解导数不等式，f,g 可导",
+      "pitfall": "模型编号原文从十一直接跳到十四，十二、十三缺失；构造后利用 F 的单调性解题",
+      "example": "",
+      "voiceText": "导数构造模型：根据不等式结构构造辅助函数，如 f 撇加 g 撇大于 0 构造 F 等于 f 加 g，x f 撇加 f 大于 0 构造 F 等于 x f，f 撇加 f 大于 0 构造 F 等于 e 的 x 次方乘 f",
+      "tags": [
+        "导数",
+        "构造函数",
+        "二级结论"
+      ]
+    }
+  ]
+}

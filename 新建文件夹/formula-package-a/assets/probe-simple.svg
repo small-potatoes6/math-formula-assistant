@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="96" viewBox="0 0 320 96">
+  <rect width="320" height="96" rx="12" fill="#fff7ed"/>
+  <circle cx="48" cy="48" r="24" fill="#f59e0b"/>
+  <path d="M92 48h46M138 48l38-24M138 48l38 24" fill="none" stroke="#25aa8d" stroke-width="8" stroke-linecap="round"/>
+  <text x="196" y="59" font-size="28" font-family="sans-serif" fill="#252525">SVG 正常</text>
+</svg>
