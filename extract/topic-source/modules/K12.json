@@ -1,0 +1,86 @@
+{
+  "id": "K12",
+  "order": 12,
+  "packageRoot": "topic-package-b",
+  "title": "数列求通项之递推法",
+  "sourcePages": [17],
+  "sections": [
+    {
+      "id": "K12-01",
+      "title": "常见递推公式与解法",
+      "sourcePages": [17],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["常见递推公式类型", "方法", "具体过程"],
+          "rows": [
+            [
+              "$a_n-a_{n-1}=f(n)(n\\geqslant2)$",
+              "累加法",
+              "$a_n=a_1+(a_2-a_1)+(a_3-a_2)+\\cdots+(a_n-a_{n-1})$"
+            ],
+            [
+              "$\\frac{a_n}{a_{n-1}}=f(n)(n\\geqslant2)$",
+              "累乘法",
+              "$a_n=a_1\\cdot\\frac{a_2}{a_1}\\cdot\\frac{a_3}{a_2}\\cdots\\frac{a_n}{a_{n-1}}$"
+            ],
+            [
+              "$a_{n+1}=pa_n+q(p,q\\ne0$且$p\\ne1,p,q$为常数$)$",
+              "待定系数法",
+              "构造等比数列，设$a_{n+1}+X=p(a_n+X)$，则$pX-X=q$，即$X=\\frac q{p-1}$"
+            ],
+            [
+              "$a_{n+1}=pa_n+An+B(p\\ne0,1,p,A,B$为常数$)$",
+              "待定系数法",
+              "构造等比数列，设$a_{n+1}+X(n+1)+Y=p(a_n+Xn+Y)$，则$\\begin{cases}pX-X=A,\\\\pY-X-Y=B,\\end{cases}$解得$\\begin{cases}X=\\frac A{p-1},\\\\Y=\\frac B{p-1}+\\frac A{(p-1)^2}.\\end{cases}$"
+            ],
+            [
+              "$a_n=pa_{n-1}+t\\cdot q^n(n\\geqslant2)(p,t,q$为非零常数$)$",
+              "当$p=q$时，构造等差数列；当$p\\ne q$时，配凑等比数列",
+              "$\\frac{a_n}{q^n}=\\frac{pa_{n-1}}{q^n}+t=\\frac{a_{n-1}}{q^{n-1}}+t$，即$\\left\\{\\frac{a_n}{q^n}\\right\\}$为等差数列；设$a_n+X\\cdot q^n=p(a_{n-1}+X\\cdot q^{n-1})$，则$pX\\cdot q^{n-1}-X\\cdot q^n=t\\cdot q^n$，解得$X=\\frac{q\\cdot t}{p-q}$"
+            ],
+            [
+              "$a_{n+1}=\\frac{ka_n}{pa_n+q}(k,p,q$为非零常数，$a_n\\ne0)$",
+              "取倒数构造法",
+              "$\\frac1{a_{n+1}}=\\frac pk+\\frac qk\\cdot\\frac1{a_n}$.若$q=k$，则$\\left\\{\\frac1{a_n}\\right\\}$为等差数列；若$q\\ne k$，则配凑等比数列"
+            ],
+            [
+              "$a_{n+1}=pa_n+qa_{n-1}(n\\geqslant2)(p,q$为非零常数，$p^2+4q\\geqslant0)$",
+              "待定系数法",
+              "构造等比数列，设$a_{n+1}+Xa_n=Y(a_n+Xa_{n-1})$，则$\\begin{cases}Y-X=p,\\\\YX=q,\\end{cases}$解得$X$和$Y$，则$\\{a_n+Xa_{n-1}\\}$为等比数列，公比为$Y$"
+            ],
+            [
+              "$a_n$与$S_n$(前$n$项和)",
+              "$a_n,S_n$相互转化",
+              "利用$a_n=S_n-S_{n-1}(n\\geqslant2)$消去$a_n$或$S_n$进行求解"
+            ],
+            [
+              "$a_n$($\\{a_n\\}$所有项非零)与$T_n$(前$n$项积)",
+              "$a_n,T_n$相互转化",
+              "与前$n$项和的处理方法类似，利用$a_n=\\frac{T_n}{T_{n-1}}(n\\geqslant2)$消去$a_n$或$T_n$"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K12-02",
+      "title": "补充说明",
+      "sourcePages": [17],
+      "blocks": [
+        {
+          "type": "note",
+          "text": "(1)累加法与累乘法常需要验证$a_1$是否满足$a_n(n\\geqslant2)$的表达式."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)已知$a_{n+1}-pa_n=f(n)$(其中$p\\ne0$且$p\\ne1$)，可两端同除以$p^{n+1}$，得到$\\frac{a_{n+1}}{p^{n+1}}-\\frac{a_n}{p^n}=\\frac{f(n)}{p^{n+1}}$，再用累加法求$\\left\\{\\frac{a_n}{p^n}\\right\\}$的通项公式，进而求得$a_n$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)已知$\\frac{a_{n+2}}{a_n}=f(n)$，也可对左端分子、分母同乘$a_{n+1}$，得到$\\frac{a_{n+2}a_{n+1}}{a_na_{n+1}}=f(n)$，再利用累乘法求$\\{a_na_{n+1}\\}$的通项公式，进而解题."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,923 @@
+{
+  "meta": {
+    "version": 1,
+    "description": "练习模块人工校对题库：公式拆题选择题与单空填空题",
+    "source": "prototype/data/公式库-全量.json",
+    "chapterCount": 16,
+    "questionCount": 48
+  },
+  "items": [
+    {
+      "id": "P-C002-01",
+      "sourceId": "C002",
+      "chapter": "集合与常用逻辑用语",
+      "title": "子集个数",
+      "stemLatex": "n\\text{ 元集合的子集个数}=",
+      "answerLatex": "2^n",
+      "distractors": [
+        { "latex": "2n", "error": "把指数误写成了乘法" },
+        { "latex": "2^{n-1}", "error": "漏算了空集这一种" },
+        { "latex": "n^2", "error": "误用元素个数的平方" }
+      ],
+      "fill": {
+        "templateLatex": "n\\text{ 元集合的子集个数}=\\boxed{\\phantom{2^n}}",
+        "answerLatex": "2^n",
+        "answerText": "2^n",
+        "accept": ["2^n", "2ⁿ"]
+      }
+    },
+    {
+      "id": "P-C004-01",
+      "sourceId": "C004",
+      "chapter": "集合与常用逻辑用语",
+      "title": "交集的定义",
+      "stemLatex": "A\\cap B=",
+      "answerLatex": "\\{x\\mid x\\in A\\text{ 且 }x\\in B\\}",
+      "distractors": [
+        { "latex": "\\{x\\mid x\\in A\\text{ 或 }x\\in B\\}", "error": "把交集写成了并集" },
+        { "latex": "\\{x\\mid x\\in A,\\ x\\notin B\\}", "error": "误写成了差集" },
+        { "latex": "A\\cup B", "error": "符号方向相反" }
+      ],
+      "fill": {
+        "templateLatex": "A\\cap B=\\{x\\mid x\\in A\\boxed{\\phantom{\\text{且}}}x\\in B\\}",
+        "answerLatex": "\\text{且}",
+        "answerText": "且",
+        "accept": ["且"]
+      }
+    },
+    {
+      "id": "P-C005-01",
+      "sourceId": "C005",
+      "chapter": "集合与常用逻辑用语",
+      "title": "存在量词的否定",
+      "stemLatex": "\\exists x\\in M,\\ p(x)\\text{ 的否定}=",
+      "answerLatex": "\\forall x\\in M,\\ \\neg p(x)",
+      "distractors": [
+        { "latex": "\\exists x\\in M,\\ \\neg p(x)", "error": "只否定了结论，没有改量词" },
+        { "latex": "\\forall x\\in M,\\ p(x)", "error": "只改了量词，没有否定结论" },
+        { "latex": "\\exists x\\notin M,\\ \\neg p(x)", "error": "错误改动了集合范围" }
+      ],
+      "fill": {
+        "templateLatex": "\\exists x\\in M,\\ p(x)\\text{ 的否定}=\\boxed{\\phantom{\\forall}}x\\in M,\\ \\neg p(x)",
+        "answerLatex": "\\forall",
+        "answerText": "∀",
+        "accept": ["∀", "forall", "\\forall"]
+      }
+    },
+    {
+      "id": "P-C007-01",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "完全平方公式",
+      "stemLatex": "(a\\pm b)^2=",
+      "answerLatex": "a^2\\pm2ab+b^2",
+      "distractors": [
+        { "latex": "a^2\\pm ab+b^2", "errorKind": "系数错误", "error": "中间项系数少了一个 2" },
+        { "latex": "a^2\\pm2ab-b^2", "errorKind": "符号错误", "error": "末项符号没有联动" },
+        { "latex": "a^2+b^2", "errorKind": "系数错误", "error": "中间项 2ab 整体缺失" }
+      ],
+      "fill": {
+        "templateLatex": "(a\\pm b)^2=a^2\\boxed{\\phantom{\\pm2ab}}+b^2",
+        "answerLatex": "\\pm2ab",
+        "answerText": "±2ab",
+        "accept": ["±2ab", "+2ab", "-2ab", "+-2ab"]
+      }
+    },
+    {
+      "id": "P-C007-02",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "立方和与立方差",
+      "stemLatex": "a^3\\pm b^3=",
+      "answerLatex": "(a\\pm b)(a^2\\mp ab+b^2)",
+      "distractors": [
+        { "latex": "(a\\pm b)(a^2\\pm ab+b^2)", "error": "第二个括号内的符号没有反向" },
+        { "latex": "(a\\pm b)(a^2-ab+b^2)", "error": "没有保留 ± 与 ∓ 的联动" },
+        { "latex": "(a\\pm b)(a^2\\mp2ab+b^2)", "error": "交叉项系数写成了 2" }
+      ],
+      "fill": {
+        "templateLatex": "a^3\\pm b^3=(a\\pm b)(a^2\\mp\\boxed{\\phantom{1}}ab+b^2)",
+        "answerLatex": "1",
+        "answerText": "1",
+        "accept": ["1"]
+      }
+    },
+    {
+      "id": "P-C007-03",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "完全立方公式",
+      "stemLatex": "(a\\pm b)^3=",
+      "answerLatex": "a^3\\pm3a^2b+3ab^2\\pm b^3",
+      "distractors": [
+        { "latex": "a^3\\pm3a^2b+3ab^2-b^3", "error": "最后一项没有跟随前面的符号" },
+        { "latex": "a^3\\pm a^2b+ab^2\\pm b^3", "error": "两个交叉项的系数都写成了 1" },
+        { "latex": "a^3\\pm3a^2b-3ab^2\\pm b^3", "error": "3ab² 前的符号写反了" }
+      ],
+      "fill": {
+        "templateLatex": "(a\\pm b)^3=a^3\\pm3a^2b+\\boxed{\\phantom{3}}ab^2\\pm b^3",
+        "answerLatex": "3",
+        "answerText": "3",
+        "accept": ["3"]
+      }
+    },
+    {
+      "id": "P-C007-04",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "三数和平方",
+      "stemLatex": "(a+b+c)^2=",
+      "answerLatex": "a^2+b^2+c^2+2(ab+ac+bc)",
+      "distractors": [
+        { "latex": "a^2+b^2+c^2+ab+ac+bc", "error": "交叉项整体漏乘了 2" },
+        { "latex": "a^2+b^2+c^2+2abc", "error": "把交叉项误写成了 2abc" },
+        { "latex": "a^2+b^2+c^2+2(ab+bc)", "error": "漏掉了 ac 这一项" }
+      ],
+      "fill": {
+        "templateLatex": "(a+b+c)^2=a^2+b^2+c^2+\\boxed{\\phantom{2}}(ab+ac+bc)",
+        "answerLatex": "2",
+        "answerText": "2",
+        "accept": ["2"]
+      }
+    },
+    {
+      "id": "P-C021-01",
+      "sourceId": "C021",
+      "chapter": "函数的概念与性质",
+      "title": "对数函数的定义域",
+      "stemLatex": "\\log_a g(x)\\text{ 有意义时，}",
+      "answerLatex": "g(x)>0,\\ a>0,\\ a\\neq1",
+      "distractors": [
+        { "latex": "g(x)\\ge0,\\ a>0,\\ a\\neq1", "error": "真数必须严格大于 0" },
+        { "latex": "g(x)>0,\\ a>0", "error": "漏掉了底数不能等于 1" },
+        { "latex": "g(x)\\neq0,\\ a>0,\\ a\\neq1", "error": "把真数条件误写成了不等于 0" }
+      ],
+      "fill": {
+        "templateLatex": "\\log_a g(x)\\text{ 有意义时，}g(x)\\boxed{\\phantom{>0}}",
+        "answerLatex": ">0",
+        "answerText": ">0",
+        "accept": [">0", "＞0"]
+      }
+    },
+    {
+      "id": "P-C030-01",
+      "sourceId": "C030",
+      "chapter": "函数的概念与性质",
+      "title": "奇函数定义",
+      "stemLatex": "f(x)\\text{ 为奇函数}\\Leftrightarrow",
+      "answerLatex": "f(-x)=-f(x)",
+      "distractors": [
+        { "latex": "f(-x)=f(x)", "error": "这是偶函数的定义" },
+        { "latex": "f(-x)+f(x)=1", "error": "把中心对称误写成了加法关系" },
+        { "latex": "f(0)=-1", "error": "奇函数在 0 处有定义时应满足 f(0)=0" }
+      ],
+      "fill": {
+        "templateLatex": "f(-x)=\\boxed{\\phantom{-f(x)}}",
+        "answerLatex": "-f(x)",
+        "answerText": "-f(x)",
+        "accept": ["-f(x)", "-fx"]
+      }
+    },
+    {
+      "id": "P-C035-01",
+      "sourceId": "C035",
+      "chapter": "函数的概念与性质",
+      "title": "周期函数结论",
+      "stemLatex": "f(x+a)=-f(x)\\Rightarrow",
+      "answerLatex": "T=2a",
+      "distractors": [
+        { "latex": "T=a", "error": "一次变号后还没有回到原值" },
+        { "latex": "T=4a", "error": "多算了一轮" },
+        { "latex": "T=-a", "error": "周期应取非负常数" }
+      ],
+      "fill": {
+        "templateLatex": "f(x+a)=-f(x)\\Rightarrow T=\\boxed{\\phantom{2a}}",
+        "answerLatex": "2a",
+        "answerText": "2a",
+        "accept": ["2a", "2|a|"]
+      }
+    },
+    {
+      "id": "P-C051-01",
+      "sourceId": "C051",
+      "chapter": "三角函数",
+      "title": "弧度制弧长",
+      "stemLatex": "l\\; (\\text{弧度制})=",
+      "answerLatex": "\\alpha r",
+      "distractors": [
+        { "latex": "\\frac12\\alpha r", "error": "把弧长公式和扇形面积公式混在一起" },
+        { "latex": "2\\alpha r", "error": "多乘了一个 2" },
+        { "latex": "\\alpha r^2", "error": "半径的指数写错了" }
+      ],
+      "fill": {
+        "templateLatex": "l\\; (\\text{弧度制})=\\boxed{\\phantom{\\alpha r}}",
+        "answerLatex": "\\alpha r",
+        "answerText": "αr",
+        "accept": ["αr", "alpha*r", "ar"]
+      }
+    },
+    {
+      "id": "P-C052-01",
+      "sourceId": "C052",
+      "chapter": "三角函数",
+      "title": "弧度制扇形面积",
+      "stemLatex": "S\\; (\\text{弧度制})=",
+      "answerLatex": "\\frac12\\alpha r^2",
+      "distractors": [
+        { "latex": "\\frac12\\alpha r", "error": "半径少了一个平方" },
+        { "latex": "\\alpha r^2", "error": "漏掉了系数 1/2" },
+        { "latex": "2\\alpha r^2", "error": "系数写成了 2" }
+      ],
+      "fill": {
+        "templateLatex": "S\\; (\\text{弧度制})=\\frac{1}{\\boxed{\\phantom{2}}}\\alpha r^2",
+        "answerLatex": "2",
+        "answerText": "2",
+        "accept": ["2"]
+      }
+    },
+    {
+      "id": "P-C055-01",
+      "sourceId": "C055",
+      "chapter": "三角函数",
+      "title": "正切与正余弦",
+      "stemLatex": "\\tan\\alpha=",
+      "answerLatex": "\\frac{\\sin\\alpha}{\\cos\\alpha}",
+      "distractors": [
+        { "latex": "\\frac{\\cos\\alpha}{\\sin\\alpha}", "error": "分子和分母写反了" },
+        { "latex": "\\sin\\alpha\\cos\\alpha", "error": "把商写成了乘积" },
+        { "latex": "\\frac{\\sin^2\\alpha}{\\cos\\alpha}", "error": "分子多了一个平方" }
+      ],
+      "fill": {
+        "templateLatex": "\\tan\\alpha=\\frac{\\sin\\alpha}{\\boxed{\\phantom{\\cos\\alpha}}}",
+        "answerLatex": "\\cos\\alpha",
+        "answerText": "cosα",
+        "accept": ["cosα", "cos a", "cosa"]
+      }
+    },
+    {
+      "id": "P-C075-01",
+      "sourceId": "C075",
+      "chapter": "平面向量及其应用",
+      "title": "向量垂直的坐标条件",
+      "stemLatex": "\\vec a\\perp\\vec b\\Leftrightarrow",
+      "answerLatex": "x_1x_2+y_1y_2=0",
+      "distractors": [
+        { "latex": "x_1x_2-y_1y_2=0", "error": "坐标乘积之间应相加" },
+        { "latex": "x_1y_2-x_2y_1=0", "error": "这是向量平行的条件" },
+        { "latex": "x_1x_2+y_1y_2=1", "error": "垂直时数量积应为 0" }
+      ],
+      "fill": {
+        "templateLatex": "\\vec a\\perp\\vec b\\Leftrightarrow x_1x_2+y_1y_2=\\boxed{\\phantom{0}}",
+        "answerLatex": "0",
+        "answerText": "0",
+        "accept": ["0"]
+      }
+    },
+    {
+      "id": "P-C076-01",
+      "sourceId": "C076",
+      "chapter": "平面向量及其应用",
+      "title": "向量数量积坐标式",
+      "stemLatex": "\\vec a\\cdot\\vec b=",
+      "answerLatex": "x_1x_2+y_1y_2",
+      "distractors": [
+        { "latex": "x_1y_2-x_2y_1", "error": "这是二维叉积形式，不是数量积" },
+        { "latex": "x_1+x_2+y_1+y_2", "error": "把对应坐标相乘写成了相加" },
+        { "latex": "x_1y_1+x_2y_2", "error": "坐标没有对应相乘" }
+      ],
+      "fill": {
+        "templateLatex": "\\vec a\\cdot\\vec b=x_1x_2\\boxed{\\phantom{+}}y_1y_2",
+        "answerLatex": "+",
+        "answerText": "+",
+        "accept": ["+", "＋"]
+      }
+    },
+    {
+      "id": "P-C079-01",
+      "sourceId": "C079",
+      "chapter": "平面向量及其应用",
+      "title": "向量夹角余弦",
+      "stemLatex": "\\cos\\theta=",
+      "answerLatex": "\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}",
+      "distractors": [
+        { "latex": "\\frac{|\\vec a||\\vec b|}{\\vec a\\cdot\\vec b}", "error": "分子和分母写反了" },
+        { "latex": "\\frac{|\\vec a\\cdot\\vec b|}{|\\vec a||\\vec b|}", "error": "向量夹角余弦可以为负，不能直接加绝对值" },
+        { "latex": "\\frac{\\vec a\\cdot\\vec b}{|\\vec a|+|\\vec b|}", "error": "分母应是两个模长的乘积" }
+      ],
+      "fill": {
+        "templateLatex": "\\cos\\theta=\\frac{\\vec a\\cdot\\vec b}{\\boxed{\\phantom{|\\vec a||\\vec b|}}}",
+        "answerLatex": "|\\vec a||\\vec b|",
+        "answerText": "|a||b|",
+        "accept": ["|a||b|", "|a|·|b|", "|a|*|b|"]
+      }
+    },
+    {
+      "id": "P-C083-01",
+      "sourceId": "C083",
+      "chapter": "平面向量及其应用",
+      "title": "正弦定理",
+      "stemLatex": "\\frac{a}{\\sin A}=",
+      "answerLatex": "\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2R",
+      "distractors": [
+        { "latex": "\\frac{b}{\\cos B}=\\frac{c}{\\cos C}=2R", "error": "边应对应角的正弦值" },
+        { "latex": "\\frac{a}{\\sin A}=R", "error": "漏掉了外接圆半径前的 2" },
+        { "latex": "\\frac{a}{\\cos A}=\\frac{b}{\\cos B}=2R", "error": "把正弦定理误写成了余弦关系" }
+      ],
+      "fill": {
+        "templateLatex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=\\boxed{\\phantom{2R}}",
+        "answerLatex": "2R",
+        "answerText": "2R",
+        "accept": ["2R", "2r"]
+      }
+    },
+    {
+      "id": "P-C085-01",
+      "sourceId": "C085",
+      "chapter": "平面向量及其应用",
+      "title": "余弦定理",
+      "stemLatex": "a^2=",
+      "answerLatex": "b^2+c^2-2bc\\cos A",
+      "distractors": [
+        { "latex": "b^2+c^2+2bc\\cos A", "error": "夹角余弦项前的符号写反了" },
+        { "latex": "b^2+c^2-bc\\cos A", "error": "漏掉了系数 2" },
+        { "latex": "b^2+c^2-2bc\\sin A", "error": "把余弦写成了正弦" }
+      ],
+      "fill": {
+        "templateLatex": "a^2=b^2+c^2\\boxed{\\phantom{-}}2bc\\cos A",
+        "answerLatex": "-",
+        "answerText": "-",
+        "accept": ["-", "−", "－"]
+      }
+    },
+    {
+      "id": "P-C087-01",
+      "sourceId": "C087",
+      "chapter": "解三角形",
+      "title": "三角形面积公式",
+      "stemLatex": "S_{\\triangle ABC}=",
+      "answerLatex": "\\frac12ab\\sin C",
+      "distractors": [
+        { "latex": "\\frac12ab\\cos C", "error": "夹角应取正弦值" },
+        { "latex": "ab\\sin C", "error": "漏掉了系数 1/2" },
+        { "latex": "\\frac12(a+b)\\sin C", "error": "底边乘积写成了两边之和" }
+      ],
+      "fill": {
+        "templateLatex": "S_{\\triangle ABC}=\\frac{1}{\\boxed{\\phantom{2}}}ab\\sin C",
+        "answerLatex": "2",
+        "answerText": "2",
+        "accept": ["2"]
+      }
+    },
+    {
+      "id": "P-C093-01",
+      "sourceId": "C093",
+      "chapter": "复数",
+      "title": "虚数单位的周期",
+      "stemLatex": "i^{4n+2}=",
+      "answerLatex": "-1",
+      "distractors": [
+        { "latex": "1", "error": "把指数余数 2 当成了周期 0" },
+        { "latex": "i", "error": "把指数余数 2 当成了 1" },
+        { "latex": "-i", "error": "把指数余数 2 当成了 3" }
+      ],
+      "fill": {
+        "templateLatex": "i^{4n+2}=\\boxed{\\phantom{-1}}",
+        "answerLatex": "-1",
+        "answerText": "-1",
+        "accept": ["-1", "−1"]
+      }
+    },
+    {
+      "id": "P-C094-01",
+      "sourceId": "C094",
+      "chapter": "复数",
+      "title": "复数的模",
+      "stemLatex": "|a+bi|=",
+      "answerLatex": "\\sqrt{a^2+b^2}",
+      "distractors": [
+        { "latex": "a^2+b^2", "error": "漏掉了最外层的根号" },
+        { "latex": "|a|+|b|", "error": "把平方和的根写成了模长相加" },
+        { "latex": "\\sqrt{a^2-b^2}", "error": "实部和虚部平方之间应相加" }
+      ],
+      "fill": {
+        "templateLatex": "|a+bi|=\\sqrt{\\boxed{\\phantom{a^2+b^2}}}",
+        "answerLatex": "a^2+b^2",
+        "answerText": "a^2+b^2",
+        "accept": ["a^2+b^2", "a²+b²"]
+      }
+    },
+    {
+      "id": "P-C095-01",
+      "sourceId": "C095",
+      "chapter": "复数",
+      "title": "共轭复数",
+      "stemLatex": "\\overline{a+bi}=",
+      "answerLatex": "a-bi",
+      "distractors": [
+        { "latex": "a+bi", "error": "共轭复数需要改变虚部符号" },
+        { "latex": "-a+bi", "error": "改变了实部符号" },
+        { "latex": "-a-bi", "error": "实部和虚部符号都改变了" }
+      ],
+      "fill": {
+        "templateLatex": "\\overline{a+bi}=a\\boxed{\\phantom{-}}bi",
+        "answerLatex": "-",
+        "answerText": "-",
+        "accept": ["-", "−", "－"]
+      }
+    },
+    {
+      "id": "P-C100-01",
+      "sourceId": "C100",
+      "chapter": "立体几何初步",
+      "title": "斜二测面积关系",
+      "stemLatex": "S_{\\text{直}}=",
+      "answerLatex": "\\frac{\\sqrt2}{4}S_{\\text{原}}",
+      "distractors": [
+        { "latex": "\\frac{\\sqrt2}{2}S_{\\text{原}}", "error": "分母误写成了 2" },
+        { "latex": "\\frac14S_{\\text{原}}", "error": "漏掉了 √2" },
+        { "latex": "\\sqrt2S_{\\text{原}}", "error": "把缩小系数写成了放大系数" }
+      ],
+      "fill": {
+        "templateLatex": "S_{\\text{直}}=\\frac{\\sqrt2}{\\boxed{\\phantom{4}}}S_{\\text{原}}",
+        "answerLatex": "4",
+        "answerText": "4",
+        "accept": ["4"]
+      }
+    },
+    {
+      "id": "P-C104-01",
+      "sourceId": "C104",
+      "chapter": "立体几何初步",
+      "title": "线面平行判定",
+      "stemLatex": "a\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b\\Rightarrow",
+      "answerLatex": "a\\parallel\\alpha",
+      "distractors": [
+        { "latex": "a\\subset\\alpha", "error": "线面平行的结论不是线在面内" },
+        { "latex": "a\\perp\\alpha", "error": "把平行关系写成了垂直关系" },
+        { "latex": "\\alpha\\parallel b", "error": "结论中混淆了直线和平面" }
+      ],
+      "fill": {
+        "templateLatex": "a\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b\\Rightarrow a\\boxed{\\phantom{\\parallel}}\\alpha",
+        "answerLatex": "\\parallel",
+        "answerText": "∥",
+        "accept": ["∥", "//", "parallel"]
+      }
+    },
+    {
+      "id": "P-C113-01",
+      "sourceId": "C113",
+      "chapter": "立体几何初步",
+      "title": "面面垂直判定",
+      "stemLatex": "l\\perp\\beta,\\ l\\subset\\alpha\\Rightarrow",
+      "answerLatex": "\\alpha\\perp\\beta",
+      "distractors": [
+        { "latex": "\\alpha\\parallel\\beta", "error": "把面面垂直误写成了面面平行" },
+        { "latex": "l\\parallel\\beta", "error": "结论仍然停留在直线与平面" },
+        { "latex": "\\alpha\\subset\\beta", "error": "两个平面之间不能用包含代替垂直" }
+      ],
+      "fill": {
+        "templateLatex": "l\\perp\\beta,\\ l\\subset\\alpha\\Rightarrow\\alpha\\boxed{\\phantom{\\perp}}\\beta",
+        "answerLatex": "\\perp",
+        "answerText": "⊥",
+        "accept": ["⊥", "垂直", "perp"]
+      }
+    },
+    {
+      "id": "P-C123-01",
+      "sourceId": "C123",
+      "chapter": "概率与统计",
+      "title": "样本平均数",
+      "stemLatex": "\\bar x=",
+      "answerLatex": "\\frac{1}{n}(x_1+x_2+\\cdots+x_n)",
+      "distractors": [
+        { "latex": "x_1+x_2+\\cdots+x_n", "error": "漏掉了除以样本容量" },
+        { "latex": "\\frac{1}{n+1}(x_1+\\cdots+x_n)", "error": "除数应是 n" },
+        { "latex": "\\sqrt{\\frac{1}{n}(x_1^2+\\cdots+x_n^2)}", "error": "把平均数写成了均方根" }
+      ],
+      "fill": {
+        "templateLatex": "\\bar x=\\frac{1}{\\boxed{\\phantom{n}}}(x_1+x_2+\\cdots+x_n)",
+        "answerLatex": "n",
+        "answerText": "n",
+        "accept": ["n"]
+      }
+    },
+    {
+      "id": "P-C127-01",
+      "sourceId": "C127",
+      "chapter": "概率与统计",
+      "title": "互斥事件概率",
+      "stemLatex": "A,B\\text{ 互斥}\\Rightarrow P(A\\cup B)=",
+      "answerLatex": "P(A)+P(B)",
+      "distractors": [
+        { "latex": "P(A)P(B)", "error": "互斥事件不是独立事件的乘法" },
+        { "latex": "1-P(A)P(B)", "error": "把互斥与补事件混在一起" },
+        { "latex": "P(A)-P(B)", "error": "并事件概率应相加" }
+      ],
+      "fill": {
+        "templateLatex": "A,B\\text{ 互斥}\\Rightarrow P(A\\cup B)=P(A)\\boxed{\\phantom{+}}P(B)",
+        "answerLatex": "+",
+        "answerText": "+",
+        "accept": ["+", "＋"]
+      }
+    },
+    {
+      "id": "P-C133-01",
+      "sourceId": "C133",
+      "chapter": "空间向量与立体几何",
+      "title": "空间向量模长",
+      "stemLatex": "|\\vec a|\\quad (\\vec a=(x_1,y_1,z_1))=",
+      "answerLatex": "\\sqrt{x_1^2+y_1^2+z_1^2}",
+      "distractors": [
+        { "latex": "x_1^2+y_1^2+z_1^2", "error": "漏掉了最外层的根号" },
+        { "latex": "\\sqrt{x_1^2+y_1^2}", "error": "漏掉了 z 坐标分量" },
+        { "latex": "|x_1|+|y_1|+|z_1|", "error": "模长不是各坐标绝对值之和" }
+      ],
+      "fill": {
+        "templateLatex": "|\\vec a|=\\sqrt{x_1^2+y_1^2+\\boxed{\\phantom{z_1^2}}}",
+        "answerLatex": "z_1^2",
+        "answerText": "z1^2",
+        "accept": ["z1^2", "z_1^2", "z₁^2"]
+      }
+    },
+    {
+      "id": "P-C136-01",
+      "sourceId": "C136",
+      "chapter": "空间向量与立体几何",
+      "title": "空间向量垂直",
+      "stemLatex": "\\vec a\\perp\\vec b\\Leftrightarrow",
+      "answerLatex": "x_1x_2+y_1y_2+z_1z_2=0",
+      "distractors": [
+        { "latex": "x_1x_2+y_1y_2-z_1z_2=0", "error": "三个坐标乘积都应相加" },
+        { "latex": "x_1y_1+x_2y_2+z_1z_2=0", "error": "对应坐标没有配成同一组" },
+        { "latex": "x_1x_2+y_1y_2+z_1z_2=1", "error": "垂直时数量积应为 0" }
+      ],
+      "fill": {
+        "templateLatex": "\\vec a\\perp\\vec b\\Leftrightarrow x_1x_2+y_1y_2+z_1z_2=\\boxed{\\phantom{0}}",
+        "answerLatex": "0",
+        "answerText": "0",
+        "accept": ["0"]
+      }
+    },
+    {
+      "id": "P-C145-01",
+      "sourceId": "C145",
+      "chapter": "空间向量与立体几何",
+      "title": "点到平面的距离",
+      "stemLatex": "d=",
+      "answerLatex": "\\frac{|\\overrightarrow{AB}\\cdot\\vec n|}{|\\vec n|}",
+      "distractors": [
+        { "latex": "\\frac{\\overrightarrow{AB}\\cdot\\vec n}{|\\vec n|}", "error": "分子漏掉了绝对值" },
+        { "latex": "\\frac{|\\overrightarrow{AB}\\cdot\\vec n|}{|\\overrightarrow{AB}|}", "error": "分母应是法向量模长" },
+        { "latex": "\\frac{|\\overrightarrow{AB}|}{|\\vec n|}", "error": "分子应是向量与法向量的数量积" }
+      ],
+      "fill": {
+        "templateLatex": "d=\\frac{|\\overrightarrow{AB}\\cdot\\vec n|}{\\boxed{\\phantom{|\\vec n|}}}",
+        "answerLatex": "|\\vec n|",
+        "answerText": "|n|",
+        "accept": ["|n|", "|\\vec n|", "|向量n|"]
+      }
+    },
+    {
+      "id": "P-C147-01",
+      "sourceId": "C147",
+      "chapter": "直线与圆的方程",
+      "title": "直线的点斜式",
+      "stemLatex": "y-y_0=",
+      "answerLatex": "k(x-x_0)",
+      "distractors": [
+        { "latex": "k(x+x_0)", "error": "横坐标平移方向写反了" },
+        { "latex": "kx-x_0", "error": "漏掉了括号，截距含义改变" },
+        { "latex": "x-x_0", "error": "漏掉了斜率 k" }
+      ],
+      "fill": {
+        "templateLatex": "y-y_0=\\boxed{\\phantom{k}}(x-x_0)",
+        "answerLatex": "k",
+        "answerText": "k",
+        "accept": ["k"]
+      }
+    },
+    {
+      "id": "P-C155-01",
+      "sourceId": "C155",
+      "chapter": "直线与圆的方程",
+      "title": "两直线垂直",
+      "stemLatex": "l_1\\perp l_2\\Leftrightarrow A_1A_2+B_1B_2=",
+      "answerLatex": "0",
+      "distractors": [
+        { "latex": "1", "error": "垂直条件不是等于 1" },
+        { "latex": "k_1k_2", "error": "一般式下应比较系数乘积" },
+        { "latex": "A_1B_2-A_2B_1", "error": "这是平行条件的行列式" }
+      ],
+      "fill": {
+        "templateLatex": "l_1\\perp l_2\\Leftrightarrow A_1A_2+B_1B_2=\\boxed{\\phantom{0}}",
+        "answerLatex": "0",
+        "answerText": "0",
+        "accept": ["0"]
+      }
+    },
+    {
+      "id": "P-C162-01",
+      "sourceId": "C162",
+      "chapter": "直线与圆的方程",
+      "title": "圆的标准方程",
+      "stemLatex": "(x-a)^2+(y-b)^2=",
+      "answerLatex": "r^2",
+      "distractors": [
+        { "latex": "r", "error": "右边应是半径的平方" },
+        { "latex": "2r", "error": "把半径平方写成了直径" },
+        { "latex": "a^2+b^2", "error": "圆心坐标不能代替半径" }
+      ],
+      "fill": {
+        "templateLatex": "(x-a)^2+(y-b)^2=r^{\\boxed{\\phantom{2}}}",
+        "answerLatex": "2",
+        "answerText": "2",
+        "accept": ["2"]
+      }
+    },
+    {
+      "id": "P-C173-01",
+      "sourceId": "C173",
+      "chapter": "圆锥曲线的方程",
+      "title": "椭圆参数关系",
+      "stemLatex": "\\text{椭圆中 }a^2=",
+      "answerLatex": "b^2+c^2",
+      "distractors": [
+        { "latex": "b^2-c^2", "error": "椭圆中 a 是最大参数，应为平方和" },
+        { "latex": "c^2-b^2", "error": "参数顺序和符号都错了" },
+        { "latex": "b^2c^2", "error": "把参数关系写成了乘积" }
+      ],
+      "fill": {
+        "templateLatex": "\\text{椭圆中 }a^2=b^2+\\boxed{\\phantom{c^2}}",
+        "answerLatex": "c^2",
+        "answerText": "c^2",
+        "accept": ["c^2", "c²"]
+      }
+    },
+    {
+      "id": "P-C175-01",
+      "sourceId": "C175",
+      "chapter": "圆锥曲线的方程",
+      "title": "双曲线渐近线",
+      "stemLatex": "\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\Rightarrow y=",
+      "answerLatex": "\\pm\\frac{b}{a}x",
+      "distractors": [
+        { "latex": "\\pm\\frac{a}{b}x", "error": "横向双曲线的渐近线斜率是 b/a" },
+        { "latex": "\\pm\\frac{b^2}{a^2}x", "error": "斜率误用了参数的平方" },
+        { "latex": "\\pm\\frac{a^2}{b^2}x", "error": "分子分母和平方关系都错了" }
+      ],
+      "fill": {
+        "templateLatex": "\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\Rightarrow y=\\pm\\boxed{\\phantom{\\frac{b}{a}}}x",
+        "answerLatex": "\\frac{b}{a}",
+        "answerText": "b/a",
+        "accept": ["b/a", "±b/a", "b÷a"]
+      }
+    },
+    {
+      "id": "P-C177-01",
+      "sourceId": "C177",
+      "chapter": "圆锥曲线的方程",
+      "title": "抛物线通径",
+      "stemLatex": "\\text{抛物线通径}=",
+      "answerLatex": "2p",
+      "distractors": [
+        { "latex": "p", "error": "漏掉了通径前的系数 2" },
+        { "latex": "4p", "error": "系数误写成了 4" },
+        { "latex": "p^2", "error": "把一次参数写成了平方" }
+      ],
+      "fill": {
+        "templateLatex": "\\text{抛物线通径}=\\boxed{\\phantom{2p}}",
+        "answerLatex": "2p",
+        "answerText": "2p",
+        "accept": ["2p"]
+      }
+    },
+    {
+      "id": "P-C190-01",
+      "sourceId": "C190",
+      "chapter": "数列",
+      "title": "等差数列通项",
+      "stemLatex": "a_n=",
+      "answerLatex": "a_1+(n-1)d",
+      "distractors": [
+        { "latex": "a_1+nd", "error": "首项之后应走 n-1 个公差" },
+        { "latex": "a_1-(n-1)d", "error": "公差前的符号写反了" },
+        { "latex": "a_1+(n+1)d", "error": "项数偏移写成了 n+1" }
+      ],
+      "fill": {
+        "templateLatex": "a_n=a_1+\\boxed{\\phantom{(n-1)}}d",
+        "answerLatex": "(n-1)",
+        "answerText": "(n-1)",
+        "accept": ["(n-1)", "n-1"]
+      }
+    },
+    {
+      "id": "P-C192-01",
+      "sourceId": "C192",
+      "chapter": "数列",
+      "title": "等差数列前 n 项和",
+      "stemLatex": "S_n=",
+      "answerLatex": "\\frac{n(a_1+a_n)}{2}",
+      "distractors": [
+        { "latex": "n(a_1+a_n)", "error": "漏掉了除以 2" },
+        { "latex": "\\frac{(n-1)(a_1+a_n)}{2}", "error": "项数误写成了 n-1" },
+        { "latex": "\\frac{n(a_1-a_n)}{2}", "error": "首末项之间应是相加" }
+      ],
+      "fill": {
+        "templateLatex": "S_n=\\frac{\\boxed{\\phantom{n(a_1+a_n)}}}{2}",
+        "answerLatex": "n(a_1+a_n)",
+        "answerText": "n(a1+an)",
+        "accept": ["n(a1+an)", "n(a_1+a_n)", "n(an+a1)"]
+      }
+    },
+    {
+      "id": "P-C194-01",
+      "sourceId": "C194",
+      "chapter": "数列",
+      "title": "等差中项",
+      "stemLatex": "a_{n-1}+a_{n+1}=",
+      "answerLatex": "2a_n",
+      "distractors": [
+        { "latex": "a_n", "error": "漏掉了中间项的系数 2" },
+        { "latex": "a_n^2", "error": "等差中项不是平方关系" },
+        { "latex": "\\frac{a_n}{2}", "error": "把两倍关系写成了二分之一" }
+      ],
+      "fill": {
+        "templateLatex": "a_{n-1}+a_{n+1}=\\boxed{\\phantom{2}}a_n",
+        "answerLatex": "2",
+        "answerText": "2",
+        "accept": ["2"]
+      }
+    },
+    {
+      "id": "P-C205-01",
+      "sourceId": "C205",
+      "chapter": "导数",
+      "title": "切线方程",
+      "stemLatex": "y-y_0=",
+      "answerLatex": "f'(x_0)(x-x_0)",
+      "distractors": [
+        { "latex": "f(x_0)(x-x_0)", "error": "斜率应是导数值，不是函数值" },
+        { "latex": "f'(x_0)(x+x_0)", "error": "切点横坐标前的符号写反了" },
+        { "latex": "f'(x)(x-x_0)", "error": "斜率应在切点 x0 处取值" }
+      ],
+      "fill": {
+        "templateLatex": "y-y_0=\\boxed{\\phantom{f'(x_0)}}(x-x_0)",
+        "answerLatex": "f'(x_0)",
+        "answerText": "f'(x0)",
+        "accept": ["f'(x0)", "f'(x_0)", "f′x₀"]
+      }
+    },
+    {
+      "id": "P-C206-01",
+      "sourceId": "C206",
+      "chapter": "导数",
+      "title": "幂函数求导",
+      "stemLatex": "(x^\\alpha)'=",
+      "answerLatex": "\\alpha x^{\\alpha-1}",
+      "distractors": [
+        { "latex": "\\alpha x^\\alpha", "error": "指数没有减 1" },
+        { "latex": "x^{\\alpha-1}", "error": "漏掉了系数 α" },
+        { "latex": "\\alpha x^{\\alpha+1}", "error": "指数方向写反了" }
+      ],
+      "fill": {
+        "templateLatex": "(x^\\alpha)'=\\alpha x^{\\boxed{\\phantom{\\alpha-1}}}",
+        "answerLatex": "\\alpha-1",
+        "answerText": "α-1",
+        "accept": ["α-1", "alpha-1", "a-1"]
+      }
+    },
+    {
+      "id": "P-C207-01",
+      "sourceId": "C207",
+      "chapter": "导数",
+      "title": "商的求导公式",
+      "stemLatex": "\\left(\\frac{f}{g}\\right)'=",
+      "answerLatex": "\\frac{f'g-fg'}{g^2}",
+      "distractors": [
+        { "latex": "\\frac{f'g+fg'}{g^2}", "error": "分子中间应是减号" },
+        { "latex": "\\frac{f'g-fg'}{g}", "error": "分母漏掉了平方" },
+        { "latex": "\\frac{fg'-f'g}{g^2}", "error": "分子两项顺序写反了" }
+      ],
+      "fill": {
+        "templateLatex": "\\left(\\frac{f}{g}\\right)'=\\frac{f'g-fg'}{\\boxed{\\phantom{g^2}}}",
+        "answerLatex": "g^2",
+        "answerText": "g^2",
+        "accept": ["g^2", "g²"]
+      }
+    },
+    {
+      "id": "P-C222-01",
+      "sourceId": "C222",
+      "chapter": "排列组合与二项式定理",
+      "title": "排列数阶乘式",
+      "stemLatex": "A_n^m=",
+      "answerLatex": "\\frac{n!}{(n-m)!}",
+      "distractors": [
+        { "latex": "\\frac{n!}{m!}", "error": "分母应是 (n-m)!" },
+        { "latex": "\\frac{n!}{(n+m)!}", "error": "分母的加减号写反了" },
+        { "latex": "\\frac{(n-m)!}{n!}", "error": "分子和分母写反了" }
+      ],
+      "fill": {
+        "templateLatex": "A_n^m=\\frac{n!}{\\boxed{\\phantom{(n-m)!}}}",
+        "answerLatex": "(n-m)!",
+        "answerText": "(n-m)!",
+        "accept": ["(n-m)!", "(n−m)!", "n-m!"]
+      }
+    },
+    {
+      "id": "P-C224-01",
+      "sourceId": "C224",
+      "chapter": "排列组合与二项式定理",
+      "title": "组合数阶乘式",
+      "stemLatex": "C_n^m=",
+      "answerLatex": "\\frac{n!}{m!(n-m)!}",
+      "distractors": [
+        { "latex": "\\frac{n!}{m!}", "error": "漏掉了 (n-m)!" },
+        { "latex": "\\frac{m!}{n!(n-m)!}", "error": "分子和分母中的阶乘关系写反了" },
+        { "latex": "\\frac{n!}{(m+n)!}", "error": "分母中的加减号和阶乘因式都不对" }
+      ],
+      "fill": {
+        "templateLatex": "C_n^m=\\frac{n!}{\\boxed{\\phantom{m!(n-m)!}}}",
+        "answerLatex": "m!(n-m)!",
+        "answerText": "m!(n-m)!",
+        "accept": ["m!(n-m)!", "m!(n−m)!", "m!*(n-m)!"]
+      }
+    },
+    {
+      "id": "P-C227-01",
+      "sourceId": "C227",
+      "chapter": "排列组合与二项式定理",
+      "title": "二项展开通项",
+      "stemLatex": "T_{k+1}=",
+      "answerLatex": "C_n^k a^{n-k}b^k",
+      "distractors": [
+        { "latex": "C_n^k a^kb^{n-k}", "error": "a 和 b 的指数写反了" },
+        { "latex": "C_n^{k+1}a^{n-k}b^k", "error": "组合数的下标写错了" },
+        { "latex": "C_n^k a^{n-k}b^{n-k}", "error": "b 的指数不应也是 n-k" }
+      ],
+      "fill": {
+        "templateLatex": "T_{k+1}=C_n^k a^{\\boxed{\\phantom{n-k}}}b^k",
+        "answerLatex": "n-k",
+        "answerText": "n-k",
+        "accept": ["n-k", "n−k"]
+      }
+    },
+    {
+      "id": "P-C230-01",
+      "sourceId": "C230",
+      "chapter": "随机变量及其分布列",
+      "title": "条件概率公式",
+      "stemLatex": "P(B\\mid A)=",
+      "answerLatex": "\\frac{P(AB)}{P(A)}",
+      "distractors": [
+        { "latex": "\\frac{P(A)}{P(AB)}", "error": "分子和分母写反了" },
+        { "latex": "P(AB)P(A)", "error": "条件概率应相除而不是相乘" },
+        { "latex": "\\frac{P(A\\mid B)}{P(A)}", "error": "条件方向写反了" }
+      ],
+      "fill": {
+        "templateLatex": "P(B\\mid A)=\\frac{P(AB)}{\\boxed{\\phantom{P(A)}}}",
+        "answerLatex": "P(A)",
+        "answerText": "P(A)",
+        "accept": ["P(A)", "p(a)"]
+      }
+    },
+    {
+      "id": "P-C237-01",
+      "sourceId": "C237",
+      "chapter": "随机变量及其分布列",
+      "title": "方差的线性变换",
+      "stemLatex": "D(aX+b)=",
+      "answerLatex": "a^2D(X)",
+      "distractors": [
+        { "latex": "aD(X)", "error": "方差前的系数应平方" },
+        { "latex": "a^2D(X)+b", "error": "平移不会改变方差" },
+        { "latex": "aD(X)+b", "error": "系数漏平方，且多加了平移项" }
+      ],
+      "fill": {
+        "templateLatex": "D(aX+b)=\\boxed{\\phantom{a^2}}D(X)",
+        "answerLatex": "a^2",
+        "answerText": "a^2",
+        "accept": ["a^2", "a²"]
+      }
+    },
+    {
+      "id": "P-C239-01",
+      "sourceId": "C239",
+      "chapter": "随机变量及其分布列",
+      "title": "二项分布期望",
+      "stemLatex": "X\\sim B(n,p)\\Rightarrow E(X)=",
+      "answerLatex": "np",
+      "distractors": [
+        { "latex": "n(1-p)", "error": "把成功概率换成了失败概率" },
+        { "latex": "np(1-p)", "error": "这是二项分布的方差" },
+        { "latex": "p", "error": "漏掉了试验次数 n" }
+      ],
+      "fill": {
+        "templateLatex": "X\\sim B(n,p)\\Rightarrow E(X)=\\boxed{\\phantom{np}}",
+        "answerLatex": "np",
+        "answerText": "np",
+        "accept": ["np", "n*p"]
+      }
+    }
+  ]
+}

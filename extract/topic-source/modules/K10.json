@@ -1,0 +1,112 @@
+{
+  "id": "K10",
+  "order": 10,
+  "packageRoot": "topic-package-b",
+  "title": "等和线定理、极化恒等式与对角线向量定理",
+  "sourcePages": [15],
+  "sections": [
+    {
+      "id": "K10-01",
+      "title": "一、等和线定理",
+      "sourcePages": [15],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "已知平面内一组基底$\\overrightarrow{OA},\\overrightarrow{OB}$及任一向量$\\overrightarrow{OC},\\overrightarrow{OC}=x\\overrightarrow{OA}+y\\overrightarrow{OB}(x,y\\in\\mathbf R)$，若点$C$在直线$AB$上或在平行于$AB$的直线上，则$x+y=k$(定值)，反之也成立.其中，直线$AB$及与直线$AB$平行的直线称为等和线."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k10-p15-equal-sum",
+          "width": 825,
+          "height": 720
+        },
+        {
+          "type": "paragraph",
+          "text": "性质：(1)$|k|=\\frac{|\\overrightarrow{OC_1}|}{|\\overrightarrow{OA_1}|}=\\frac{|\\overrightarrow{OB_1}|}{|\\overrightarrow{OB}|}=\\frac{O\\text{ 到 }A_1B_1\\text{ 的距离}}{O\\text{ 到 }AB\\text{ 的距离}}$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)当等和线恰为直线$AB$时，$k=1$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)当等和线在点$O$和直线$AB$之间时，$k\\in(0,1)$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)当直线$AB$在点$O$和等和线之间时，$k\\in(1,+\\infty)$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(5)当等和线过$O$点时，$k=0$."
+        }
+      ]
+    },
+    {
+      "id": "K10-02",
+      "title": "二、极化恒等式",
+      "sourcePages": [15],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "对于非零向量$\\boldsymbol a,\\boldsymbol b$，可以得到$\\boldsymbol a\\cdot\\boldsymbol b=\\frac14[(\\boldsymbol a+\\boldsymbol b)^2-(\\boldsymbol a-\\boldsymbol b)^2]$."
+        },
+        {
+          "type": "label",
+          "text": "公式推导"
+        },
+        {
+          "type": "formula",
+          "tex": "\\begin{cases}(\\boldsymbol a+\\boldsymbol b)^2=\\boldsymbol a^2+2\\boldsymbol a\\cdot\\boldsymbol b+\\boldsymbol b^2,\\\\(\\boldsymbol a-\\boldsymbol b)^2=\\boldsymbol a^2-2\\boldsymbol a\\cdot\\boldsymbol b+\\boldsymbol b^2\\end{cases}\\Rightarrow\\boldsymbol a\\cdot\\boldsymbol b=\\frac14[(\\boldsymbol a+\\boldsymbol b)^2-(\\boldsymbol a-\\boldsymbol b)^2]."
+        },
+        {
+          "type": "paragraph",
+          "text": "几何意义：在$\\triangle ABC$中，$D$是边$BC$的中点，则$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=|\\overrightarrow{AD}|^2-|\\overrightarrow{DB}|^2$."
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=(\\overrightarrow{AD}+\\overrightarrow{DB})\\cdot(\\overrightarrow{AD}+\\overrightarrow{DC})=(\\overrightarrow{AD}+\\overrightarrow{DB})\\cdot(\\overrightarrow{AD}-\\overrightarrow{DB})=|\\overrightarrow{AD}|^2-|\\overrightarrow{DB}|^2$，得证."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k10-p15-polar",
+          "width": 660,
+          "height": 660
+        }
+      ]
+    },
+    {
+      "id": "K10-03",
+      "title": "三、对角线向量定理",
+      "sourcePages": [15],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "如图，在四边形$ABCD$中，有$\\overrightarrow{AC}\\cdot\\overrightarrow{BD}=\\frac{|\\overrightarrow{AD}|^2+|\\overrightarrow{BC}|^2-|\\overrightarrow{AB}|^2-|\\overrightarrow{CD}|^2}{2}$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k10-p15-quad",
+          "width": 1020,
+          "height": 705
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "在$\\triangle ABC$中，由余弦定理可得$\\overrightarrow{CA}\\cdot\\overrightarrow{CB}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CB}|^2-|\\overrightarrow{AB}|^2}{2}$.同理，在$\\triangle ACD$中，$\\overrightarrow{CA}\\cdot\\overrightarrow{CD}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CD}|^2-|\\overrightarrow{AD}|^2}{2}$."
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{两式相减可得，}\\overrightarrow{AC}\\cdot\\overrightarrow{BD}=\\overrightarrow{CA}\\cdot(\\overrightarrow{CB}-\\overrightarrow{CD})=\\overrightarrow{CA}\\cdot\\overrightarrow{CB}-\\overrightarrow{CA}\\cdot\\overrightarrow{CD}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CB}|^2-|\\overrightarrow{AB}|^2}{2}-\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CD}|^2-|\\overrightarrow{AD}|^2}{2}=\\frac{|\\overrightarrow{AD}|^2+|\\overrightarrow{BC}|^2-|\\overrightarrow{AB}|^2-|\\overrightarrow{CD}|^2}{2}."
+        }
+      ]
+    }
+  ]
+}

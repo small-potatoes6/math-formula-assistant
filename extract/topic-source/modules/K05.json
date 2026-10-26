@@ -1,0 +1,129 @@
+{
+  "id": "K05",
+  "order": 5,
+  "packageRoot": "topic-package-a",
+  "title": "构造辅助函数",
+  "sourcePages": [8, 9],
+  "sections": [
+    {
+      "id": "K05-01",
+      "title": "一、同构技巧",
+      "sourcePages": [8, 9],
+      "blocks": [
+        {
+          "type": "label",
+          "text": "类型一：地位同等要同构，主要针对双变量问题"
+        },
+        {
+          "type": "formula",
+          "tex": "(1)\\frac{f(x_1)-f(x_2)}{x_1-x_2}>k(x_1<x_2)\\Leftrightarrow f(x_1)-f(x_2)<kx_1-kx_2\\Leftrightarrow f(x_1)-kx_1<f(x_2)-kx_2\\Leftrightarrow y=f(x)-kx\\text{ 为增函数}."
+        },
+        {
+          "type": "formula",
+          "tex": "(2)\\frac{f(x_1)-f(x_2)}{x_1-x_2}<\\frac{k}{x_1x_2}(x_1<x_2,x_1,x_2\\ne0)\\Leftrightarrow f(x_1)-f(x_2)>\\frac{k(x_1-x_2)}{x_1x_2}=\\frac{k}{x_2}-\\frac{k}{x_1}\\Leftrightarrow f(x_1)+\\frac{k}{x_1}>f(x_2)+\\frac{k}{x_2}\\Leftrightarrow y=f(x)+\\frac{k}{x}\\text{ 为减函数}."
+        },
+        {
+          "type": "label",
+          "text": "类型二：指对跨阶型同构，同左同右取对数"
+        },
+        {
+          "type": "paragraph",
+          "text": "（1）积型：$ae^a\\leqslant b\\ln b$"
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{三种同构方式}\\begin{cases}\\text{同左：}e^a\\ln e^a\\leqslant b\\ln b\\Leftrightarrow f(x)=x\\ln x,\\\\\\text{同右：}ae^a\\leqslant(\\ln b)e^{\\ln b}\\Leftrightarrow f(x)=xe^x,\\\\\\text{取对数：}a+\\ln a\\leqslant\\ln b+\\ln(\\ln b)\\Leftrightarrow f(x)=x+\\ln x.\\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "例如，$2x^3\\ln x\\geqslant me^{m/x}\\Leftrightarrow x^2\\ln x^2\\geqslant\\frac{m}{x}e^{m/x}\\Leftrightarrow x^2\\ln x^2\\geqslant e^{m/x}\\ln e^{m/x}.$"
+        },
+        {
+          "type": "paragraph",
+          "text": "（2）商型：$\\frac{e^a}{a}\\leqslant\\frac{b}{\\ln b}$"
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{三种同构方式}\\begin{cases}\\text{同左：}\\frac{e^a}{a}\\leqslant\\frac{e^{\\ln b}}{\\ln b}\\Leftrightarrow f(x)=\\frac{e^x}{x},\\\\\\text{同右：}\\frac{e^a}{\\ln e^a}\\leqslant\\frac{b}{\\ln b}\\Leftrightarrow f(x)=\\frac{x}{\\ln x},\\\\\\text{取对数：}a-\\ln a\\leqslant\\ln b-\\ln(\\ln b)\\Leftrightarrow f(x)=x-\\ln x.\\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "（3）和差型：$e^a\\pm a\\geqslant b\\pm\\ln b$"
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{两种同构方式}\\begin{cases}\\text{同左：}e^a\\pm a\\geqslant e^{\\ln b}\\pm\\ln b\\Leftrightarrow f(x)=e^x\\pm x,\\\\\\text{同右：}e^a\\pm\\ln e^a\\geqslant b\\pm\\ln b\\Leftrightarrow f(x)=x\\pm\\ln x.\\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "例如，$e^{ax}+ax>\\ln(x+1)+x+1\\Leftrightarrow e^{ax}+ax>e^{\\ln(x+1)}+\\ln(x+1).$"
+        },
+        {
+          "type": "label",
+          "text": "类型三：“无中生有”去同构，利用$x=e^{\\ln x}=\\ln e^x$凑形式"
+        },
+        {
+          "type": "formula",
+          "tex": "(1)\\text{当 }a\\ne0\\text{ 时，}ae^{ax}>\\ln x\\xLeftrightarrow{\\text{同乘 }x\\text{（无中生有）}}axe^{ax}>x\\ln x;"
+        },
+        {
+          "type": "formula",
+          "tex": "(2)\\text{当 }a>0\\text{ 时，}e^x>a\\ln(ax-a)-a\\Leftrightarrow\\frac1ae^x>\\ln[a(x-1)]-1\\Leftrightarrow e^{x-\\ln a}-\\ln a>\\ln(x-1)-1\\xLeftrightarrow{\\text{两边同加 }x}e^{x-\\ln a}+x-\\ln a>\\ln(x-1)+x-1=e^{\\ln(x-1)}+\\ln(x-1)\\Leftrightarrow x-\\ln a>\\ln(x-1);"
+        },
+        {
+          "type": "formula",
+          "tex": "(3)\\text{当 }a>0\\text{ 且 }a\\ne1\\text{ 时，}a^x>\\log_ax\\Leftrightarrow e^{x\\ln a}>\\frac{\\ln x}{\\ln a}\\Leftrightarrow(x\\ln a)e^{x\\ln a}>x\\ln x."
+        },
+        {
+          "type": "note",
+          "text": "【提示】由于$a^x>\\log_ax$两边互为反函数，所以还可将$a^x>\\log_ax$转化为$a^x>x$，即$\\ln a>\\frac{\\ln x}{x}.$"
+        },
+        {
+          "type": "paragraph",
+          "text": "例如，当$a>0$时，$\\frac1ae^x+1>\\ln[a(x-1)]$，左右两边互为反函数，所以可转化为$\\frac1ae^x+1>x$，即$\\frac1a>\\frac{x-1}{e^x}.$"
+        },
+        {
+          "type": "label",
+          "text": "类型四：切线放缩"
+        },
+        {
+          "type": "formula",
+          "tex": "(1)e^x\\geqslant x+1\\Rightarrow e^{x-1}\\geqslant x\\Rightarrow e^x\\geqslant ex,\\quad e^x\\geqslant1+x+\\frac{x^2}{2},\\quad e^{ax}\\geqslant ax+1(a\\text{为常数})."
+        },
+        {
+          "type": "note",
+          "text": "【变式】$xe^x=e^{x+\\ln x}\\geqslant x+\\ln x+1$，$\\frac{e^x}{x}=e^{x-\\ln x}\\geqslant x-\\ln x+1$，$\\frac{x}{e^x}=e^{\\ln x-x}\\geqslant\\ln x-x+1$，$x^ne^x=e^{x+n\\ln x}\\geqslant x+n\\ln x+1$，$\\frac{x^n}{e^x}=e^{n\\ln x-x}\\geqslant n\\ln x-x+1.$"
+        },
+        {
+          "type": "formula",
+          "tex": "(2)\\ln x\\leqslant x-1\\Rightarrow\\ln(ex)\\leqslant x\\Rightarrow\\ln x\\leqslant\\frac{x}{e},\\quad\\ln x\\leqslant a(x-1)(x\\geqslant1,a\\geqslant1)."
+        },
+        {
+          "type": "note",
+          "text": "【变式】$x+\\ln x=\\ln(xe^x)\\leqslant xe^x-1$，$x+n\\ln x=\\ln(x^ne^x)\\leqslant x^ne^x-1.$"
+        }
+      ]
+    },
+    {
+      "id": "K05-02",
+      "title": "二、关于$f(x),f'(x)$的构造",
+      "sourcePages": [9],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["题干形式", "构造函数", "题干形式", "构造函数"],
+          "rows": [
+            ["$f'(x)\\pm g'(x)>0$", "$F(x)=f(x)\\pm g(x)$", "$f(x)+f'(x)\\tan x>0$", "$F(x)=\\sin xf(x)$"],
+            ["$f'(x)>k,k\\ne0$", "$F(x)=f(x)-kx$", "$f(x)-f'(x)\\tan x>0$", "$F(x)=\\frac{f(x)}{\\sin x}$"],
+            ["$f'(x)g(x)+g'(x)f(x)>0$", "$F(x)=f(x)g(x)$", "$f'(x)-f(x)\\tan x>0$", "$F(x)=\\cos xf(x)$"],
+            ["$f'(x)g(x)-g'(x)f(x)>0$", "$F(x)=\\frac{f(x)}{g(x)},g(x)\\ne0$", "$f'(x)+f(x)\\tan x>0$", "$F(x)=\\frac{f(x)}{\\cos x}$"],
+            ["$xf'(x)+nf(x)>0$", "$F(x)=x^nf(x)$", "$f'(x)\\sin x+f(x)\\cos x>0$", "$F(x)=f(x)\\sin x$"],
+            ["$xf'(x)-nf(x)>0$", "$F(x)=\\frac{f(x)}{x^n}$", "$f'(x)\\sin x-f(x)\\cos x>0$", "$F(x)=\\frac{f(x)}{\\sin x}$"],
+            ["$f'(x)+kf(x)>0$", "$F(x)=e^{kx}f(x)$", "$f'(x)\\cos x-f(x)\\sin x>0$", "$F(x)=f(x)\\cos x$"],
+            ["$f'(x)-kf(x)>0$", "$F(x)=\\frac{f(x)}{e^{kx}}$", "$f'(x)\\cos x+f(x)\\sin x>0$", "$F(x)=\\frac{f(x)}{\\cos x}$"]
+          ]
+        }
+      ]
+    }
+  ]
+}

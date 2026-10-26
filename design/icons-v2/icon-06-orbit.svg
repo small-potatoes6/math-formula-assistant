@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">三色轨道 Π</title>
+  <defs>
+    <linearGradient id="prism" gradientUnits="userSpaceOnUse" x1="210" y1="250" x2="820" y2="770">
+      <stop offset="0" stop-color="#E86F45"/>
+      <stop offset="0.50" stop-color="#F3B93B"/>
+      <stop offset="1" stop-color="#2FA79B"/>
+    </linearGradient>
+    <filter id="shadow" x="-35%" y="-35%" width="170%" height="185%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#7A6655" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect x="12" y="12" width="1000" height="1000" rx="232" fill="#FFFDF9"/>
+  <g fill="none" stroke-linecap="round" opacity="0.32">
+    <path d="M266 253A330 330 0 0 1 512 184" stroke="#E86F45" stroke-width="14"/>
+    <path d="M804 289A330 330 0 0 1 838 512" stroke="#F3B93B" stroke-width="14"/>
+    <path d="M748 785A330 330 0 0 1 512 842" stroke="#2FA79B" stroke-width="14"/>
+  </g>
+  <g fill="none" stroke="url(#prism)" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke-width="94"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke-width="86"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke-width="86"/>
+  </g>
+</svg>

@@ -1,0 +1,146 @@
+{
+  "id": "K16",
+  "order": 16,
+  "packageRoot": "topic-package-b",
+  "title": "截面与翻折问题——作图、识图",
+  "sourcePages": [22, 23],
+  "sections": [
+    {
+      "id": "K16-01",
+      "title": "一、正方体的截面",
+      "sourcePages": [22],
+      "blocks": [
+        {
+          "type": "figure",
+          "assetKey": "k16-p22-section-types",
+          "width": 2370,
+          "height": 1110
+        },
+        {
+          "type": "paragraph",
+          "text": "作图：截面经过的三个已知点分别在正方体的棱上."
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)已知的$E,F,G$三点中任意两点的连线都在正方体的表面上，直接两两连接即得截面图形，如图①所示."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k16-p22-fig-1-3",
+          "width": 2535,
+          "height": 930
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)已知的$E,F,G$三点中任意两点的连线恰有两条在正方体的表面上，由平行法或相交法可得截面图形."
+        },
+        {
+          "type": "paragraph",
+          "text": "平行法思路：如图②所示，连接$GF$，在平面$ABB_1A_1$内过点$E$作$EH\\parallel GF$，交$AA_1$于点$H$，连接$GH,EF$，则四边形$EFGH$为所求的截面图形."
+        },
+        {
+          "type": "paragraph",
+          "text": "相交法思路：如图③所示，连接$FE$并延长交$DA$的延长线于点$H$，连接$GH$交$AA_1$于点$I$，连接$IE,GF$，则四边形$EFGI$为所求的截面图形."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)已知的$E,F,G$三点中任意两点的连线恰有一条在正方体的表面上，由相交法可得截面图形."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k16-p22-fig-4-5",
+          "width": 2325,
+          "height": 960
+        },
+        {
+          "type": "paragraph",
+          "text": "相交法思路：如图④所示，连接$FG$并延长，交$DD_1$的延长线于点$P$，连接$PE$交$A_1D_1$于点$H$，则点$H$为截面上一点，延长$GF$，交$DC$的延长线于点$Q$，连接$QE$交$BC$于点$I$，则点$I$为截面上一点，连接$FI,HG$，则五边形$EIFGH$即为所求的截面图形."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)已知的$E,F,G$三点中任意两点的连线都不在正方体的表面上，可以通过作辅助平面结合相交法来处理，如图⑤所示."
+        }
+      ]
+    },
+    {
+      "id": "K16-02",
+      "title": "二、圆锥中的截面与截口曲线",
+      "sourcePages": [23],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "(1)过顶点作一个平面和圆锥相交，所得的截面是一个等腰三角形；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)如果平面和母线平行，那么所得到的截口曲线是抛物线；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)如果平面和轴线所成的角大于等于$0$，小于母线和轴线所成的角，那么所得到的截口曲线是双曲线的一支；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)如果平面和轴线所成的角大于母线和轴线所成的角且小于$\\frac{\\pi}{2}$，那么所得到的截口曲线是椭圆(或椭圆的一部分)；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(5)如果平面和轴线所成的角等于$\\frac{\\pi}{2}$，那么所得到的截口曲线是圆."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k16-p23-cone-sections",
+          "width": 2310,
+          "height": 1065
+        }
+      ]
+    },
+    {
+      "id": "K16-03",
+      "title": "三、翻折",
+      "sourcePages": [23],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "以如图①所示的筝形$ABCD$(筝形是指有一条对角线所在直线为对称轴的四边形)为例，将$\\triangle ADB$沿着$BD$翻折，得到$\\triangle A_1BD$，那么翻折过程的基本规律如下："
+        },
+        {
+          "type": "figure",
+          "assetKey": "k16-p23-folding",
+          "width": 1740,
+          "height": 690
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)连接$AC$交$BD$于点$O$，则$AO\\perp BD$，顶点$A_1$的运动轨迹为以$O$为圆心，$OA$为半径的圆，且点$A_1$在底面$BCD$的射影在直线$AO$上."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)当且仅当$A_1$在底面的射影为$O$时，点$A_1$到底面的距离取得最大值，此时平面$A_1BD\\perp$平面$BCD$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)三垂线定理：如果平面内的一条直线与平面的一条斜线在该平面内的射影垂直，那么它也和这条斜线垂直(如图②)."
+        },
+        {
+          "type": "paragraph",
+          "text": "三垂线定理的逆定理：如果平面内的一条直线和这个平面的一条斜线垂直，那么它也和这条斜线在该平面内的射影垂直."
+        },
+        {
+          "type": "note",
+          "text": "【提示】若两平面垂直，则其中一个平面内的所有点在另一个平面内的射影一定在两平面的交线上."
+        },
+        {
+          "type": "subheading",
+          "text": "解决折叠问题的步骤："
+        },
+        {
+          "type": "figure",
+          "assetKey": "k16-p23-steps",
+          "width": 1710,
+          "height": 480
+        }
+      ]
+    }
+  ]
+}

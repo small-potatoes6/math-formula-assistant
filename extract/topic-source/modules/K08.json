@@ -1,0 +1,150 @@
+{
+  "id": "K08",
+  "order": 8,
+  "packageRoot": "topic-package-a",
+  "title": "射影定理、三角形的“三线”、张角定理",
+  "sourcePages": [12, 13],
+  "sections": [
+    {
+      "id": "K08-01",
+      "title": "一、射影定理",
+      "sourcePages": [12],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "(1)直角三角形中的射影定理：如图，在$\\mathrm{Rt}\\triangle ABC$中，$C$为直角，$CD\\perp AB$于点$D$，则有"
+        },
+        {
+          "type": "figure",
+          "assetKey": "k08-p12-right-triangle",
+          "width": 585,
+          "height": 390
+        },
+        {
+          "type": "formula",
+          "tex": "(1)AC^2=AD\\cdot AB;(2)BC^2=BD\\cdot AB;(3)CD^2=AD\\cdot DB."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)任意三角形中的射影定理：在$\\triangle ABC$中，内角$A,B,C$对应的边分别为$a,b,c$，则有"
+        },
+        {
+          "type": "formula",
+          "tex": "(1)a=b\\cos C+c\\cos B;(2)b=c\\cos A+a\\cos C;(3)c=a\\cos B+b\\cos A."
+        }
+      ]
+    },
+    {
+      "id": "K08-02",
+      "title": "二、三角形的“三线”",
+      "sourcePages": [12, 13],
+      "blocks": [
+        {
+          "type": "subheading",
+          "text": "1.三角形的中线："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)在$\\triangle ABC$中，内角$A,B,C$的对边分别为$a,b,c$，已知$m_a,m_b,m_c$分别为边$a,b,c$上的中线，则"
+        },
+        {
+          "type": "formula",
+          "tex": "m_a=\\frac12\\sqrt{2(b^2+c^2)-a^2},m_b=\\frac12\\sqrt{2(c^2+a^2)-b^2},m_c=\\frac12\\sqrt{2(a^2+b^2)-c^2}."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)在$\\triangle ABC$中，$AD$是$BC$边上的中线，则$AB^2+AC^2=2(BD^2+AD^2)=2(AD^2+CD^2)$."
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "在$\\triangle ABD$中，$\\cos B=\\frac{AB^2+BD^2-AD^2}{2AB\\cdot BD}$，在$\\triangle ABC$中，$\\cos B=\\frac{AB^2+BC^2-AC^2}{2AB\\cdot BC}$，联立两个方程可得$AB^2+AC^2=2(BD^2+AD^2)$.同理，$AB^2+AC^2=2(AD^2+CD^2)$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k08-p12-median",
+          "width": 390,
+          "height": 480
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)向量法：$\\overrightarrow{AD}^2=\\frac14(b^2+c^2+2bc\\cos\\angle BAC)$."
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "由$\\overrightarrow{AD}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})$，得$\\overrightarrow{AD}^2=\\frac14(\\overrightarrow{AB}+\\overrightarrow{AC})^2=\\frac14(\\overrightarrow{AB}^2+\\overrightarrow{AC}^2+2|\\overrightarrow{AB}||\\overrightarrow{AC}|\\cos\\angle BAC)$，所以$\\overrightarrow{AD}^2=\\frac14(b^2+c^2+2bc\\cos\\angle BAC)$."
+        },
+        {
+          "type": "subheading",
+          "text": "2.三角形的高线："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)在$\\triangle ABC$中，内角$A,B,C$所对的边分别为$a,b,c$，$h_1,h_2,h_3$分别为边$a,b,c$上的高，则$h_1:h_2:h_3=\\frac1a:\\frac1b:\\frac1c=\\frac1{\\sin A}:\\frac1{\\sin B}:\\frac1{\\sin C}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)求高一般采用等面积法，即求某边上的高，需要求出面积和底边长度."
+        },
+        {
+          "type": "subheading",
+          "text": "3.三角形的内角平分线："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)角平分线性质定理：如图，在$\\triangle ABC$中，内角$A,B,C$对应的边分别为$a,b,c$，$AD$是$\\angle BAC$的平分线，则$\\frac{AB}{AC}=\\frac{BD}{CD}$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k08-p12-bisector",
+          "width": 450,
+          "height": 480
+        },
+        {
+          "type": "formula",
+          "tex": "(2)\\text{角平分线长公式：}AD=\\frac{2bc\\cos\\frac A2}{b+c}."
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "因为$S_{\\triangle ABD}+S_{\\triangle ACD}=S_{\\triangle ABC}$，所以$\\frac12c\\cdot AD\\sin\\frac A2+\\frac12b\\cdot AD\\sin\\frac A2=\\frac12bc\\sin A$，所以$(b+c)AD=2bc\\cos\\frac A2$，整理得$AD=\\frac{2bc\\cos\\frac A2}{b+c}$."
+        }
+      ]
+    },
+    {
+      "id": "K08-03",
+      "title": "三、张角定理",
+      "sourcePages": [13],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "如图所示，$D$为边$BC$上一点，设$\\angle BAD=\\alpha$，$\\angle CAD=\\beta$，则$\\frac{\\sin(\\alpha+\\beta)}{AD}=\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}$.特别地，若$AD$恰好为$\\angle BAC$的平分线，则$\\cos\\alpha=\\frac12\\left(\\frac{AD}{AB}+\\frac{AD}{AC}\\right)$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k08-p13-angle",
+          "width": 735,
+          "height": 600
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "因为$S_{\\triangle ABC}=S_{\\triangle ABD}+S_{\\triangle ACD}$，由三角形面积公式可得$\\frac12AB\\cdot AC\\cdot\\sin\\angle BAC=\\frac12AB\\cdot AD\\cdot\\sin\\alpha+\\frac12AD\\cdot AC\\cdot\\sin\\beta$，两边同除以$AB\\cdot AC\\cdot AD$，得$\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}=\\frac{\\sin\\angle BAC}{AD}$，即$\\frac{\\sin(\\alpha+\\beta)}{AD}=\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}$."
+        }
+      ]
+    }
+  ]
+}

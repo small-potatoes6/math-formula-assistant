@@ -1,0 +1,376 @@
+<view
+  wx:if="{{module}}"
+  class="topic-page {{module.visualTheme === 'soft' ? 'topic-page--soft' : ''}} {{module.layoutVariant === 'feature-cards' ? 'topic-page--feature-cards' : ''}} {{module.layoutVariant === 'function-cards' ? 'topic-page--function-cards' : ''}}"
+>
+  <view class="topic-heading">
+    <view class="topic-title">{{module.title}}</view>
+  </view>
+
+  <view class="topic-content {{module.layoutVariant === 'function-cards' ? 'topic-content--function-cards' : ''}}">
+    <view
+      wx:for="{{module.sections}}"
+      wx:key="id"
+      wx:for-item="section"
+      class="topic-section"
+    >
+      <view wx:if="{{section.title}}" class="section-title rich-title">
+        <view
+          wx:for="{{section.titleLines}}"
+          wx:key="key"
+          wx:for-item="line"
+          class="rich-line"
+        >
+          <block
+            wx:for="{{line.segments}}"
+            wx:key="key"
+            wx:for-item="segment"
+          >
+            <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+            <image
+              wx:elif="{{segment.type === 'formula'}}"
+              class="inline-formula"
+              src="{{segment.asset}}"
+              mode="aspectFit"
+              style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+            />
+          </block>
+        </view>
+      </view>
+
+      <view
+        wx:for="{{section.groups}}"
+        wx:key="uid"
+        wx:for-item="group"
+        class="content-group content-group--{{group.kind}}"
+      >
+        <view class="content-stack content-stack--{{group.kind}}">
+          <view class="content-surface content-surface--{{group.kind}}">
+            <block
+              wx:for="{{group.blocks}}"
+              wx:key="uid"
+              wx:for-item="block"
+              wx:for-index="blockIndex"
+            >
+        <view wx:if="{{block.type === 'paragraph'}}" class="block-paragraph rich-body">
+          <view
+            wx:for="{{block.lines}}"
+            wx:key="key"
+            wx:for-item="line"
+            class="rich-line {{line.segments.length ? '' : 'rich-line-empty'}}"
+          >
+            <block
+              wx:for="{{line.segments}}"
+              wx:key="key"
+              wx:for-item="segment"
+            >
+              <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+              <image
+                wx:elif="{{segment.type === 'formula'}}"
+                class="inline-formula"
+                src="{{segment.asset}}"
+                mode="aspectFit"
+                style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+              />
+            </block>
+          </view>
+        </view>
+
+        <view wx:elif="{{block.type === 'note'}}" class="block-note rich-body">
+          <view
+            wx:for="{{block.lines}}"
+            wx:key="key"
+            wx:for-item="line"
+            class="rich-line {{line.segments.length ? '' : 'rich-line-empty'}}"
+          >
+            <block
+              wx:for="{{line.segments}}"
+              wx:key="key"
+              wx:for-item="segment"
+            >
+              <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+              <image
+                wx:elif="{{segment.type === 'formula'}}"
+                class="inline-formula"
+                src="{{segment.asset}}"
+                mode="aspectFit"
+                style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+              />
+            </block>
+          </view>
+        </view>
+
+        <view wx:elif="{{block.type === 'label'}}" class="block-label rich-label">
+          <view
+            wx:for="{{block.lines}}"
+            wx:key="key"
+            wx:for-item="line"
+            class="rich-line"
+          >
+            <block
+              wx:for="{{line.segments}}"
+              wx:key="key"
+              wx:for-item="segment"
+            >
+              <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+              <image
+                wx:elif="{{segment.type === 'formula'}}"
+                class="inline-formula"
+                src="{{segment.asset}}"
+                mode="aspectFit"
+                style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+              />
+            </block>
+          </view>
+        </view>
+
+        <view wx:elif="{{block.type === 'subheading'}}" class="block-subheading rich-subheading">
+          <view
+            wx:for="{{block.lines}}"
+            wx:key="key"
+            wx:for-item="line"
+            class="rich-line"
+          >
+            <block
+              wx:for="{{line.segments}}"
+              wx:key="key"
+              wx:for-item="segment"
+            >
+              <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+              <image
+                wx:elif="{{segment.type === 'formula'}}"
+                class="inline-formula"
+                src="{{segment.asset}}"
+                mode="aspectFit"
+                style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+              />
+            </block>
+          </view>
+        </view>
+
+        <view wx:elif="{{block.type === 'formula'}}" class="formula-block">
+          <view
+            wx:for="{{block.parts}}"
+            wx:key="asset"
+            wx:for-item="part"
+            class="formula-line"
+          >
+            <formula-image
+              asset="{{part.asset}}"
+              asset-width="{{part.width}}"
+              asset-height="{{part.height}}"
+              max-width="646"
+              mode="fit"
+              align="left"
+            ></formula-image>
+          </view>
+        </view>
+
+        <view
+          wx:elif="{{block.type === 'table' && block.cardMode === 'function-cards'}}"
+          class="function-card-list"
+        >
+          <view
+            wx:for="{{block.cards}}"
+            wx:key="uid"
+            wx:for-item="card"
+            class="function-card"
+          >
+            <view class="function-card-face">
+              <view class="function-card-field">
+              <view class="function-card-title-row">
+                <view class="function-card-mark">
+                  <view class="function-card-mark-bar function-card-mark-bar-short"></view>
+                  <view class="function-card-mark-bar function-card-mark-bar-tall"></view>
+                  <view class="function-card-mark-bar function-card-mark-bar-medium"></view>
+                </view>
+                <view class="function-card-label">{{card.labels.function}}</view>
+              </view>
+              <view class="function-card-rich function-card-expression">
+                <view
+                  wx:for="{{card.functionLines}}"
+                  wx:key="key"
+                  wx:for-item="line"
+                  class="rich-line"
+                >
+                  <block
+                    wx:for="{{line.segments}}"
+                    wx:key="key"
+                    wx:for-item="segment"
+                  >
+                    <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+                    <image
+                      wx:elif="{{segment.type === 'formula'}}"
+                      class="inline-formula"
+                      src="{{segment.asset}}"
+                      mode="aspectFit"
+                      style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+                    />
+                  </block>
+                </view>
+              </view>
+            </view>
+
+            <view class="function-card-field">
+              <view class="function-card-label">{{card.labels.figure}}</view>
+              <view class="function-card-figure">
+                <image
+                  wx:if="{{card.figure}}"
+                  class="function-card-figure-image"
+                  src="{{card.figure.asset}}"
+                  mode="widthFix"
+                />
+              </view>
+            </view>
+
+            <view class="function-card-field function-card-field-detail">
+              <view class="function-card-label">{{card.labels.detail}}</view>
+              <view class="function-card-rich function-card-detail">
+                <view
+                  wx:for="{{card.detailLines}}"
+                  wx:key="key"
+                  wx:for-item="line"
+                  class="rich-line"
+                >
+                  <block
+                    wx:for="{{line.segments}}"
+                    wx:key="key"
+                    wx:for-item="segment"
+                  >
+                    <text wx:if="{{segment.type === 'text'}}" class="rich-text">{{segment.text}}</text>
+                    <image
+                      wx:elif="{{segment.type === 'formula'}}"
+                      class="inline-formula"
+                      src="{{segment.asset}}"
+                      mode="aspectFit"
+                      style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+                    />
+                  </block>
+                </view>
+              </view>
+            </view>
+            </view>
+          </view>
+        </view>
+
+        <view wx:elif="{{block.type === 'table'}}" class="table-shell">
+          <scroll-view
+            class="table-scroll"
+            scroll-x
+            enhanced
+            show-scrollbar="{{false}}"
+          >
+            <view class="topic-table" style="width: {{block.tableWidth}}rpx;">
+              <view class="table-row table-head">
+                <view
+                  wx:for="{{block.columns}}"
+                  wx:key="uid"
+                  wx:for-item="cell"
+                  class="table-cell table-head-cell"
+                  style="width: {{cell.width}}rpx;"
+                >
+                  <view
+                    wx:for="{{cell.lines}}"
+                    wx:key="key"
+                    wx:for-item="line"
+                    class="table-line"
+                  >
+                    <block
+                      wx:for="{{line.segments}}"
+                      wx:key="key"
+                      wx:for-item="segment"
+                    >
+                      <text wx:if="{{segment.type === 'text'}}" class="table-text">{{segment.text}}</text>
+                      <image
+                        wx:elif="{{segment.type === 'formula'}}"
+                        class="inline-formula table-inline-formula"
+                        src="{{segment.asset}}"
+                        mode="aspectFit"
+                        style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+                      />
+                    </block>
+                  </view>
+                </view>
+              </view>
+
+              <view
+                wx:for="{{block.rows}}"
+                wx:key="uid"
+                wx:for-item="row"
+                class="table-row"
+              >
+                <view
+                  wx:for="{{row.cells}}"
+                  wx:key="uid"
+                  wx:for-item="cell"
+                  class="table-cell"
+                  style="width: {{cell.width}}rpx;"
+                >
+                  <image
+                    wx:if="{{cell.figure}}"
+                    class="table-figure"
+                    src="{{cell.figure.asset}}"
+                    mode="widthFix"
+                  />
+                  <block wx:else>
+                    <view
+                      wx:for="{{cell.lines}}"
+                      wx:key="key"
+                      wx:for-item="line"
+                      class="table-line"
+                    >
+                      <block
+                        wx:for="{{line.segments}}"
+                        wx:key="key"
+                        wx:for-item="segment"
+                      >
+                        <text wx:if="{{segment.type === 'text'}}" class="table-text">{{segment.text}}</text>
+                        <image
+                          wx:elif="{{segment.type === 'formula'}}"
+                          class="inline-formula table-inline-formula"
+                          src="{{segment.asset}}"
+                          mode="aspectFit"
+                          style="width: {{segment.renderWidth}}rpx; height: {{segment.renderHeight}}rpx;"
+                        />
+                      </block>
+                    </view>
+                  </block>
+                </view>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+
+        <view wx:elif="{{block.type === 'figure'}}" class="figure-block">
+          <scroll-view
+            wx:if="{{block.isWideFigure}}"
+            class="figure-scroll"
+            style="height: {{block.renderHeight}}rpx;"
+            scroll-x
+            enhanced
+            show-scrollbar="{{false}}"
+          >
+            <image
+              class="figure-image figure-image-wide"
+              src="{{block.asset}}"
+              mode="scaleToFill"
+              style="width: {{block.renderWidth}}rpx; height: {{block.renderHeight}}rpx;"
+            />
+          </scroll-view>
+          <image
+            wx:else
+            class="figure-image"
+            src="{{block.asset}}"
+            mode="widthFix"
+          />
+        </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:elif="{{notFound}}" class="empty-state">
+  <view class="empty-title">未找到该专项</view>
+</view>

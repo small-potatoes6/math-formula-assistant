@@ -574,7 +574,7 @@
    "id": "C039",
    "chapter": "函数的概念与性质",
    "name": "根式性质",
-   "latex": "\\left(\\sqrt[n]{a}\\right)^n=a;\\quad \\sqrt[n]{a^n}=a\\ (n\\text{ 为奇数}),\\quad \\sqrt[n]{a^n}=|a|\\ (n\\text{ 为偶数})\\quad (n>1,\\ n\\in\\mathbb{N}^*)",
+   "latex": "\\left(\\sqrt[n]{a}\\right)^n=a;\\quad \\sqrt[n]{a^n}=a\\ (n\\text{ 为奇数}),\\quad \\sqrt[n]{a^n}=|a|\\ (n\\text{ 为偶数})",
    "condition": "n>1，n∈N*",
    "pitfall": "n 为偶数时 ⁿ√(aⁿ)=|a|，不是 a",
    "example": "\\sqrt[3]{(-2)^3}=-2,\\quad \\sqrt{(-2)^2}=2",

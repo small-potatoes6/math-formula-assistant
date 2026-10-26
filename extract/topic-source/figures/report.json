@@ -1,0 +1,465 @@
+{
+  "count": 51,
+  "bytes": 5625101,
+  "crops": [
+    {
+      "assetKey": "k04-p07-r1-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r1-left.png",
+      "width": 160,
+      "height": 155,
+      "pixelWidth": 480,
+      "pixelHeight": 465,
+      "bytes": 29568
+    },
+    {
+      "assetKey": "k04-p07-r1-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r1-right.png",
+      "width": 145,
+      "height": 155,
+      "pixelWidth": 435,
+      "pixelHeight": 465,
+      "bytes": 27225
+    },
+    {
+      "assetKey": "k04-p07-r2-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r2-left.png",
+      "width": 160,
+      "height": 145,
+      "pixelWidth": 480,
+      "pixelHeight": 435,
+      "bytes": 28185
+    },
+    {
+      "assetKey": "k04-p07-r2-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r2-right.png",
+      "width": 145,
+      "height": 145,
+      "pixelWidth": 435,
+      "pixelHeight": 435,
+      "bytes": 33249
+    },
+    {
+      "assetKey": "k04-p07-r3-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r3-left.png",
+      "width": 160,
+      "height": 270,
+      "pixelWidth": 480,
+      "pixelHeight": 810,
+      "bytes": 36923
+    },
+    {
+      "assetKey": "k04-p07-r3-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r3-right.png",
+      "width": 145,
+      "height": 270,
+      "pixelWidth": 435,
+      "pixelHeight": 810,
+      "bytes": 35834
+    },
+    {
+      "assetKey": "k04-p07-r4-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r4-left.png",
+      "width": 160,
+      "height": 200,
+      "pixelWidth": 480,
+      "pixelHeight": 600,
+      "bytes": 28178
+    },
+    {
+      "assetKey": "k04-p07-r4-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r4-right.png",
+      "width": 145,
+      "height": 200,
+      "pixelWidth": 435,
+      "pixelHeight": 600,
+      "bytes": 33372
+    },
+    {
+      "assetKey": "k04-p07-r5-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r5-left.png",
+      "width": 160,
+      "height": 160,
+      "pixelWidth": 480,
+      "pixelHeight": 480,
+      "bytes": 30990
+    },
+    {
+      "assetKey": "k04-p07-r5-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r5-right.png",
+      "width": 145,
+      "height": 160,
+      "pixelWidth": 435,
+      "pixelHeight": 480,
+      "bytes": 20893
+    },
+    {
+      "assetKey": "k04-p07-r6-left",
+      "output": "extract\\topic-source\\figures\\k04-p07-r6-left.png",
+      "width": 160,
+      "height": 190,
+      "pixelWidth": 480,
+      "pixelHeight": 570,
+      "bytes": 43105
+    },
+    {
+      "assetKey": "k04-p07-r6-right",
+      "output": "extract\\topic-source\\figures\\k04-p07-r6-right.png",
+      "width": 145,
+      "height": 190,
+      "pixelWidth": 435,
+      "pixelHeight": 570,
+      "bytes": 38093
+    },
+    {
+      "assetKey": "k04-p08-r1-left",
+      "output": "extract\\topic-source\\figures\\k04-p08-r1-left.png",
+      "width": 160,
+      "height": 135,
+      "pixelWidth": 480,
+      "pixelHeight": 405,
+      "bytes": 27284
+    },
+    {
+      "assetKey": "k04-p08-r1-right",
+      "output": "extract\\topic-source\\figures\\k04-p08-r1-right.png",
+      "width": 170,
+      "height": 135,
+      "pixelWidth": 510,
+      "pixelHeight": 405,
+      "bytes": 28379
+    },
+    {
+      "assetKey": "k04-p08-r2-left",
+      "output": "extract\\topic-source\\figures\\k04-p08-r2-left.png",
+      "width": 160,
+      "height": 180,
+      "pixelWidth": 480,
+      "pixelHeight": 540,
+      "bytes": 52828
+    },
+    {
+      "assetKey": "k04-p08-r2-right",
+      "output": "extract\\topic-source\\figures\\k04-p08-r2-right.png",
+      "width": 170,
+      "height": 180,
+      "pixelWidth": 510,
+      "pixelHeight": 540,
+      "bytes": 49404
+    },
+    {
+      "assetKey": "k04-p08-r3-left",
+      "output": "extract\\topic-source\\figures\\k04-p08-r3-left.png",
+      "width": 160,
+      "height": 160,
+      "pixelWidth": 480,
+      "pixelHeight": 480,
+      "bytes": 36418
+    },
+    {
+      "assetKey": "k04-p08-r3-right",
+      "output": "extract\\topic-source\\figures\\k04-p08-r3-right.png",
+      "width": 170,
+      "height": 160,
+      "pixelWidth": 510,
+      "pixelHeight": 480,
+      "bytes": 36405
+    },
+    {
+      "assetKey": "k04-p08-r4-left",
+      "output": "extract\\topic-source\\figures\\k04-p08-r4-left.png",
+      "width": 185,
+      "height": 125,
+      "pixelWidth": 555,
+      "pixelHeight": 375,
+      "bytes": 48251
+    },
+    {
+      "assetKey": "k04-p08-r4-right",
+      "output": "extract\\topic-source\\figures\\k04-p08-r4-right.png",
+      "width": 170,
+      "height": 125,
+      "pixelWidth": 510,
+      "pixelHeight": 375,
+      "bytes": 42251
+    },
+    {
+      "assetKey": "k07-p11-top-angle",
+      "output": "extract\\topic-source\\figures\\k07-p11-top-angle.png",
+      "width": 255,
+      "height": 200,
+      "pixelWidth": 765,
+      "pixelHeight": 600,
+      "bytes": 44049
+    },
+    {
+      "assetKey": "k07-p11-shared-angle",
+      "output": "extract\\topic-source\\figures\\k07-p11-shared-angle.png",
+      "width": 255,
+      "height": 225,
+      "pixelWidth": 765,
+      "pixelHeight": 675,
+      "bytes": 43570
+    },
+    {
+      "assetKey": "k08-p12-right-triangle",
+      "output": "extract\\topic-source\\figures\\k08-p12-right-triangle.png",
+      "width": 195,
+      "height": 130,
+      "pixelWidth": 585,
+      "pixelHeight": 390,
+      "bytes": 30528
+    },
+    {
+      "assetKey": "k08-p12-median",
+      "output": "extract\\topic-source\\figures\\k08-p12-median.png",
+      "width": 190,
+      "height": 165,
+      "pixelWidth": 570,
+      "pixelHeight": 495,
+      "bytes": 41453
+    },
+    {
+      "assetKey": "k08-p12-bisector",
+      "output": "extract\\topic-source\\figures\\k08-p12-bisector.png",
+      "width": 190,
+      "height": 190,
+      "pixelWidth": 570,
+      "pixelHeight": 570,
+      "bytes": 35639
+    },
+    {
+      "assetKey": "k08-p13-angle",
+      "output": "extract\\topic-source\\figures\\k08-p13-angle.png",
+      "width": 245,
+      "height": 200,
+      "pixelWidth": 735,
+      "pixelHeight": 600,
+      "bytes": 41350
+    },
+    {
+      "assetKey": "k09-p13-benz",
+      "output": "extract\\topic-source\\figures\\k09-p13-benz.png",
+      "width": 300,
+      "height": 200,
+      "pixelWidth": 900,
+      "pixelHeight": 600,
+      "bytes": 75997
+    },
+    {
+      "assetKey": "k09-p13-proof",
+      "output": "extract\\topic-source\\figures\\k09-p13-proof.png",
+      "width": 290,
+      "height": 250,
+      "pixelWidth": 870,
+      "pixelHeight": 750,
+      "bytes": 83577
+    },
+    {
+      "assetKey": "k10-p15-equal-sum",
+      "output": "extract\\topic-source\\figures\\k10-p15-equal-sum.png",
+      "width": 275,
+      "height": 240,
+      "pixelWidth": 825,
+      "pixelHeight": 720,
+      "bytes": 70224
+    },
+    {
+      "assetKey": "k10-p15-polar",
+      "output": "extract\\topic-source\\figures\\k10-p15-polar.png",
+      "width": 220,
+      "height": 220,
+      "pixelWidth": 660,
+      "pixelHeight": 660,
+      "bytes": 72602
+    },
+    {
+      "assetKey": "k10-p15-quad",
+      "output": "extract\\topic-source\\figures\\k10-p15-quad.png",
+      "width": 340,
+      "height": 235,
+      "pixelWidth": 1020,
+      "pixelHeight": 705,
+      "bytes": 86867
+    },
+    {
+      "assetKey": "k15-p20-cube-row",
+      "output": "extract\\topic-source\\figures\\k15-p20-cube-row.png",
+      "width": 830,
+      "height": 200,
+      "pixelWidth": 2490,
+      "pixelHeight": 600,
+      "bytes": 331747
+    },
+    {
+      "assetKey": "k15-p20-tetra-row",
+      "output": "extract\\topic-source\\figures\\k15-p20-tetra-row.png",
+      "width": 830,
+      "height": 245,
+      "pixelWidth": 2490,
+      "pixelHeight": 735,
+      "bytes": 352068
+    },
+    {
+      "assetKey": "k15-p20-cuboid",
+      "output": "extract\\topic-source\\figures\\k15-p20-cuboid.png",
+      "width": 175,
+      "height": 170,
+      "pixelWidth": 525,
+      "pixelHeight": 510,
+      "bytes": 71876
+    },
+    {
+      "assetKey": "k15-p21-outer-spheres",
+      "output": "extract\\topic-source\\figures\\k15-p21-outer-spheres.png",
+      "width": 215,
+      "height": 675,
+      "pixelWidth": 645,
+      "pixelHeight": 2025,
+      "bytes": 370961
+    },
+    {
+      "assetKey": "k15-p21-inner-spheres",
+      "output": "extract\\topic-source\\figures\\k15-p21-inner-spheres.png",
+      "width": 265,
+      "height": 410,
+      "pixelWidth": 795,
+      "pixelHeight": 1230,
+      "bytes": 182736
+    },
+    {
+      "assetKey": "k16-p22-section-types",
+      "output": "extract\\topic-source\\figures\\k16-p22-section-types.png",
+      "width": 815,
+      "height": 365,
+      "pixelWidth": 2445,
+      "pixelHeight": 1095,
+      "bytes": 843623
+    },
+    {
+      "assetKey": "k16-p22-fig-1-3",
+      "output": "extract\\topic-source\\figures\\k16-p22-fig-1-3.png",
+      "width": 850,
+      "height": 260,
+      "pixelWidth": 2550,
+      "pixelHeight": 780,
+      "bytes": 348855
+    },
+    {
+      "assetKey": "k16-p22-fig-4-5",
+      "output": "extract\\topic-source\\figures\\k16-p22-fig-4-5.png",
+      "width": 865,
+      "height": 305,
+      "pixelWidth": 2595,
+      "pixelHeight": 915,
+      "bytes": 309215
+    },
+    {
+      "assetKey": "k16-p23-cone-sections",
+      "output": "extract\\topic-source\\figures\\k16-p23-cone-sections.png",
+      "width": 675,
+      "height": 300,
+      "pixelWidth": 2025,
+      "pixelHeight": 900,
+      "bytes": 271947
+    },
+    {
+      "assetKey": "k16-p23-folding",
+      "output": "extract\\topic-source\\figures\\k16-p23-folding.png",
+      "width": 605,
+      "height": 135,
+      "pixelWidth": 1815,
+      "pixelHeight": 405,
+      "bytes": 117297
+    },
+    {
+      "assetKey": "k16-p23-steps",
+      "output": "extract\\topic-source\\figures\\k16-p23-steps.png",
+      "width": 570,
+      "height": 185,
+      "pixelWidth": 1710,
+      "pixelHeight": 555,
+      "bytes": 304936
+    },
+    {
+      "assetKey": "k18-p25-ellipse-triangle",
+      "output": "extract\\topic-source\\figures\\k18-p25-ellipse-triangle.png",
+      "width": 300,
+      "height": 235,
+      "pixelWidth": 900,
+      "pixelHeight": 705,
+      "bytes": 112198
+    },
+    {
+      "assetKey": "k18-p25-hyperbola-triangle",
+      "output": "extract\\topic-source\\figures\\k18-p25-hyperbola-triangle.png",
+      "width": 315,
+      "height": 235,
+      "pixelWidth": 945,
+      "pixelHeight": 705,
+      "bytes": 124328
+    },
+    {
+      "assetKey": "k19-p26-focus-chord",
+      "output": "extract\\topic-source\\figures\\k19-p26-focus-chord.png",
+      "width": 237,
+      "height": 340,
+      "pixelWidth": 711,
+      "pixelHeight": 1020,
+      "bytes": 100638
+    },
+    {
+      "assetKey": "k19-p26-tangent-circles",
+      "output": "extract\\topic-source\\figures\\k19-p26-tangent-circles.png",
+      "width": 242,
+      "height": 200,
+      "pixelWidth": 726,
+      "pixelHeight": 600,
+      "bytes": 95825
+    },
+    {
+      "assetKey": "k19-p26-triangles",
+      "output": "extract\\topic-source\\figures\\k19-p26-triangles.png",
+      "width": 262,
+      "height": 310,
+      "pixelWidth": 786,
+      "pixelHeight": 930,
+      "bytes": 111859
+    },
+    {
+      "assetKey": "k21-p28-apollonius-definition",
+      "output": "extract\\topic-source\\figures\\k21-p28-apollonius-definition.png",
+      "width": 190,
+      "height": 255,
+      "pixelWidth": 570,
+      "pixelHeight": 765,
+      "bytes": 58675
+    },
+    {
+      "assetKey": "k21-p28-apollonius-proof",
+      "output": "extract\\topic-source\\figures\\k21-p28-apollonius-proof.png",
+      "width": 148,
+      "height": 185,
+      "pixelWidth": 444,
+      "pixelHeight": 555,
+      "bytes": 48200
+    },
+    {
+      "assetKey": "k21-p28-apollonius-conclusion",
+      "output": "extract\\topic-source\\figures\\k21-p28-apollonius-conclusion.png",
+      "width": 180,
+      "height": 180,
+      "pixelWidth": 540,
+      "pixelHeight": 540,
+      "bytes": 53914
+    },
+    {
+      "assetKey": "k21-p29-monge-circle",
+      "output": "extract\\topic-source\\figures\\k21-p29-monge-circle.png",
+      "width": 280,
+      "height": 230,
+      "pixelWidth": 840,
+      "pixelHeight": 690,
+      "bytes": 81512
+    }
+  ]
+}

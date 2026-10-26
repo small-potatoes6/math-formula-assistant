@@ -1,5 +1,9 @@
 <package-loader
-  label="正在整理公式库"
-  detail="首次打开会稍慢一些"
-  progress="{{2}}"
+  progress="{{progress}}"
 ></package-loader>
+
+<view class="package-anchor-host">
+  <package-anchor-a data-key="A" bind:packageready="onPackageReady" />
+  <package-anchor-b data-key="B" bind:packageready="onPackageReady" />
+  <package-anchor-c data-key="C" bind:packageready="onPackageReady" />
+</view>

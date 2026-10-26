@@ -1,0 +1,310 @@
+{
+  "crops": [
+    {
+      "assetKey": "k04-p07-r1-left",
+      "source": "07.jpg",
+      "box": [195, 195, 355, 350],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r1-right",
+      "source": "07.jpg",
+      "box": [705, 195, 850, 350],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r2-left",
+      "source": "07.jpg",
+      "box": [195, 390, 355, 535],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r2-right",
+      "source": "07.jpg",
+      "box": [705, 390, 850, 535],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r3-left",
+      "source": "07.jpg",
+      "box": [195, 585, 355, 855],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r3-right",
+      "source": "07.jpg",
+      "box": [705, 585, 850, 855],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r4-left",
+      "source": "07.jpg",
+      "box": [195, 900, 355, 1100],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r4-right",
+      "source": "07.jpg",
+      "box": [705, 900, 850, 1100],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r5-left",
+      "source": "07.jpg",
+      "box": [195, 1110, 355, 1270],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r5-right",
+      "source": "07.jpg",
+      "box": [705, 1110, 850, 1270],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r6-left",
+      "source": "07.jpg",
+      "box": [195, 1300, 355, 1490],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p07-r6-right",
+      "source": "07.jpg",
+      "box": [705, 1300, 850, 1490],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r1-left",
+      "source": "08.jpg",
+      "box": [205, 165, 365, 300],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r1-right",
+      "source": "08.jpg",
+      "box": [705, 165, 875, 300],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r2-left",
+      "source": "08.jpg",
+      "box": [205, 300, 365, 480],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r2-right",
+      "source": "08.jpg",
+      "box": [705, 300, 875, 480],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r3-left",
+      "source": "08.jpg",
+      "box": [205, 480, 365, 640],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r3-right",
+      "source": "08.jpg",
+      "box": [705, 480, 875, 640],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r4-left",
+      "source": "08.jpg",
+      "box": [205, 655, 390, 780],
+      "scale": 3
+    },
+    {
+      "assetKey": "k04-p08-r4-right",
+      "source": "08.jpg",
+      "box": [705, 655, 875, 780],
+      "scale": 3
+    },
+    {
+      "assetKey": "k07-p11-top-angle",
+      "source": "11.jpg",
+      "box": [505, 1070, 760, 1270],
+      "scale": 3
+    },
+    {
+      "assetKey": "k07-p11-shared-angle",
+      "source": "11.jpg",
+      "box": [540, 1260, 795, 1485],
+      "scale": 3
+    },
+    {
+      "assetKey": "k08-p12-right-triangle",
+      "source": "12.jpg",
+      "box": [870, 175, 1065, 305],
+      "scale": 3
+    },
+    {
+      "assetKey": "k08-p12-median",
+      "source": "12.jpg",
+      "box": [860, 605, 1050, 770],
+      "scale": 3
+    },
+    {
+      "assetKey": "k08-p12-bisector",
+      "source": "12.jpg",
+      "box": [890, 1290, 1080, 1480],
+      "scale": 3
+    },
+    {
+      "assetKey": "k08-p13-angle",
+      "source": "13.jpg",
+      "box": [815, 330, 1060, 530],
+      "scale": 3
+    },
+    {
+      "assetKey": "k09-p13-benz",
+      "source": "13.jpg",
+      "box": [390, 890, 690, 1090],
+      "scale": 3
+    },
+    {
+      "assetKey": "k09-p13-proof",
+      "source": "13.jpg",
+      "box": [770, 1110, 1060, 1360],
+      "scale": 3
+    },
+    {
+      "assetKey": "k10-p15-equal-sum",
+      "source": "15.jpg",
+      "box": [790, 125, 1065, 365],
+      "scale": 3
+    },
+    {
+      "assetKey": "k10-p15-polar",
+      "source": "15.jpg",
+      "box": [825, 780, 1045, 1000],
+      "scale": 3
+    },
+    {
+      "assetKey": "k10-p15-quad",
+      "source": "15.jpg",
+      "box": [380, 1040, 720, 1275],
+      "scale": 3
+    },
+    {
+      "assetKey": "k15-p20-cube-row",
+      "source": "20.jpg",
+      "box": [185, 245, 1015, 445],
+      "scale": 3
+    },
+    {
+      "assetKey": "k15-p20-tetra-row",
+      "source": "20.jpg",
+      "box": [185, 575, 1015, 820],
+      "scale": 3
+    },
+    {
+      "assetKey": "k15-p20-cuboid",
+      "source": "20.jpg",
+      "box": [615, 1380, 790, 1550],
+      "scale": 3
+    },
+    {
+      "assetKey": "k15-p21-outer-spheres",
+      "source": "21.jpg",
+      "box": [585, 140, 800, 815],
+      "scale": 3
+    },
+    {
+      "assetKey": "k15-p21-inner-spheres",
+      "source": "21.jpg",
+      "box": [785, 1135, 1050, 1545],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p22-section-types",
+      "source": "22.jpg",
+      "box": [180, 175, 995, 540],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p22-fig-1-3",
+      "source": "22.jpg",
+      "box": [180, 605, 1030, 865],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p22-fig-4-5",
+      "source": "22.jpg",
+      "box": [175, 1070, 1040, 1375],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p23-cone-sections",
+      "source": "23.jpg",
+      "box": [245, 400, 920, 700],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p23-folding",
+      "source": "23.jpg",
+      "box": [250, 915, 855, 1050],
+      "scale": 3
+    },
+    {
+      "assetKey": "k16-p23-steps",
+      "source": "23.jpg",
+      "box": [285, 1350, 855, 1535],
+      "scale": 3
+    },
+    {
+      "assetKey": "k18-p25-ellipse-triangle",
+      "source": "25.jpg",
+      "box": [330, 585, 630, 820],
+      "scale": 3
+    },
+    {
+      "assetKey": "k18-p25-hyperbola-triangle",
+      "source": "25.jpg",
+      "box": [675, 585, 990, 820],
+      "scale": 3
+    },
+    {
+      "assetKey": "k19-p26-focus-chord",
+      "source": "26.jpg",
+      "box": [95, 380, 332, 720],
+      "scale": 3
+    },
+    {
+      "assetKey": "k19-p26-tangent-circles",
+      "source": "26.jpg",
+      "box": [90, 785, 332, 985],
+      "scale": 3
+    },
+    {
+      "assetKey": "k19-p26-triangles",
+      "source": "26.jpg",
+      "box": [70, 1080, 332, 1390],
+      "scale": 3
+    },
+    {
+      "assetKey": "k21-p28-apollonius-definition",
+      "source": "28.jpg",
+      "box": [865, 135, 1055, 390],
+      "scale": 3
+    },
+    {
+      "assetKey": "k21-p28-apollonius-proof",
+      "source": "28.jpg",
+      "box": [880, 1055, 1028, 1240],
+      "scale": 3
+    },
+    {
+      "assetKey": "k21-p28-apollonius-conclusion",
+      "source": "28.jpg",
+      "box": [875, 1315, 1055, 1495],
+      "scale": 3
+    },
+    {
+      "assetKey": "k21-p29-monge-circle",
+      "source": "29.jpg",
+      "box": [405, 270, 685, 500],
+      "scale": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "选择题练习",
+  "usingComponents": {
+    "formula-crop": "../../components/formula-crop/formula-crop",
+    "anchor-placeholder": "/components/anchor-placeholder/anchor-placeholder",
+    "practice-asset-anchor-a": "/practice-assets-a/components/anchor/anchor",
+    "practice-asset-anchor-b": "/practice-assets-b/components/anchor/anchor",
+    "practice-asset-anchor-c": "/practice-assets-c/components/anchor/anchor"
+  },
+  "componentPlaceholder": {
+    "practice-asset-anchor-a": "anchor-placeholder",
+    "practice-asset-anchor-b": "anchor-placeholder",
+    "practice-asset-anchor-c": "anchor-placeholder"
+  }
+}

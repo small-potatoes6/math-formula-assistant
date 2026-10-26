@@ -1,0 +1,909 @@
+{
+  "items": [
+    {
+      "id": "P-C002-02",
+      "sourceId": "C002",
+      "chapter": "集合与常用逻辑用语",
+      "title": "子集个数公式",
+      "type": "reconstruct",
+      "stemLatex": "n\\text{ 元集合的真子集个数}=",
+      "answerLatex": "2^n-1",
+      "distractors": [
+        {
+          "latex": "2^n+1",
+          "errorKind": "系数错误",
+          "error": "真子集应排除全集，常数项却写成了加 1"
+        },
+        {
+          "latex": "2^{n-1}",
+          "errorKind": "次数错误",
+          "error": "把排除全集误写成了排除一个元素"
+        },
+        {
+          "latex": "2^n-2",
+          "errorKind": "相似公式混淆",
+          "error": "多排除了空集，这是非空真子集的个数"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C002-atom-7d22fcf436",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C002-03",
+      "sourceId": "C002",
+      "chapter": "集合与常用逻辑用语",
+      "title": "子集个数公式",
+      "type": "reconstruct",
+      "stemLatex": "n\\text{ 元集合的非空真子集个数}=",
+      "answerLatex": "2^n-2",
+      "distractors": [
+        {
+          "latex": "2^n-1",
+          "errorKind": "漏条件",
+          "error": "只排除了空集，没有排除全集"
+        },
+        {
+          "latex": "2^n+2",
+          "errorKind": "系数错误",
+          "error": "两种不符合要求的子集都应排除，不能相加"
+        },
+        {
+          "latex": "2^{n-1}-1",
+          "errorKind": "次数错误",
+          "error": "把指数减一，误当成排除一个元素"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C002-atom-8b73bbc5f6",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C007-02",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "reconstruct",
+      "stemLatex": "a^3+b^3=",
+      "answerLatex": "(a+b)(a^2-ab+b^2)",
+      "distractors": [
+        {
+          "latex": "(a+b)(a^2+ab+b^2)",
+          "errorKind": "符号错误",
+          "error": "立方和公式括号内的一次项应取负号"
+        },
+        {
+          "latex": "(a-b)(a^2+ab+b^2)",
+          "errorKind": "符号错误",
+          "error": "外侧因式应为 a+b"
+        },
+        {
+          "latex": "(a+b)(a^2-ab-b^2)",
+          "errorKind": "符号错误",
+          "error": "括号内末项应为正的 b 平方"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-4487847016",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C007-03",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "blank",
+      "stemLatex": "a^3+b^3=(a+b)(a^2-\\boxed{\\phantom{ab}}+b^2)",
+      "answerLatex": "ab",
+      "distractors": [
+        {
+          "latex": "a^2b",
+          "errorKind": "次数错误",
+          "error": "把一次项 ab 错写成了三次项"
+        },
+        {
+          "latex": "2ab",
+          "errorKind": "系数错误",
+          "error": "括号内的一次项系数应为 1"
+        },
+        {
+          "latex": "-ab",
+          "errorKind": "符号错误",
+          "error": "再添一个负号会把括号内的符号改错"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-4487847016",
+      "promptForm": "completion",
+      "variantOf": "P-C007-02"
+    },
+    {
+      "id": "P-C007-04",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "reconstruct",
+      "stemLatex": "(a+b+c)^2=",
+      "answerLatex": "a^2+b^2+c^2+2ab+2ac+2bc",
+      "distractors": [
+        {
+          "latex": "a^2+b^2+c^2+ab+ac+bc",
+          "errorKind": "系数错误",
+          "error": "三个交叉项都漏掉了系数 2"
+        },
+        {
+          "latex": "a^2+b^2+c^2+2ab+2ac-2bc",
+          "errorKind": "符号错误",
+          "error": "bc 交叉项前应为加号"
+        },
+        {
+          "latex": "a^2+b^2+c^2+2ab-2ac-2bc",
+          "errorKind": "符号错误",
+          "error": "后两个交叉项的正负号写反了"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-a03d52bcbc",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C007-05",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "blank",
+      "stemLatex": "(a+b)^3=a^3+\\boxed{\\phantom{3a^2b}}+3ab^2+b^3",
+      "answerLatex": "3a^2b",
+      "distractors": [
+        {
+          "latex": "3ab^2",
+          "errorKind": "次数错误",
+          "error": "a、b 的指数位置写反了"
+        },
+        {
+          "latex": "a^2b",
+          "errorKind": "系数错误",
+          "error": "完全立方公式中间项漏掉了系数 3"
+        },
+        {
+          "latex": "3a^3b",
+          "errorKind": "次数错误",
+          "error": "第一项指数误写成了 3"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-b7d12a9ccc",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-C007-06",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "blank",
+      "stemLatex": "a^3-b^3=(a-b)(a^2+\\boxed{\\phantom{ab}}+b^2)",
+      "answerLatex": "ab",
+      "distractors": [
+        {
+          "latex": "-ab",
+          "errorKind": "符号错误",
+          "error": "再添一个负号会把括号内的符号改错"
+        },
+        {
+          "latex": "2ab",
+          "errorKind": "系数错误",
+          "error": "括号内的一次项系数应为 1"
+        },
+        {
+          "latex": "a^2b",
+          "errorKind": "次数错误",
+          "error": "把一次项 ab 错写成了三次项"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-4487847016",
+      "promptForm": "completion",
+      "variantOf": "P-C007-07"
+    },
+    {
+      "id": "P-C007-07",
+      "sourceId": "C007",
+      "chapter": "一元二次函数、方程和不等式",
+      "title": "常用恒等式",
+      "type": "reconstruct",
+      "stemLatex": "a^3-b^3=",
+      "answerLatex": "(a-b)(a^2+ab+b^2)",
+      "distractors": [
+        {
+          "latex": "(a-b)(a^2-ab+b^2)",
+          "errorKind": "符号错误",
+          "error": "立方差公式括号内的一次项应取正号"
+        },
+        {
+          "latex": "(a+b)(a^2+ab+b^2)",
+          "errorKind": "符号错误",
+          "error": "外侧因式应为 a-b"
+        },
+        {
+          "latex": "(a-b)(a^2+ab-b^2)",
+          "errorKind": "符号错误",
+          "error": "括号内末项应为正的 b 平方"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C007-atom-4487847016",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C035-02",
+      "sourceId": "C035",
+      "chapter": "函数的概念与性质",
+      "title": "周期函数结论",
+      "type": "reconstruct",
+      "stemLatex": "f(x+a)=f(x+b)\\Rightarrow T=",
+      "answerLatex": "|a-b|",
+      "distractors": [
+        {
+          "latex": "a-b",
+          "errorKind": "漏条件",
+          "error": "周期不能为负，必须取绝对值"
+        },
+        {
+          "latex": "|a+b|",
+          "errorKind": "符号错误",
+          "error": "两个自变量的平移量应相减"
+        },
+        {
+          "latex": "\\frac{|a-b|}{2}",
+          "errorKind": "系数错误",
+          "error": "多除了一个 2"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C035-atom-224e89799b",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C035-03",
+      "sourceId": "C035",
+      "chapter": "函数的概念与性质",
+      "title": "周期函数结论",
+      "type": "blank",
+      "stemLatex": "f(x+a)=-\\frac1{f(x)}\\Rightarrow T=\\boxed{\\phantom{2a}}",
+      "answerLatex": "2a",
+      "distractors": [
+        {
+          "latex": "a",
+          "errorKind": "系数错误",
+          "error": "一次取负倒数还没有回到原函数"
+        },
+        {
+          "latex": "4a",
+          "errorKind": "系数错误",
+          "error": "把周期多算了一轮"
+        },
+        {
+          "latex": "\\frac a2",
+          "errorKind": "系数错误",
+          "error": "周期不应除以 2"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C035-atom-0ba8e3be7e",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-C035-04",
+      "sourceId": "C035",
+      "chapter": "函数的概念与性质",
+      "title": "周期函数结论",
+      "type": "reconstruct",
+      "stemLatex": "f(x+a)+f(x-a)=b\\Rightarrow T=",
+      "answerLatex": "4a",
+      "distractors": [
+        {
+          "latex": "2a",
+          "errorKind": "系数错误",
+          "error": "只做了两次平移，少算了一轮"
+        },
+        {
+          "latex": "a",
+          "errorKind": "系数错误",
+          "error": "把单个平移量直接当成了周期"
+        },
+        {
+          "latex": "8a",
+          "errorKind": "系数错误",
+          "error": "把周期多算了一轮"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C035-atom-3f7e197675",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C035-05",
+      "sourceId": "C035",
+      "chapter": "函数的概念与性质",
+      "title": "周期函数结论",
+      "type": "reconstruct",
+      "stemLatex": "f(x+a)=\\frac1{f(x)}\\Rightarrow T=",
+      "answerLatex": "2a",
+      "distractors": [
+        {
+          "latex": "a",
+          "errorKind": "系数错误",
+          "error": "一次取倒数还没有回到原函数"
+        },
+        {
+          "latex": "4a",
+          "errorKind": "系数错误",
+          "error": "把周期多算了一轮"
+        },
+        {
+          "latex": "\\frac a2",
+          "errorKind": "系数错误",
+          "error": "周期不应除以 2"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C035-atom-cbf35fb9ea",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C042-02",
+      "sourceId": "C042",
+      "chapter": "函数的概念与性质",
+      "title": "对数性质",
+      "type": "reconstruct",
+      "stemLatex": "a^{\\log_a N}=",
+      "answerLatex": "N",
+      "distractors": [
+        {
+          "latex": "a",
+          "errorKind": "相似公式混淆",
+          "error": "把指数与对数抵消后的结果误写成了底数"
+        },
+        {
+          "latex": "N^a",
+          "errorKind": "次数错误",
+          "error": "结果不应再带底数指数 a"
+        },
+        {
+          "latex": "\\log_a N",
+          "errorKind": "相似公式混淆",
+          "error": "指数与对数抵消后应得到真数 N"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C042-atom-1cf445000c",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C042-03",
+      "sourceId": "C042",
+      "chapter": "函数的概念与性质",
+      "title": "对数性质",
+      "type": "reconstruct",
+      "stemLatex": "\\log_a a^b=",
+      "answerLatex": "b",
+      "distractors": [
+        {
+          "latex": "a^b",
+          "errorKind": "相似公式混淆",
+          "error": "把对数值误写成了原来的真数"
+        },
+        {
+          "latex": "\\frac ba",
+          "errorKind": "分母或根号错误",
+          "error": "误把指数除以底数"
+        },
+        {
+          "latex": "ab",
+          "errorKind": "系数错误",
+          "error": "误把指数与底数相乘"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C042-atom-1fbe0680e7",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C042-04",
+      "sourceId": "C042",
+      "chapter": "函数的概念与性质",
+      "title": "对数性质",
+      "type": "blank",
+      "stemLatex": "\\log_a a=\\boxed{\\phantom{1}}",
+      "answerLatex": "1",
+      "distractors": [
+        {
+          "latex": "0",
+          "errorKind": "相似公式混淆",
+          "error": "把 log_a a 与 log_a 1 混淆了"
+        },
+        {
+          "latex": "a",
+          "errorKind": "相似公式混淆",
+          "error": "对数值误写成了底数本身"
+        },
+        {
+          "latex": "\\log_a 1",
+          "errorKind": "相似公式混淆",
+          "error": "把两个基本对数值混用了"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C042-atom-80bc3b30a9",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-C042-05",
+      "sourceId": "C042",
+      "chapter": "函数的概念与性质",
+      "title": "对数性质",
+      "type": "condition",
+      "stemLatex": "\\log_a N\\text{ 有意义时，下列条件全部正确的是}",
+      "answerLatex": "a>0,\\ a\\neq1,\\ N>0",
+      "distractors": [
+        {
+          "latex": "a>0,\\ a\\neq0,\\ N>0",
+          "errorKind": "漏条件",
+          "error": "底数不能等于 1，而不是只要不等于 0"
+        },
+        {
+          "latex": "a>0,\\ a\\neq1,\\ N\\geq0",
+          "errorKind": "符号错误",
+          "error": "真数必须严格大于 0"
+        },
+        {
+          "latex": "a>0,\\ a=1,\\ N>0",
+          "errorKind": "相似公式混淆",
+          "error": "底数为 1 时对数没有定义"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C042-atom-5ee577b97e",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C058-02",
+      "sourceId": "C058",
+      "chapter": "三角函数",
+      "title": "诱导公式",
+      "type": "reconstruct",
+      "stemLatex": "\\sin(\\pi-\\alpha)=",
+      "answerLatex": "\\sin\\alpha",
+      "distractors": [
+        {
+          "latex": "-\\sin\\alpha",
+          "errorKind": "符号错误",
+          "error": "第二象限角的正弦值为正"
+        },
+        {
+          "latex": "\\cos\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "π 的倍数是“偶不变”，函数名仍为正弦"
+        },
+        {
+          "latex": "-\\cos\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "函数名和符号同时判断错了"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C058-atom-1389a6214e",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C058-03",
+      "sourceId": "C058",
+      "chapter": "三角函数",
+      "title": "诱导公式",
+      "type": "blank",
+      "stemLatex": "\\sin(\\pi-\\alpha)=\\boxed{\\phantom{\\sin\\alpha}}",
+      "answerLatex": "\\sin\\alpha",
+      "distractors": [
+        {
+          "latex": "-\\sin\\alpha",
+          "errorKind": "符号错误",
+          "error": "第二象限角的正弦值为正"
+        },
+        {
+          "latex": "\\cos\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "π 的倍数是“偶不变”，函数名仍为正弦"
+        },
+        {
+          "latex": "-\\cos\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "函数名和符号同时判断错了"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C058-atom-1389a6214e",
+      "promptForm": "completion",
+      "variantOf": "P-C058-02"
+    },
+    {
+      "id": "P-C058-04",
+      "sourceId": "C058",
+      "chapter": "三角函数",
+      "title": "诱导公式",
+      "type": "reconstruct",
+      "stemLatex": "\\tan\\left(\\tfrac{\\pi}{2}+\\alpha\\right)=",
+      "answerLatex": "-\\cot\\alpha",
+      "distractors": [
+        {
+          "latex": "\\cot\\alpha",
+          "errorKind": "符号错误",
+          "error": "第二象限角的正切值为负，结果应保留负号"
+        },
+        {
+          "latex": "-\\tan\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "π/2 的奇倍应改变函数名"
+        },
+        {
+          "latex": "\\tan\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "函数名不变且符号判断错误"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C058-atom-a34266726d",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C058-05",
+      "sourceId": "C058",
+      "chapter": "三角函数",
+      "title": "诱导公式",
+      "type": "blank",
+      "stemLatex": "\\sin\\left(\\tfrac{3\\pi}{2}+\\alpha\\right)=\\boxed{\\phantom{-\\cos\\alpha}}",
+      "answerLatex": "-\\cos\\alpha",
+      "distractors": [
+        {
+          "latex": "\\cos\\alpha",
+          "errorKind": "符号错误",
+          "error": "第四象限角的正弦值为负"
+        },
+        {
+          "latex": "-\\sin\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "3π/2 的奇倍应改变函数名"
+        },
+        {
+          "latex": "\\sin\\alpha",
+          "errorKind": "相似公式混淆",
+          "error": "函数名不变且符号判断错误"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C058-atom-7947f3554b",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-C059-02",
+      "sourceId": "C059",
+      "chapter": "三角函数",
+      "title": "正弦函数性质",
+      "type": "reconstruct",
+      "stemLatex": "y=\\sin x\\text{ 的最小正周期 }T=",
+      "answerLatex": "2\\pi",
+      "distractors": [
+        {
+          "latex": "\\pi",
+          "errorKind": "系数错误",
+          "error": "漏掉了系数 2"
+        },
+        {
+          "latex": "\\frac{\\pi}{2}",
+          "errorKind": "分母或根号错误",
+          "error": "把周期误写成了四分之一周期"
+        },
+        {
+          "latex": "4\\pi",
+          "errorKind": "系数错误",
+          "error": "把周期扩大了一倍"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C059-atom-dfa554ec63",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C059-03",
+      "sourceId": "C059",
+      "chapter": "三角函数",
+      "title": "正弦函数性质",
+      "type": "blank",
+      "stemLatex": "y=\\sin x\\text{ 的零点 }x=\\boxed{\\phantom{k\\pi}}\\ (k\\in\\mathbb{Z})",
+      "answerLatex": "k\\pi",
+      "distractors": [
+        {
+          "latex": "\\frac{\\pi}{2}+k\\pi",
+          "errorKind": "相似公式混淆",
+          "error": "把对称轴的位置误当成了零点"
+        },
+        {
+          "latex": "2k\\pi",
+          "errorKind": "漏条件",
+          "error": "漏掉了 x=π 这一类零点"
+        },
+        {
+          "latex": "\\frac{\\pi}{2}+2k\\pi",
+          "errorKind": "相似公式混淆",
+          "error": "把最大值点误当成了零点"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C059-atom-1cc840f0f3",
+      "promptForm": "completion",
+      "variantOf": "P-C059-04"
+    },
+    {
+      "id": "P-C059-04",
+      "sourceId": "C059",
+      "chapter": "三角函数",
+      "title": "正弦函数性质",
+      "type": "reconstruct",
+      "stemLatex": "y=\\sin x\\text{ 的零点 }x=",
+      "answerLatex": "k\\pi\\ (k\\in\\mathbb{Z})",
+      "distractors": [
+        {
+          "latex": "\\pi/2+k\\pi\\ (k\\in\\mathbb{Z})",
+          "errorKind": "相似公式混淆",
+          "error": "把对称轴的位置误当成了零点"
+        },
+        {
+          "latex": "2k\\pi\\ (k\\in\\mathbb{Z})",
+          "errorKind": "漏条件",
+          "error": "漏掉了 x=π 这一类零点"
+        },
+        {
+          "latex": "\\pi/2+2k\\pi\\ (k\\in\\mathbb{Z})",
+          "errorKind": "相似公式混淆",
+          "error": "把最大值点误当成了零点"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C059-atom-1cc840f0f3",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-C059-05",
+      "sourceId": "C059",
+      "chapter": "三角函数",
+      "title": "正弦函数性质",
+      "type": "blank",
+      "stemLatex": "y=\\sin x\\text{ 的单调递减区间为}\\boxed{\\phantom{\\left[\\tfrac{\\pi}{2}+2k\\pi,\\ \\tfrac{3\\pi}{2}+2k\\pi\\right]}}\\ (k\\in\\mathbb{Z})",
+      "answerLatex": "\\left[\\tfrac{\\pi}{2}+2k\\pi,\\ \\tfrac{3\\pi}{2}+2k\\pi\\right]",
+      "distractors": [
+        {
+          "latex": "\\left[-\\tfrac{\\pi}{2}+2k\\pi,\\ \\tfrac{\\pi}{2}+2k\\pi\\right]",
+          "errorKind": "符号错误",
+          "error": "这是正弦函数的单调递增区间"
+        },
+        {
+          "latex": "\\left[\\tfrac{\\pi}{2}+k\\pi,\\ \\tfrac{3\\pi}{2}+k\\pi\\right]",
+          "errorKind": "次数错误",
+          "error": "周期部分应为 2kπ，不能写成 kπ"
+        },
+        {
+          "latex": "\\left[\\tfrac{\\pi}{2}+2k\\pi,\\ \\pi+2k\\pi\\right]",
+          "errorKind": "系数错误",
+          "error": "递减区间的右端点应为 3π/2+2kπ"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "C059-atom-b8edf26e61",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-S044-02",
+      "sourceId": "S044",
+      "chapter": "数列",
+      "title": "数列求和放缩公式",
+      "type": "reconstruct",
+      "stemLatex": "\\frac1{n(n+1)}=",
+      "answerLatex": "\\frac1n-\\frac1{n+1}",
+      "distractors": [
+        {
+          "latex": "\\frac1n+\\frac1{n+1}",
+          "errorKind": "符号错误",
+          "error": "裂项应取两个倒数之差"
+        },
+        {
+          "latex": "\\frac1{n+1}-\\frac1n",
+          "errorKind": "符号错误",
+          "error": "两个分式的相减顺序写反了"
+        },
+        {
+          "latex": "\\frac1{n-1}-\\frac1n",
+          "errorKind": "分母或根号错误",
+          "error": "分母中的平移量写错了"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S044-atom-af6d8901a0",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-S044-03",
+      "sourceId": "S044",
+      "chapter": "数列",
+      "title": "数列求和放缩公式",
+      "type": "blank",
+      "stemLatex": "\\frac1{n(n+1)}=\\frac1n-\\boxed{\\phantom{\\frac1{n+1}}}",
+      "answerLatex": "\\frac1{n+1}",
+      "distractors": [
+        {
+          "latex": "\\frac1{n-1}",
+          "errorKind": "分母或根号错误",
+          "error": "后一项的分母应为 n+1"
+        },
+        {
+          "latex": "\\frac1n",
+          "errorKind": "相似公式混淆",
+          "error": "被减项不能与前一裂项相同"
+        },
+        {
+          "latex": "-\\frac1{n+1}",
+          "errorKind": "符号错误",
+          "error": "再添一个负号会把裂项改成相加"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S044-atom-af6d8901a0",
+      "promptForm": "completion",
+      "variantOf": "P-S044-02"
+    },
+    {
+      "id": "P-S045-02",
+      "sourceId": "S045",
+      "chapter": "导数",
+      "title": "导数构造模型",
+      "type": "reconstruct",
+      "stemLatex": "f'g-fg'>0\\Rightarrow F=",
+      "answerLatex": "\\frac f g",
+      "distractors": [
+        {
+          "latex": "fg",
+          "errorKind": "相似公式混淆",
+          "error": "把商的导数模型与积的导数模型混淆了"
+        },
+        {
+          "latex": "\\frac g f",
+          "errorKind": "分母或根号错误",
+          "error": "商的分子和分母写反了"
+        },
+        {
+          "latex": "f-g",
+          "errorKind": "相似公式混淆",
+          "error": "把商的构造误写成了差"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S045-atom-a05bc7cb8f",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-S045-03",
+      "sourceId": "S045",
+      "chapter": "导数",
+      "title": "导数构造模型",
+      "type": "blank",
+      "stemLatex": "xf'+f>0\\Rightarrow F=\\boxed{\\phantom{xf}}",
+      "answerLatex": "xf",
+      "distractors": [
+        {
+          "latex": "\\frac f x",
+          "errorKind": "分母或根号错误",
+          "error": "把乘积模型与商模型混淆了"
+        },
+        {
+          "latex": "f-x",
+          "errorKind": "相似公式混淆",
+          "error": "把乘积构造误写成了差"
+        },
+        {
+          "latex": "xf'",
+          "errorKind": "次数错误",
+          "error": "构造 F 时不能把 f 误写成它的导数"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S045-atom-26d7a415e9",
+      "promptForm": "completion"
+    },
+    {
+      "id": "P-S045-04",
+      "sourceId": "S045",
+      "chapter": "导数",
+      "title": "导数构造模型",
+      "type": "reconstruct",
+      "stemLatex": "xf'-f>0\\Rightarrow F=",
+      "answerLatex": "\\frac f x",
+      "distractors": [
+        {
+          "latex": "xf",
+          "errorKind": "相似公式混淆",
+          "error": "把商模型与乘积模型混淆了"
+        },
+        {
+          "latex": "\\frac x f",
+          "errorKind": "分母或根号错误",
+          "error": "商的分子和分母写反了"
+        },
+        {
+          "latex": "f-x",
+          "errorKind": "相似公式混淆",
+          "error": "把商的构造误写成了差"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S045-atom-9fef69b400",
+      "promptForm": "qa"
+    },
+    {
+      "id": "P-S045-05",
+      "sourceId": "S045",
+      "chapter": "导数",
+      "title": "导数构造模型",
+      "type": "blank",
+      "stemLatex": "f'+f>0\\Rightarrow F=\\boxed{\\phantom{e^xf}}",
+      "answerLatex": "e^xf",
+      "distractors": [
+        {
+          "latex": "e^{-x}f",
+          "errorKind": "符号错误",
+          "error": "指数上的符号写反了"
+        },
+        {
+          "latex": "e^x+f",
+          "errorKind": "相似公式混淆",
+          "error": "构造模型应为乘积，不是加法"
+        },
+        {
+          "latex": "e^{x-f}",
+          "errorKind": "系数错误",
+          "error": "f 应在指数函数外面相乘"
+        }
+      ],
+      "authoring": "manual",
+      "demo": true,
+      "atomId": "S045-atom-6820ea3b75",
+      "promptForm": "completion"
+    }
+  ]
+}

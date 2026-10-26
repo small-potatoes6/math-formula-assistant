@@ -1,0 +1,89 @@
+page {
+  background: #f5f6f8;
+}
+
+.topics-page {
+  min-height: 100vh;
+  padding: 0 0 calc(48rpx + env(safe-area-inset-bottom));
+  background: #f5f6f8;
+}
+
+.topics-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 48rpx 32rpx 26rpx;
+}
+
+.topics-title {
+  color: #15171a;
+  font-size: 46rpx;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.topics-count {
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  background: #eef8f5;
+  color: #16856e;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.topic-list {
+  margin: 0 24rpx;
+  overflow: hidden;
+  border: 1rpx solid #e4e7ec;
+  border-radius: 16rpx;
+  background: #ffffff;
+  box-shadow: 0 5rpx 16rpx rgba(15, 23, 42, 0.025);
+}
+
+.topic-row {
+  display: grid;
+  grid-template-columns: 72rpx minmax(0, 1fr) 24rpx;
+  align-items: center;
+  min-height: 112rpx;
+  padding: 20rpx 18rpx 20rpx 12rpx;
+  border-bottom: 1rpx solid #eef1f4;
+}
+
+.topic-row:last-child {
+  border-bottom: 0;
+}
+
+.topic-row:active {
+  background: #f8fafb;
+}
+
+.topic-order {
+  width: auto;
+  color: #16856e;
+  font-family: inherit;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.topic-title {
+  color: #1f2933;
+  font-size: 31rpx;
+  font-weight: 600;
+  line-height: 1.48;
+  white-space: normal;
+}
+
+.topic-arrow {
+  width: 24rpx;
+  margin-left: 0;
+  color: #98a2b3;
+  font-size: 34rpx;
+  font-weight: 300;
+  line-height: 1;
+  text-align: right;
+}
+
+.pressable:active {
+  opacity: 0.78;
+}

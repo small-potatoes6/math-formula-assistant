@@ -1,0 +1,151 @@
+<view class="page-shell session-page">
+  <view wx:if="{{empty}}" class="page-content empty-wrap">
+    <view class="empty-state">
+      <view class="empty-title">当前范围没有题目</view>
+      <view class="empty-copy">返回练习设置，换一个章节或范围。</view>
+      <button class="primary-button empty-button pressable" bindtap="goBack">返回练习设置</button>
+    </view>
+  </view>
+
+  <view wx:elif="{{finished}}" class="page-content finish-wrap">
+    <view class="finish-card">
+      <view class="finish-eyebrow">{{isDemo ? total + ' 题示范完成' : '本组完成'}}</view>
+      <view class="finish-title">{{isDemo ? '演示答题不计入练习记录' : '答题记录已经保存'}}</view>
+      <view class="finish-stats">
+        <view class="finish-stat">
+          <text class="finish-value known">{{stats.known}}</text>
+          <text class="finish-label">正确</text>
+        </view>
+        <view class="finish-divider"></view>
+        <view class="finish-stat">
+          <text class="finish-value unknown">{{stats.unknown}}</text>
+          <text class="finish-label">错误</text>
+        </view>
+        <view class="finish-divider"></view>
+        <view class="finish-stat">
+          <text class="finish-value total">{{total}}</text>
+          <text class="finish-label">总题数</text>
+        </view>
+      </view>
+      <button class="primary-button finish-button pressable" bindtap="restartSession">再练一组</button>
+      <button class="secondary-button finish-button pressable" bindtap="goBack">返回练习设置</button>
+    </view>
+  </view>
+
+  <view wx:else class="page-content session-content">
+    <view class="session-head">
+      <view class="session-back pressable" bindtap="goBack">
+        <text class="session-back-icon">‹</text>
+        <text>返回</text>
+      </view>
+      <view class="session-position">{{currentIndex + 1}} / {{total}}</view>
+    </view>
+
+    <view class="session-progress-row">
+      <view class="progress-track">
+        <view class="progress-value" style="width:{{progress}}%;"></view>
+      </view>
+      <button
+        class="next-pill pressable {{quizAnswered ? 'is-ready' : 'is-disabled'}}"
+        disabled="{{!quizAnswered || assetLoading}}"
+        bindtap="advance"
+      >
+        <text>{{currentIndex + 1 == total ? '看结果' : '下一题'}}</text>
+        <text class="next-pill-arrow">›</text>
+      </button>
+    </view>
+
+    <view wx:if="{{current}}" class="question-card">
+      <view class="question-meta">{{current.sourceId}} · {{current.chapter}}</view>
+      <view class="question-title">{{current.title}}</view>
+      <view class="question-prompt">{{questionPrompt}}</view>
+
+      <view class="stem-stage">
+        <formula-crop
+          wx:if="{{stem}}"
+          sheet="{{stem.crop.sheet}}"
+          sheet-width="{{stem.crop.sheetWidth}}"
+          sheet-height="{{stem.crop.sheetHeight}}"
+          x="{{stem.crop.x}}"
+          y="{{stem.crop.y}}"
+          width="{{stem.crop.width}}"
+          height="{{stem.crop.height}}"
+          max-width="{{570}}"
+          align="left"
+          fit="{{false}}"
+        ></formula-crop>
+      </view>
+
+      <view wx:if="{{assetLoading}}" class="asset-state">
+        <view class="asset-title">正在加载公式</view>
+        <view class="asset-track">
+          <view class="asset-value" style="width:{{loadProgress}}%;"></view>
+        </view>
+        <view class="asset-copy">{{loadProgress}}%</view>
+      </view>
+
+      <view wx:elif="{{loadError}}" class="asset-state error-state">
+        <view class="asset-title">公式资源没有加载完成</view>
+        <view class="asset-copy">{{loadError}}</view>
+        <button class="secondary-button retry-button pressable" bindtap="retryAssets">重新加载</button>
+      </view>
+
+      <view wx:else class="choice-list">
+        <view
+          wx:for="{{quizOptions}}"
+          wx:key="expressionId"
+          class="choice-item {{item.status}} pressable"
+          data-id="{{item.expressionId}}"
+          bindtap="chooseOption"
+        >
+          <view class="choice-item-head">
+            <view class="choice-letter">{{item.letter}}</view>
+            <view class="choice-status {{item.status}}">
+              {{item.status ? (item.status == 'correct' ? '正确' : '再想想') : ''}}
+            </view>
+          </view>
+          <view class="choice-formula">
+            <formula-crop
+              id="choice-formula-{{index}}"
+              sheet="{{item.crop.sheet}}"
+              sheet-width="{{item.crop.sheetWidth}}"
+              sheet-height="{{item.crop.sheetHeight}}"
+              x="{{item.crop.x}}"
+              y="{{item.crop.y}}"
+              width="{{item.crop.width}}"
+              height="{{item.crop.height}}"
+              max-width="{{574}}"
+              align="left"
+              fit="{{false}}"
+              bind:cropswipe="onFormulaSwipe"
+            ></formula-crop>
+          </view>
+        </view>
+      </view>
+
+      <view wx:if="{{quizAnswered}}" class="quiz-feedback">
+        <view class="feedback-title {{quizCorrect ? 'is-correct' : 'is-wrong'}}">
+          {{quizCorrect ? '回答正确' : '这次没有选对'}}
+        </view>
+        <view class="feedback-copy">{{feedbackText}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{!empty}}" class="practice-asset-bootstrap">
+    <!-- practice-asset-anchors:start -->
+    <practice-asset-anchor-a
+      data-package-name="practiceAssetsA"
+      bind:packageready="onAssetPackageReady"
+    />
+    <practice-asset-anchor-b
+      data-package-name="practiceAssetsB"
+      bind:packageready="onAssetPackageReady"
+    />
+    <practice-asset-anchor-c
+      data-package-name="practiceAssetsC"
+      bind:packageready="onAssetPackageReady"
+    />
+    <!-- practice-asset-anchors:end -->
+  </view>
+</view>

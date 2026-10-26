@@ -1,0 +1,21 @@
+<view class="topics-page">
+  <view class="topics-head">
+    <view class="topics-title">数学专项</view>
+    <view class="topics-count">24 篇</view>
+  </view>
+
+  <view class="topic-list">
+    <view
+      wx:for="{{TOPICS}}"
+      wx:key="id"
+      class="topic-row pressable"
+      data-id="{{item.id}}"
+      data-route="{{item.route}}"
+      bindtap="openTopic"
+    >
+      <view class="topic-order">{{item.displayOrder}}</view>
+      <view class="topic-title">{{item.title}}</view>
+      <view class="topic-arrow">›</view>
+    </view>
+  </view>
+</view>

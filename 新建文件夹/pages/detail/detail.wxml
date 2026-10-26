@@ -16,21 +16,30 @@
 
   <view class="detail-content">
     <view class="formula-panel {{formula.type}}">
-      <formula-image
-        asset="{{formula.formulaImage}}"
-        asset-width="{{formula.formulaWidth}}"
-        asset-height="{{formula.formulaHeight}}"
-        max-width="620"
-      ></formula-image>
+      <view class="formula-stack">
+        <formula-image
+          asset="{{formula.formulaImage}}"
+          asset-width="{{formula.formulaWidth}}"
+          asset-height="{{formula.formulaHeight}}"
+          max-width="654"
+          mode="scroll"
+        ></formula-image>
+      </view>
     </view>
 
     <view
-      wx:if="{{formula.condition || formula.pitfall || formula.example || formula.tags.length}}"
+      wx:if="{{explanationParas.length || formula.pitfall || formula.example || formula.tags.length}}"
       class="info-panel"
     >
-      <view wx:if="{{formula.condition}}" class="info-block">
-        <view class="info-label">适用条件</view>
-        <view class="info-text">{{formula.condition}}</view>
+      <view wx:if="{{explanationParas.length}}" class="info-block explain-block">
+        <view class="info-label">说明</view>
+        <view class="info-text explain-text">
+          <view
+            wx:for="{{explanationParas}}"
+            wx:key="*this"
+            class="explain-para {{index === 0 ? 'first' : ''}}"
+          >{{item}}</view>
+        </view>
       </view>
 
       <view wx:if="{{formula.pitfall}}" class="info-block pitfall-block">
@@ -45,7 +54,8 @@
           asset="{{formula.exampleImage}}"
           asset-width="{{formula.exampleWidth}}"
           asset-height="{{formula.exampleHeight}}"
-          max-width="620"
+          max-width="654"
+          mode="scroll"
         ></formula-image>
         <view wx:else class="info-text">{{formula.example}}</view>
       </view>
@@ -57,9 +67,9 @@
   </view>
 
   <view class="detail-actions">
-    <button class="secondary-button action-button favorite-action pressable" bindtap="toggleFavorite">
-      <text class="action-star {{favorite ? 'active' : ''}}">{{favorite ? '★' : '☆'}}</text>
-      <text>{{favorite ? '已收藏' : '收藏'}}</text>
+    <button class="secondary-button action-button back-action pressable" bindtap="goBack">
+      <text class="action-back-icon">←</text>
+      <text>返回</text>
     </button>
     <button class="primary-button action-button pressable" bindtap="startPractice">
       练习这个公式

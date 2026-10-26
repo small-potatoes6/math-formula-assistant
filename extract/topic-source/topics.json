@@ -1,0 +1,3170 @@
+{
+  "meta": {
+    "title": "高中数学 24 个解题专项",
+    "source": "知乎专栏 715220128，原图 03-32",
+    "transcription": "逐页对照原图转录；仅重新排版，不增删正文",
+    "count": 24
+  },
+  "modules": [
+    {
+      "id": "K01",
+      "order": 1,
+      "packageRoot": "topic-package-a",
+      "visualTheme": "soft",
+      "layoutVariant": "feature-cards",
+      "title": "基本不等式、柯西不等式、权方和不等式",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "sections": [
+        {
+          "id": "K01-01",
+          "title": "一、基本不等式",
+          "sourcePages": [
+            3
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "基本不等式及几个重要的不等式："
+            },
+            {
+              "type": "formula",
+              "tex": "(1)\\sqrt{ab}\\le\\frac{a+b}{2}(a>0,b>0);\\quad(2)a+b\\ge2\\sqrt{ab}(a>0,b>0);\\quad(3)a^2+b^2\\ge2ab;\\quad(4)\\frac{b}{a}+\\frac{a}{b}\\ge2(ab\\ne0,\\text{且 }a,b\\text{同号});"
+            },
+            {
+              "type": "formula",
+              "tex": "(5)ab\\le\\left(\\frac{a+b}{2}\\right)^2;\\quad(6)\\left(\\frac{a+b}{2}\\right)^2\\le\\frac{a^2+b^2}{2};\\quad(7)\\sqrt{\\frac{a^2+b^2}{2}}\\ge\\frac{a+b}{2}\\ge\\sqrt{ab}\\ge\\frac{2}{\\frac1a+\\frac1b}(a>0,b>0)."
+            },
+            {
+              "type": "note",
+              "text": "注：以上不等式均在$a=b$时取等号."
+            },
+            {
+              "type": "label",
+              "text": "常用模型"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{模型一：}mx+\\frac{n}{x}\\ge2\\sqrt{mn}(m>0,n>0,x>0),\\text{当且仅当 }x=\\sqrt{\\frac{n}{m}}\\text{ 时，等号成立}."
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{模型二：}mx+\\frac{n}{x-a}=m(x-a)+\\frac{n}{x-a}+ma\\ge2\\sqrt{mn}+ma(m>0,n>0,x>a),\\text{当且仅当 }x-a=\\sqrt{\\frac{n}{m}}\\text{ 时，等号成立}."
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{模型三：}\\frac{x}{ax^2+bx+c}=\\frac1{ax+b+\\frac{c}{x}}\\le\\frac1{2\\sqrt{ac}+b}(a>0,c>0,x>0,2\\sqrt{ac}+b\\ne0),\\text{当且仅当 }x=\\sqrt{\\frac{c}{a}}\\text{ 时，等号成立}."
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{模型四：}x(n-mx)=\\frac{mx(n-mx)}{m}\\le\\frac1m\\left[\\frac{mx+(n-mx)}2\\right]^2=\\frac{n^2}{4m}(m>0,n>0,0<x<\\frac{n}{m}),\\text{当且仅当 }x=\\frac{n}{2m}\\text{ 时，等号成立}."
+            }
+          ]
+        },
+        {
+          "id": "K01-02",
+          "title": "二、柯西不等式",
+          "sourcePages": [
+            3
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "二维形式的柯西不等式：若$a,b,c,d$都是实数，则$(a^2+b^2)(c^2+d^2)\\ge(ac+bd)^2$，当且仅当$ad=bc$时，等号成立."
+            },
+            {
+              "type": "label",
+              "text": "常用模型"
+            },
+            {
+              "type": "paragraph",
+              "text": "模型一：（1）“一高一低和式”配凑类型：已知$x^2+y^2$的值，求$x+y$的取值范围，或已知$x+y$的值，求$2x^2+3y^2$的最值或求$\\sqrt{x}+\\sqrt{y}$的最值."
+            },
+            {
+              "type": "paragraph",
+              "text": "例如，$(a^2+b^2)(1+1)\\ge(a+b)^2$，当且仅当$a=b$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）“同次积式”配凑类型：已知$xy$的值，求$(x+m)(y+n)(x,y,m,n\\in\\mathbf R_+)$的最值."
+            },
+            {
+              "type": "paragraph",
+              "text": "模型二：$(a+b)\\left(\\frac{m}{a}+\\frac{n}{b}\\right)\\ge(\\sqrt m+\\sqrt n)^2$，其中$a>0,b>0,m>0,n>0$，当且仅当$\\frac{an}{b}=\\frac{bm}{a}$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "例如，当$a>0,b>0$时，$(a+b)\\left(\\frac1a+\\frac1b\\right)\\ge\\left(\\sqrt{a\\cdot\\frac1a}+\\sqrt{b\\cdot\\frac1b}\\right)^2=4$，当且仅当$a=b$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "模型三：$\\frac{a}{x}+\\frac{b}{1-x}=[x+(1-x)]\\left(\\frac{a}{x}+\\frac{b}{1-x}\\right)\\ge(\\sqrt a+\\sqrt b)^2$，其中$a>0,b>0,0<x<1$，当且仅当$\\frac{bx}{1-x}=\\frac{a(1-x)}{x}$时，等号成立."
+            }
+          ]
+        },
+        {
+          "id": "K01-03",
+          "title": "三、权方和不等式",
+          "sourcePages": [
+            4
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "若$a,b,x,y>0$，则$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，当且仅当$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "要证$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，即证$\\frac{ya^2+xb^2}{xy}\\ge\\frac{(a+b)^2}{x+y}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "因为$a,b,x,y>0$，即证$xya^2+y^2a^2+x^2b^2+xyb^2\\ge xya^2+2xyab+xyb^2$，故只需证$y^2a^2+x^2b^2\\ge2xyab$，即$(ya-xb)^2\\ge0$，当且仅当$ya-xb=0$，即$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "因此$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，当且仅当$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "推论1：若$a_i>0,b_i>0(i=1,2,\\cdots,n)$，则$\\frac{a_1^2}{b_1}+\\frac{a_2^2}{b_2}+\\cdots+\\frac{a_n^2}{b_n}\\ge\\frac{(a_1+a_2+\\cdots+a_n)^2}{b_1+b_2+\\cdots+b_n}$，当且仅当$a_i=\\lambda b_i(\\lambda>0)$时，等号成立."
+            },
+            {
+              "type": "paragraph",
+              "text": "推论2：若$a_i>0,b_i>0(i=1,2,\\cdots,n),m>0$，则$\\frac{a_1^{m+1}}{b_1^m}+\\frac{a_2^{m+1}}{b_2^m}+\\cdots+\\frac{a_n^{m+1}}{b_n^m}\\ge\\frac{(a_1+a_2+\\cdots+a_n)^{m+1}}{(b_1+b_2+\\cdots+b_n)^m}$，当且仅当$a_i=\\lambda b_i(\\lambda>0)$时，等号成立."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K02",
+      "order": 2,
+      "packageRoot": "topic-package-a",
+      "title": "函数的奇偶性、周期性、图象的对称性",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "sections": [
+        {
+          "id": "K02-01",
+          "title": "一、函数的奇偶性",
+          "sourcePages": [
+            4
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "（1）常见的指对型奇函数："
+            },
+            {
+              "type": "formula",
+              "tex": "y=a^x-a^{-x},y=\\frac{a^x-1}{a^x+1},y=\\frac{a^x+1}{a^x-1},y=\\ln\\frac{kx-b}{kx+b},y=\\ln\\frac{kx+b}{kx-b},y=\\log_a(x+\\sqrt{x^2+1}),y=\\log_a(\\sqrt{x^2+1}-x)."
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）常见的指对型偶函数："
+            },
+            {
+              "type": "formula",
+              "tex": "y=a^x+a^{-x},y=a^{|x|},y=a^{x^2},y=\\log_a|x|,y=\\left(\\frac12+\\frac1{2^x-1}\\right)x."
+            }
+          ]
+        },
+        {
+          "id": "K02-02",
+          "title": "二、函数的周期性",
+          "sourcePages": [
+            4,
+            5
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "函数$y=f(x)$对定义域内任意实数$x$（$a$为常数，且$a>0$）满足："
+            },
+            {
+              "type": "table",
+              "columns": [
+                "序号",
+                "常见周期的表达式",
+                "$f(x)$的周期"
+              ],
+              "rows": [
+                [
+                  "①",
+                  "$f(x)=f(x+a)$",
+                  "$T=a$"
+                ],
+                [
+                  "②",
+                  "$f(x+a)=-f(x);f(x+a)=\\pm\\frac1{f(x)};f(x+a)=f(x-a);f(x+a)=\\frac{f(x)+1}{f(x)-1}(f(x)\\ne1);f(x+a)=\\frac{1-f(x)}{1+f(x)}(f(x)\\ne-1)$",
+                  "$T=2a$"
+                ]
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "续表"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "序号",
+                "常见周期的表达式",
+                "$f(x)$的周期"
+              ],
+              "rows": [
+                [
+                  "③",
+                  "$f(x+a)=f(x+b)(a\\ne b)$",
+                  "$T=|b-a|$"
+                ],
+                [
+                  "④",
+                  "$f(x+a)=-f(x+b)(a\\ne b)$",
+                  "$T=2|b-a|$"
+                ],
+                [
+                  "⑤",
+                  "$f(x)$的图象关于直线$x=a$和$x=b$对称",
+                  "$T=2|b-a|$"
+                ],
+                [
+                  "⑥",
+                  "$f(x)$的图象关于点$(a,0)$和点$(b,0)$对称",
+                  "$T=2|b-a|$"
+                ],
+                [
+                  "⑦",
+                  "$f(x)$的图象关于直线$x=a$对称，又关于点$(b,0)$对称",
+                  "$T=4|b-a|$"
+                ],
+                [
+                  "⑧",
+                  "$f(x)$是偶函数，其图象关于直线$x=a$对称",
+                  "$T=2a$"
+                ],
+                [
+                  "⑨",
+                  "$f(x)$是偶函数，其图象关于点$(a,0)$对称",
+                  "$T=4a$"
+                ],
+                [
+                  "⑩",
+                  "$f(x)$是奇函数，其图象关于直线$x=a$对称",
+                  "$T=4a$"
+                ],
+                [
+                  "⑪",
+                  "$f(x)$是奇函数，其图象关于点$(a,0)$对称",
+                  "$T=2a$"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K02-03",
+          "title": "三、函数图象的对称性",
+          "sourcePages": [
+            5
+          ],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "函数图象本身的对称性（自身对称）"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "序号",
+                "常见对称性的表达式",
+                "图象关于线（点）对称"
+              ],
+              "rows": [
+                [
+                  "①",
+                  "$f(a+x)=f(b-x)$",
+                  "关于直线$x=\\frac{a+b}{2}$对称"
+                ],
+                [
+                  "推论1",
+                  "$f(a+x)=f(a-x)$",
+                  "关于直线$x=a$对称"
+                ],
+                [
+                  "推论2",
+                  "$f(x)=f(2a-x)$",
+                  "关于直线$x=a$对称"
+                ],
+                [
+                  "推论3",
+                  "$f(-x)=f(2a+x)$",
+                  "关于直线$x=a$对称"
+                ],
+                [
+                  "②",
+                  "$f(a+x)+f(b-x)=2c$",
+                  "关于点$\\left(\\frac{a+b}{2},c\\right)$对称"
+                ],
+                [
+                  "推论1",
+                  "$f(a+x)+f(a-x)=2b$",
+                  "关于点$(a,b)$对称"
+                ],
+                [
+                  "推论2",
+                  "$f(x)+f(2a-x)=2b$",
+                  "关于点$(a,b)$对称"
+                ],
+                [
+                  "推论3",
+                  "$f(-x)+f(2a+x)=2b$",
+                  "关于点$(a,b)$对称"
+                ]
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "两个函数图象的对称性（相互对称）"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "序号",
+                "常见对称性的表达式",
+                "图象关于线（点）对称"
+              ],
+              "rows": [
+                [
+                  "①",
+                  "$y=f(x)$与$y=f(-x)$",
+                  "关于$y$轴对称"
+                ],
+                [
+                  "②",
+                  "$y=f(x)$与$y=-f(x)$",
+                  "关于$x$轴对称"
+                ],
+                [
+                  "③",
+                  "$y=f(x)$与$y=-f(-x)$",
+                  "关于原点对称"
+                ],
+                [
+                  "④",
+                  "$y=f(x)$与其反函数$y=f^{-1}(x)$或$x=f(y)$",
+                  "关于直线$y=x$对称"
+                ],
+                [
+                  "⑤",
+                  "$y=f(a+x)$与$y=f(b-x)$",
+                  "关于直线$x=\\frac{b-a}{2}$对称"
+                ],
+                [
+                  "推论1",
+                  "$y=f(a+x)$与$y=f(a-x)$",
+                  "关于直线$x=0$对称"
+                ],
+                [
+                  "推论2",
+                  "$y=f(x)$与$y=f(2a-x)$",
+                  "关于直线$x=a$对称"
+                ],
+                [
+                  "推论3",
+                  "$y=f(-x)$与$y=f(2a+x)$",
+                  "关于直线$x=-a$对称"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K03",
+      "order": 3,
+      "packageRoot": "topic-package-a",
+      "title": "抽象函数问题",
+      "sourcePages": [
+        6
+      ],
+      "sections": [
+        {
+          "id": "K03-01",
+          "title": "一、赋值法在抽象函数中的应用",
+          "sourcePages": [
+            6
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "赋值法是求解抽象函数问题最基本的方法，赋值时一般将$0,\\pm1,\\pm2$等特殊值代入，结合给定的抽象函数的单调性、奇偶性、周期性、图象的对称性等性质进行求解."
+            },
+            {
+              "type": "label",
+              "text": "点拨"
+            },
+            {
+              "type": "subheading",
+              "text": "判断抽象函数单调性的方法"
+            },
+            {
+              "type": "paragraph",
+              "text": "（1）凑：凑定义或凑已知，利用定义或已知条件得出结论."
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）赋值：给变量赋值要根据条件与结论的关系.有时可能要进行多次尝试."
+            },
+            {
+              "type": "paragraph",
+              "text": "①若给出的是“和型”抽象函数$f(x+y)=\\cdots$，比较大小时要变形为$f(x_2)-f(x_1)=f((x_2-x_1)+x_1)-f(x_1)$或$f(x_2)-f(x_1)=f(x_2)-f((x_1-x_2)+x_2)$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "②若给出的是“积型”抽象函数$f(xy)=\\cdots$，比较大小时要变形为$f(x_2)-f(x_1)=f\\left(x_1\\cdot\\frac{x_2}{x_1}\\right)-f(x_1)$或$f(x_2)-f(x_1)=f(x_2)-f\\left(x_2\\cdot\\frac{x_1}{x_2}\\right)$."
+            }
+          ]
+        },
+        {
+          "id": "K03-02",
+          "title": "二、常见的抽象函数模型",
+          "sourcePages": [
+            6
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "（1）一次函数：$f(x)=kx+b(k\\ne0)$，其对应的抽象函数为$f(x\\pm y)=f(x)\\pm f(y)\\mp b$."
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）二次函数：$f(x)=ax^2+bx+c(a\\ne0)$，其对应的抽象函数为$f(x+y)=f(x)+f(y)+2axy-c$."
+            },
+            {
+              "type": "paragraph",
+              "text": "（3）幂函数：$f(x)=x^\\alpha$，其对应的抽象函数为$f(xy)=f(x)f(y)$或$f\\left(\\frac{x}{y}\\right)=\\frac{f(x)}{f(y)}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "（4）指数函数：$f(x)=a^x(a>0,a\\ne1)$，其对应的抽象函数为$f(x+y)=f(x)f(y)$或$f(x-y)=\\frac{f(x)}{f(y)}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "（5）对数函数：$f(x)=\\log_a x(a>0,a\\ne1)$，其对应的抽象函数为$f(xy)=f(x)+f(y)$或$f\\left(\\frac{x}{y}\\right)=f(x)-f(y)$或$f(x^n)=nf(x)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "（6）三角函数：①正弦函数$f(x)=\\sin x$，对应的抽象函数为$f(x+y)f(x-y)=f^2(x)-f^2(y)$."
+            },
+            {
+              "type": "note",
+              "text": "【提示】对应正弦的平方差公式：$\\sin^2\\alpha-\\sin^2\\beta=\\sin(\\alpha+\\beta)\\sin(\\alpha-\\beta)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "②余弦函数$f(x)=\\cos x$，对应的抽象函数为$f(x)+f(y)=2f\\left(\\frac{x+y}{2}\\right)f\\left(\\frac{x-y}{2}\\right)$或$f(x)f(y)=\\frac12[f(x+y)+f(x-y)]$."
+            },
+            {
+              "type": "note",
+              "text": "【提示】分别对应余弦的和差化积公式：$\\cos\\alpha+\\cos\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2}$；"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{余弦的积化和差公式：}\\cos\\alpha\\cos\\beta=\\frac{\\cos(\\alpha+\\beta)+\\cos(\\alpha-\\beta)}2."
+            },
+            {
+              "type": "paragraph",
+              "text": "③正切函数$f(x)=\\tan x\\left(x\\ne\\frac{\\pi}{2}+k\\pi,k\\in\\mathbf Z\\right)$，对应的抽象函数为$f(x\\pm y)=\\frac{f(x)\\pm f(y)}{1\\mp f(x)f(y)}$."
+            },
+            {
+              "type": "note",
+              "text": "【提示】对应正切函数的和差角公式：$\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K04",
+      "order": 4,
+      "packageRoot": "topic-package-a",
+      "visualTheme": "soft",
+      "layoutVariant": "function-cards",
+      "title": "导数问题中常用函数的图象",
+      "sourcePages": [
+        7,
+        8
+      ],
+      "sections": [
+        {
+          "id": "K04-01",
+          "title": "",
+          "sourcePages": [
+            7,
+            8
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "函数",
+                "图象",
+                "单调性与极值情况",
+                "函数",
+                "图象",
+                "单调性与极值情况"
+              ],
+              "rows": [
+                [
+                  "$f(x)=x+\\ln x$，$x\\in(0,+\\infty)$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r1-left",
+                    "width": 480,
+                    "height": 465
+                  },
+                  "在$(0,+\\infty)$上单调递增，无极值",
+                  "$f(x)=e^x+x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r1-right",
+                    "width": 435,
+                    "height": 465
+                  },
+                  "在$\\mathbf R$上单调递增，无极值"
+                ],
+                [
+                  "$f(x)=\\ln x-x$，$x\\in(0,+\\infty)$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r2-left",
+                    "width": 480,
+                    "height": 435
+                  },
+                  "在$(0,1)$上单调递增，在$(1,+\\infty)$上单调递减，在$x=1$处取得极大值$-1$，无极小值",
+                  "$f(x)=e^x-x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r2-right",
+                    "width": 435,
+                    "height": 435
+                  },
+                  "在$(-\\infty,0)$上单调递减，在$(0,+\\infty)$上单调递增，在$x=0$处取得极小值$1$，无极大值"
+                ],
+                [
+                  "$f(x)=x\\ln x$，$x\\in(0,+\\infty)$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r3-left",
+                    "width": 480,
+                    "height": 810
+                  },
+                  "在$\\left(0,\\frac1e\\right)$上单调递减，在$\\left(\\frac1e,+\\infty\\right)$上单调递增，在$x=\\frac1e$处取得极小值$-\\frac1e$，无极大值",
+                  "$f(x)=xe^x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r3-right",
+                    "width": 435,
+                    "height": 810
+                  },
+                  "在$(-\\infty,-1)$上单调递减，在$(-1,+\\infty)$上单调递增，在$x=-1$处取得极小值$-\\frac1e$，无极大值"
+                ],
+                [
+                  "$f(x)=\\frac{\\ln x}{x}$，$x\\in(0,+\\infty)$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r4-left",
+                    "width": 480,
+                    "height": 600
+                  },
+                  "在$(0,e)$上单调递增，在$(e,+\\infty)$上单调递减，在$x=e$处取得极大值$\\frac1e$，无极小值",
+                  "$f(x)=\\frac{e^x}{x}$，$x\\ne0$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r4-right",
+                    "width": 435,
+                    "height": 600
+                  },
+                  "在$(-\\infty,0),(0,1)$上单调递减，在$(1,+\\infty)$上单调递增，在$x=1$处取得极小值$e$，无极大值"
+                ],
+                [
+                  "$f(x)=\\frac{x}{\\ln x}$，$x\\in(0,1)\\cup(1,+\\infty)$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r5-left",
+                    "width": 480,
+                    "height": 480
+                  },
+                  "在$(0,1),(1,e)$上单调递减，在$(e,+\\infty)$上单调递增，在$x=e$处取得极小值$e$，无极大值",
+                  "$f(x)=\\frac{x}{e^x}$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r5-right",
+                    "width": 435,
+                    "height": 480
+                  },
+                  "在$(-\\infty,1)$上单调递增，在$(1,+\\infty)$上单调递减，在$x=1$处取得极大值$\\frac1e$，无极小值"
+                ],
+                [
+                  "$f(x)=\\sin x+x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r6-left",
+                    "width": 480,
+                    "height": 570
+                  },
+                  "在$\\mathbf R$上单调递增，无极值",
+                  "$f(x)=\\cos x+x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p07-r6-right",
+                    "width": 435,
+                    "height": 570
+                  },
+                  "在$\\mathbf R$上单调递增，无极值"
+                ]
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "续表"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "函数",
+                "图象",
+                "单调性与极值情况",
+                "函数",
+                "图象",
+                "单调性与极值情况"
+              ],
+              "rows": [
+                [
+                  "$f(x)=x-\\sin x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r1-left",
+                    "width": 480,
+                    "height": 405
+                  },
+                  "在$\\mathbf R$上单调递增，无极值",
+                  "$f(x)=x-\\cos x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r1-right",
+                    "width": 510,
+                    "height": 405
+                  },
+                  "在$\\mathbf R$上单调递增，无极值"
+                ],
+                [
+                  "$f(x)=x\\sin x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r2-left",
+                    "width": 480,
+                    "height": 540
+                  },
+                  "单调性与极值情况如图所示",
+                  "$f(x)=x\\cos x$，$x\\in\\mathbf R$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r2-right",
+                    "width": 510,
+                    "height": 540
+                  },
+                  "单调性与极值情况如图所示"
+                ],
+                [
+                  "$f(x)=\\frac{\\sin x}{x}$，$x\\ne0$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r3-left",
+                    "width": 480,
+                    "height": 480
+                  },
+                  "单调性与极值情况如图所示",
+                  "$f(x)=\\frac{\\cos x}{x}$，$x\\ne0$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r3-right",
+                    "width": 510,
+                    "height": 480
+                  },
+                  "单调性与极值情况如图所示"
+                ],
+                [
+                  "$f(x)=\\frac{x}{\\sin x}$，$x\\ne k\\pi,k\\in\\mathbf Z$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r4-left",
+                    "width": 480,
+                    "height": 375
+                  },
+                  "单调性与极值情况如图所示",
+                  "$f(x)=\\frac{x}{\\cos x}$，$x\\ne\\frac{\\pi}{2}+k\\pi,k\\in\\mathbf Z$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k04-p08-r4-right",
+                    "width": 510,
+                    "height": 375
+                  },
+                  "单调性与极值情况如图所示"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K05",
+      "order": 5,
+      "packageRoot": "topic-package-a",
+      "title": "构造辅助函数",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "sections": [
+        {
+          "id": "K05-01",
+          "title": "一、同构技巧",
+          "sourcePages": [
+            8,
+            9
+          ],
+          "blocks": [
+            {
+              "type": "label",
+              "text": "类型一：地位同等要同构，主要针对双变量问题"
+            },
+            {
+              "type": "formula",
+              "tex": "(1)\\frac{f(x_1)-f(x_2)}{x_1-x_2}>k(x_1<x_2)\\Leftrightarrow f(x_1)-f(x_2)<kx_1-kx_2\\Leftrightarrow f(x_1)-kx_1<f(x_2)-kx_2\\Leftrightarrow y=f(x)-kx\\text{ 为增函数}."
+            },
+            {
+              "type": "formula",
+              "tex": "(2)\\frac{f(x_1)-f(x_2)}{x_1-x_2}<\\frac{k}{x_1x_2}(x_1<x_2,x_1,x_2\\ne0)\\Leftrightarrow f(x_1)-f(x_2)>\\frac{k(x_1-x_2)}{x_1x_2}=\\frac{k}{x_2}-\\frac{k}{x_1}\\Leftrightarrow f(x_1)+\\frac{k}{x_1}>f(x_2)+\\frac{k}{x_2}\\Leftrightarrow y=f(x)+\\frac{k}{x}\\text{ 为减函数}."
+            },
+            {
+              "type": "label",
+              "text": "类型二：指对跨阶型同构，同左同右取对数"
+            },
+            {
+              "type": "paragraph",
+              "text": "（1）积型：$ae^a\\leqslant b\\ln b$"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{三种同构方式}\\begin{cases}\\text{同左：}e^a\\ln e^a\\leqslant b\\ln b\\Leftrightarrow f(x)=x\\ln x,\\\\\\text{同右：}ae^a\\leqslant(\\ln b)e^{\\ln b}\\Leftrightarrow f(x)=xe^x,\\\\\\text{取对数：}a+\\ln a\\leqslant\\ln b+\\ln(\\ln b)\\Leftrightarrow f(x)=x+\\ln x.\\end{cases}"
+            },
+            {
+              "type": "paragraph",
+              "text": "例如，$2x^3\\ln x\\geqslant me^{m/x}\\Leftrightarrow x^2\\ln x^2\\geqslant\\frac{m}{x}e^{m/x}\\Leftrightarrow x^2\\ln x^2\\geqslant e^{m/x}\\ln e^{m/x}.$"
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）商型：$\\frac{e^a}{a}\\leqslant\\frac{b}{\\ln b}$"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{三种同构方式}\\begin{cases}\\text{同左：}\\frac{e^a}{a}\\leqslant\\frac{e^{\\ln b}}{\\ln b}\\Leftrightarrow f(x)=\\frac{e^x}{x},\\\\\\text{同右：}\\frac{e^a}{\\ln e^a}\\leqslant\\frac{b}{\\ln b}\\Leftrightarrow f(x)=\\frac{x}{\\ln x},\\\\\\text{取对数：}a-\\ln a\\leqslant\\ln b-\\ln(\\ln b)\\Leftrightarrow f(x)=x-\\ln x.\\end{cases}"
+            },
+            {
+              "type": "paragraph",
+              "text": "（3）和差型：$e^a\\pm a\\geqslant b\\pm\\ln b$"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{两种同构方式}\\begin{cases}\\text{同左：}e^a\\pm a\\geqslant e^{\\ln b}\\pm\\ln b\\Leftrightarrow f(x)=e^x\\pm x,\\\\\\text{同右：}e^a\\pm\\ln e^a\\geqslant b\\pm\\ln b\\Leftrightarrow f(x)=x\\pm\\ln x.\\end{cases}"
+            },
+            {
+              "type": "paragraph",
+              "text": "例如，$e^{ax}+ax>\\ln(x+1)+x+1\\Leftrightarrow e^{ax}+ax>e^{\\ln(x+1)}+\\ln(x+1).$"
+            },
+            {
+              "type": "label",
+              "text": "类型三：“无中生有”去同构，利用$x=e^{\\ln x}=\\ln e^x$凑形式"
+            },
+            {
+              "type": "formula",
+              "tex": "(1)\\text{当 }a\\ne0\\text{ 时，}ae^{ax}>\\ln x\\xLeftrightarrow{\\text{同乘 }x\\text{（无中生有）}}axe^{ax}>x\\ln x;"
+            },
+            {
+              "type": "formula",
+              "tex": "(2)\\text{当 }a>0\\text{ 时，}e^x>a\\ln(ax-a)-a\\Leftrightarrow\\frac1ae^x>\\ln[a(x-1)]-1\\Leftrightarrow e^{x-\\ln a}-\\ln a>\\ln(x-1)-1\\xLeftrightarrow{\\text{两边同加 }x}e^{x-\\ln a}+x-\\ln a>\\ln(x-1)+x-1=e^{\\ln(x-1)}+\\ln(x-1)\\Leftrightarrow x-\\ln a>\\ln(x-1);"
+            },
+            {
+              "type": "formula",
+              "tex": "(3)\\text{当 }a>0\\text{ 且 }a\\ne1\\text{ 时，}a^x>\\log_ax\\Leftrightarrow e^{x\\ln a}>\\frac{\\ln x}{\\ln a}\\Leftrightarrow(x\\ln a)e^{x\\ln a}>x\\ln x."
+            },
+            {
+              "type": "note",
+              "text": "【提示】由于$a^x>\\log_ax$两边互为反函数，所以还可将$a^x>\\log_ax$转化为$a^x>x$，即$\\ln a>\\frac{\\ln x}{x}.$"
+            },
+            {
+              "type": "paragraph",
+              "text": "例如，当$a>0$时，$\\frac1ae^x+1>\\ln[a(x-1)]$，左右两边互为反函数，所以可转化为$\\frac1ae^x+1>x$，即$\\frac1a>\\frac{x-1}{e^x}.$"
+            },
+            {
+              "type": "label",
+              "text": "类型四：切线放缩"
+            },
+            {
+              "type": "formula",
+              "tex": "(1)e^x\\geqslant x+1\\Rightarrow e^{x-1}\\geqslant x\\Rightarrow e^x\\geqslant ex,\\quad e^x\\geqslant1+x+\\frac{x^2}{2},\\quad e^{ax}\\geqslant ax+1(a\\text{为常数})."
+            },
+            {
+              "type": "note",
+              "text": "【变式】$xe^x=e^{x+\\ln x}\\geqslant x+\\ln x+1$，$\\frac{e^x}{x}=e^{x-\\ln x}\\geqslant x-\\ln x+1$，$\\frac{x}{e^x}=e^{\\ln x-x}\\geqslant\\ln x-x+1$，$x^ne^x=e^{x+n\\ln x}\\geqslant x+n\\ln x+1$，$\\frac{x^n}{e^x}=e^{n\\ln x-x}\\geqslant n\\ln x-x+1.$"
+            },
+            {
+              "type": "formula",
+              "tex": "(2)\\ln x\\leqslant x-1\\Rightarrow\\ln(ex)\\leqslant x\\Rightarrow\\ln x\\leqslant\\frac{x}{e},\\quad\\ln x\\leqslant a(x-1)(x\\geqslant1,a\\geqslant1)."
+            },
+            {
+              "type": "note",
+              "text": "【变式】$x+\\ln x=\\ln(xe^x)\\leqslant xe^x-1$，$x+n\\ln x=\\ln(x^ne^x)\\leqslant x^ne^x-1.$"
+            }
+          ]
+        },
+        {
+          "id": "K05-02",
+          "title": "二、关于$f(x),f'(x)$的构造",
+          "sourcePages": [
+            9
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "题干形式",
+                "构造函数",
+                "题干形式",
+                "构造函数"
+              ],
+              "rows": [
+                [
+                  "$f'(x)\\pm g'(x)>0$",
+                  "$F(x)=f(x)\\pm g(x)$",
+                  "$f(x)+f'(x)\\tan x>0$",
+                  "$F(x)=\\sin xf(x)$"
+                ],
+                [
+                  "$f'(x)>k,k\\ne0$",
+                  "$F(x)=f(x)-kx$",
+                  "$f(x)-f'(x)\\tan x>0$",
+                  "$F(x)=\\frac{f(x)}{\\sin x}$"
+                ],
+                [
+                  "$f'(x)g(x)+g'(x)f(x)>0$",
+                  "$F(x)=f(x)g(x)$",
+                  "$f'(x)-f(x)\\tan x>0$",
+                  "$F(x)=\\cos xf(x)$"
+                ],
+                [
+                  "$f'(x)g(x)-g'(x)f(x)>0$",
+                  "$F(x)=\\frac{f(x)}{g(x)},g(x)\\ne0$",
+                  "$f'(x)+f(x)\\tan x>0$",
+                  "$F(x)=\\frac{f(x)}{\\cos x}$"
+                ],
+                [
+                  "$xf'(x)+nf(x)>0$",
+                  "$F(x)=x^nf(x)$",
+                  "$f'(x)\\sin x+f(x)\\cos x>0$",
+                  "$F(x)=f(x)\\sin x$"
+                ],
+                [
+                  "$xf'(x)-nf(x)>0$",
+                  "$F(x)=\\frac{f(x)}{x^n}$",
+                  "$f'(x)\\sin x-f(x)\\cos x>0$",
+                  "$F(x)=\\frac{f(x)}{\\sin x}$"
+                ],
+                [
+                  "$f'(x)+kf(x)>0$",
+                  "$F(x)=e^{kx}f(x)$",
+                  "$f'(x)\\cos x-f(x)\\sin x>0$",
+                  "$F(x)=f(x)\\cos x$"
+                ],
+                [
+                  "$f'(x)-kf(x)>0$",
+                  "$F(x)=\\frac{f(x)}{e^{kx}}$",
+                  "$f'(x)\\cos x+f(x)\\sin x>0$",
+                  "$F(x)=\\frac{f(x)}{\\cos x}$"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K06",
+      "order": 6,
+      "packageRoot": "topic-package-a",
+      "title": "三角函数的公式、图象与性质",
+      "sourcePages": [
+        10
+      ],
+      "sections": [
+        {
+          "id": "K06-01",
+          "title": "一、拓展公式",
+          "sourcePages": [
+            10
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "常见的三角不等式："
+            },
+            {
+              "type": "formula",
+              "tex": "(1)\\text{若 }x\\in\\left(0,\\frac{\\pi}{2}\\right),\\text{则}\\sin x<x<\\tan x;\\quad(2)\\text{若 }x\\in\\left(0,\\frac{\\pi}{2}\\right),\\text{则}1<\\sin x+\\cos x\\leqslant\\sqrt2;\\quad(3)1\\leqslant|\\sin x|+|\\cos x|\\leqslant\\sqrt2."
+            },
+            {
+              "type": "paragraph",
+              "text": "万能公式："
+            },
+            {
+              "type": "formula",
+              "tex": "\\sin\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}};\\quad\\cos\\alpha=\\frac{1-\\tan^2\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}};\\quad\\tan\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1-\\tan^2\\frac{\\alpha}{2}}."
+            },
+            {
+              "type": "paragraph",
+              "text": "和差化积公式："
+            },
+            {
+              "type": "formula",
+              "tex": "\\sin\\alpha+\\sin\\beta=2\\sin\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2};\\quad\\sin\\alpha-\\sin\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\alpha-\\beta}{2};"
+            },
+            {
+              "type": "formula",
+              "tex": "\\cos\\alpha+\\cos\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2};\\quad\\cos\\alpha-\\cos\\beta=-2\\sin\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\alpha-\\beta}{2}."
+            },
+            {
+              "type": "paragraph",
+              "text": "积化和差公式："
+            },
+            {
+              "type": "formula",
+              "tex": "\\sin\\alpha\\cos\\beta=\\frac12[\\sin(\\alpha+\\beta)+\\sin(\\alpha-\\beta)];\\quad\\cos\\alpha\\sin\\beta=\\frac12[\\sin(\\alpha+\\beta)-\\sin(\\alpha-\\beta)];"
+            },
+            {
+              "type": "formula",
+              "tex": "\\cos\\alpha\\cos\\beta=\\frac12[\\cos(\\alpha+\\beta)+\\cos(\\alpha-\\beta)];\\quad\\sin\\alpha\\sin\\beta=-\\frac12[\\cos(\\alpha+\\beta)-\\cos(\\alpha-\\beta)]."
+            },
+            {
+              "type": "paragraph",
+              "text": "三倍角公式：$\\sin3\\alpha=3\\sin\\alpha-4\\sin^3\\alpha;\\quad\\cos3\\alpha=4\\cos^3\\alpha-3\\cos\\alpha;\\quad\\tan3\\alpha=\\frac{3\\tan\\alpha-\\tan^3\\alpha}{1-3\\tan^2\\alpha}=\\tan\\alpha\\tan\\left(\\frac{\\pi}{3}-\\alpha\\right)\\tan\\left(\\frac{\\pi}{3}+\\alpha\\right).$"
+            },
+            {
+              "type": "paragraph",
+              "text": "正弦平方差公式：$\\sin^2\\alpha-\\sin^2\\beta=\\sin(\\alpha-\\beta)\\sin(\\alpha+\\beta)=\\cos^2\\beta-\\cos^2\\alpha.$"
+            }
+          ]
+        },
+        {
+          "id": "K06-02",
+          "title": "二、与三角函数的图象、性质有关的结论",
+          "sourcePages": [
+            10
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "已知$f(x)=A\\sin(\\omega x+\\varphi)$，其中$A\\ne0,\\omega>0,(x_1,f(x_1)),(x_2,f(x_2))$在$y=f(x)$的图象上，则"
+            },
+            {
+              "type": "paragraph",
+              "text": "（1）对称轴：过函数的最值点且与$x$轴垂直的直线."
+            },
+            {
+              "type": "paragraph",
+              "text": "（2）对称中心：满足$A\\sin(\\omega x+\\varphi)=0$的点."
+            },
+            {
+              "type": "paragraph",
+              "text": "（3）单调区间：沿$x$轴正方向，最大值点到相邻最小值点为单调递减区间，最小值点到相邻最大值点为单调递增区间."
+            },
+            {
+              "type": "paragraph",
+              "text": "（4）周期：①两对称轴之间的距离为$\\frac{T}{2}$的正整数倍，表示为$\\frac{nT}{2},n\\in\\mathbf N^*$，当$n=1$时，两对称轴相邻；"
+            },
+            {
+              "type": "paragraph",
+              "text": "②两对称中心之间的距离为$\\frac{T}{2}$的正整数倍，表示为$\\frac{nT}{2},n\\in\\mathbf N^*$，当$n=1$时，两对称中心相邻；"
+            },
+            {
+              "type": "paragraph",
+              "text": "③对称轴和对称中心之间的距离为$\\frac{T}{4}$的正奇数倍，表示为$\\frac{(2n-1)T}{4},n\\in\\mathbf N^*$，当$n=1$时，对称轴与对称中心相邻."
+            },
+            {
+              "type": "paragraph",
+              "text": "（5）函数值相等：若$x_1,x_2$在一个周期内，且$f(x_1)=f(x_2)$，则直线$x=\\frac{x_1+x_2}{2}$为$f(x)$图象的对称轴."
+            },
+            {
+              "type": "paragraph",
+              "text": "（6）函数值相反：若$x_1,x_2$在同一单调区间上，且$f(x_1)=-f(x_2)$，则$\\left(\\frac{x_1+x_2}{2},f\\left(\\frac{x_1+x_2}{2}\\right)\\right)$为$f(x)$图象的对称中心."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K07",
+      "order": 7,
+      "packageRoot": "topic-package-a",
+      "title": "三角形面积问题",
+      "sourcePages": [
+        11
+      ],
+      "sections": [
+        {
+          "id": "K07-01",
+          "title": "一、三角形面积公式",
+          "sourcePages": [
+            11
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "已知$\\triangle ABC$的内角$A,B,C$所对的边的长分别为$a,b,c$，则$\\triangle ABC$的面积可以表示为："
+            },
+            {
+              "type": "formula",
+              "tex": "(1)S_{\\triangle ABC}=\\frac12ab\\sin C=\\frac12bc\\sin A=\\frac12ac\\sin B;"
+            },
+            {
+              "type": "formula",
+              "tex": "(2)S_{\\triangle ABC}=\\frac12a\\cdot h_a=\\frac12b\\cdot h_b=\\frac12c\\cdot h_c\\ (h_a,h_b,h_c\\text{ 分别表示边 }a,b,c\\text{ 上的高});"
+            },
+            {
+              "type": "formula",
+              "tex": "(3)S_{\\triangle ABC}=\\frac12r(a+b+c)=\\frac12rl,\\text{其中 }r,l\\text{ 分别为 }\\triangle ABC\\text{ 的内切圆半径及 }\\triangle ABC\\text{ 的周长};"
+            },
+            {
+              "type": "formula",
+              "tex": "(4)S_{\\triangle ABC}=\\frac12a^2\\frac{\\sin B\\sin C}{\\sin A},S_{\\triangle ABC}=\\frac12b^2\\frac{\\sin A\\sin C}{\\sin B},S_{\\triangle ABC}=\\frac12c^2\\frac{\\sin A\\sin B}{\\sin C};"
+            },
+            {
+              "type": "formula",
+              "tex": "(5)S_{\\triangle ABC}=2R^2\\sin A\\sin B\\sin C=\\frac{abc}{4R}(R\\text{ 为 }\\triangle ABC\\text{ 外接圆的半径});"
+            },
+            {
+              "type": "formula",
+              "tex": "(6)\\text{海伦公式：}S_{\\triangle ABC}=\\sqrt{p(p-a)(p-b)(p-c)},\\text{其中 }p=\\frac12(a+b+c);"
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "由余弦定理得$\\cos C=\\frac{a^2+b^2-c^2}{2ab}$，所以$S_{\\triangle ABC}=\\frac12ab\\sin C=\\frac12ab\\sqrt{1-\\cos^2C}=\\frac12ab\\sqrt{1-\\left(\\frac{a^2+b^2-c^2}{2ab}\\right)^2}$. 令$p=\\frac12(a+b+c)$，整理得$S_{\\triangle ABC}=\\sqrt{p(p-a)(p-b)(p-c)}$."
+            },
+            {
+              "type": "formula",
+              "tex": "(7)S_{\\triangle ABC}=\\frac12\\sqrt{|\\boldsymbol a|^2|\\boldsymbol b|^2-(\\boldsymbol a\\cdot\\boldsymbol b)^2},\\text{其中 }\\boldsymbol b=\\overrightarrow{CA},\\boldsymbol a=\\overrightarrow{CB};"
+            },
+            {
+              "type": "formula",
+              "tex": "(8)S_{\\triangle ABC}=\\frac12|a_1b_2-a_2b_1|,\\text{其中 }\\overrightarrow{AB}=(a_1,a_2),\\overrightarrow{AC}=(b_1,b_2)."
+            },
+            {
+              "type": "note",
+              "text": "【说明】公式(7)可视为三角形面积公式的向量形式，公式(8)则是三角形面积公式的向量坐标形式."
+            }
+          ]
+        },
+        {
+          "id": "K07-02",
+          "title": "二、三角形面积比的处理方法",
+          "sourcePages": [
+            11
+          ],
+          "blocks": [
+            {
+              "type": "label",
+              "text": "对顶角模型"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "公式",
+                "图示"
+              ],
+              "rows": [
+                [
+                  "$\\frac{S_{\\triangle OAC}}{S_{\\triangle OBD}}=\\frac{\\frac12OA\\cdot OC\\cdot\\sin\\alpha}{\\frac12OB\\cdot OD\\cdot\\sin\\alpha}=\\frac{OA\\cdot OC}{OB\\cdot OD};$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k07-p11-top-angle",
+                    "width": 750,
+                    "height": 510
+                  }
+                ]
+              ]
+            },
+            {
+              "type": "label",
+              "text": "等角、共角模型"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "公式",
+                "图示"
+              ],
+              "rows": [
+                [
+                  "$\\frac{S_{\\triangle OAC}}{S_{\\triangle OBD}}=\\frac{\\frac12OA\\cdot OC\\cdot\\sin\\alpha}{\\frac12OB\\cdot OD\\cdot\\sin\\alpha}=\\frac{OA\\cdot OC}{OB\\cdot OD}.$",
+                  {
+                    "type": "figure",
+                    "assetKey": "k07-p11-shared-angle",
+                    "width": 900,
+                    "height": 795
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K08",
+      "order": 8,
+      "packageRoot": "topic-package-a",
+      "title": "射影定理、三角形的“三线”、张角定理",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "sections": [
+        {
+          "id": "K08-01",
+          "title": "一、射影定理",
+          "sourcePages": [
+            12
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "(1)直角三角形中的射影定理：如图，在$\\mathrm{Rt}\\triangle ABC$中，$C$为直角，$CD\\perp AB$于点$D$，则有"
+            },
+            {
+              "type": "figure",
+              "assetKey": "k08-p12-right-triangle",
+              "width": 585,
+              "height": 390
+            },
+            {
+              "type": "formula",
+              "tex": "(1)AC^2=AD\\cdot AB;(2)BC^2=BD\\cdot AB;(3)CD^2=AD\\cdot DB."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)任意三角形中的射影定理：在$\\triangle ABC$中，内角$A,B,C$对应的边分别为$a,b,c$，则有"
+            },
+            {
+              "type": "formula",
+              "tex": "(1)a=b\\cos C+c\\cos B;(2)b=c\\cos A+a\\cos C;(3)c=a\\cos B+b\\cos A."
+            }
+          ]
+        },
+        {
+          "id": "K08-02",
+          "title": "二、三角形的“三线”",
+          "sourcePages": [
+            12,
+            13
+          ],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "1.三角形的中线："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)在$\\triangle ABC$中，内角$A,B,C$的对边分别为$a,b,c$，已知$m_a,m_b,m_c$分别为边$a,b,c$上的中线，则"
+            },
+            {
+              "type": "formula",
+              "tex": "m_a=\\frac12\\sqrt{2(b^2+c^2)-a^2},m_b=\\frac12\\sqrt{2(c^2+a^2)-b^2},m_c=\\frac12\\sqrt{2(a^2+b^2)-c^2}."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)在$\\triangle ABC$中，$AD$是$BC$边上的中线，则$AB^2+AC^2=2(BD^2+AD^2)=2(AD^2+CD^2)$."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "在$\\triangle ABD$中，$\\cos B=\\frac{AB^2+BD^2-AD^2}{2AB\\cdot BD}$，在$\\triangle ABC$中，$\\cos B=\\frac{AB^2+BC^2-AC^2}{2AB\\cdot BC}$，联立两个方程可得$AB^2+AC^2=2(BD^2+AD^2)$.同理，$AB^2+AC^2=2(AD^2+CD^2)$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k08-p12-median",
+              "width": 390,
+              "height": 480
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)向量法：$\\overrightarrow{AD}^2=\\frac14(b^2+c^2+2bc\\cos\\angle BAC)$."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "由$\\overrightarrow{AD}=\\frac12(\\overrightarrow{AB}+\\overrightarrow{AC})$，得$\\overrightarrow{AD}^2=\\frac14(\\overrightarrow{AB}+\\overrightarrow{AC})^2=\\frac14(\\overrightarrow{AB}^2+\\overrightarrow{AC}^2+2|\\overrightarrow{AB}||\\overrightarrow{AC}|\\cos\\angle BAC)$，所以$\\overrightarrow{AD}^2=\\frac14(b^2+c^2+2bc\\cos\\angle BAC)$."
+            },
+            {
+              "type": "subheading",
+              "text": "2.三角形的高线："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)在$\\triangle ABC$中，内角$A,B,C$所对的边分别为$a,b,c$，$h_1,h_2,h_3$分别为边$a,b,c$上的高，则$h_1:h_2:h_3=\\frac1a:\\frac1b:\\frac1c=\\frac1{\\sin A}:\\frac1{\\sin B}:\\frac1{\\sin C}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)求高一般采用等面积法，即求某边上的高，需要求出面积和底边长度."
+            },
+            {
+              "type": "subheading",
+              "text": "3.三角形的内角平分线："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)角平分线性质定理：如图，在$\\triangle ABC$中，内角$A,B,C$对应的边分别为$a,b,c$，$AD$是$\\angle BAC$的平分线，则$\\frac{AB}{AC}=\\frac{BD}{CD}$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k08-p12-bisector",
+              "width": 450,
+              "height": 480
+            },
+            {
+              "type": "formula",
+              "tex": "(2)\\text{角平分线长公式：}AD=\\frac{2bc\\cos\\frac A2}{b+c}."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "因为$S_{\\triangle ABD}+S_{\\triangle ACD}=S_{\\triangle ABC}$，所以$\\frac12c\\cdot AD\\sin\\frac A2+\\frac12b\\cdot AD\\sin\\frac A2=\\frac12bc\\sin A$，所以$(b+c)AD=2bc\\cos\\frac A2$，整理得$AD=\\frac{2bc\\cos\\frac A2}{b+c}$."
+            }
+          ]
+        },
+        {
+          "id": "K08-03",
+          "title": "三、张角定理",
+          "sourcePages": [
+            13
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "如图所示，$D$为边$BC$上一点，设$\\angle BAD=\\alpha$，$\\angle CAD=\\beta$，则$\\frac{\\sin(\\alpha+\\beta)}{AD}=\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}$.特别地，若$AD$恰好为$\\angle BAC$的平分线，则$\\cos\\alpha=\\frac12\\left(\\frac{AD}{AB}+\\frac{AD}{AC}\\right)$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k08-p13-angle",
+              "width": 735,
+              "height": 600
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "因为$S_{\\triangle ABC}=S_{\\triangle ABD}+S_{\\triangle ACD}$，由三角形面积公式可得$\\frac12AB\\cdot AC\\cdot\\sin\\angle BAC=\\frac12AB\\cdot AD\\cdot\\sin\\alpha+\\frac12AD\\cdot AC\\cdot\\sin\\beta$，两边同除以$AB\\cdot AC\\cdot AD$，得$\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}=\\frac{\\sin\\angle BAC}{AD}$，即$\\frac{\\sin(\\alpha+\\beta)}{AD}=\\frac{\\sin\\alpha}{AC}+\\frac{\\sin\\beta}{AB}$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K09",
+      "order": 9,
+      "packageRoot": "topic-package-b",
+      "title": "奔驰定理与三角形的“四心”",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "sections": [
+        {
+          "id": "K09-01",
+          "title": "一、奔驰定理",
+          "sourcePages": [
+            13
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "如图，已知$O$为$\\triangle ABC$内一点，则有$S_{\\triangle BOC}\\cdot\\overrightarrow{OA}+S_{\\triangle AOC}\\cdot\\overrightarrow{OB}+S_{\\triangle AOB}\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k09-p13-benz",
+              "width": 900,
+              "height": 600
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "如图，延长$AO$与$BC$边相交于点$D$，则$\\frac{BD}{DC}=\\frac{S_{\\triangle ABD}}{S_{\\triangle ACD}}=\\frac{S_{\\triangle BOD}}{S_{\\triangle COD}}=\\frac{S_{\\triangle ABD}-S_{\\triangle BOD}}{S_{\\triangle ACD}-S_{\\triangle COD}}=\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}}$，"
+            },
+            {
+              "type": "formula",
+              "tex": "\\overrightarrow{OD}=\\frac{DC}{BC}\\overrightarrow{OB}+\\frac{BD}{BC}\\overrightarrow{OC}=\\frac{S_{\\triangle AOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OB}+\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OC}."
+            },
+            {
+              "type": "formula",
+              "tex": "\\frac{OD}{OA}=\\frac{S_{\\triangle BOD}}{S_{\\triangle AOB}}=\\frac{S_{\\triangle COD}}{S_{\\triangle AOC}}=\\frac{S_{\\triangle BOD}+S_{\\triangle COD}}{S_{\\triangle AOB}+S_{\\triangle AOC}}=\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}},\\therefore\\overrightarrow{OD}=-\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OA},"
+            },
+            {
+              "type": "formula",
+              "tex": "\\therefore-\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OA}=\\frac{S_{\\triangle AOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OB}+\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OC},"
+            },
+            {
+              "type": "formula",
+              "tex": "\\therefore S_{\\triangle BOC}\\cdot\\overrightarrow{OA}+S_{\\triangle AOC}\\cdot\\overrightarrow{OB}+S_{\\triangle AOB}\\cdot\\overrightarrow{OC}=\\boldsymbol0."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k09-p13-proof",
+              "width": 870,
+              "height": 750
+            },
+            {
+              "type": "paragraph",
+              "text": "推论：若$O$是$\\triangle ABC$内的一点，且$x\\cdot\\overrightarrow{OA}+y\\cdot\\overrightarrow{OB}+z\\cdot\\overrightarrow{OC}=\\boldsymbol0(xyz\\ne0)$，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=x:y:z$."
+            }
+          ]
+        },
+        {
+          "id": "K09-02",
+          "title": "二、三角形的“四心”",
+          "sourcePages": [
+            14
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "三角形的“四心”即重心(三条中线的交点，重心将中线长度分成$2:1$)、内心(三条角平分线的交点，也是三角形内切圆的圆心)、外心(三条中垂线的交点，也是三角形外接圆的圆心)、垂心(三条高线的交点)."
+            },
+            {
+              "type": "subheading",
+              "text": "重心："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)若$O$为$\\triangle ABC$的重心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=1:1:1$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)$O$为$\\triangle ABC$的重心$\\Leftrightarrow\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=\\boldsymbol0$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC}),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的重心."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的重心."
+            },
+            {
+              "type": "paragraph",
+              "text": "(5)已知$\\triangle ABC$的顶点$A(x_A,y_A),B(x_B,y_B),C(x_C,y_C)$，则$\\triangle ABC$的重心坐标为$\\left(\\frac{x_A+x_B+x_C}{3},\\frac{y_A+y_B+y_C}{3}\\right)$."
+            },
+            {
+              "type": "subheading",
+              "text": "内心："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)若$O$为$\\triangle ABC$内心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=a:b:c$(其中$a,b,c$分别为$\\triangle ABC$内角$A,B,C$的对边)."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)在$\\triangle ABC$中，$|\\overrightarrow{BC}|\\cdot\\overrightarrow{OA}+|\\overrightarrow{AC}|\\cdot\\overrightarrow{OB}+|\\overrightarrow{AB}|\\cdot\\overrightarrow{OC}=\\boldsymbol0\\Leftrightarrow O$为$\\triangle ABC$的内心."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的内心."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)在$\\triangle ABC$中，$\\overrightarrow{OA}\\cdot\\left(\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}-\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}\\right)=\\overrightarrow{OB}\\cdot\\left(\\frac{\\overrightarrow{BC}}{|\\overrightarrow{BC}|}-\\frac{\\overrightarrow{BA}}{|\\overrightarrow{BA}|}\\right)=\\overrightarrow{OC}\\cdot\\left(\\frac{\\overrightarrow{CA}}{|\\overrightarrow{CA}|}-\\frac{\\overrightarrow{CB}}{|\\overrightarrow{CB}|}\\right)=\\boldsymbol0\\Leftrightarrow O$为$\\triangle ABC$的内心."
+            },
+            {
+              "type": "subheading",
+              "text": "外心："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)若$O$为$\\triangle ABC$的外心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=\\sin2A:\\sin2B:\\sin2C$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)若$O$为$\\triangle ABC$的外心，则$\\overrightarrow{OA}^2=\\overrightarrow{OB}^2=\\overrightarrow{OC}^2$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)若$O$为$\\triangle ABC$的外心，则$\\sin2A\\cdot\\overrightarrow{OA}+\\sin2B\\cdot\\overrightarrow{OB}+\\sin2C\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\frac{\\overrightarrow{OB}+\\overrightarrow{OC}}2+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的外心."
+            },
+            {
+              "type": "paragraph",
+              "text": "(5)若$(\\overrightarrow{OA}+\\overrightarrow{OB})\\cdot\\overrightarrow{AB}=(\\overrightarrow{OB}+\\overrightarrow{OC})\\cdot\\overrightarrow{BC}=(\\overrightarrow{OA}+\\overrightarrow{OC})\\cdot\\overrightarrow{AC}=\\boldsymbol0$，则$O$是$\\triangle ABC$的外心."
+            },
+            {
+              "type": "subheading",
+              "text": "垂心："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)若$O$为$\\triangle ABC$的垂心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=\\tan A:\\tan B:\\tan C$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)若$O$为$\\triangle ABC$的垂心，则$\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=\\overrightarrow{OB}\\cdot\\overrightarrow{OC}=\\overrightarrow{OC}\\cdot\\overrightarrow{OA}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)若$O$为$\\triangle ABC$(非直角三角形)的垂心，则$\\tan A\\cdot\\overrightarrow{OA}+\\tan B\\cdot\\overrightarrow{OB}+\\tan C\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)若$O$为$\\triangle ABC$的垂心，则$|\\overrightarrow{OA}|^2+|\\overrightarrow{BC}|^2=|\\overrightarrow{OB}|^2+|\\overrightarrow{CA}|^2=|\\overrightarrow{OC}|^2+|\\overrightarrow{AB}|^2$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(5)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的垂心."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K10",
+      "order": 10,
+      "packageRoot": "topic-package-b",
+      "title": "等和线定理、极化恒等式与对角线向量定理",
+      "sourcePages": [
+        15
+      ],
+      "sections": [
+        {
+          "id": "K10-01",
+          "title": "一、等和线定理",
+          "sourcePages": [
+            15
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "已知平面内一组基底$\\overrightarrow{OA},\\overrightarrow{OB}$及任一向量$\\overrightarrow{OC},\\overrightarrow{OC}=x\\overrightarrow{OA}+y\\overrightarrow{OB}(x,y\\in\\mathbf R)$，若点$C$在直线$AB$上或在平行于$AB$的直线上，则$x+y=k$(定值)，反之也成立.其中，直线$AB$及与直线$AB$平行的直线称为等和线."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k10-p15-equal-sum",
+              "width": 825,
+              "height": 720
+            },
+            {
+              "type": "paragraph",
+              "text": "性质：(1)$|k|=\\frac{|\\overrightarrow{OC_1}|}{|\\overrightarrow{OA_1}|}=\\frac{|\\overrightarrow{OB_1}|}{|\\overrightarrow{OB}|}=\\frac{O\\text{ 到 }A_1B_1\\text{ 的距离}}{O\\text{ 到 }AB\\text{ 的距离}}$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)当等和线恰为直线$AB$时，$k=1$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)当等和线在点$O$和直线$AB$之间时，$k\\in(0,1)$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)当直线$AB$在点$O$和等和线之间时，$k\\in(1,+\\infty)$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(5)当等和线过$O$点时，$k=0$."
+            }
+          ]
+        },
+        {
+          "id": "K10-02",
+          "title": "二、极化恒等式",
+          "sourcePages": [
+            15
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "对于非零向量$\\boldsymbol a,\\boldsymbol b$，可以得到$\\boldsymbol a\\cdot\\boldsymbol b=\\frac14[(\\boldsymbol a+\\boldsymbol b)^2-(\\boldsymbol a-\\boldsymbol b)^2]$."
+            },
+            {
+              "type": "label",
+              "text": "公式推导"
+            },
+            {
+              "type": "formula",
+              "tex": "\\begin{cases}(\\boldsymbol a+\\boldsymbol b)^2=\\boldsymbol a^2+2\\boldsymbol a\\cdot\\boldsymbol b+\\boldsymbol b^2,\\\\(\\boldsymbol a-\\boldsymbol b)^2=\\boldsymbol a^2-2\\boldsymbol a\\cdot\\boldsymbol b+\\boldsymbol b^2\\end{cases}\\Rightarrow\\boldsymbol a\\cdot\\boldsymbol b=\\frac14[(\\boldsymbol a+\\boldsymbol b)^2-(\\boldsymbol a-\\boldsymbol b)^2]."
+            },
+            {
+              "type": "paragraph",
+              "text": "几何意义：在$\\triangle ABC$中，$D$是边$BC$的中点，则$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=|\\overrightarrow{AD}|^2-|\\overrightarrow{DB}|^2$."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "$\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=(\\overrightarrow{AD}+\\overrightarrow{DB})\\cdot(\\overrightarrow{AD}+\\overrightarrow{DC})=(\\overrightarrow{AD}+\\overrightarrow{DB})\\cdot(\\overrightarrow{AD}-\\overrightarrow{DB})=|\\overrightarrow{AD}|^2-|\\overrightarrow{DB}|^2$，得证."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k10-p15-polar",
+              "width": 660,
+              "height": 660
+            }
+          ]
+        },
+        {
+          "id": "K10-03",
+          "title": "三、对角线向量定理",
+          "sourcePages": [
+            15
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "如图，在四边形$ABCD$中，有$\\overrightarrow{AC}\\cdot\\overrightarrow{BD}=\\frac{|\\overrightarrow{AD}|^2+|\\overrightarrow{BC}|^2-|\\overrightarrow{AB}|^2-|\\overrightarrow{CD}|^2}{2}$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k10-p15-quad",
+              "width": 1020,
+              "height": 705
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "在$\\triangle ABC$中，由余弦定理可得$\\overrightarrow{CA}\\cdot\\overrightarrow{CB}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CB}|^2-|\\overrightarrow{AB}|^2}{2}$.同理，在$\\triangle ACD$中，$\\overrightarrow{CA}\\cdot\\overrightarrow{CD}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CD}|^2-|\\overrightarrow{AD}|^2}{2}$."
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{两式相减可得，}\\overrightarrow{AC}\\cdot\\overrightarrow{BD}=\\overrightarrow{CA}\\cdot(\\overrightarrow{CB}-\\overrightarrow{CD})=\\overrightarrow{CA}\\cdot\\overrightarrow{CB}-\\overrightarrow{CA}\\cdot\\overrightarrow{CD}=\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CB}|^2-|\\overrightarrow{AB}|^2}{2}-\\frac{|\\overrightarrow{CA}|^2+|\\overrightarrow{CD}|^2-|\\overrightarrow{AD}|^2}{2}=\\frac{|\\overrightarrow{AD}|^2+|\\overrightarrow{BC}|^2-|\\overrightarrow{AB}|^2-|\\overrightarrow{CD}|^2}{2}."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K11",
+      "order": 11,
+      "packageRoot": "topic-package-b",
+      "title": "等差、等比数列的性质及二级结论",
+      "sourcePages": [
+        16
+      ],
+      "sections": [
+        {
+          "id": "K11-01",
+          "title": "项的性质",
+          "sourcePages": [
+            16
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "分类",
+                "内容"
+              ],
+              "rows": [
+                [
+                  "项的性质",
+                  "在等差数列$\\{a_n\\}$中，$a_n,a_{n+m},a_{n+2m},\\cdots$为等差数列，公差为$md$；在等比数列$\\{a_n\\}$中，$a_n,a_{n+m},a_{n+2m},\\cdots$为等比数列，公比为$q^m$."
+                ],
+                [
+                  "项的性质",
+                  "在等差数列$\\{a_n\\}$中，$2a_n=a_{n-1}+a_{n+1}(n\\geqslant2),2a_n=a_{n-k}+a_{n+k}(n>k)$；在等比数列$\\{a_n\\}$中，$a_n^2=a_{n-1}\\cdot a_{n+1}(n\\geqslant2),a_n^2=a_{n-k}\\cdot a_{n+k}(n>k)$."
+                ],
+                [
+                  "项的性质",
+                  "在等差数列$\\{a_n\\}$中，若$m+n=r+s$，则$a_m+a_n=a_r+a_s$(多项和也成立)；在等比数列$\\{a_n\\}$中，若$m+n=r+s$，则$a_ma_n=a_ra_s$(多项积也成立)."
+                ],
+                [
+                  "项的性质",
+                  "若$\\{a_n\\},\\{b_n\\}$为项数相同的等差数列，则①$\\{ka_n\\pm lb_n\\}$($k,l$为常数)仍为等差数列；②$\\{c^{a_n}\\}$($c>0,c\\ne1$)为等比数列.若$\\{a_n\\},\\{b_n\\}$为项数相同的等比数列，则①$\\{ka_n\\},\\{a_nb_n\\},\\left\\{\\frac1{a_n}\\right\\},\\left\\{\\frac{a_n}{b_n}\\right\\},\\{\\sqrt{a_n}\\},\\{a_n^k\\},\\{|a_n|\\}$(其中$a_n>0,k\\ne0$)为等比数列；②$\\{\\log_c a_n\\}$(其中$a_n>0,c>0,c\\ne1$)为等差数列."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K11-02",
+          "title": "和的性质",
+          "sourcePages": [
+            16
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "分类",
+                "内容"
+              ],
+              "rows": [
+                [
+                  "和的性质",
+                  "在等差数列中，$S_n,S_{2n}-S_n,S_{3n}-S_{2n},\\cdots$也成等差数列，且公差为$n^2d$；在公比$q\\ne-1$的等比数列中，$S_n,S_{2n}-S_n,S_{3n}-S_{2n},\\cdots$也成等比数列，且公比为$q^n$."
+                ],
+                [
+                  "和的性质",
+                  "在等差数列中，$\\frac{S_n}{n}=\\frac d2n+\\left(a_1-\\frac d2\\right)$是关于$n$的一次函数或常数函数，数列$\\left\\{\\frac{S_n}{n}\\right\\}$也是等差数列."
+                ],
+                [
+                  "和的性质",
+                  "若$\\{a_n\\},\\{b_n\\}$为项数相同的等差数列，且前$n$项和分别为$S_n$与$T_n$，则$\\frac{a_m}{b_m}=\\frac{S_{2m-1}}{T_{2m-1}},\\frac{a_n}{b_m}=\\frac{(2m-1)S_{2n-1}}{(2n-1)T_{2m-1}}.$"
+                ],
+                [
+                  "和的性质",
+                  "在公差为$d$的等差数列中，$S_{m+n}=S_m+S_n+mnd$；在公比为$q$的等比数列中，$S_{m+n}=S_m+q^mS_n=S_n+q^nS_m$."
+                ],
+                [
+                  "和的性质",
+                  "在公比为$q$的等比数列中，当$q=1$时，$\\frac{S_n}{S_m}=\\frac nm$；当$q\\ne1$时，$\\frac{S_n}{S_m}=\\frac{1-q^n}{1-q^m}$."
+                ],
+                [
+                  "和的性质",
+                  "等差数列中的绝对值求和问题：①设等差数列$\\{a_n\\}$中，$a_1,a_2,\\cdots,a_k>0,a_{k+1},\\cdots,a_n<0,S_n$为$\\{a_n\\}$的前$n$项和，则$|a_1|+|a_2|+|a_3|+\\cdots+|a_n|=\\begin{cases}\\frac{n(a_1+a_n)}2,n\\leqslant k,\\\\2S_k-S_n,n>k.\\end{cases}$②设等差数列$\\{a_n\\}$中，$a_1,a_2,\\cdots,a_k<0,a_{k+1},\\cdots,a_n>0,S_n$为$\\{a_n\\}$的前$n$项和，则$|a_1|+|a_2|+|a_3|+\\cdots+|a_n|=\\begin{cases}-\\frac{n(a_1+a_n)}2,n\\leqslant k,\\\\-2S_k+S_n,n>k.\\end{cases}$"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K12",
+      "order": 12,
+      "packageRoot": "topic-package-b",
+      "title": "数列求通项之递推法",
+      "sourcePages": [
+        17
+      ],
+      "sections": [
+        {
+          "id": "K12-01",
+          "title": "常见递推公式与解法",
+          "sourcePages": [
+            17
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "常见递推公式类型",
+                "方法",
+                "具体过程"
+              ],
+              "rows": [
+                [
+                  "$a_n-a_{n-1}=f(n)(n\\geqslant2)$",
+                  "累加法",
+                  "$a_n=a_1+(a_2-a_1)+(a_3-a_2)+\\cdots+(a_n-a_{n-1})$"
+                ],
+                [
+                  "$\\frac{a_n}{a_{n-1}}=f(n)(n\\geqslant2)$",
+                  "累乘法",
+                  "$a_n=a_1\\cdot\\frac{a_2}{a_1}\\cdot\\frac{a_3}{a_2}\\cdots\\frac{a_n}{a_{n-1}}$"
+                ],
+                [
+                  "$a_{n+1}=pa_n+q(p,q\\ne0$且$p\\ne1,p,q$为常数$)$",
+                  "待定系数法",
+                  "构造等比数列，设$a_{n+1}+X=p(a_n+X)$，则$pX-X=q$，即$X=\\frac q{p-1}$"
+                ],
+                [
+                  "$a_{n+1}=pa_n+An+B(p\\ne0,1,p,A,B$为常数$)$",
+                  "待定系数法",
+                  "构造等比数列，设$a_{n+1}+X(n+1)+Y=p(a_n+Xn+Y)$，则$\\begin{cases}pX-X=A,\\\\pY-X-Y=B,\\end{cases}$解得$\\begin{cases}X=\\frac A{p-1},\\\\Y=\\frac B{p-1}+\\frac A{(p-1)^2}.\\end{cases}$"
+                ],
+                [
+                  "$a_n=pa_{n-1}+t\\cdot q^n(n\\geqslant2)(p,t,q$为非零常数$)$",
+                  "当$p=q$时，构造等差数列；当$p\\ne q$时，配凑等比数列",
+                  "$\\frac{a_n}{q^n}=\\frac{pa_{n-1}}{q^n}+t=\\frac{a_{n-1}}{q^{n-1}}+t$，即$\\left\\{\\frac{a_n}{q^n}\\right\\}$为等差数列；设$a_n+X\\cdot q^n=p(a_{n-1}+X\\cdot q^{n-1})$，则$pX\\cdot q^{n-1}-X\\cdot q^n=t\\cdot q^n$，解得$X=\\frac{q\\cdot t}{p-q}$"
+                ],
+                [
+                  "$a_{n+1}=\\frac{ka_n}{pa_n+q}(k,p,q$为非零常数，$a_n\\ne0)$",
+                  "取倒数构造法",
+                  "$\\frac1{a_{n+1}}=\\frac pk+\\frac qk\\cdot\\frac1{a_n}$.若$q=k$，则$\\left\\{\\frac1{a_n}\\right\\}$为等差数列；若$q\\ne k$，则配凑等比数列"
+                ],
+                [
+                  "$a_{n+1}=pa_n+qa_{n-1}(n\\geqslant2)(p,q$为非零常数，$p^2+4q\\geqslant0)$",
+                  "待定系数法",
+                  "构造等比数列，设$a_{n+1}+Xa_n=Y(a_n+Xa_{n-1})$，则$\\begin{cases}Y-X=p,\\\\YX=q,\\end{cases}$解得$X$和$Y$，则$\\{a_n+Xa_{n-1}\\}$为等比数列，公比为$Y$"
+                ],
+                [
+                  "$a_n$与$S_n$(前$n$项和)",
+                  "$a_n,S_n$相互转化",
+                  "利用$a_n=S_n-S_{n-1}(n\\geqslant2)$消去$a_n$或$S_n$进行求解"
+                ],
+                [
+                  "$a_n$($\\{a_n\\}$所有项非零)与$T_n$(前$n$项积)",
+                  "$a_n,T_n$相互转化",
+                  "与前$n$项和的处理方法类似，利用$a_n=\\frac{T_n}{T_{n-1}}(n\\geqslant2)$消去$a_n$或$T_n$"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K12-02",
+          "title": "补充说明",
+          "sourcePages": [
+            17
+          ],
+          "blocks": [
+            {
+              "type": "note",
+              "text": "(1)累加法与累乘法常需要验证$a_1$是否满足$a_n(n\\geqslant2)$的表达式."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)已知$a_{n+1}-pa_n=f(n)$(其中$p\\ne0$且$p\\ne1$)，可两端同除以$p^{n+1}$，得到$\\frac{a_{n+1}}{p^{n+1}}-\\frac{a_n}{p^n}=\\frac{f(n)}{p^{n+1}}$，再用累加法求$\\left\\{\\frac{a_n}{p^n}\\right\\}$的通项公式，进而求得$a_n$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)已知$\\frac{a_{n+2}}{a_n}=f(n)$，也可对左端分子、分母同乘$a_{n+1}$，得到$\\frac{a_{n+2}a_{n+1}}{a_na_{n+1}}=f(n)$，再利用累乘法求$\\{a_na_{n+1}\\}$的通项公式，进而解题."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K13",
+      "order": 13,
+      "packageRoot": "topic-package-b",
+      "title": "数列求和的“裂项”技巧",
+      "sourcePages": [
+        18
+      ],
+      "sections": [
+        {
+          "id": "K13-01",
+          "title": "",
+          "sourcePages": [
+            18
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "基本模型",
+                "常见裂项形式"
+              ],
+              "rows": [
+                [
+                  "已知$\\{a_n\\}$为等差数列，则$\\frac1{a_n\\cdot a_{n+k}}=\\frac1{a_{n+k}-a_n}\\cdot\\left(\\frac1{a_n}-\\frac1{a_{n+k}}\\right)$",
+                  "$\\frac1{n(n+1)}=\\frac1n-\\frac1{n+1};\\frac1{n(n+k)}=\\frac1k\\left(\\frac1n-\\frac1{n+k}\\right)$；$\\frac1{4n^2-1}=\\frac12\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right)$；$\\frac1{n(n+1)(n+2)}=\\frac12\\left[\\frac1{n(n+1)}-\\frac1{(n+1)(n+2)}\\right]$；$\\sqrt{1+\\frac1{n^2}+\\frac1{(n+1)^2}}=\\frac{n(n+1)+1}{n(n+1)}=1+\\frac1n-\\frac1{n+1}$"
+                ],
+                [
+                  "含根式型：已知$\\{a_n\\}$为等差数列，则$\\frac1{\\sqrt{a_n}+\\sqrt{a_{n+k}}}=\\frac{\\sqrt{a_{n+k}}-\\sqrt{a_n}}{a_{n+k}-a_n}$",
+                  "$\\frac1{\\sqrt{n+1}+\\sqrt n}=\\sqrt{n+1}-\\sqrt n;\\frac1{\\sqrt{n+k}+\\sqrt n}=\\frac1k(\\sqrt{n+k}-\\sqrt n)$；$\\frac1{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\frac12(\\sqrt{2n+1}-\\sqrt{2n-1})$；$\\frac1{(n+1)\\sqrt n+n\\sqrt{n+1}}=\\frac1{\\sqrt{n(n+1)}(\\sqrt{n+1}+\\sqrt n)}=\\frac{\\sqrt{n+1}-\\sqrt n}{\\sqrt{n(n+1)}}=\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}}$"
+                ],
+                [
+                  "含指数式型：$\\frac{a_{n+1}\\cdot q-a_n}{a_n\\cdot a_{n+1}\\cdot q^{n+1}}=\\frac1{a_n\\cdot q^n}-\\frac1{a_{n+1}\\cdot q^{n+1}}$",
+                  "$\\frac{2^n}{(2^{n+1}-1)(2^n-1)}=\\frac{(2^{n+1}-1)-(2^n-1)}{(2^{n+1}-1)(2^n-1)}=\\frac1{2^n-1}-\\frac1{2^{n+1}-1}$；$\\frac{n+2}{n(n+1)\\cdot2^n}=\\frac1{n\\cdot2^{n-1}}-\\frac1{(n+1)\\cdot2^n}$"
+                ],
+                [
+                  "含对数式型：已知$\\{a_n\\}$为正项数列，则$\\log_a\\frac{a_{n+1}}{a_n}=\\log_a a_{n+1}-\\log_a a_n(a>0$且$a\\ne1)$",
+                  "$\\log_a\\left(1+\\frac1n\\right)=\\log_a(n+1)-\\log_a n$；$\\log_a\\left(2+\\frac1{2^n-1}\\right)=\\log_a\\frac{2^{n+1}-1}{2^n-1}=\\log_a(2^{n+1}-1)-\\log_a(2^n-1)$"
+                ],
+                [
+                  "含排列组合式的裂项",
+                  "$n^2\\cdot(n-1)!=n\\cdot n!=(n+1)!-n!$；$\\frac n{(n+1)!}=\\frac1{n!}-\\frac1{(n+1)!}$；$\\frac1{n!(n+2)}=\\frac{n+1}{(n+2)!}=\\frac1{(n+1)!}-\\frac1{(n+2)!}$；$\\mathrm C_n^k=\\mathrm C_{n+1}^{k+1}-\\mathrm C_n^{k+1}$"
+                ],
+                [
+                  "其他常用裂项公式",
+                  "$\\frac{2n+1}{n^2(n+1)^2}=\\frac1{n^2}-\\frac1{(n+1)^2}$；$\\frac{(-1)^n(2n+1)}{n(n+1)}=(-1)^n\\left(\\frac1n+\\frac1{n+1}\\right)$；$(-1)^n\\log_2[n(n+1)]=(-1)^n[\\log_2n+\\log_2(n+1)]$；在非零数列$\\{a_n\\}$中，$a_{n+1}=a_n^2+a_n\\Leftrightarrow\\frac1{1+a_n}=\\frac1{a_n}-\\frac1{a_{n+1}}$"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K14",
+      "order": 14,
+      "packageRoot": "topic-package-b",
+      "title": "数列中的奇偶项问题",
+      "sourcePages": [
+        19
+      ],
+      "sections": [
+        {
+          "id": "K14-01",
+          "title": "一、$a_{n+1}+a_n=f(n)$或$a_{n+1}\\cdot a_n=f(n)$型",
+          "sourcePages": [
+            19
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "构造隔项等差数列：由$a_{n+1}+a_n=pn+q(p\\ne0)$，得$a_{n+2}+a_{n+1}=p(n+1)+q$，两式相减得$a_{n+2}-a_n=p$.$\\{a_n\\}$的奇数项是以$a_1$为首项，$p$为公差的等差数列；$\\{a_n\\}$的偶数项是以$a_2$为首项，$p$为公差的等差数列."
+            },
+            {
+              "type": "paragraph",
+              "text": "构造隔项等比数列：由$a_{n+1}\\cdot a_n=pq^n(p,q\\ne0)$，得$a_{n+2}\\cdot a_{n+1}=pq^{n+1}$，两式相除得$\\frac{a_{n+2}}{a_n}=q$.$\\{a_n\\}$的奇数项是以$a_1$为首项，$q$为公比的等比数列；$\\{a_n\\}$的偶数项是以$a_2$为首项，$q$为公比的等比数列."
+            }
+          ]
+        },
+        {
+          "id": "K14-02",
+          "title": "二、$a_n=\\begin{cases}f(n),n\\text{为奇数},\\\\g(n),n\\text{为偶数}\\end{cases}$型",
+          "sourcePages": [
+            19
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "邻项等差、邻项等比型数列：如$a_1=1,a_{n+1}=\\begin{cases}a_n+1,n\\text{为奇数},\\\\2a_n,n\\text{为偶数},\\end{cases}$将$n$用$2k-1$或$2k$替代."
+            },
+            {
+              "type": "paragraph",
+              "text": "当$n=2k-1$时，$a_{2k}=a_{2k-1}+1$；当$n=2k$时，$a_{2k+1}=2a_{2k}=2(a_{2k-1}+1)$，即$a_{2k+1}+2=2(a_{2k-1}+2)$，构造出以$a_1+2$为首项，$2$为公比的等比数列，求出$a_{2k-1}$的通项公式，进而求出$a_{2k}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "数列$\\{a_n\\}$与其他数列的关系：如$a_n=\\begin{cases}b_n,n\\text{为奇数},\\\\\\log_2b_n,n\\text{为偶数},\\end{cases}$先求出数列$\\{b_n\\}$的通项公式，再求出$\\{a_n\\}$的通项公式."
+            }
+          ]
+        },
+        {
+          "id": "K14-03",
+          "title": "三、含有$(-1)^n$型",
+          "sourcePages": [
+            19
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "递推公式中含有$(-1)^n$：寻找间隔两项之间的关系，如$a_{n+1}+(-1)^na_n=2n$."
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{当 }n\\text{ 为奇数时，}\\begin{cases}a_{n+1}-a_n=2n,\\\\a_{n+2}+a_{n+1}=2n+2,\\end{cases}\\text{两式相减得 }a_{n+2}+a_n=2;"
+            },
+            {
+              "type": "formula",
+              "tex": "\\text{当 }n\\text{ 为偶数时，}\\begin{cases}a_{n+1}+a_n=2n,\\\\a_{n+2}-a_{n+1}=2n+2,\\end{cases}\\text{两式相加得 }a_{n+2}+a_n=4n+2,\\text{从而得到相邻两个奇数项或偶数项的关系}."
+            },
+            {
+              "type": "note",
+              "text": "注：若求数列前$n$项的和，本质上是考查分组求和."
+            },
+            {
+              "type": "paragraph",
+              "text": "通项公式中含有$(-1)^n$："
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)等差数列的通项公式乘$(-1)^n$，用并项求和法将奇偶项合并，求数列前$n$项的和.例如，$a_n=(-1)^n(2n-1)$，前$20$项的和$a_1+a_2+\\cdots+a_{20}=(-1+3)+(-5+7)+\\cdots+(-37+39)=20$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)等比数列的通项公式乘$(-1)^n$，其前$n$项和可写成分段的形式.例如，等比数列$\\{a_n\\}$的通项公式为$a_n=(-1)^{n-1}\\cdot\\frac3{2^n}$，则其前$n$项和$S_n=\\begin{cases}1+\\left(\\frac12\\right)^n,n\\text{为奇数},\\\\1-\\left(\\frac12\\right)^n,n\\text{为偶数}.\\end{cases}$"
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)裂项相消法求和.例如，$a_n=(-1)^n\\frac{4n}{(2n-1)(2n+1)}=(-1)^n\\left(\\frac1{2n-1}+\\frac1{2n+1}\\right)$，求和时通过$(-1)^n$实现正负交替."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K15",
+      "order": 15,
+      "packageRoot": "topic-package-b",
+      "title": "与球有关的模型、结论",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "sections": [
+        {
+          "id": "K15-01",
+          "title": "一、球与正方体、正四面体模型的具体剖析",
+          "sourcePages": [
+            20
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "已知正方体的棱长为$a$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k15-p20-cube-row",
+              "width": 2475,
+              "height": 735
+            },
+            {
+              "type": "table",
+              "columns": [
+                "图形",
+                "球的半径"
+              ],
+              "rows": [
+                [
+                  "正方体的内切球",
+                  "$r_{\\text{内切球}}=\\frac a2$"
+                ],
+                [
+                  "正方体的棱切球",
+                  "$r_{\\text{棱切球}}=\\frac{\\sqrt2}{2}a$"
+                ],
+                [
+                  "正方体的外接球",
+                  "$r_{\\text{外接球}}=\\frac{\\sqrt3}{2}a$"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "已知正四面体的棱长为$a$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k15-p20-tetra-row",
+              "width": 2475,
+              "height": 825
+            },
+            {
+              "type": "table",
+              "columns": [
+                "图形",
+                "说明",
+                "球的半径"
+              ],
+              "rows": [
+                [
+                  "正四面体的内切球",
+                  "$R_{\\text{内切球}}=OH=AH-AO=h-R_{\\text{外接球}}$($h$为正四面体的高)",
+                  "$R_{\\text{内切球}}=\\frac{\\sqrt6}{12}a$"
+                ],
+                [
+                  "正四面体的棱切球",
+                  "对棱中点$E,F$为棱切球与棱的切点，且$EF=2R_{\\text{棱切球}}$，$EF$在$\\triangle DEF$中用勾股定理可求",
+                  "$R_{\\text{棱切球}}=\\frac{\\sqrt2}{4}a$"
+                ],
+                [
+                  "正四面体的外接球",
+                  "$DH=\\frac{\\sqrt3}{3}a,R_{\\text{外接球}}=OD$，$OD$在$\\triangle DOH$中用勾股定理可求",
+                  "$R_{\\text{外接球}}=\\frac{\\sqrt6}{4}a$"
+                ]
+              ]
+            },
+            {
+              "type": "label",
+              "text": "拓展"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)正方体的内切球、棱切球、外接球半径的平方成等差数列，公差为$\\frac{a^2}{4}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)正四面体的内切球、棱切球、外接球的半径成等比数列，公比为$\\sqrt3$."
+            }
+          ]
+        },
+        {
+          "id": "K15-02",
+          "title": "二、常见多面体外接球半径的求法",
+          "sourcePages": [
+            20,
+            21
+          ],
+          "blocks": [
+            {
+              "type": "figure",
+              "assetKey": "k15-p20-cuboid",
+              "width": 1140,
+              "height": 945
+            },
+            {
+              "type": "figure",
+              "assetKey": "k15-p21-outer-spheres",
+              "width": 1350,
+              "height": 3045
+            },
+            {
+              "type": "table",
+              "columns": [
+                "模型",
+                "说明",
+                "外接球半径"
+              ],
+              "rows": [
+                [
+                  "长方体",
+                  "底面边长为$a,b$，高为$c$",
+                  "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+                ],
+                [
+                  "正三棱柱",
+                  "正三棱柱的高为$h$，底面边长为$a$，利用勾股定理求解",
+                  "$R=\\sqrt{\\left(\\frac h2\\right)^2+\\left(\\frac{\\sqrt3a}{3}\\right)^2}$"
+                ],
+                [
+                  "对棱相等的三棱锥",
+                  "$DA=BC=x,DC=AB=y,DB=AC=z$，补形为长方体求解",
+                  "$R=\\frac{\\sqrt2}{4}\\sqrt{x^2+y^2+z^2}$"
+                ],
+                [
+                  "三条侧棱两两垂直的三棱锥(墙角模型)",
+                  "$AB=a,AC=b,AP=c$，补形为长方体求解",
+                  "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+                ],
+                [
+                  "四个面都是直角三角形的三棱锥",
+                  "$AC=a,BC=b$，顶点$P$到底面$ABC$的距离为$c$，补形为长方体求解",
+                  "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+                ]
+              ]
+            },
+            {
+              "type": "label",
+              "text": "归纳"
+            },
+            {
+              "type": "subheading",
+              "text": "确定球心的主要方法"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)补形找心：将几何体还原或补形为正方体或长方体，进而确定球心；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)垂线找心：几何体的外接球球心一定在过底面的外心且与底面垂直的直线上；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)定义找心：几何体外接球球心到各顶点的距离都相等."
+            }
+          ]
+        },
+        {
+          "id": "K15-03",
+          "title": "三、常见多面体内切球半径的求法",
+          "sourcePages": [
+            21
+          ],
+          "blocks": [
+            {
+              "type": "figure",
+              "assetKey": "k15-p21-inner-spheres",
+              "width": 660,
+              "height": 1425
+            },
+            {
+              "type": "table",
+              "columns": [
+                "模型",
+                "方法",
+                "说明"
+              ],
+              "rows": [
+                [
+                  "正四棱锥",
+                  "相似三角形法",
+                  "$E,F$分别为$AB,CD$的中点，$PH$为四棱锥的高，利用$\\triangle POG\\backsim\\triangle PFH$，得到$\\frac{OG}{FH}=\\frac{PO}{PF}$，从而得到内切球半径"
+                ],
+                [
+                  "任意三棱锥",
+                  "等体积法",
+                  "连接球心$O$和各顶点，利用三棱锥的表面积和体积即可求出内切球半径"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K16",
+      "order": 16,
+      "packageRoot": "topic-package-b",
+      "title": "截面与翻折问题——作图、识图",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "sections": [
+        {
+          "id": "K16-01",
+          "title": "一、正方体的截面",
+          "sourcePages": [
+            22
+          ],
+          "blocks": [
+            {
+              "type": "figure",
+              "assetKey": "k16-p22-section-types",
+              "width": 2370,
+              "height": 1110
+            },
+            {
+              "type": "paragraph",
+              "text": "作图：截面经过的三个已知点分别在正方体的棱上."
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)已知的$E,F,G$三点中任意两点的连线都在正方体的表面上，直接两两连接即得截面图形，如图①所示."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k16-p22-fig-1-3",
+              "width": 2535,
+              "height": 930
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)已知的$E,F,G$三点中任意两点的连线恰有两条在正方体的表面上，由平行法或相交法可得截面图形."
+            },
+            {
+              "type": "paragraph",
+              "text": "平行法思路：如图②所示，连接$GF$，在平面$ABB_1A_1$内过点$E$作$EH\\parallel GF$，交$AA_1$于点$H$，连接$GH,EF$，则四边形$EFGH$为所求的截面图形."
+            },
+            {
+              "type": "paragraph",
+              "text": "相交法思路：如图③所示，连接$FE$并延长交$DA$的延长线于点$H$，连接$GH$交$AA_1$于点$I$，连接$IE,GF$，则四边形$EFGI$为所求的截面图形."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)已知的$E,F,G$三点中任意两点的连线恰有一条在正方体的表面上，由相交法可得截面图形."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k16-p22-fig-4-5",
+              "width": 2325,
+              "height": 960
+            },
+            {
+              "type": "paragraph",
+              "text": "相交法思路：如图④所示，连接$FG$并延长，交$DD_1$的延长线于点$P$，连接$PE$交$A_1D_1$于点$H$，则点$H$为截面上一点，延长$GF$，交$DC$的延长线于点$Q$，连接$QE$交$BC$于点$I$，则点$I$为截面上一点，连接$FI,HG$，则五边形$EIFGH$即为所求的截面图形."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)已知的$E,F,G$三点中任意两点的连线都不在正方体的表面上，可以通过作辅助平面结合相交法来处理，如图⑤所示."
+            }
+          ]
+        },
+        {
+          "id": "K16-02",
+          "title": "二、圆锥中的截面与截口曲线",
+          "sourcePages": [
+            23
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "(1)过顶点作一个平面和圆锥相交，所得的截面是一个等腰三角形；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)如果平面和母线平行，那么所得到的截口曲线是抛物线；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)如果平面和轴线所成的角大于等于$0$，小于母线和轴线所成的角，那么所得到的截口曲线是双曲线的一支；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)如果平面和轴线所成的角大于母线和轴线所成的角且小于$\\frac{\\pi}{2}$，那么所得到的截口曲线是椭圆(或椭圆的一部分)；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(5)如果平面和轴线所成的角等于$\\frac{\\pi}{2}$，那么所得到的截口曲线是圆."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k16-p23-cone-sections",
+              "width": 2310,
+              "height": 1065
+            }
+          ]
+        },
+        {
+          "id": "K16-03",
+          "title": "三、翻折",
+          "sourcePages": [
+            23
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "以如图①所示的筝形$ABCD$(筝形是指有一条对角线所在直线为对称轴的四边形)为例，将$\\triangle ADB$沿着$BD$翻折，得到$\\triangle A_1BD$，那么翻折过程的基本规律如下："
+            },
+            {
+              "type": "figure",
+              "assetKey": "k16-p23-folding",
+              "width": 1740,
+              "height": 690
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)连接$AC$交$BD$于点$O$，则$AO\\perp BD$，顶点$A_1$的运动轨迹为以$O$为圆心，$OA$为半径的圆，且点$A_1$在底面$BCD$的射影在直线$AO$上."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)当且仅当$A_1$在底面的射影为$O$时，点$A_1$到底面的距离取得最大值，此时平面$A_1BD\\perp$平面$BCD$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)三垂线定理：如果平面内的一条直线与平面的一条斜线在该平面内的射影垂直，那么它也和这条斜线垂直(如图②)."
+            },
+            {
+              "type": "paragraph",
+              "text": "三垂线定理的逆定理：如果平面内的一条直线和这个平面的一条斜线垂直，那么它也和这条斜线在该平面内的射影垂直."
+            },
+            {
+              "type": "note",
+              "text": "【提示】若两平面垂直，则其中一个平面内的所有点在另一个平面内的射影一定在两平面的交线上."
+            },
+            {
+              "type": "subheading",
+              "text": "解决折叠问题的步骤："
+            },
+            {
+              "type": "figure",
+              "assetKey": "k16-p23-steps",
+              "width": 1710,
+              "height": 480
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K17",
+      "order": 17,
+      "packageRoot": "topic-package-c",
+      "title": "椭圆、双曲线的三大定义",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "sections": [
+        {
+          "id": "K17-01",
+          "title": "一、椭圆",
+          "sourcePages": [
+            24,
+            25
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "第一定义：满足$|PF_1|+|PF_2|=2a>|F_1F_2|=2c$的点$P$的轨迹是椭圆."
+            },
+            {
+              "type": "paragraph",
+              "text": "第二定义：平面内到定点$F_2(c,0)(c>0)$的距离与到定直线$l_2:x=\\frac{a^2}{c}$($F_2$不在$l_2$上)的距离之比为常数$e=\\frac ca\\in(0,1)$的点$P(x,y)$的轨迹为椭圆$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$，其中$a^2=b^2+c^2$，定点$F_2$为椭圆的右焦点，定直线$l_2$为椭圆的右准线.常用结论见下表："
+            },
+            {
+              "type": "table",
+              "columns": [
+                "椭圆的方程",
+                "焦点在$x$轴",
+                "焦点在$y$轴"
+              ],
+              "rows": [
+                [
+                  "椭圆的方程",
+                  "$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$",
+                  "$\\frac{y^2}{a^2}+\\frac{x^2}{b^2}=1(a>b>0)$"
+                ],
+                [
+                  "焦点",
+                  "$F_1(-c,0),F_2(c,0)$",
+                  "$F_1(0,-c),F_2(0,c)$"
+                ],
+                [
+                  "焦半径长度",
+                  "$P(x_0,y_0)$为椭圆上一点，$|PF_1|=a+ex_0,|PF_2|=a-ex_0$",
+                  "$P(x_0,y_0)$为椭圆上一点，$|PF_1|=a+ey_0,|PF_2|=a-ey_0$"
+                ],
+                [
+                  "焦半径长度记忆口诀",
+                  "左加右减",
+                  "下加上减"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "第三定义：已知点$A(x_0,y_0),B(-x_0,-y_0)$是关于原点对称的两个点，当点$P(x,y)$与点$A,B$以及$C(x_0,-y_0),D(-x_0,y_0)$不重合时，有$k_{PA}\\cdot k_{PB}=-\\frac{b^2}{a^2}=e^2-1,0<e<1$，则点$P(x,y)$的轨迹是中心在原点，焦点在$x$轴上，离心率为$e$的椭圆(不含点$A,B,C,D$，且$A,B,C,D$也在该椭圆上)."
+            },
+            {
+              "type": "label",
+              "text": "结论"
+            },
+            {
+              "type": "paragraph",
+              "text": "①当椭圆焦点在$x$轴上时，$A,B$是关于原点对称的两个点，点$P$在椭圆上.若直线$PA,PB$的斜率都存在，则$k_{PA}\\cdot k_{PB}=-\\frac{b^2}{a^2}=e^2-1$($a$为长半轴长，$b$为短半轴长，$e$为离心率)."
+            },
+            {
+              "type": "paragraph",
+              "text": "②当椭圆焦点在$y$轴上时，$A,B$是关于原点对称的两个点，点$P$在椭圆上.若直线$PA,PB$的斜率都存在，则$k_{PA}\\cdot k_{PB}=-\\frac{a^2}{b^2}=\\frac1{e^2-1}$($a$为长半轴长，$b$为短半轴长，$e$为离心率)."
+            }
+          ]
+        },
+        {
+          "id": "K17-02",
+          "title": "二、双曲线",
+          "sourcePages": [
+            24,
+            25
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "第一定义：满足$||PF_1|-|PF_2||=2a<|F_1F_2|=2c$的点$P$的轨迹是双曲线."
+            },
+            {
+              "type": "paragraph",
+              "text": "第二定义：若平面内到定点$F_2(c,0)(c>0)$的距离与到定直线$l_2:x=\\frac{a^2}{c}$($F_2$不在$l_2$上)的距离之比为常数$e=\\frac ca\\in(1,+\\infty)$的点$P(x,y)$的轨迹为双曲线$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a>0,b>0)$，其中$c^2=a^2+b^2$，定点$F_2$为双曲线的右焦点，定直线$l_2$为双曲线的右准线.常用结论见下表："
+            },
+            {
+              "type": "table",
+              "columns": [
+                "双曲线的方程",
+                "焦点在$x$轴",
+                "焦点在$y$轴"
+              ],
+              "rows": [
+                [
+                  "双曲线的方程",
+                  "$\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1(a>0,b>0)$",
+                  "$\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1(a>0,b>0)$"
+                ],
+                [
+                  "焦点",
+                  "$F_1(-c,0),F_2(c,0)$",
+                  "$F_1(0,-c),F_2(0,c)$"
+                ],
+                [
+                  "焦半径长度",
+                  "$P(x_0,y_0)$为双曲线上一点，$|PF_1|=|a+ex_0|,|PF_2|=|a-ex_0|$",
+                  "$P(x_0,y_0)$为双曲线上一点，$|PF_1|=|a+ey_0|,|PF_2|=|a-ey_0|$"
+                ],
+                [
+                  "焦半径长度记忆口诀",
+                  "左加右减",
+                  "下加上减"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "第三定义：已知点$A(x_0,y_0),B(-x_0,-y_0)$是关于原点对称的两个点，当点$P(x,y)$与点$A,B$以及$C(x_0,-y_0),D(-x_0,y_0)$不重合时，有$k_{PA}\\cdot k_{PB}=\\frac{b^2}{a^2}=e^2-1,e>1$，则点$P(x,y)$的轨迹是中心在原点，焦点在$x$轴上，离心率为$e$的双曲线(不含点$A,B,C,D$，且$A,B,C,D$也在该双曲线上)."
+            },
+            {
+              "type": "label",
+              "text": "结论"
+            },
+            {
+              "type": "paragraph",
+              "text": "①当双曲线焦点在$x$轴上时，$A,B$是关于原点对称的两个点，$P$为双曲线上一点，若直线$PA,PB$的斜率都存在，则$k_{PA}\\cdot k_{PB}=\\frac{b^2}{a^2}=e^2-1$($a$为实半轴长，$b$为虚半轴长，$e$为离心率)."
+            },
+            {
+              "type": "paragraph",
+              "text": "②当双曲线焦点在$y$轴上时，$A,B$是关于原点对称的两个点，$P$为双曲线上一点，若直线$PA,PB$的斜率都存在，则$k_{PA}\\cdot k_{PB}=\\frac{a^2}{b^2}=\\frac1{e^2-1}$($a$为实半轴长，$b$为虚半轴长，$e$为离心率)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K18",
+      "order": 18,
+      "packageRoot": "topic-package-c",
+      "title": "椭圆与双曲线的焦点三角形",
+      "sourcePages": [
+        25
+      ],
+      "sections": [
+        {
+          "id": "K18-01",
+          "title": "椭圆与双曲线的焦点三角形",
+          "sourcePages": [
+            25
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "图形($\\triangle PF_1F_2$为曲线的焦点三角形)"
+            },
+            {
+              "type": "figure",
+              "assetKey": "k18-p25-ellipse-triangle",
+              "width": 750,
+              "height": 735,
+              "caption": "椭圆"
+            },
+            {
+              "type": "figure",
+              "assetKey": "k18-p25-hyperbola-triangle",
+              "width": 750,
+              "height": 750,
+              "caption": "双曲线"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "",
+                "椭圆",
+                "双曲线"
+              ],
+              "rows": [
+                [
+                  "三条边之间的关系",
+                  "$|PF_1|+|PF_2|=2a,|F_1F_2|=2c$",
+                  "$||PF_1|-|PF_2||=2a,|F_1F_2|=2c$"
+                ],
+                [
+                  "焦点三角形的周长$L$",
+                  "定值；$L=2a+2c$",
+                  "不是定值；$L=r_1+r_2+2c\\in(4c,+\\infty)$"
+                ],
+                [
+                  "$r_1\\cdot r_2$",
+                  "$r_1\\cdot r_2=\\frac{2b^2}{1+\\cos\\theta}=a^2-e^2x_0^2$",
+                  "$r_1\\cdot r_2=\\frac{2b^2}{1-\\cos\\theta}=e^2x_0^2-a^2$"
+                ],
+                [
+                  "焦点三角形的面积$S$",
+                  "$S=b^2\\cdot\\tan\\frac{\\theta}{2}=c\\cdot|y_0|$，当$P$为短轴端点时，$\\theta$最大，同时$S$取得最大值$bc$",
+                  "$S=\\frac{b^2}{\\tan\\frac{\\theta}{2}}=c\\cdot|y_0|\\in(0,+\\infty)$，$S$无最值"
+                ],
+                [
+                  "离心率",
+                  "$e=\\frac{2c}{2a}=\\frac{|F_1F_2|}{r_1+r_2}=\\frac{\\sin\\theta}{\\sin\\beta+\\sin\\alpha}=\\frac{\\sin(\\alpha+\\beta)}{\\sin\\beta+\\sin\\alpha}$",
+                  "$e=\\frac{2c}{2a}=\\frac{|F_1F_2|}{|r_1-r_2|}=\\frac{\\sin\\theta}{|\\sin\\beta-\\sin\\alpha|}=\\frac{\\sin(\\alpha+\\beta)}{|\\sin\\beta-\\sin\\alpha|}$"
+                ],
+                [
+                  "$\\triangle PF_1F_2$的内切圆",
+                  "内切圆半径$r=\\frac{2S}{L}=\\frac{b^2\\cdot\\tan\\frac{\\theta}{2}}{a+c}$",
+                  "内切圆圆心的横坐标恒为$a$"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K19",
+      "order": 19,
+      "packageRoot": "topic-package-c",
+      "title": "抛物线的焦点弦",
+      "sourcePages": [
+        26
+      ],
+      "sections": [
+        {
+          "id": "K19-01",
+          "title": "抛物线的焦点弦",
+          "sourcePages": [
+            26
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "过抛物线$y^2=2px(p>0)$的焦点$F$的直线与抛物线交于$A,B$两点，$G$为弦$AB$的中点，分别过点$A,B$作准线$l:x=-\\frac{p}{2}$的垂线，垂足分别为$M,N$，$H$为$MN$的中点. 设$A(x_1,y_1),B(x_2,y_2)$，直线$AB$的倾斜角为$\\alpha$($\\alpha$为锐角)，则有如下结论："
+            },
+            {
+              "type": "figure",
+              "assetKey": "k19-p26-focus-chord",
+              "width": 711,
+              "height": 1020
+            },
+            {
+              "type": "subheading",
+              "text": "1. 焦半径、焦点弦相关公式"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)焦半径：$|AF|=x_1+\\frac{p}{2}=\\frac{p}{1-\\cos\\alpha}$；$|BF|=x_2+\\frac{p}{2}=\\frac{p}{1+\\cos\\alpha}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)焦点弦：$|AB|=x_1+x_2+p=\\frac{2p}{\\sin^2\\alpha}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)焦半径之比：$\\frac{|AF|}{|BF|}=\\frac{1+\\cos\\alpha}{1-\\cos\\alpha}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)三个定值：$x_1x_2=\\frac{p^2}{4}$；$y_1y_2=-p^2$；$\\frac{1}{|AF|}+\\frac{1}{|BF|}=\\frac{2}{p}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "2. $S_{\\triangle OAB}=\\frac{1}{2}\\cdot|OF|\\cdot|AB|\\sin\\alpha=\\frac{p^2}{2\\sin\\alpha}$"
+            },
+            {
+              "type": "figure",
+              "assetKey": "k19-p26-tangent-circles",
+              "width": 726,
+              "height": 600
+            },
+            {
+              "type": "subheading",
+              "text": "3. 四种相切"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)以$AB$为直径的圆与$MN$切于点$H$，即$\\angle AHB=90^\\circ$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)以$MN$为直径的圆与$AB$切于焦点$F$，即$\\angle MFN=90^\\circ$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)以焦半径$AF$为直径的圆与$y$轴相切."
+            },
+            {
+              "type": "paragraph",
+              "text": "(4)以焦半径$BF$为直径的圆与$y$轴相切."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k19-p26-triangles",
+              "width": 786,
+              "height": 930
+            },
+            {
+              "type": "subheading",
+              "text": "4. 两对全等的三角形"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)$\\triangle AMH\\cong\\triangle AFH$，∴$AH$平分$\\angle MAF$和$\\angle MHF$，$AH\\perp MF$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)$\\triangle BNH\\cong\\triangle BFH$，∴$BH$平分$\\angle NHF$和$\\angle NBF$，$BH\\perp NF$."
+            },
+            {
+              "type": "paragraph",
+              "text": "5. $A,O,N$三点共线；$B,O,M$三点共线."
+            },
+            {
+              "type": "paragraph",
+              "text": "6. 记$\\triangle AMF,\\triangle FMN,\\triangle BNF$的面积分别为$S_1,S_2,S_3$，则$S_2^2=4S_1S_3$."
+            },
+            {
+              "type": "paragraph",
+              "text": "$S_1=\\frac{1}{2}|AF||AM|\\sin\\alpha=\\frac{\\sin\\alpha}{2}\\cdot\\left(\\frac{p}{1-\\cos\\alpha}\\right)^2$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "$S_3=\\frac{1}{2}|BF||BN|\\sin\\alpha=\\frac{\\sin\\alpha}{2}\\cdot\\left(\\frac{p}{1+\\cos\\alpha}\\right)^2$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "$S_2=\\frac{1}{2}\\cdot p\\cdot|MN|=\\frac{1}{2}\\cdot p\\cdot|AB|\\sin\\alpha=\\frac{p^2}{\\sin\\alpha}$"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K20",
+      "order": 20,
+      "packageRoot": "topic-package-c",
+      "title": "弦中点与点差法",
+      "sourcePages": [
+        27
+      ],
+      "sections": [
+        {
+          "id": "K20-01",
+          "title": "圆：x²+y²=r²(r>0)",
+          "sourcePages": [
+            27
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "$AB$为圆的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=-1$."
+            }
+          ]
+        },
+        {
+          "id": "K20-02",
+          "title": "椭圆：x²/m²+y²/n²=1(m>0，n>0，m≠n)",
+          "sourcePages": [
+            27
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "$AB$为椭圆的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=-\\frac{n^2}{m^2}$(焦点在$x$轴或$y$轴均成立)."
+            },
+            {
+              "type": "label",
+              "text": "【证明】"
+            },
+            {
+              "type": "paragraph",
+              "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入椭圆方程得$\\begin{cases}\\frac{x_1^2}{m^2}+\\frac{y_1^2}{n^2}=1,\\\\\\frac{x_2^2}{m^2}+\\frac{y_2^2}{n^2}=1,\\end{cases}$两式作差得$\\frac{x_1^2-x_2^2}{m^2}+\\frac{y_1^2-y_2^2}{n^2}=0$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{\\frac{y_1+y_2}{2}}{\\frac{x_1+x_2}{2}}=-\\frac{n^2}{m^2}$，从而$k_{AB}\\cdot k_{OM}=-\\frac{n^2}{m^2}$."
+            }
+          ]
+        },
+        {
+          "id": "K20-03",
+          "title": "双曲线：x²/m²-y²/n²=±1(m>0，n>0)",
+          "sourcePages": [
+            27
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "$AB$为双曲线的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=\\frac{n^2}{m^2}$(焦点在$x$轴或$y$轴均成立)."
+            },
+            {
+              "type": "label",
+              "text": "【证明】"
+            },
+            {
+              "type": "paragraph",
+              "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入双曲线方程得$\\begin{cases}\\frac{x_1^2}{m^2}-\\frac{y_1^2}{n^2}=\\pm1,\\\\\\frac{x_2^2}{m^2}-\\frac{y_2^2}{n^2}=\\pm1,\\end{cases}$两式作差得$\\frac{x_1^2-x_2^2}{m^2}-\\frac{y_1^2-y_2^2}{n^2}=0$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{\\frac{y_1+y_2}{2}}{\\frac{x_1+x_2}{2}}=\\frac{n^2}{m^2}$，从而$k_{AB}\\cdot k_{OM}=\\frac{n^2}{m^2}$."
+            }
+          ]
+        },
+        {
+          "id": "K20-04",
+          "title": "抛物线：y²=2px(p≠0)",
+          "sourcePages": [
+            27
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "$AB$为抛物线的弦，$M$为弦$AB$的中点，若直线$AB$的斜率存在，则$k_{AB}\\cdot y_M=p$."
+            },
+            {
+              "type": "label",
+              "text": "【证明】"
+            },
+            {
+              "type": "paragraph",
+              "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入抛物线方程得$\\begin{cases}y_1^2=2px_1,\\\\y_2^2=2px_2,\\end{cases}$两式作差得$y_1^2-y_2^2=2p(x_1-x_2)$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{y_1+y_2}{2}=p$，从而$k_{AB}\\cdot y_M=p$."
+            }
+          ]
+        },
+        {
+          "id": "K20-05",
+          "title": "抛物线：x²=2py(p≠0)",
+          "sourcePages": [
+            27
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "$AB$为抛物线的弦，$M$为弦$AB$的中点，则$x_M=p\\cdot k_{AB}$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K21",
+      "order": 21,
+      "packageRoot": "topic-package-c",
+      "title": "阿波罗尼斯圆与蒙日圆",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "sections": [
+        {
+          "id": "K21-01",
+          "title": "一、阿波罗尼斯圆",
+          "sourcePages": [
+            28
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "阿波罗尼斯圆：设$P(x,y),A(-a,0),B(a,0),a>0$. 若$\\frac{|PA|}{|PB|}=\\lambda(\\lambda>0且\\lambda\\ne1)$，则点$P$的轨迹方程是$\\left(x-\\frac{\\lambda^2+1}{\\lambda^2-1}a\\right)^2+y^2=\\left(\\frac{2a\\lambda}{\\lambda^2-1}\\right)^2$，其轨迹是以$\\left(\\frac{\\lambda^2+1}{\\lambda^2-1}a,0\\right)$为圆心，$\\left|\\frac{2a\\lambda}{\\lambda^2-1}\\right|$为半径的圆."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k21-p28-apollonius-definition",
+              "width": 570,
+              "height": 765
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "由$|PA|=\\lambda|PB|$及两点间距离公式，可得$(x+a)^2+y^2=\\lambda^2[(x-a)^2+y^2]$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "化简可得$(1-\\lambda^2)x^2+(1-\\lambda^2)y^2+2(1+\\lambda^2)ax+(1-\\lambda^2)a^2=0(*)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "①当$\\lambda=1$时，得$x=0$，此时动点的轨迹是线段$AB$的垂直平分线；"
+            },
+            {
+              "type": "paragraph",
+              "text": "②当$\\lambda>0$且$\\lambda\\ne1$时，方程$(*)$两边都除以$1-\\lambda^2$得$x^2+y^2+\\frac{2(1+\\lambda^2)ax}{1-\\lambda^2}+a^2=0$，化为标准形式即为$\\left(x-\\frac{\\lambda^2+1}{\\lambda^2-1}a\\right)^2+y^2=\\left(\\frac{2a\\lambda}{\\lambda^2-1}\\right)^2$，故点$P$的轨迹是以$\\left(\\frac{\\lambda^2+1}{\\lambda^2-1}a,0\\right)$为圆心，$\\left|\\frac{2a\\lambda}{\\lambda^2-1}\\right|$为半径的圆."
+            },
+            {
+              "type": "paragraph",
+              "text": "定理：$A,B$为两已知点，$M,N$分别为线段$AB$的定比为$\\lambda(\\lambda>0且\\lambda\\ne1)$的内、外分点，则以$MN$为直径的圆$C$上任意一点$P$到$A,B$两点的距离之比为$\\lambda$."
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "以$\\lambda>1$为例，如图，设$|AB|=2a(a>0)$，$\\frac{|AM|}{|MB|}=\\frac{|AN|}{|NB|}=\\lambda$，∴$|AM|=\\frac{2a\\lambda}{1+\\lambda},|MB|=\\frac{2a}{1+\\lambda},|AN|=\\frac{2a\\lambda}{\\lambda-1},|BN|=\\frac{2a}{\\lambda-1}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "过$B$作$AB$的垂线与圆$C$交于$Q,R$两点，由射影定理及勾股定理得$|QB|^2=|MB|\\cdot|BN|=\\frac{4a^2}{\\lambda^2-1}$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "$|QA|^2=|AB|^2+|QB|^2=\\frac{4a^2\\lambda^2}{\\lambda^2-1}$，∴$|QB|=\\frac{2a}{\\sqrt{\\lambda^2-1}},|QA|=\\frac{2a\\lambda}{\\sqrt{\\lambda^2-1}}$，∴$\\frac{|QA|}{|QB|}=\\lambda$."
+            },
+            {
+              "type": "paragraph",
+              "text": "∵$M,Q,N$同时在到$A,B$两点距离之比等于$\\lambda$的圆上，而不共线的三点所确定的圆是唯一的，∴圆$C$上任意一点$P$到$A,B$两点的距离之比恒为$\\lambda$. 同理可证$0<\\lambda<1$的情形."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k21-p28-apollonius-proof",
+              "width": 444,
+              "height": 555
+            },
+            {
+              "type": "paragraph",
+              "text": "结论1：当$\\lambda>1$时，点$B$在圆$C$内，点$A$在圆$C$外；当$0<\\lambda<1$时，点$A$在圆$C$内，点$B$在圆$C$外."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论2：所作出的阿波罗尼斯圆的直径为$\\frac{4a\\lambda}{|\\lambda^2-1|}$，面积为$\\frac{4\\pi a^2\\lambda^2}{(\\lambda^2-1)^2}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论3：当$\\lambda>1$时，过点$A$作圆$C$的切线$AQ(Q$为切点$)$，则$QM,QN$分别为$\\angle AQB$的内、外角平分线."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论4：当$\\lambda>1$时，过点$B$作圆$C$不与$MN$重合的弦$EF$，则$AB$平分$\\angle EAF$."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k21-p28-apollonius-conclusion",
+              "width": 540,
+              "height": 540
+            }
+          ]
+        },
+        {
+          "id": "K21-02",
+          "title": "二、蒙日圆",
+          "sourcePages": [
+            29
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "蒙日圆：在椭圆(双曲线)中，任意两条互相垂直的切线的交点都在同一个圆上，它的圆心是椭圆(双曲线)的中心，半径等于长半轴(实半轴)长与短半轴(虚半轴)长平方和(差)的算术平方根，这个圆叫蒙日圆."
+            },
+            {
+              "type": "paragraph",
+              "text": "设椭圆的方程为$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$，则椭圆的两条互相垂直的切线$PA,PB$的交点$P$的轨迹是蒙日圆，即$x^2+y^2=a^2+b^2$，焦点在$y$轴的椭圆同样适用."
+            },
+            {
+              "type": "figure",
+              "assetKey": "k21-p29-monge-circle",
+              "width": 840,
+              "height": 690
+            },
+            {
+              "type": "label",
+              "text": "证明"
+            },
+            {
+              "type": "paragraph",
+              "text": "以焦点在$x$轴的椭圆为例："
+            },
+            {
+              "type": "paragraph",
+              "text": "①当两条互相垂直的切线$PA,PB$的斜率均存在且不为0时，可设$P(x_0,y_0)(x_0\\ne\\pm a且y_0\\ne\\pm b)$，过$P$的椭圆的切线方程为$y-y_0=k(x-x_0)(k\\ne0)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "由$\\begin{cases}y-y_0=k(x-x_0),\\\\\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1,\\end{cases}$得$(a^2k^2+b^2)x^2-2a^2k(kx_0-y_0)x+a^2(kx_0-y_0)^2-a^2b^2=0$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "由其判别式的值为0，得$(x_0^2-a^2)k^2-2x_0y_0k+y_0^2-b^2=0(x_0^2-a^2\\ne0)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "∵$k_{PA},k_{PB}$是这个关于$k$的一元二次方程的两个根，∴$k_{PA}\\cdot k_{PB}=\\frac{y_0^2-b^2}{x_0^2-a^2}$. ∵$PA\\perp PB$，∴$k_{PA}\\cdot k_{PB}=-1$，"
+            },
+            {
+              "type": "paragraph",
+              "text": "∴$\\frac{y_0^2-b^2}{x_0^2-a^2}=-1$，∴$x_0^2+y_0^2=a^2+b^2$，∴点$P$的坐标满足方程$x^2+y^2=a^2+b^2$."
+            },
+            {
+              "type": "paragraph",
+              "text": "②当两条互相垂直的切线$PA,PB$的斜率不存在或斜率为0时，可得点$P$的坐标为$(\\pm a,\\pm b)$，此时点$P$也在圆$x^2+y^2=a^2+b^2$上."
+            },
+            {
+              "type": "paragraph",
+              "text": "综上，椭圆$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$的两条互相垂直的切线$PA,PB$的交点$P$的轨迹是蒙日圆$x^2+y^2=a^2+b^2$."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论1：过圆$x^2+y^2=a^2+b^2$上的动点$P$作椭圆$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$的两条切线$PA,PB$，则$PA\\perp PB$."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论2：设$O$为原点，$P$为蒙日圆$O:x^2+y^2=a^2+b^2$上任一点，过点$P$作椭圆$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$的两条切线，交椭圆于点$A,B$，则直线$OP,AB$的斜率乘积为定值，$k_{OP}\\cdot k_{AB}=-\\frac{b^2}{a^2}$，直线$OA,PA$的斜率乘积为定值，$k_{OA}\\cdot k_{PA}=-\\frac{b^2}{a^2}$，直线$OB,PB$的斜率乘积为定值，$k_{OB}\\cdot k_{PB}=-\\frac{b^2}{a^2}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "结论3：过圆$x^2+y^2=a^2+b^2$上的动点$P$作椭圆$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1(a>b>0)$的两条切线，$O$为原点，则$PO$平分椭圆的切点弦$AB$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K22",
+      "order": 22,
+      "packageRoot": "topic-package-c",
+      "title": "排列组合的题型识别与解题方法",
+      "sourcePages": [
+        30
+      ],
+      "sections": [
+        {
+          "id": "K22-01",
+          "title": "排列组合的题型识别与解题方法",
+          "sourcePages": [
+            30
+          ],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "1. 特殊元素、特殊位置——优先安排"
+            },
+            {
+              "type": "paragraph",
+              "text": "首先考虑问题中的特殊元素（或位置），然后排列其他的一般元素（或位置）."
+            },
+            {
+              "type": "subheading",
+              "text": "2. 相邻问题——捆绑法"
+            },
+            {
+              "type": "paragraph",
+              "text": "将$n$个不同的元素排列成一排，其中$k(k\\leqslant n)$个元素排在相邻位置上，求不同排法种数的步骤：①先将这$k$个元素“捆绑”在一起，看成一个整体；②把这个整体当作一个元素与其他元素一起排列，其排列方法有$\\mathrm{A}_{n-k+1}^{n-k+1}$种；③然后“松绑”，将“捆绑”在一起的元素内部进行排列，其排列方法有$\\mathrm{A}_k^k$种；④根据分步乘法计数原理，符合条件的排列方法有$\\mathrm{A}_{n-k+1}^{n-k+1}\\cdot \\mathrm{A}_k^k$种."
+            },
+            {
+              "type": "subheading",
+              "text": "3. 不相邻问题——插空法"
+            },
+            {
+              "type": "paragraph",
+              "text": "将$n$个不同的元素排成一排，其中$k(k\\leqslant n-k+1)$个元素互不相邻，求不同排法种数的步骤：①先将没有不相邻要求的$n-k$个元素排成一排，其排列方法有$\\mathrm{A}_{n-k}^{n-k}$种；②然后将要求两两不相邻的$k$个元素插入$n-k+1$个空隙中（包括两端），相当于从$n-k+1$个空隙中选出$k$个，分别分配给两两不相邻的$k$个元素，其排列方法有$\\mathrm{A}_{n-k+1}^{k}$种；③根据分步乘法计数原理，符合条件的排列方法有$\\mathrm{A}_{n-k}^{n-k}\\cdot \\mathrm{A}_{n-k+1}^{k}$种."
+            },
+            {
+              "type": "subheading",
+              "text": "4. 定序问题——倍缩法"
+            },
+            {
+              "type": "paragraph",
+              "text": "$n$个不同元素排列成一排共有$\\mathrm{A}_n^n$种排法，$m$个不同元素排列成一排共有$\\mathrm{A}_m^m$种排法，因为$m$个不同元素顺序已定的排法只占排法总数的$\\frac{1}{\\mathrm{A}_m^m}$，所以$n$个不同元素中$m(m\\leqslant n)$个元素顺序已定的排法共有$\\frac{\\mathrm{A}_n^n}{\\mathrm{A}_m^m}$种（即定序问题先不考虑顺序限制，排列后再除以定序元素的全排列）."
+            },
+            {
+              "type": "subheading",
+              "text": "5. 分排问题——合并法"
+            },
+            {
+              "type": "paragraph",
+              "text": "分排问题可以忽略分排，直接看成一排处理."
+            },
+            {
+              "type": "subheading",
+              "text": "6. 相同元素分组——隔板法"
+            },
+            {
+              "type": "paragraph",
+              "text": "将$n$个相同元素排成一排，元素之间共形成$n-1$个空隙，从中挑出$m-1(m\\leqslant n)$个空隙插入$m-1$个隔板，就可以将$n$个相同元素分为$m$组（每组至少含1个元素），共有$\\mathrm{C}_{n-1}^{m-1}$种方法."
+            },
+            {
+              "type": "subheading",
+              "text": "7. 不同元素分组"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "常见形式",
+                "处理方法"
+              ],
+              "rows": [
+                [
+                  "非均匀不编号分组",
+                  "$n$个不同元素分成$m$组，每组元素数目均不相等，且不考虑各组间的顺序，不管是否分尽，分法种数$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$"
+                ],
+                [
+                  "均匀不编号分组",
+                  "$n$个不同元素分成不编号的$m$组，假定其中$r$组元素个数相等，不管是否分尽，其分法种数为$\\frac{N}{\\mathrm{A}_r^r}$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）．如果再有$k$组均匀分组，应再除以$\\mathrm{A}_k^k$"
+                ],
+                [
+                  "非均匀编号分组",
+                  "$n$个不同元素分成$m$组，各组元素数目均不相等，且考虑各组间的顺序，其分法种数为$N\\cdot \\mathrm{A}_m^m$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）"
+                ],
+                [
+                  "均匀编号分组",
+                  "$n$个不同元素分成$m$组，其中$r$组元素个数相同，且考虑各组间的顺序，其分法种数为$\\frac{N\\cdot \\mathrm{A}_m^m}{\\mathrm{A}_r^r}$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K23",
+      "order": 23,
+      "packageRoot": "topic-package-c",
+      "title": "相互独立事件、条件概率与全概率公式",
+      "sourcePages": [
+        31
+      ],
+      "sections": [
+        {
+          "id": "K23-01",
+          "title": "一、相互独立事件",
+          "sourcePages": [
+            31
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "(1)如果$A_1,A_2,\\cdots,A_n$相互独立，则有$P(A_1A_2\\cdots A_n)=P(A_1)P(A_2)\\cdots P(A_n)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)若事件$A,B$相互独立，则"
+            },
+            {
+              "type": "table",
+              "columns": [
+                "事件$A,B$发生的情况",
+                "概率计算公式"
+              ],
+              "rows": [
+                [
+                  "$A,B$中至少有一个不发生",
+                  "$P(\\overline{A}\\,\\overline{B}\\cup A\\overline{B}\\cup \\overline{A}B)=1-P(AB)=1-P(A)P(B)$"
+                ],
+                [
+                  "$A,B$中至少有一个发生",
+                  "$P(A\\overline{B}\\cup \\overline{A}B\\cup AB)=1-P(\\overline{A}\\,\\overline{B})=1-P(\\overline{A})P(\\overline{B})=P(A)+P(B)-P(A)P(B)$"
+                ],
+                [
+                  "$A,B$中恰好有一个发生",
+                  "$P(A\\overline{B}\\cup \\overline{A}B)=P(A\\overline{B}+\\overline{A}B)=P(A)P(\\overline{B})+P(\\overline{A})P(B)=P(A)+P(B)-2P(A)P(B)$"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K23-02",
+          "title": "二、条件概率",
+          "sourcePages": [
+            31
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "条件概率：一般地，设$A,B$为两个随机事件，且$P(A)>0$，则在事件$A$发生的条件下，事件$B$发生的概率为$P(B|A)=\\frac{P(AB)}{P(A)}$."
+            },
+            {
+              "type": "paragraph",
+              "text": "乘法公式：对任意两个事件$A,B$，若$P(A)>0$，则$P(AB)=P(A)P(B|A)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "条件概率的性质：设$P(A)>0$，则"
+            },
+            {
+              "type": "paragraph",
+              "text": "(1)$P(\\Omega|A)=1$($\\Omega$为样本空间)；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)如果$B$和$C$是两个互斥事件，则$P(B\\cup C|A)=P(B|A)+P(C|A)$；"
+            },
+            {
+              "type": "paragraph",
+              "text": "(3)设$\\overline{B}$和$B$互为对立事件，则$P(\\overline{B}|A)=1-P(B|A)$."
+            }
+          ]
+        },
+        {
+          "id": "K23-03",
+          "title": "三、全概率公式",
+          "sourcePages": [
+            31
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "全概率公式：一般地，设$A_1,A_2,\\cdots,A_n$是一组两两互斥的事件，$A_1\\cup A_2\\cup\\cdots\\cup A_n=\\Omega$，且$P(A_i)>0,i=1,2,\\cdots,n$，则对任意的事件$B\\subseteq\\Omega$，有$P(B)=\\sum_{i=1}^{n}P(BA_i)=\\sum_{i=1}^{n}P(A_i)P(B|A_i)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "理解：(1)某一事件$B$的发生有各种可能的原因，如果$B$是由原因$A_i(i=1,2,3,\\cdots,n)$所引起的，那么事件$B$发生的概率$P(B)=\\sum_{i=1}^{n}P(BA_i)=\\sum_{i=1}^{n}P(A_i)P(B|A_i)$."
+            },
+            {
+              "type": "paragraph",
+              "text": "(2)每一个原因都可能导致$B$发生，故$B$发生的概率是各原因引起$B$发生概率的总和."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K24",
+      "order": 24,
+      "packageRoot": "topic-package-c",
+      "title": "二项分布、超几何分布的识别",
+      "sourcePages": [
+        32
+      ],
+      "sections": [
+        {
+          "id": "K24-01",
+          "title": "二项分布、超几何分布的识别",
+          "sourcePages": [
+            32
+          ],
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "",
+                "超几何分布",
+                "二项分布"
+              ],
+              "rows": [
+                [
+                  "特征",
+                  "一个总体（共有$N$个元素）内含有两种不同的事物$A$（$M$个元素），$B$（$N-M$个元素），任取$n$个元素，其中恰有$X$个$A$事物",
+                  "①在一次试验中，试验结果只有$A$与$\\overline{A}$两个，且事件$A$发生的概率为$p$，事件$\\overline{A}$发生的概率为$1-p$；\n②试验可以独立重复地进行，即每次重复做试验，事件$A$发生的概率都是同一常数$p$，事件$\\overline{A}$发生的概率都是$1-p$"
+                ],
+                [
+                  "试验类型与特点",
+                  "古典概型的随机试验，可以理解为是不放回抽样的试验．\n每一次试验的结果数较多",
+                  "在相同的条件下做了$n$次独立重复试验，可以理解为有放回抽样的试验．\n①每次试验在相同条件下可重复进行；\n②各次试验是相互独立的；\n③每次试验都只有两种结果，即事件要么发生，要么不发生"
+                ],
+                [
+                  "$P(X=k)$",
+                  "$P(X=k)=\\frac{\\mathrm{C}_M^k\\mathrm{C}_{N-M}^{n-k}}{\\mathrm{C}_N^n}$，其中$k=m,m+1,m+2,\\cdots,r$，其中$n,N,M\\in\\mathbf{N}^*$，$M\\leqslant N$，$n\\leqslant N$，$m=\\max\\{0,n-N+M\\}$，$r=\\min\\{n,M\\}$",
+                  "$P(X=k)=\\mathrm{C}_n^k p^k(1-p)^{n-k}$，其中$k=0,1,2,\\cdots,n$"
+                ],
+                [
+                  "$E(X)$",
+                  "$E(X)=n\\frac{M}{N}$",
+                  "$E(X)=np$"
+                ],
+                [
+                  "$D(X)$",
+                  "$D(X)=n\\frac{M}{N}\\left(1-\\frac{M}{N}\\right)\\frac{N-n}{N-1}$",
+                  "$D(X)=np(1-p)$"
+                ],
+                [
+                  "联系",
+                  {
+                    "text": "当总体数$N$较小时，无放回抽样中按照超几何分布计算的概率与有放回抽样中按照二项分布计算的概率差异比较明显；当总体数$N$不断变大时，两种分布计算的概率逐渐接近，当总体数$N$无限大或很大时，此时$\\lim\\limits_{N\\to\\infty}\\frac{M}{N}=p$，无放回抽取少量样品对概率的影响很小，$p$此时是一个趋近于稳定的值，两种分布计算的概率近似相等",
+                    "colspan": 2
+                  }
+                ],
+                [
+                  "识别",
+                  {
+                    "text": "(1)看总体数是否给出，若未给出或给出总体数较大，则一般考查二项分布；\n(2)看一次抽取抽中事物$A$的概率是否给出，若给出或可求出，则一般考查二项分布；\n(3)看一次抽取的结果是否只有两个，若只有两个对立的结果$A$或$\\overline{A}$，一般考查二项分布；\n(4)看抽样方法，如果是有放回抽样，一定是二项分布；如果是无放回抽样，需要考虑总体数再确定是否是超几何分布；\n(5)看每一次抽样试验中，事件是否独立，事件发生的概率是否不变，若事件独立且概率不变，一定考查二项分布，这也是判断二项分布最根本的依据",
+                    "colspan": 2
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

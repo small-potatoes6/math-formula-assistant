@@ -1,189 +1,77 @@
 <view class="page-shell practice-page">
   <view class="page-hero compact">
-    <view class="hero-eyebrow">PRACTICE</view>
-    <view class="hero-title">公式练习</view>
-    <view class="hero-subtitle">收藏 {{favoriteCount}} 条 · 今日待复习 {{dueCount}} 条</view>
+    <view class="hero-title">选择题练习</view>
+    <view class="hero-subtitle">{{formulaCount}} 条公式，共 {{questionCount}} 道基础题</view>
   </view>
 
   <view class="page-content practice-content">
-    <view wx:if="{{started}}">
-      <view class="session-head">
-        <view>
-          <view class="session-label">正在练习</view>
-          <view class="session-position">{{currentIndex + 1}} / {{total}}</view>
+    <view class="setup-card">
+      <view class="setup-summary">
+        <view class="summary-item">
+          <text class="summary-value">{{formulaCount}}</text>
+          <text class="summary-label">公式</text>
         </view>
-        <view class="session-type">
-          {{activeMode == 'self' ? '默写自评' : activeMode == 'fill' ? '填空' : '选择'}}
+        <view class="summary-divider"></view>
+        <view class="summary-item">
+          <text class="summary-value">{{favoriteCount}}</text>
+          <text class="summary-label">收藏</text>
+        </view>
+        <view class="summary-divider"></view>
+        <view class="summary-item">
+          <text class="summary-value">{{dueCount}}</text>
+          <text class="summary-label">待复习</text>
         </view>
       </view>
-      <view class="progress-track">
-        <view class="progress-value" style="width: {{progress}}%;"></view>
+
+      <view class="setup-row">
+        <view class="setup-row-label">章节</view>
+        <picker mode="selector" range="{{chapterLabels}}" value="{{chapterIndex}}" bindchange="onChapterChange">
+          <view class="setup-picker pressable">
+            <text>{{chapterLabels[chapterIndex]}}</text>
+            <text class="picker-arrow">›</text>
+          </view>
+        </picker>
       </view>
 
-      <view wx:if="{{current}}" class="question-card">
-        <view class="question-meta">{{current.id}} · {{current.chapter}}</view>
-        <view class="question-title">{{current.name}}</view>
-
-        <block wx:if="{{activeMode == 'self'}}">
-          <view wx:if="{{!showFormula}}" class="recall-panel">
-            <view class="recall-title">先在脑中回忆公式</view>
-            <view class="recall-copy">想好后看公式对照，再选择自己的掌握程度。</view>
+      <view class="setup-row">
+        <view class="setup-row-label">每组题量</view>
+        <picker mode="selector" range="{{quantityLabels}}" value="{{quantityIndex}}" bindchange="onQuantityChange">
+          <view class="setup-picker pressable">
+            <text>{{quantityLabels[quantityIndex]}}</text>
+            <text class="picker-arrow">›</text>
           </view>
-          <view wx:else class="answer-panel">
-            <formula-image
-              asset="{{current.formulaImage}}"
-              asset-width="{{current.formulaWidth}}"
-              asset-height="{{current.formulaHeight}}"
-              max-width="600"
-            ></formula-image>
-          </view>
-          <button wx:if="{{!showFormula}}" class="secondary-button reveal-button pressable" bindtap="revealFormula">
-            看公式
-          </button>
-          <view wx:else class="rating-block">
-            <view class="rating-label">这次回忆得怎么样？</view>
-            <view class="rating-row">
-              <button class="rating-button unknown pressable" data-level="unknown" bindtap="rate">不会</button>
-              <button class="rating-button fuzzy pressable" data-level="fuzzy" bindtap="rate">模糊</button>
-              <button class="rating-button known pressable" data-level="known" bindtap="rate">会</button>
-            </view>
-          </view>
-        </block>
-
-        <block wx:elif="{{activeMode == 'fill'}}">
-          <view class="question-hint">
-            {{current.blankImage ? '补全空缺部分，再查看答案对照。' : '这条暂未生成填空版，先查看原公式并自评。'}}
-          </view>
-          <view class="answer-panel">
-            <formula-image
-              asset="{{current.blankImage || current.formulaImage}}"
-              asset-width="{{current.blankImage ? current.blankWidth : current.formulaWidth}}"
-              asset-height="{{current.blankImage ? current.blankHeight : current.formulaHeight}}"
-              max-width="600"
-            ></formula-image>
-          </view>
-          <button wx:if="{{!showAnswer}}" class="secondary-button reveal-button pressable" bindtap="revealAnswer">
-            查看答案
-          </button>
-          <view wx:else class="answer-panel answer-reveal">
-            <view class="answer-label">完整公式</view>
-            <formula-image
-              asset="{{current.formulaImage}}"
-              asset-width="{{current.formulaWidth}}"
-              asset-height="{{current.formulaHeight}}"
-              max-width="600"
-            ></formula-image>
-          </view>
-          <view wx:if="{{showAnswer}}" class="rating-block">
-            <view class="rating-label">对照后自评</view>
-            <view class="rating-row">
-              <button class="rating-button unknown pressable" data-level="unknown" bindtap="rate">不会</button>
-              <button class="rating-button fuzzy pressable" data-level="fuzzy" bindtap="rate">模糊</button>
-              <button class="rating-button known pressable" data-level="known" bindtap="rate">会</button>
-            </view>
-          </view>
-        </block>
-
-        <block wx:else>
-          <view class="question-hint">选择与名称对应的公式。</view>
-          <view class="choice-list">
-            <view
-              wx:for="{{quizOptions}}"
-              wx:key="id"
-              class="choice-item {{item.status}} pressable"
-              data-id="{{item.id}}"
-              bindtap="chooseOption"
-            >
-              <view class="choice-letter">{{item.letter}}</view>
-              <view class="choice-formula">
-                <formula-image
-                  asset="{{item.formulaImage}}"
-                  asset-width="{{item.formulaWidth}}"
-                  asset-height="{{item.formulaHeight}}"
-                  max-width="580"
-                ></formula-image>
-              </view>
-              <view wx:if="{{item.status}}" class="choice-status">
-                {{item.status == 'correct' ? '正确' : '再想想'}}
-              </view>
-            </view>
-          </view>
-          <view wx:if="{{quizAnswered}}" class="quiz-feedback">
-            <view class="feedback-title">
-              {{quizCorrect ? '回答正确' : '这次没有选对'}}
-            </view>
-            <button class="primary-button next-button pressable" bindtap="advance">下一条</button>
-          </view>
-        </block>
-      </view>
-    </view>
-
-    <view wx:else>
-      <view wx:if="{{finished}}" class="finish-card">
-        <view class="finish-eyebrow">本组完成</view>
-        <view class="finish-title">练习记录已经保存</view>
-        <view class="finish-stats">
-          <view class="finish-stat">
-            <text class="finish-value">{{stats.known}}</text>
-            <text class="finish-label">会</text>
-          </view>
-          <view class="finish-stat">
-            <text class="finish-value">{{stats.fuzzy}}</text>
-            <text class="finish-label">模糊</text>
-          </view>
-          <view class="finish-stat">
-            <text class="finish-value">{{stats.unknown}}</text>
-            <text class="finish-label">不会</text>
-          </view>
-        </view>
-        <button class="primary-button finish-button pressable" bindtap="restartSession">再来一组</button>
+        </picker>
       </view>
 
-      <view class="setup-card">
-        <view class="setup-label">练习方式</view>
-        <view class="segment-control practice-segment">
-          <view
-            wx:for="{{modeOptions}}"
-            wx:key="value"
-            class="segment-item {{activeMode == item.value ? 'active' : ''}}"
-            data-value="{{item.value}}"
-            bindtap="onModeTap"
-          >{{item.label}}</view>
-        </view>
-
-        <view class="setup-row">
-          <view class="setup-row-label">章节</view>
-          <picker mode="selector" range="{{chapterLabels}}" value="{{chapterIndex}}" bindchange="onChapterChange">
-            <view class="setup-picker pressable">
-              <text>{{chapterLabels[chapterIndex]}}</text>
-              <text class="picker-arrow">⌄</text>
-            </view>
-          </picker>
-        </view>
-
-        <view class="setup-row">
-          <view class="setup-row-label">每组数量</view>
-          <picker mode="selector" range="{{quantityLabels}}" value="{{quantityIndex}}" bindchange="onQuantityChange">
-            <view class="setup-picker pressable">
-              <text>{{quantityLabels[quantityIndex]}}</text>
-              <text class="picker-arrow">⌄</text>
-            </view>
-          </picker>
-        </view>
-
-        <view class="setup-row">
-          <view class="setup-row-label">练习范围</view>
-          <picker mode="selector" range="{{scopeLabels}}" value="{{scopeIndex}}" bindchange="onScopeChange">
-            <view class="setup-picker pressable">
-              <text>{{scopeLabels[scopeIndex]}}</text>
-              <text class="picker-arrow">⌄</text>
-            </view>
-          </picker>
-        </view>
-
-        <button class="primary-button start-button pressable" bindtap="startSession">开始练习</button>
-        <view class="setup-note">练习结果自动保存在本机，不需要登录。</view>
+      <view class="setup-row">
+        <view class="setup-row-label">范围</view>
+        <picker mode="selector" range="{{scopeLabels}}" value="{{scopeIndex}}" bindchange="onScopeChange">
+          <view class="setup-picker pressable">
+            <text>{{scopeLabels[scopeIndex]}}</text>
+            <text class="picker-arrow">›</text>
+          </view>
+        </picker>
       </view>
+
+      <view class="setup-row demo-row">
+        <view class="setup-row-label">演示题</view>
+        <button
+          class="demo-button pressable"
+          loading="{{demoStarting}}"
+          disabled="{{starting || demoStarting}}"
+          bindtap="startDemoSession"
+        >
+          <text>30 题示范</text>
+          <text class="demo-button-arrow">›</text>
+        </button>
+      </view>
+
+      <button
+        class="primary-button start-button pressable {{starting ? 'is-loading' : ''}}"
+        loading="{{starting}}"
+        disabled="{{starting || demoStarting}}"
+        bindtap="startSession"
+      >开始练习</button>
     </view>
   </view>
 </view>

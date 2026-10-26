@@ -1,0 +1,163 @@
+{
+  "id": "K09",
+  "order": 9,
+  "packageRoot": "topic-package-b",
+  "title": "奔驰定理与三角形的“四心”",
+  "sourcePages": [13, 14],
+  "sections": [
+    {
+      "id": "K09-01",
+      "title": "一、奔驰定理",
+      "sourcePages": [13],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "如图，已知$O$为$\\triangle ABC$内一点，则有$S_{\\triangle BOC}\\cdot\\overrightarrow{OA}+S_{\\triangle AOC}\\cdot\\overrightarrow{OB}+S_{\\triangle AOB}\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k09-p13-benz",
+          "width": 900,
+          "height": 600
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "如图，延长$AO$与$BC$边相交于点$D$，则$\\frac{BD}{DC}=\\frac{S_{\\triangle ABD}}{S_{\\triangle ACD}}=\\frac{S_{\\triangle BOD}}{S_{\\triangle COD}}=\\frac{S_{\\triangle ABD}-S_{\\triangle BOD}}{S_{\\triangle ACD}-S_{\\triangle COD}}=\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}}$，"
+        },
+        {
+          "type": "formula",
+          "tex": "\\overrightarrow{OD}=\\frac{DC}{BC}\\overrightarrow{OB}+\\frac{BD}{BC}\\overrightarrow{OC}=\\frac{S_{\\triangle AOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OB}+\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OC}."
+        },
+        {
+          "type": "formula",
+          "tex": "\\frac{OD}{OA}=\\frac{S_{\\triangle BOD}}{S_{\\triangle AOB}}=\\frac{S_{\\triangle COD}}{S_{\\triangle AOC}}=\\frac{S_{\\triangle BOD}+S_{\\triangle COD}}{S_{\\triangle AOB}+S_{\\triangle AOC}}=\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}},\\therefore\\overrightarrow{OD}=-\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OA},"
+        },
+        {
+          "type": "formula",
+          "tex": "\\therefore-\\frac{S_{\\triangle BOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OA}=\\frac{S_{\\triangle AOC}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OB}+\\frac{S_{\\triangle AOB}}{S_{\\triangle AOC}+S_{\\triangle AOB}}\\overrightarrow{OC},"
+        },
+        {
+          "type": "formula",
+          "tex": "\\therefore S_{\\triangle BOC}\\cdot\\overrightarrow{OA}+S_{\\triangle AOC}\\cdot\\overrightarrow{OB}+S_{\\triangle AOB}\\cdot\\overrightarrow{OC}=\\boldsymbol0."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k09-p13-proof",
+          "width": 870,
+          "height": 750
+        },
+        {
+          "type": "paragraph",
+          "text": "推论：若$O$是$\\triangle ABC$内的一点，且$x\\cdot\\overrightarrow{OA}+y\\cdot\\overrightarrow{OB}+z\\cdot\\overrightarrow{OC}=\\boldsymbol0(xyz\\ne0)$，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=x:y:z$."
+        }
+      ]
+    },
+    {
+      "id": "K09-02",
+      "title": "二、三角形的“四心”",
+      "sourcePages": [14],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "三角形的“四心”即重心(三条中线的交点，重心将中线长度分成$2:1$)、内心(三条角平分线的交点，也是三角形内切圆的圆心)、外心(三条中垂线的交点，也是三角形外接圆的圆心)、垂心(三条高线的交点)."
+        },
+        {
+          "type": "subheading",
+          "text": "重心："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)若$O$为$\\triangle ABC$的重心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=1:1:1$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)$O$为$\\triangle ABC$的重心$\\Leftrightarrow\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}=\\boldsymbol0$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda(\\overrightarrow{AB}+\\overrightarrow{AC}),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的重心."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\sin B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\sin C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的重心."
+        },
+        {
+          "type": "paragraph",
+          "text": "(5)已知$\\triangle ABC$的顶点$A(x_A,y_A),B(x_B,y_B),C(x_C,y_C)$，则$\\triangle ABC$的重心坐标为$\\left(\\frac{x_A+x_B+x_C}{3},\\frac{y_A+y_B+y_C}{3}\\right)$."
+        },
+        {
+          "type": "subheading",
+          "text": "内心："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)若$O$为$\\triangle ABC$内心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=a:b:c$(其中$a,b,c$分别为$\\triangle ABC$内角$A,B,C$的对边)."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)在$\\triangle ABC$中，$|\\overrightarrow{BC}|\\cdot\\overrightarrow{OA}+|\\overrightarrow{AC}|\\cdot\\overrightarrow{OB}+|\\overrightarrow{AB}|\\cdot\\overrightarrow{OC}=\\boldsymbol0\\Leftrightarrow O$为$\\triangle ABC$的内心."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的内心."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)在$\\triangle ABC$中，$\\overrightarrow{OA}\\cdot\\left(\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|}-\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|}\\right)=\\overrightarrow{OB}\\cdot\\left(\\frac{\\overrightarrow{BC}}{|\\overrightarrow{BC}|}-\\frac{\\overrightarrow{BA}}{|\\overrightarrow{BA}|}\\right)=\\overrightarrow{OC}\\cdot\\left(\\frac{\\overrightarrow{CA}}{|\\overrightarrow{CA}|}-\\frac{\\overrightarrow{CB}}{|\\overrightarrow{CB}|}\\right)=\\boldsymbol0\\Leftrightarrow O$为$\\triangle ABC$的内心."
+        },
+        {
+          "type": "subheading",
+          "text": "外心："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)若$O$为$\\triangle ABC$的外心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=\\sin2A:\\sin2B:\\sin2C$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)若$O$为$\\triangle ABC$的外心，则$\\overrightarrow{OA}^2=\\overrightarrow{OB}^2=\\overrightarrow{OC}^2$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)若$O$为$\\triangle ABC$的外心，则$\\sin2A\\cdot\\overrightarrow{OA}+\\sin2B\\cdot\\overrightarrow{OB}+\\sin2C\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\frac{\\overrightarrow{OB}+\\overrightarrow{OC}}2+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的外心."
+        },
+        {
+          "type": "paragraph",
+          "text": "(5)若$(\\overrightarrow{OA}+\\overrightarrow{OB})\\cdot\\overrightarrow{AB}=(\\overrightarrow{OB}+\\overrightarrow{OC})\\cdot\\overrightarrow{BC}=(\\overrightarrow{OA}+\\overrightarrow{OC})\\cdot\\overrightarrow{AC}=\\boldsymbol0$，则$O$是$\\triangle ABC$的外心."
+        },
+        {
+          "type": "subheading",
+          "text": "垂心："
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)若$O$为$\\triangle ABC$的垂心，则$S_{\\triangle BOC}:S_{\\triangle AOC}:S_{\\triangle AOB}=\\tan A:\\tan B:\\tan C$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)若$O$为$\\triangle ABC$的垂心，则$\\overrightarrow{OA}\\cdot\\overrightarrow{OB}=\\overrightarrow{OB}\\cdot\\overrightarrow{OC}=\\overrightarrow{OC}\\cdot\\overrightarrow{OA}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)若$O$为$\\triangle ABC$(非直角三角形)的垂心，则$\\tan A\\cdot\\overrightarrow{OA}+\\tan B\\cdot\\overrightarrow{OB}+\\tan C\\cdot\\overrightarrow{OC}=\\boldsymbol0$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)若$O$为$\\triangle ABC$的垂心，则$|\\overrightarrow{OA}|^2+|\\overrightarrow{BC}|^2=|\\overrightarrow{OB}|^2+|\\overrightarrow{CA}|^2=|\\overrightarrow{OC}|^2+|\\overrightarrow{AB}|^2$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(5)设$O$是$\\triangle ABC$内一点，若动点$P$满足$\\overrightarrow{OP}=\\overrightarrow{OA}+\\lambda\\left(\\frac{\\overrightarrow{AB}}{|\\overrightarrow{AB}|\\cos B}+\\frac{\\overrightarrow{AC}}{|\\overrightarrow{AC}|\\cos C}\\right),\\lambda\\in(0,+\\infty)$，则动点$P$的轨迹一定通过$\\triangle ABC$的垂心."
+        }
+      ]
+    }
+  ]
+}

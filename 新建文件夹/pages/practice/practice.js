@@ -1,24 +1,19 @@
 const {
   FORMULAS,
   CHAPTERS,
-  getFormula,
   getChapter,
-  shuffle,
-  getDistractors
+  shuffle
 } = require('../../utils/formula')
+const {
+  formalQuestionCount
+} = require('../../utils/practice-meta')
 const store = require('../../utils/store')
 
-const MODE_OPTIONS = [
-  { label: '默写自评', value: 'self' },
-  { label: '填空', value: 'fill' },
-  { label: '选择', value: 'choice' }
-]
-
 const QUANTITY_OPTIONS = [
-  { label: '5 条', value: 5 },
-  { label: '10 条', value: 10 },
-  { label: '15 条', value: 15 },
-  { label: '20 条', value: 20 },
+  { label: '5 题', value: 5 },
+  { label: '10 题', value: 10 },
+  { label: '15 题', value: 15 },
+  { label: '20 题', value: 20 },
   { label: '全部', value: 'all' }
 ]
 
@@ -28,10 +23,43 @@ const SCOPE_OPTIONS = [
   { label: '今日待复习', value: 'due' }
 ]
 
+const DEMO_QUESTION_IDS = [
+  'P-C002-02',
+  'P-C002-03',
+  'P-C007-02',
+  'P-C007-03',
+  'P-C007-04',
+  'P-C007-05',
+  'P-C007-06',
+  'P-C007-07',
+  'P-C035-02',
+  'P-C035-03',
+  'P-C035-04',
+  'P-C035-05',
+  'P-C042-02',
+  'P-C042-03',
+  'P-C042-04',
+  'P-C042-05',
+  'P-C058-02',
+  'P-C058-03',
+  'P-C058-04',
+  'P-C058-05',
+  'P-C059-02',
+  'P-C059-03',
+  'P-C059-04',
+  'P-C059-05',
+  'P-S044-02',
+  'P-S044-03',
+  'P-S045-02',
+  'P-S045-03',
+  'P-S045-04',
+  'P-S045-05'
+]
+
 Page({
   data: {
-    modeOptions: MODE_OPTIONS,
-    activeMode: 'self',
+    formulaCount: FORMULAS.length,
+    questionCount: formalQuestionCount,
     chapterLabels: ['全部章节'].concat(CHAPTERS),
     chapterIndex: 0,
     quantityLabels: QUANTITY_OPTIONS.map(item => item.label),
@@ -40,38 +68,18 @@ Page({
     scopeIndex: 0,
     favoriteCount: 0,
     dueCount: 0,
-    started: false,
-    finished: false,
-    current: null,
-    currentIndex: 0,
-    total: 0,
-    progress: 0,
-    showFormula: false,
-    showAnswer: false,
-    quizOptions: [],
-    quizAnswered: false,
-    quizCorrect: false,
-    stats: {
-      known: 0,
-      fuzzy: 0,
-      unknown: 0
-    }
-  },
-
-  onLoad() {
-    this.deck = []
-    this.sessionStats = { known: 0, fuzzy: 0, unknown: 0 }
-    this.refreshSummary()
+    starting: false,
+    demoStarting: false
   },
 
   onShow() {
-    this.refreshSummary()
-    const app = getApp()
-    const target = app.globalData.practiceTarget
-    if (target && target.id) {
-      app.globalData.practiceTarget = null
-      this.startSingle(target.id)
+    if (this.data.starting) {
+      this.setData({ starting: false })
     }
+    if (this.data.demoStarting) {
+      this.setData({ demoStarting: false })
+    }
+    this.refreshSummary()
   },
 
   refreshSummary() {
@@ -79,17 +87,6 @@ Page({
     this.setData({
       favoriteCount: summary.favoriteCount,
       dueCount: summary.dueCount
-    })
-  },
-
-  onModeTap(event) {
-    const activeMode = event.currentTarget.dataset.value
-    if (activeMode === this.data.activeMode) return
-    this.setData({
-      activeMode,
-      started: false,
-      finished: false,
-      current: null
     })
   },
 
@@ -137,147 +134,60 @@ Page({
   },
 
   startSession() {
+    if (this.data.starting || this.data.demoStarting) return
     const scope = SCOPE_OPTIONS[this.data.scopeIndex].value
     const pool = this.buildPool()
     if (!pool.length) {
       wx.showToast({
-        title: scope === 'favorites' ? '还没有收藏公式' : '暂时没有待练习公式',
+        title: scope === 'favorites'
+          ? '还没有收藏公式'
+          : scope === 'due'
+            ? '今天没有待复习公式'
+            : '当前章节没有公式',
         icon: 'none'
       })
       return
     }
 
-    this.deck = pool
-    this.sessionStats = { known: 0, fuzzy: 0, unknown: 0 }
-    this.setData({
-      started: true,
-      finished: false,
-      currentIndex: 0,
-      total: pool.length,
-      progress: 0
-    }, () => this.prepareQuestion())
-  },
-
-  startSingle(id) {
-    const item = getFormula(id)
-    if (!item) return
-    this.deck = [item]
-    this.sessionStats = { known: 0, fuzzy: 0, unknown: 0 }
-    this.setData({
-      activeMode: 'self',
-      started: true,
-      finished: false,
-      currentIndex: 0,
-      total: 1,
-      progress: 0
-    }, () => this.prepareQuestion())
-  },
-
-  prepareQuestion() {
-    const current = this.deck[this.data.currentIndex]
-    if (!current) {
-      this.finishSession()
-      return
+    const app = getApp()
+    app.globalData = app.globalData || {}
+    app.globalData.practiceSession = {
+      sourceIds: pool.map(item => item.id),
+      demo: false
     }
+    this.setData({ starting: true })
+    wx.navigateTo({
+      url: '/practice-package/pages/session/choice',
+      fail: () => {
+        app.globalData.practiceSession = null
+        this.setData({ starting: false })
+        wx.showToast({
+          title: '练习页加载失败，请重试',
+          icon: 'none'
+        })
+      }
+    })
+  },
 
-    let quizOptions = []
-    if (this.data.activeMode === 'choice') {
-      quizOptions = shuffle([current].concat(getDistractors(current, 3))).map((item, index) => ({
-        id: item.id,
-        letter: ['A', 'B', 'C', 'D'][index],
-        name: item.name,
-        formulaImage: item.formulaImage,
-        formulaWidth: item.formulaWidth,
-        formulaHeight: item.formulaHeight,
-        status: ''
-      }))
+  startDemoSession() {
+    if (this.data.starting || this.data.demoStarting) return
+    const app = getApp()
+    app.globalData = app.globalData || {}
+    app.globalData.practiceSession = {
+      questionIds: DEMO_QUESTION_IDS.slice(),
+      demo: true
     }
-
-    this.setData({
-      current,
-      quizOptions,
-      quizAnswered: false,
-      quizCorrect: false,
-      showFormula: false,
-      showAnswer: false,
-      progress: Math.round((this.data.currentIndex / this.data.total) * 100)
-    })
-  },
-
-  revealFormula() {
-    this.setData({ showFormula: true })
-  },
-
-  revealAnswer() {
-    this.setData({ showAnswer: true })
-  },
-
-  rate(event) {
-    if (!this.data.current) return
-    const level = event.currentTarget.dataset.level
-    this.sessionStats[level] += 1
-    store.recordResult(this.data.current.id, level)
-    this.advance()
-  },
-
-  chooseOption(event) {
-    if (this.data.quizAnswered || !this.data.current) return
-    const selectedId = event.currentTarget.dataset.id
-    const correct = selectedId === this.data.current.id
-    const level = correct ? 'known' : 'unknown'
-    this.sessionStats[level] += 1
-    store.recordResult(this.data.current.id, level)
-
-    const quizOptions = this.data.quizOptions.map(item => ({
-      ...item,
-      status: item.id === this.data.current.id
-        ? 'correct'
-        : item.id === selectedId
-          ? 'wrong'
-          : ''
-    }))
-    this.setData({
-      quizAnswered: true,
-      quizCorrect: correct,
-      quizOptions
-    })
-  },
-
-  advance() {
-    const nextIndex = this.data.currentIndex + 1
-    if (nextIndex >= this.data.total) {
-      this.finishSession()
-      return
-    }
-    this.setData({
-      currentIndex: nextIndex,
-      progress: Math.round((nextIndex / this.data.total) * 100)
-    }, () => this.prepareQuestion())
-  },
-
-  finishSession() {
-    this.setData({
-      started: false,
-      finished: true,
-      current: null,
-      quizOptions: [],
-      progress: 100,
-      stats: { ...this.sessionStats }
-    })
-    this.refreshSummary()
-  },
-
-  restartSession() {
-    this.setData({
-      finished: false,
-      progress: 0,
-      stats: { known: 0, fuzzy: 0, unknown: 0 }
-    })
-  },
-
-  openFavorites() {
-    wx.switchTab({
-      url: '/pages/favorites/favorites'
+    this.setData({ demoStarting: true })
+    wx.navigateTo({
+      url: '/practice-package/pages/session/choice',
+      fail: () => {
+        app.globalData.practiceSession = null
+        this.setData({ demoStarting: false })
+        wx.showToast({
+          title: '演示页加载失败，请重试',
+          icon: 'none'
+        })
+      }
     })
   },
 

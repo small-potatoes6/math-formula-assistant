@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>公式记忆助手 · 极简启动封面</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #15171A; }
+  body {
+    padding: 40px;
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .grid { display: grid; grid-template-columns: repeat(3, 375px); gap: 48px 40px; }
+  .cell { display: flex; flex-direction: column; gap: 12px; }
+  .cap { display: flex; align-items: baseline; gap: 10px; }
+  .cap b { color: #F2F4F7; font-size: 15px; font-weight: 700; letter-spacing: 0; }
+  .cap span { color: #868E9C; font-size: 12px; }
+
+  .phone {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    overflow: hidden;
+    border-radius: 34px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.09), 0 18px 40px rgba(0,0,0,.35);
+  }
+  .sb {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px 0 30px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .sb.dark { color: #12161C; }
+  .sb.warm { color: #302A23; }
+  .home-bar {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 9px;
+    width: 130px;
+    height: 5px;
+    margin-left: -65px;
+    border-radius: 3px;
+  }
+  .home-bar.dark { background: rgba(18,22,28,.26); }
+  .home-bar.warm { background: rgba(56,45,32,.22); }
+  .body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 36px;
+    text-align: center;
+  }
+  .progress {
+    position: absolute;
+    left: 50%;
+    bottom: 72px;
+    width: 118px;
+    height: 2px;
+    margin-left: -59px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress i {
+    display: block;
+    width: 62%;
+    height: 100%;
+    border-radius: 2px;
+  }
+  .caption {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: .2px;
+  }
+  .serif { font-family: "Noto Serif SC", "STZhongsong", "SimSun", serif; }
+  .kai { font-family: "STXingkai", "华文行楷", "KaiTi", serif; }
+
+  /* A · MUJI */
+  .muji { background: #FAFAF7; color: #161616; }
+  .muji .body { justify-content: center; padding-bottom: 26px; }
+  .muji .mark { opacity: .86; }
+  .muji .title {
+    margin-top: 48px;
+    font-family: "Noto Serif SC", "STSong", "SimSun", serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 9px;
+    text-indent: 9px;
+  }
+  .muji .sub {
+    margin-top: 16px;
+    color: #9A9A95;
+    font-size: 10.5px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+  }
+  .muji .progress { background: #E8E8E3; }
+  .muji .progress i { background: #30302E; }
+
+  /* B · Notion / Linear */
+  .linear { background: #FFFFFF; color: #17181A; }
+  .linear .body { justify-content: center; padding-bottom: 12px; }
+  .linear .mark-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #E7E8EA;
+    border-radius: 17px;
+    background: #FCFCFD;
+  }
+  .linear .title {
+    margin-top: 30px;
+    font-size: 27px;
+    font-weight: 720;
+    letter-spacing: 1px;
+  }
+  .linear .sub {
+    margin-top: 11px;
+    color: #8A8F98;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+  }
+  .linear .micro {
+    position: absolute;
+    left: 38px;
+    top: 59px;
+    color: #B2B6BD;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+  }
+  .linear .progress { background: #EEF0F2; }
+  .linear .progress i { background: #202124; }
+
+  /* C · Bear / Craft */
+  .bear { background: #F7F2E9; color: #22201E; }
+  .bear .body { justify-content: center; padding-bottom: 28px; }
+  .bear .mark-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 22px;
+    background: #FFFDFC;
+    box-shadow: 0 9px 26px rgba(107, 73, 49, .10);
+  }
+  .bear .title {
+    margin-top: 34px;
+    font-family: "Noto Serif SC", "STZhongsong", "SimSun", serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-indent: 4px;
+  }
+  .bear .sub {
+    margin-top: 14px;
+    color: #9B9288;
+    font-size: 10.5px;
+    letter-spacing: 2.4px;
+  }
+  .bear .progress { background: #E9E0D4; }
+  .bear .progress i { background: #D97757; }
+
+  /* D · Apple Health / Wallet */
+  .apple { background: #FFFFFF; color: #111214; }
+  .apple .body { justify-content: center; padding-bottom: 44px; }
+  .apple .cards { position: relative; width: 116px; height: 104px; }
+  .apple .card {
+    position: absolute;
+    left: 50%;
+    width: 75px;
+    height: 52px;
+    margin-left: -37.5px;
+    border: 1px solid #E6E8EB;
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0 7px 18px rgba(24, 28, 35, .045);
+  }
+  .apple .card.one { top: 42px; transform: scale(.84); opacity: .38; }
+  .apple .card.two { top: 23px; transform: scale(.92); opacity: .64; }
+  .apple .card.three {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 82px;
+    margin-left: -41px;
+    border-radius: 20px;
+    background: #FCFCFC;
+  }
+  .apple .title {
+    margin-top: 29px;
+    font-size: 30px;
+    font-weight: 680;
+    letter-spacing: 1px;
+  }
+  .apple .sub {
+    width: 188px;
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid #ECEEF1;
+    color: #8B9099;
+    font-size: 10.5px;
+    letter-spacing: 1.6px;
+  }
+  .apple .progress { background: #EFEFEF; }
+  .apple .progress i { background: #17181A; }
+
+  /* E · Journey */
+  .journey {
+    background: #EAD8B9;
+    color: #43392D;
+  }
+  .journey::after {
+    content: "";
+    position: absolute;
+    left: -45px;
+    right: -45px;
+    bottom: 102px;
+    height: 82px;
+    border-top: 1px solid rgba(98, 76, 50, .16);
+    border-radius: 50%;
+    transform: rotate(-2deg);
+  }
+  .journey .body { justify-content: center; padding-bottom: 6px; }
+  .journey .pi-glow {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 196px;
+    left: 50%;
+    margin-left: -130px;
+    border-radius: 50%;
+    background: rgba(255, 247, 226, .27);
+  }
+  .journey .mark { position: relative; z-index: 2; }
+  .journey .title {
+    position: relative;
+    z-index: 2;
+    margin-top: 52px;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-indent: 5px;
+  }
+  .journey .sub {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    color: rgba(67, 57, 45, .60);
+    font-size: 10.5px;
+    letter-spacing: 2.8px;
+  }
+  .journey .progress { z-index: 2; background: rgba(86, 67, 43, .16); }
+  .journey .progress i { background: #66523A; }
+
+  /* F · Monument Valley */
+  .monument { background: #F6F1E8; color: #262321; }
+  .monument .geometry {
+    position: absolute;
+    left: 50%;
+    top: 225px;
+    width: 220px;
+    height: 220px;
+    margin-left: -110px;
+    transform: rotate(-11deg);
+  }
+  .monument .geometry::before,
+  .monument .geometry::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 215px;
+    background: rgba(51, 67, 71, .12);
+    transform-origin: 50% 50%;
+  }
+  .monument .geometry::before { transform: rotate(28deg); }
+  .monument .geometry::after { transform: rotate(-28deg); }
+  .monument .steps {
+    position: absolute;
+    left: 50%;
+    top: 191px;
+    width: 124px;
+    height: 124px;
+    margin-left: -62px;
+    transform: rotate(45deg);
+    opacity: .55;
+  }
+  .monument .steps i {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(51, 67, 71, .13);
+  }
+  .monument .steps i:nth-child(1) { left: 0; top: 0; }
+  .monument .steps i:nth-child(2) { left: 57px; top: 57px; }
+  .monument .steps i:nth-child(3) { left: 0; top: 57px; border-color: rgba(217,119,87,.28); }
+  .monument .mark { position: relative; z-index: 2; }
+  .monument .title {
+    position: relative;
+    z-index: 2;
+    margin-top: 48px;
+    font-family: "Noto Serif SC", "STZhongsong", "SimSun", serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-indent: 5px;
+  }
+  .monument .sub {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    color: #989087;
+    font-size: 10.5px;
+    letter-spacing: 2.6px;
+  }
+  .monument .progress { z-index: 2; background: #E5DDD2; }
+  .monument .progress i {
+    background: linear-gradient(90deg, #D97757 0 33%, #E5B854 33% 66%, #2FA79B 66%);
+  }
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<script>
+const PATHS = [
+  { d: 'M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360', w: 94 },
+  { d: 'M376 366C355 427 346 496 350 568V714', w: 86 },
+  { d: 'M650 363C642 449 643 530 647 610C649 671 620 712 562 724', w: 86 }
+];
+const VIEW = '190 245 654 549';
+
+function pi({ size = 100, stroke = '#161616', widths = [94, 86, 86], opacity = 1 }) {
+  const paths = PATHS.map((p, i) => (
+    `<path d="${p.d}" stroke-width="${widths[i] || p.w}"/>`
+  )).join('');
+  return `<svg class="mark" viewBox="${VIEW}" width="${size}" height="${size}"
+    style="overflow:visible;opacity:${opacity}" aria-hidden="true">
+    <g fill="none" stroke="${stroke}" stroke-linecap="round" stroke-linejoin="round">${paths}</g>
+  </svg>`;
+}
+
+function statusbar(tone = 'dark') {
+  return `<div class="sb ${tone}"><span>9:41</span>
+    <svg width="62" height="12" viewBox="0 0 62 12" fill="none">
+      <rect x="0" y="7.5" width="3" height="4.5" rx="1" fill="currentColor"/>
+      <rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="currentColor"/>
+      <rect x="10" y="3.4" width="3" height="8.6" rx="1" fill="currentColor"/>
+      <rect x="15" y="1.4" width="3" height="10.6" rx="1" fill="currentColor"/>
+      <path d="M25.4 5.1a6.6 6.6 0 0 1 8.2 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M27.6 7.9a3.4 3.4 0 0 1 3.8 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <circle cx="29.5" cy="10.4" r="1.05" fill="currentColor"/>
+      <rect x="42.5" y="1.6" width="16" height="8.8" rx="2.6" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+      <rect x="44.2" y="3.3" width="11" height="5.4" rx="1.4" fill="currentColor"/>
+      <path d="M60.2 4.4v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
+    </svg>
+  </div>`;
+}
+
+const items = [
+  {
+    key: 'A',
+    title: '無印留白',
+    sub: '近白底 · 细字 · 几乎无装饰',
+    html: `
+      <div class="phone muji">
+        ${statusbar('dark')}
+        <div class="body">
+          ${pi({ size: 82, stroke: '#1E1E1C', widths: [36, 32, 32], opacity: .80 })}
+          <div class="title">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'B',
+    title: '结构排版',
+    sub: '纯白 · 无衬线 · 字距',
+    html: `
+      <div class="phone linear">
+        ${statusbar('dark')}
+        <div class="micro">FORMULA MEMORY</div>
+        <div class="body">
+          <div class="mark-box">${pi({ size: 42, stroke: '#1C1D1F', widths: [34, 30, 30] })}</div>
+          <div class="title">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'C',
+    title: '暖白笔记',
+    sub: '米白底 · 微型 Π · 宋体',
+    html: `
+      <div class="phone bear">
+        ${statusbar('warm')}
+        <div class="body">
+          <div class="mark-box">${pi({ size: 47, stroke: '#D97757', widths: [34, 30, 30] })}</div>
+          <div class="title">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar warm"></div>
+      </div>`
+  },
+  {
+    key: 'D',
+    title: '系统秩序',
+    sub: '白底 · 细边卡片 · 细分隔线',
+    html: `
+      <div class="phone apple">
+        ${statusbar('dark')}
+        <div class="body">
+          <div class="cards">
+            <div class="card one"></div>
+            <div class="card two"></div>
+            <div class="card three">${pi({ size: 48, stroke: '#1B1C1E', widths: [32, 28, 28] })}</div>
+          </div>
+          <div class="title">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'E',
+    title: '沙海行旅',
+    sub: '沙色 · 大地色 Π · 行楷',
+    html: `
+      <div class="phone journey">
+        ${statusbar('warm')}
+        <div class="pi-glow"></div>
+        <div class="body">
+          ${pi({ size: 145, stroke: '#56452F', widths: [54, 48, 48], opacity: .88 })}
+          <div class="title kai">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar warm"></div>
+      </div>`
+  },
+  {
+    key: 'F',
+    title: '几何漫游',
+    sub: '几何叠线 · 三色 Π · 中宋',
+    html: `
+      <div class="phone monument">
+        ${statusbar('warm')}
+        <div class="geometry"></div>
+        <div class="steps"><i></i><i></i><i></i></div>
+        <div class="body">
+          ${pi({ size: 136, stroke: '#D97757', widths: [52, 46, 46] })}
+          <div class="title">数学链接宇宙</div>
+          <div class="sub">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress"><i></i></div>
+        <div class="home-bar warm"></div>
+      </div>`
+  }
+];
+
+document.getElementById('grid').innerHTML = items.map(it => `
+  <div class="cell" data-key="${it.key}">
+    <div class="cap"><b>方案 ${it.key}</b><span>${it.title} · ${it.sub}</span></div>
+    ${it.html}
+  </div>`).join('');
+
+const only = new URLSearchParams(location.search).get('only');
+if (only) {
+  document.body.style.padding = '24px';
+  [...document.querySelectorAll('.cell')].forEach(c => {
+    if (c.dataset.key !== only) c.remove();
+  });
+}
+</script>
+</body>
+</html>

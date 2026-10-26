@@ -1,4 +1,7 @@
+const { FORMULAS } = require('../data/formulas')
+
 const STORAGE_KEY = 'gsmath_v1'
+const VALID_IDS = new Set(FORMULAS.map(item => item.id))
 
 const EMPTY_STATE = {
   mastery: {},
@@ -12,21 +15,34 @@ function uniqueArray(value) {
   return Array.isArray(value) ? [...new Set(value.filter(Boolean))] : []
 }
 
+function uniqueValidArray(value) {
+  return uniqueArray(value).filter(id => VALID_IDS.has(id))
+}
+
+function validMastery(value) {
+  const source = value && typeof value === 'object' ? value : {}
+  const target = {}
+  Object.keys(source).forEach(id => {
+    if (VALID_IDS.has(id)) target[id] = source[id]
+  })
+  return target
+}
+
 function normalizeState(value) {
   const source = value && typeof value === 'object' ? value : {}
   return {
-    mastery: source.mastery && typeof source.mastery === 'object' ? source.mastery : {},
-    favs: uniqueArray(source.favs),
-    wrong: uniqueArray(source.wrong),
+    mastery: validMastery(source.mastery),
+    favs: uniqueValidArray(source.favs),
+    wrong: uniqueValidArray(source.wrong),
     days: uniqueArray(source.days),
-    voiceMarked: uniqueArray(source.voiceMarked)
+    voiceMarked: uniqueValidArray(source.voiceMarked)
   }
 }
 
 function getState() {
   const stored = wx.getStorageSync(STORAGE_KEY)
   const state = normalizeState(stored)
-  if (!stored) {
+  if (!stored || JSON.stringify(stored) !== JSON.stringify(state)) {
     wx.setStorageSync(STORAGE_KEY, state)
   }
   return state

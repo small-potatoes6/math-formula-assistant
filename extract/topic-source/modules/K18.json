@@ -1,0 +1,70 @@
+{
+  "id": "K18",
+  "order": 18,
+  "packageRoot": "topic-package-c",
+  "title": "椭圆与双曲线的焦点三角形",
+  "sourcePages": [25],
+  "sections": [
+    {
+      "id": "K18-01",
+      "title": "椭圆与双曲线的焦点三角形",
+      "sourcePages": [25],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "图形($\\triangle PF_1F_2$为曲线的焦点三角形)"
+        },
+        {
+          "type": "figure",
+          "assetKey": "k18-p25-ellipse-triangle",
+          "width": 750,
+          "height": 735,
+          "caption": "椭圆"
+        },
+        {
+          "type": "figure",
+          "assetKey": "k18-p25-hyperbola-triangle",
+          "width": 750,
+          "height": 750,
+          "caption": "双曲线"
+        },
+        {
+          "type": "table",
+          "columns": ["", "椭圆", "双曲线"],
+          "rows": [
+            [
+              "三条边之间的关系",
+              "$|PF_1|+|PF_2|=2a,|F_1F_2|=2c$",
+              "$||PF_1|-|PF_2||=2a,|F_1F_2|=2c$"
+            ],
+            [
+              "焦点三角形的周长$L$",
+              "定值；$L=2a+2c$",
+              "不是定值；$L=r_1+r_2+2c\\in(4c,+\\infty)$"
+            ],
+            [
+              "$r_1\\cdot r_2$",
+              "$r_1\\cdot r_2=\\frac{2b^2}{1+\\cos\\theta}=a^2-e^2x_0^2$",
+              "$r_1\\cdot r_2=\\frac{2b^2}{1-\\cos\\theta}=e^2x_0^2-a^2$"
+            ],
+            [
+              "焦点三角形的面积$S$",
+              "$S=b^2\\cdot\\tan\\frac{\\theta}{2}=c\\cdot|y_0|$，当$P$为短轴端点时，$\\theta$最大，同时$S$取得最大值$bc$",
+              "$S=\\frac{b^2}{\\tan\\frac{\\theta}{2}}=c\\cdot|y_0|\\in(0,+\\infty)$，$S$无最值"
+            ],
+            [
+              "离心率",
+              "$e=\\frac{2c}{2a}=\\frac{|F_1F_2|}{r_1+r_2}=\\frac{\\sin\\theta}{\\sin\\beta+\\sin\\alpha}=\\frac{\\sin(\\alpha+\\beta)}{\\sin\\beta+\\sin\\alpha}$",
+              "$e=\\frac{2c}{2a}=\\frac{|F_1F_2|}{|r_1-r_2|}=\\frac{\\sin\\theta}{|\\sin\\beta-\\sin\\alpha|}=\\frac{\\sin(\\alpha+\\beta)}{|\\sin\\beta-\\sin\\alpha|}$"
+            ],
+            [
+              "$\\triangle PF_1F_2$的内切圆",
+              "内切圆半径$r=\\frac{2S}{L}=\\frac{b^2\\cdot\\tan\\frac{\\theta}{2}}{a+c}$",
+              "内切圆圆心的横坐标恒为$a$"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

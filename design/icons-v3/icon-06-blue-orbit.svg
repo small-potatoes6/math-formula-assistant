@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">四色蓝光轨道 Π</title>
+  <defs>
+    <linearGradient id="spectrum" gradientUnits="userSpaceOnUse" x1="238" y1="260" x2="810" y2="776">
+      <stop offset="0" stop-color="#318FD1"/>
+      <stop offset="0.36" stop-color="#F06F55"/>
+      <stop offset="1" stop-color="#F2B83F"/>
+    </linearGradient>
+    <linearGradient id="spectrum-soft" gradientUnits="userSpaceOnUse" x1="238" y1="260" x2="810" y2="776">
+      <stop offset="0" stop-color="#318FD1" stop-opacity="0.20"/>
+      <stop offset="0.36" stop-color="#F06F55" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#F2B83F" stop-opacity="0.20"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="#FFFFFF"/>
+
+  <g fill="none" stroke-linecap="round" opacity="0.24">
+    <path d="M270 264A338 338 0 0 1 512 176" stroke="#318FD1" stroke-width="12"/>
+    <path d="M808 281A338 338 0 0 1 844 512" stroke="#F06F55" stroke-width="12"/>
+    <path d="M754 790A338 338 0 0 1 512 850" stroke="#F2B83F" stroke-width="12"/>
+    <path d="M263 799A338 338 0 0 1 180 512" stroke="#318FD1" stroke-width="12"/>
+  </g>
+
+  <g fill="none" stroke="url(#spectrum-soft)" stroke-linecap="round" stroke-linejoin="round"
+     stroke-width="102">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360"/>
+    <path d="M376 366C355 427 346 496 350 568V714"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724"/>
+  </g>
+
+  <g fill="none" stroke="url(#spectrum)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke-width="94"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke-width="86"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke-width="86"/>
+  </g>
+</svg>

@@ -19,7 +19,7 @@
   border-radius: 14rpx;
   background: #ffffff;
   color: #344054;
-  font-size: 24rpx;
+  font-size: 28rpx;
   font-weight: 650;
 }
 
@@ -30,7 +30,7 @@
 
 .result-count {
   color: #98a2b3;
-  font-size: 23rpx;
+  font-size: 28rpx;
 }
 
 .favorite-list {
@@ -40,7 +40,7 @@
 }
 
 .favorite-card {
-  padding: 26rpx;
+  padding: 30rpx 32rpx 24rpx;
   border: 1rpx solid #e4e7ec;
   border-radius: 16rpx;
   background: #ffffff;
@@ -58,7 +58,7 @@
   border-radius: 8rpx;
   background: #fff0e9;
   color: #b85f43;
-  font-size: 20rpx;
+  font-size: 28rpx;
   font-weight: 750;
 }
 
@@ -72,7 +72,7 @@
   margin-left: 14rpx;
   overflow: hidden;
   color: #98a2b3;
-  font-size: 22rpx;
+  font-size: 28rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -81,12 +81,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64rpx;
-  height: 64rpx;
-  margin: -8rpx -8rpx -8rpx 0;
+  width: 70rpx;
+  height: 70rpx;
+  margin: -10rpx -12rpx -10rpx 0;
   border-radius: 50%;
   color: #aab2bf;
-  font-size: 44rpx;
+  font-size: 50rpx;
   line-height: 1;
   transition: color 0.14s ease, transform 0.14s ease, background-color 0.14s ease;
 }
@@ -101,7 +101,7 @@
 }
 
 .favorite-name {
-  margin-top: 14rpx;
+  margin-top: 16rpx;
   color: #15171a;
   font-size: 34rpx;
   font-weight: 700;
@@ -109,11 +109,11 @@
 
 .favorite-formula {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 166rpx;
-  margin-top: 16rpx;
-  padding: 24rpx 8rpx 8rpx;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 184rpx;
+  margin-top: 18rpx;
+  padding: 32rpx 12rpx 10rpx;
   border-top: 1rpx solid #f0f2f5;
 }
 
@@ -121,7 +121,7 @@
   display: flex;
   align-items: center;
   margin-top: 16rpx;
-  font-size: 22rpx;
+  font-size: 28rpx;
 }
 
 .favorite-type {

@@ -1,3 +1,13 @@
 page {
-  background: #f7f4ee;
+  background: #ffffff;
+}
+
+/* 隐藏的分包锚点宿主：靠渲染锚点触发分包下载，本身不占位、不可见 */
+.package-anchor-host {
+  position: fixed;
+  left: -2000rpx;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

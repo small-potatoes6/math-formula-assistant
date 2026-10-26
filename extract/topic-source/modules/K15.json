@@ -1,0 +1,177 @@
+{
+  "id": "K15",
+  "order": 15,
+  "packageRoot": "topic-package-b",
+  "title": "与球有关的模型、结论",
+  "sourcePages": [20, 21],
+  "sections": [
+    {
+      "id": "K15-01",
+      "title": "一、球与正方体、正四面体模型的具体剖析",
+      "sourcePages": [20],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "已知正方体的棱长为$a$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k15-p20-cube-row",
+          "width": 2475,
+          "height": 735
+        },
+        {
+          "type": "table",
+          "columns": ["图形", "球的半径"],
+          "rows": [
+            ["正方体的内切球", "$r_{\\text{内切球}}=\\frac a2$"],
+            ["正方体的棱切球", "$r_{\\text{棱切球}}=\\frac{\\sqrt2}{2}a$"],
+            ["正方体的外接球", "$r_{\\text{外接球}}=\\frac{\\sqrt3}{2}a$"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "已知正四面体的棱长为$a$."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k15-p20-tetra-row",
+          "width": 2475,
+          "height": 825
+        },
+        {
+          "type": "table",
+          "columns": ["图形", "说明", "球的半径"],
+          "rows": [
+            [
+              "正四面体的内切球",
+              "$R_{\\text{内切球}}=OH=AH-AO=h-R_{\\text{外接球}}$($h$为正四面体的高)",
+              "$R_{\\text{内切球}}=\\frac{\\sqrt6}{12}a$"
+            ],
+            [
+              "正四面体的棱切球",
+              "对棱中点$E,F$为棱切球与棱的切点，且$EF=2R_{\\text{棱切球}}$，$EF$在$\\triangle DEF$中用勾股定理可求",
+              "$R_{\\text{棱切球}}=\\frac{\\sqrt2}{4}a$"
+            ],
+            [
+              "正四面体的外接球",
+              "$DH=\\frac{\\sqrt3}{3}a,R_{\\text{外接球}}=OD$，$OD$在$\\triangle DOH$中用勾股定理可求",
+              "$R_{\\text{外接球}}=\\frac{\\sqrt6}{4}a$"
+            ]
+          ]
+        },
+        {
+          "type": "label",
+          "text": "拓展"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)正方体的内切球、棱切球、外接球半径的平方成等差数列，公差为$\\frac{a^2}{4}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)正四面体的内切球、棱切球、外接球的半径成等比数列，公比为$\\sqrt3$."
+        }
+      ]
+    },
+    {
+      "id": "K15-02",
+      "title": "二、常见多面体外接球半径的求法",
+      "sourcePages": [20, 21],
+      "blocks": [
+        {
+          "type": "figure",
+          "assetKey": "k15-p20-cuboid",
+          "width": 1140,
+          "height": 945
+        },
+        {
+          "type": "figure",
+          "assetKey": "k15-p21-outer-spheres",
+          "width": 1350,
+          "height": 3045
+        },
+        {
+          "type": "table",
+          "columns": ["模型", "说明", "外接球半径"],
+          "rows": [
+            [
+              "长方体",
+              "底面边长为$a,b$，高为$c$",
+              "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+            ],
+            [
+              "正三棱柱",
+              "正三棱柱的高为$h$，底面边长为$a$，利用勾股定理求解",
+              "$R=\\sqrt{\\left(\\frac h2\\right)^2+\\left(\\frac{\\sqrt3a}{3}\\right)^2}$"
+            ],
+            [
+              "对棱相等的三棱锥",
+              "$DA=BC=x,DC=AB=y,DB=AC=z$，补形为长方体求解",
+              "$R=\\frac{\\sqrt2}{4}\\sqrt{x^2+y^2+z^2}$"
+            ],
+            [
+              "三条侧棱两两垂直的三棱锥(墙角模型)",
+              "$AB=a,AC=b,AP=c$，补形为长方体求解",
+              "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+            ],
+            [
+              "四个面都是直角三角形的三棱锥",
+              "$AC=a,BC=b$，顶点$P$到底面$ABC$的距离为$c$，补形为长方体求解",
+              "$R=\\frac{\\sqrt{a^2+b^2+c^2}}2$"
+            ]
+          ]
+        },
+        {
+          "type": "label",
+          "text": "归纳"
+        },
+        {
+          "type": "subheading",
+          "text": "确定球心的主要方法"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)补形找心：将几何体还原或补形为正方体或长方体，进而确定球心；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)垂线找心：几何体的外接球球心一定在过底面的外心且与底面垂直的直线上；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)定义找心：几何体外接球球心到各顶点的距离都相等."
+        }
+      ]
+    },
+    {
+      "id": "K15-03",
+      "title": "三、常见多面体内切球半径的求法",
+      "sourcePages": [21],
+      "blocks": [
+        {
+          "type": "figure",
+          "assetKey": "k15-p21-inner-spheres",
+          "width": 660,
+          "height": 1425
+        },
+        {
+          "type": "table",
+          "columns": ["模型", "方法", "说明"],
+          "rows": [
+            [
+              "正四棱锥",
+              "相似三角形法",
+              "$E,F$分别为$AB,CD$的中点，$PH$为四棱锥的高，利用$\\triangle POG\\backsim\\triangle PFH$，得到$\\frac{OG}{FH}=\\frac{PO}{PF}$，从而得到内切球半径"
+            ],
+            [
+              "任意三棱锥",
+              "等体积法",
+              "连接球心$O$和各顶点，利用三棱锥的表面积和体积即可求出内切球半径"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

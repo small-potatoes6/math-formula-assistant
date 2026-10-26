@@ -2,6 +2,14 @@
   "navigationStyle": "custom",
   "disableScroll": true,
   "usingComponents": {
-    "package-loader": "../../components/package-loader/package-loader"
+    "anchor-placeholder": "/components/anchor-placeholder/anchor-placeholder",
+    "package-anchor-a": "/formula-package-a/components/anchor/anchor",
+    "package-anchor-b": "/formula-package-b/components/anchor/anchor",
+    "package-anchor-c": "/formula-package-c/components/anchor/anchor"
+  },
+  "componentPlaceholder": {
+    "package-anchor-a": "anchor-placeholder",
+    "package-anchor-b": "anchor-placeholder",
+    "package-anchor-c": "anchor-placeholder"
   }
 }

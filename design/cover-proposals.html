@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>公式记忆助手 · 启动封面方案</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #14161A; }
+  body {
+    padding: 40px;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .grid { display: grid; grid-template-columns: repeat(3, 375px); gap: 48px 40px; }
+  .cell { display: flex; flex-direction: column; gap: 12px; }
+  .cap { display: flex; align-items: baseline; gap: 10px; }
+  .cap b { color: #F2F4F7; font-size: 15px; font-weight: 700; letter-spacing: 0; }
+  .cap span { color: #868E9C; font-size: 12px; }
+
+  .phone {
+    position: relative; width: 375px; height: 812px;
+    border-radius: 34px; overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.09), 0 18px 40px rgba(0,0,0,.35);
+  }
+  .sb {
+    position: absolute; left: 0; right: 0; top: 0; height: 46px; z-index: 9;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 26px 0 30px; font-size: 13px; font-weight: 600;
+  }
+  .sb.dark { color: #12161C; }
+  .sb.light { color: #FFFFFF; }
+  .sb-icons { display: block; }
+  .home-bar {
+    position: absolute; left: 50%; bottom: 9px; width: 130px; height: 5px;
+    margin-left: -65px; border-radius: 3px; z-index: 9;
+  }
+  .home-bar.dark { background: rgba(18,22,28,.28); }
+  .home-bar.light { background: rgba(255,255,255,.42); }
+
+  .body { position: absolute; inset: 0; display: flex; flex-direction: column;
+          align-items: center; justify-content: center; padding: 0 34px; text-align: center; }
+  .mark { display: block; }
+  .tag, .tag-serif, .tag-li, .tag-hu, .tag-sans { white-space: nowrap; }
+  .tag { font-family: "STXingkai", "华文行楷", "KaiTi", serif; }
+  .tag-serif { font-family: "Noto Serif SC", "STZhongsong", "华文中宋", "SimSun", serif; }
+  .tag-li { font-family: "STLiti", "华文隶书", "LiSu", serif; }
+  .tag-hu { font-family: "STHupo", "华文琥珀", "Microsoft YaHei", sans-serif; }
+  .tag-sans { font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+
+  .progress { position: absolute; left: 50%; bottom: 74px; transform: translateX(-50%);
+              width: 168px; height: 4px; border-radius: 3px; overflow: hidden; }
+  .progress i { display: block; height: 100%; border-radius: 3px; }
+  .prog-seg { display: flex; gap: 5px; }
+  .prog-seg i { flex: 1; height: 4px; border-radius: 3px; }
+
+  /* A 明亮极简 */
+  .pA { background: #FBFAF7; }
+  /* B 深空 */
+  .pB {
+    background-color: #0A101C;
+    background-image:
+      radial-gradient(1.6px 1.6px at 16% 20%, rgba(255,255,255,.60), transparent 62%),
+      radial-gradient(1.3px 1.3px at 74% 13%, rgba(255,255,255,.42), transparent 62%),
+      radial-gradient(1.6px 1.6px at 86% 38%, rgba(255,255,255,.50), transparent 62%),
+      radial-gradient(1.2px 1.2px at 28% 46%, rgba(255,255,255,.34), transparent 62%),
+      radial-gradient(1.4px 1.4px at 62% 58%, rgba(255,255,255,.30), transparent 62%),
+      radial-gradient(1.6px 1.6px at 12% 74%, rgba(255,255,255,.44), transparent 62%),
+      radial-gradient(1.2px 1.2px at 82% 82%, rgba(255,255,255,.36), transparent 62%),
+      radial-gradient(1.4px 1.4px at 44% 88%, rgba(255,255,255,.28), transparent 62%),
+      radial-gradient(1.3px 1.3px at 92% 64%, rgba(255,255,255,.32), transparent 62%),
+      radial-gradient(1.2px 1.2px at 52% 8%, rgba(255,255,255,.40), transparent 62%);
+  }
+  .pB .grid-lines {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.030) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.030) 1px, transparent 1px);
+    background-size: 46px 46px;
+    -webkit-mask-image: radial-gradient(120% 78% at 50% 44%, #000 30%, transparent 78%);
+    mask-image: radial-gradient(120% 78% at 50% 44%, #000 30%, transparent 78%);
+  }
+  /* C 三色几何 */
+  .pC { background: #FFFFFF; }
+  /* D 墨线留白 */
+  .pD { background: #F6F3EC; }
+  /* E 全息 */
+  .pE { background: #0E1218; }
+  /* F 放射深底 */
+  .pF { background: #17191C; }
+  .mark-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
+  .spokes { position: absolute; width: 0; height: 0; left: 50%; top: 50%; }
+  .spokes span {
+    position: absolute; left: -8px; top: -160px; width: 16px; height: 58px;
+    border-radius: 8px; transform-origin: 50% 160px;
+  }
+  .rule { width: 54px; height: 1px; }
+  .foot { position: absolute; left: 0; right: 0; bottom: 74px; text-align: center;
+          font-size: 11.5px; letter-spacing: .6px; }
+
+  body.solo { padding: 24px; }
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<script>
+const PATHS = [
+  { d: 'M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360', w: 94 },
+  { d: 'M376 366C355 427 346 496 350 568V714', w: 86 },
+  { d: 'M650 363C642 449 643 530 647 610C649 671 620 712 562 724', w: 86 }
+];
+const VIEW = '190 245 654 549';
+
+function grad(id, stops, x1, y1, x2, y2) {
+  const s = stops.map(([o, c]) => `<stop offset="${o}" stop-color="${c}"/>`).join('');
+  return `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}">${s}</linearGradient>`;
+}
+
+function pi(opt) {
+  const sw = opt.sw || null;
+  const colors = opt.colors || ['url(#g)'];
+  const defs = opt.defs || '';
+  const paths = PATHS.map((p, i) => {
+    const stroke = colors[i] || colors[colors.length - 1];
+    const width = sw ? sw[i] : p.w;
+    return `<path d="${p.d}" stroke="${stroke}" stroke-width="${width}"/>`;
+  }).join('');
+  const shadow = opt.shadow
+    ? `<defs><filter id="${opt.shadow.id}" x="-40%" y="-40%" width="180%" height="200%">
+         <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="${opt.shadow.color}" flood-opacity="${opt.shadow.opacity}"/>
+       </filter></defs>`
+    : '';
+  const filterAttr = opt.shadow ? ` filter="url(#${opt.shadow.id})"` : '';
+  return `<svg viewBox="${VIEW}" width="${opt.size}" height="${opt.size}" style="overflow:visible">
+    <defs>${defs}${shadow ? '' : ''}</defs>${shadow}
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round"${filterAttr}>${paths}</g>
+  </svg>`;
+}
+
+function statusbar(tone) {
+  return `<div class="sb ${tone}"><span>9:41</span>
+    <svg class="sb-icons" width="62" height="12" viewBox="0 0 62 12" fill="none">
+      <rect x="0" y="7.5" width="3" height="4.5" rx="1" fill="currentColor"/>
+      <rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="currentColor"/>
+      <rect x="10" y="3.4" width="3" height="8.6" rx="1" fill="currentColor"/>
+      <rect x="15" y="1.4" width="3" height="10.6" rx="1" fill="currentColor"/>
+      <path d="M25.4 5.1a6.6 6.6 0 0 1 8.2 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M27.6 7.9a3.4 3.4 0 0 1 3.8 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <circle cx="29.5" cy="10.4" r="1.05" fill="currentColor"/>
+      <rect x="42.5" y="1.6" width="16" height="8.8" rx="2.6" stroke="currentColor" stroke-width="1.1" opacity=".5"/>
+      <rect x="44.2" y="3.3" width="11" height="5.4" rx="1.4" fill="currentColor"/>
+      <path d="M60.2 4.4v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
+    </svg>
+  </div>`;
+}
+
+const COLORS = { coral: '#E86F45', amber: '#F3B93B', teal: '#2FA79B' };
+const DARK = '#101828';
+
+const items = [
+  {
+    key: 'A',
+    title: '明亮极简',
+    sub: '渐变 π · 行楷',
+    html: `
+      <div class="phone pA">
+        ${statusbar('dark')}
+        <div class="body">
+          <div class="mark">${pi({
+            size: 186,
+            colors: ['url(#gA)'],
+            defs: grad('gA', [['0%', COLORS.coral], ['52%', COLORS.amber], ['100%', COLORS.teal]],
+              200, 250, 830, 780)
+          })}</div>
+          <div class="tag" style="margin-top:34px;font-size:44px;color:#1F242B;letter-spacing:5px">数学链接宇宙</div>
+          <div style="margin-top:16px;font-size:12.5px;color:#8B9199;letter-spacing:2.4px">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress" style="background:#ECEAE4">
+          <i style="width:64%;background:linear-gradient(90deg,${COLORS.coral},${COLORS.amber},${COLORS.teal})"></i>
+        </div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'B',
+    title: '深空霓虹',
+    sub: '宇宙 π · 行楷渐变',
+    html: `
+      <div class="phone pB">
+        <div class="grid-lines"></div>
+        ${statusbar('light')}
+        <div class="body">
+          <div class="mark">${pi({
+            size: 190,
+            colors: ['url(#gB)'],
+            shadow: { id: 'shB', color: '#2FA79B', opacity: .55 },
+            defs: grad('gB', [['0%', '#FF8A5B'], ['48%', '#FFC94A'], ['100%', '#35C7B6']],
+              200, 250, 830, 780)
+          })}</div>
+          <div class="tag" style="margin-top:36px;font-size:46px;letter-spacing:5px;
+               background:linear-gradient(96deg,#FF8A5B 6%,#FFC94A 48%,#35C7B6 94%);
+               -webkit-background-clip:text;background-clip:text;color:transparent">数学链接宇宙</div>
+          <div style="margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.50);letter-spacing:2.4px">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress" style="background:rgba(255,255,255,.12)">
+          <i style="width:64%;background:linear-gradient(90deg,#FF8A5B,#FFC94A,#35C7B6)"></i>
+        </div>
+        <div class="home-bar light"></div>
+      </div>`
+  },
+  {
+    key: 'C',
+    title: '三色几何',
+    sub: '分段 π · 宋体',
+    html: `
+      <div class="phone pC">
+        ${statusbar('dark')}
+        <div class="body">
+          <div class="mark">${pi({
+            size: 186,
+            sw: [104, 96, 96],
+            colors: [COLORS.amber, COLORS.coral, COLORS.teal]
+          })}</div>
+          <div class="tag-serif" style="margin-top:34px;font-size:40px;font-weight:600;color:#111827;letter-spacing:8px">数学链接宇宙</div>
+          <div style="margin-top:16px;font-size:12.5px;color:#8B9199;letter-spacing:2.4px">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress prog-seg" style="width:168px">
+          <i style="background:${COLORS.amber}"></i>
+          <i style="background:${COLORS.coral}"></i>
+          <i style="background:${COLORS.teal}"></i>
+        </div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'D',
+    title: '墨线留白',
+    sub: '细线 π · 隶书',
+    html: `
+      <div class="phone pD">
+        ${statusbar('dark')}
+        <div class="body">
+          <div class="rule" style="background:#D8D2C6"></div>
+          <div class="mark" style="margin-top:44px">${pi({
+            size: 176,
+            sw: [40, 36, 36],
+            colors: ['url(#gD)'],
+            defs: grad('gD', [['0%', '#C4623F'], ['54%', '#D9A02F'], ['100%', '#2C8E84']],
+              200, 250, 830, 780)
+          })}</div>
+          <div class="tag-li" style="margin-top:46px;font-size:39px;color:#1B1B1B;letter-spacing:5px">数学链接宇宙</div>
+          <div style="margin-top:22px;font-size:12.5px;color:#9A9384;letter-spacing:2.6px">公式记忆助手 · 高中数学</div>
+          <div class="rule" style="margin-top:44px;background:#D8D2C6"></div>
+        </div>
+        <div class="progress" style="background:#E5DFD3">
+          <i style="width:64%;background:linear-gradient(90deg,#C4623F,#D9A02F,#2C8E84)"></i>
+        </div>
+        <div class="home-bar dark"></div>
+      </div>`
+  },
+  {
+    key: 'E',
+    title: '全息镀膜',
+    sub: '光谱 π · 琥珀体',
+    html: `
+      <div class="phone pE">
+        ${statusbar('light')}
+        <div class="body">
+          <div class="mark">${pi({
+            size: 188,
+            colors: ['url(#gE)'],
+            defs: grad('gE', [['0%', '#8B5CF6'], ['24%', '#3B82F6'], ['50%', '#2FA79B'], ['76%', '#F3B93B'], ['100%', '#E86F45']],
+              210, 252, 820, 778)
+          })}</div>
+          <div class="tag-serif" style="margin-top:38px;font-size:40px;font-weight:700;letter-spacing:6px;
+               background:linear-gradient(100deg,#A78BFA,#60A5FA,#5EEAD4,#FDE68A,#FB923C);
+               -webkit-background-clip:text;background-clip:text;color:transparent;
+               filter:drop-shadow(0 0 12px rgba(94,234,212,.22))">数学链接宇宙</div>
+          <div style="margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.45);letter-spacing:2.4px">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress" style="background:rgba(255,255,255,.11)">
+          <i style="width:64%;background:linear-gradient(90deg,#8B5CF6,#3B82F6,#2FA79B,#F3B93B,#E86F45)"></i>
+        </div>
+        <div class="home-bar light"></div>
+      </div>`
+  },
+  {
+    key: 'F',
+    title: '放射星芒',
+    sub: 'CC Switch 直系',
+    html: `
+      <div class="phone pF">
+        ${statusbar('light')}
+        <div class="spokes">${(() => {
+          const pal = ['#E86F45', '#F3B93B', '#2FA79B', '#F0932B', '#4FB3A8', '#EDC047'];
+          let s = '';
+          for (let i = 0; i < 24; i++) {
+            const a = i * 15;
+            const c = pal[i % pal.length];
+            const h = 150 + (i % 4) * 14;
+            s += `<span style="transform:rotate(${a}deg);background:${c};height:${h}px;top:-${h}px;opacity:.26"></span>`;
+          }
+          return s;
+        })()}</div>
+        <div class="body">
+          <div class="mark" style="position:relative">${pi({
+            size: 182,
+            sw: [102, 94, 94],
+            colors: ['#F8F3E8', '#F8F3E8', '#F8F3E8'],
+            shadow: { id: 'shF', color: '#000000', opacity: .45 }
+          })}</div>
+          <div class="tag" style="margin-top:34px;font-size:44px;color:#F8F3E8;letter-spacing:5px">数学链接宇宙</div>
+          <div style="margin-top:16px;font-size:12.5px;color:rgba(255,255,255,.46);letter-spacing:2.4px">公式记忆助手 · 高中数学</div>
+        </div>
+        <div class="progress" style="background:rgba(255,255,255,.13)">
+          <i style="width:64%;background:linear-gradient(90deg,#E86F45,#F3B93B,#2FA79B)"></i>
+        </div>
+        <div class="home-bar light"></div>
+      </div>`
+  }
+];
+
+const grid = document.getElementById('grid');
+grid.innerHTML = items.map(it => `
+  <div class="cell" data-key="${it.key}">
+    <div class="cap"><b>方案 ${it.key}</b><span>${it.title} · ${it.sub}</span></div>
+    ${it.html}
+  </div>`).join('');
+
+const only = new URLSearchParams(location.search).get('only');
+if (only) {
+  document.body.classList.add('solo');
+  [...document.querySelectorAll('.cell')].forEach(c => {
+    if (c.dataset.key !== only) c.remove();
+  });
+}
+</script>
+</body>
+</html>

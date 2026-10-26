@@ -1,4 +1,4 @@
-/* 用真实 KaTeX 逐条校验 366 条公式的 LaTeX 语法 */
+/* 用真实 KaTeX 逐条校验 351 条公式的 LaTeX 语法 */
 const fs = require('fs');
 const path = require('path');
 let katex;
@@ -8,13 +8,8 @@ try {
   katex = require(path.join(__dirname, '..', 'tools', 'katex', 'katex.min.js'));
 }
 
-const htmlPath = path.join(__dirname, '..', 'prototype', '公式记忆助手-原型.html');
-const html = fs.readFileSync(htmlPath, 'utf8');
-const marker = 'const DATA = ';
-const s = html.indexOf(marker) + marker.length;
-const end = html.slice(s).search(/;\r?\n/);
-if (s < marker.length || end < 0) throw new Error('未找到 HTML 内联 DATA 数据块');
-const DATA = JSON.parse(html.slice(s, s + end));
+const dataPath = path.join(__dirname, '..', 'prototype', 'data', '公式库-全量.json');
+const DATA = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 function tryRender(tex) {
   try { katex.renderToString(tex, { throwOnError: true, displayMode: true }); return null; }
@@ -42,4 +37,4 @@ fs.writeFileSync(path.join(__dirname, 'katex_errors.json'),
   JSON.stringify({ main: errsMain, blank: errsBlank }, null, 1), 'utf8');
 console.log('\n错误清单已写入 extract/katex_errors.json');
 
-if (DATA.items.length !== 366 || errsMain.length || errsBlank.length) process.exit(1);
+if (DATA.items.length !== 351 || errsMain.length || errsBlank.length) process.exit(1);

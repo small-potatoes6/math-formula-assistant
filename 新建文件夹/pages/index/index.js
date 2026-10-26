@@ -17,6 +17,7 @@ function toCard(item, favoriteMap) {
     formulaImage: item.formulaImage,
     formulaWidth: item.formulaWidth,
     formulaHeight: item.formulaHeight,
+    formulaScrollable: Number(item.formulaWidth) * 2 > 620,
     condition: item.condition || '',
     favorite: Boolean(favoriteMap[item.id])
   }
@@ -48,25 +49,41 @@ Page({
         (item.tags || []).join(' ')
       ].join(' ').toLowerCase()
     }))
-    this.applyFilters()
+    this._skipNextShow = true
+    this.refresh()
   },
 
   onShow() {
+    if (this._skipNextShow) {
+      this._skipNextShow = false
+      return
+    }
     this.refresh()
   },
 
   refresh() {
     const state = store.getState()
-    const favoriteMap = {}
-    state.favs.forEach(id => {
-      favoriteMap[id] = true
-    })
-    this.favoriteMap = favoriteMap
+    const favoriteSignature = state.favs.join('|')
+    const favoritesChanged = this._favoriteSignature !== favoriteSignature
+
+    if (favoritesChanged) {
+      const favoriteMap = {}
+      state.favs.forEach(id => {
+        favoriteMap[id] = true
+      })
+      this.favoriteMap = favoriteMap
+      this._favoriteSignature = favoriteSignature
+    }
+
     this.setData({
       favoriteCount: state.favs.length,
       summary: store.getSummary()
     })
-    this.applyFilters()
+
+    if (favoritesChanged || !this.sourceItemsApplied) {
+      this.sourceItemsApplied = true
+      this.applyFilters()
+    }
   },
 
   applyFilters() {
@@ -144,7 +161,7 @@ Page({
 
   onShareAppMessage() {
     return {
-      title: '公式记忆助手：366 条高中数学公式',
+      title: '公式记忆助手：351 条高中数学公式',
       path: '/pages/index/index'
     }
   }

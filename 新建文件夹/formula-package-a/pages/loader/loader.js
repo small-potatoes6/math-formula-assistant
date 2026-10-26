@@ -1,5 +1,5 @@
 Page({
-  onReady() {
+  onLoad() {
     wx.redirectTo({
       url: '/formula-package-b/pages/loader/loader',
       fail: () => {

@@ -1,7 +1,4 @@
 {
   "navigationStyle": "custom",
-  "disableScroll": true,
-  "usingComponents": {
-    "package-loader": "/components/package-loader/package-loader"
-  }
+  "disableScroll": true
 }

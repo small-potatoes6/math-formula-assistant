@@ -1,0 +1,92 @@
+{
+  "id": "K23",
+  "order": 23,
+  "packageRoot": "topic-package-c",
+  "title": "相互独立事件、条件概率与全概率公式",
+  "sourcePages": [31],
+  "sections": [
+    {
+      "id": "K23-01",
+      "title": "一、相互独立事件",
+      "sourcePages": [31],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "(1)如果$A_1,A_2,\\cdots,A_n$相互独立，则有$P(A_1A_2\\cdots A_n)=P(A_1)P(A_2)\\cdots P(A_n)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)若事件$A,B$相互独立，则"
+        },
+        {
+          "type": "table",
+          "columns": ["事件$A,B$发生的情况", "概率计算公式"],
+          "rows": [
+            [
+              "$A,B$中至少有一个不发生",
+              "$P(\\overline{A}\\,\\overline{B}\\cup A\\overline{B}\\cup \\overline{A}B)=1-P(AB)=1-P(A)P(B)$"
+            ],
+            [
+              "$A,B$中至少有一个发生",
+              "$P(A\\overline{B}\\cup \\overline{A}B\\cup AB)=1-P(\\overline{A}\\,\\overline{B})=1-P(\\overline{A})P(\\overline{B})=P(A)+P(B)-P(A)P(B)$"
+            ],
+            [
+              "$A,B$中恰好有一个发生",
+              "$P(A\\overline{B}\\cup \\overline{A}B)=P(A\\overline{B}+\\overline{A}B)=P(A)P(\\overline{B})+P(\\overline{A})P(B)=P(A)+P(B)-2P(A)P(B)$"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K23-02",
+      "title": "二、条件概率",
+      "sourcePages": [31],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "条件概率：一般地，设$A,B$为两个随机事件，且$P(A)>0$，则在事件$A$发生的条件下，事件$B$发生的概率为$P(B|A)=\\frac{P(AB)}{P(A)}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "乘法公式：对任意两个事件$A,B$，若$P(A)>0$，则$P(AB)=P(A)P(B|A)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "条件概率的性质：设$P(A)>0$，则"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)$P(\\Omega|A)=1$($\\Omega$为样本空间)；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)如果$B$和$C$是两个互斥事件，则$P(B\\cup C|A)=P(B|A)+P(C|A)$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)设$\\overline{B}$和$B$互为对立事件，则$P(\\overline{B}|A)=1-P(B|A)$."
+        }
+      ]
+    },
+    {
+      "id": "K23-03",
+      "title": "三、全概率公式",
+      "sourcePages": [31],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "全概率公式：一般地，设$A_1,A_2,\\cdots,A_n$是一组两两互斥的事件，$A_1\\cup A_2\\cup\\cdots\\cup A_n=\\Omega$，且$P(A_i)>0,i=1,2,\\cdots,n$，则对任意的事件$B\\subseteq\\Omega$，有$P(B)=\\sum_{i=1}^{n}P(BA_i)=\\sum_{i=1}^{n}P(A_i)P(B|A_i)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "理解：(1)某一事件$B$的发生有各种可能的原因，如果$B$是由原因$A_i(i=1,2,3,\\cdots,n)$所引起的，那么事件$B$发生的概率$P(B)=\\sum_{i=1}^{n}P(BA_i)=\\sum_{i=1}^{n}P(A_i)P(B|A_i)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)每一个原因都可能导致$B$发生，故$B$发生的概率是各原因引起$B$发生概率的总和."
+        }
+      ]
+    }
+  ]
+}

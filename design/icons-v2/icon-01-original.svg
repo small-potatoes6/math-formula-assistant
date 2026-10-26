@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">原版珊瑚 Π</title>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#9B4A34" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect x="12" y="12" width="1000" height="1000" rx="232" fill="#FFFDFC"/>
+  <g fill="none" stroke="#D97757" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke-width="76"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke-width="70"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke-width="70"/>
+  </g>
+</svg>

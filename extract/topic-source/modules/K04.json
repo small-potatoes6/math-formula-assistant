@@ -1,0 +1,214 @@
+{
+  "id": "K04",
+  "order": 4,
+  "packageRoot": "topic-package-a",
+  "visualTheme": "soft",
+  "layoutVariant": "function-cards",
+  "title": "导数问题中常用函数的图象",
+  "sourcePages": [7, 8],
+  "sections": [
+    {
+      "id": "K04-01",
+      "title": "",
+      "sourcePages": [7, 8],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["函数", "图象", "单调性与极值情况", "函数", "图象", "单调性与极值情况"],
+          "rows": [
+            [
+              "$f(x)=x+\\ln x$，$x\\in(0,+\\infty)$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r1-left",
+                "width": 480,
+                "height": 465
+              },
+              "在$(0,+\\infty)$上单调递增，无极值",
+              "$f(x)=e^x+x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r1-right",
+                "width": 435,
+                "height": 465
+              },
+              "在$\\mathbf R$上单调递增，无极值"
+            ],
+            [
+              "$f(x)=\\ln x-x$，$x\\in(0,+\\infty)$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r2-left",
+                "width": 480,
+                "height": 435
+              },
+              "在$(0,1)$上单调递增，在$(1,+\\infty)$上单调递减，在$x=1$处取得极大值$-1$，无极小值",
+              "$f(x)=e^x-x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r2-right",
+                "width": 435,
+                "height": 435
+              },
+              "在$(-\\infty,0)$上单调递减，在$(0,+\\infty)$上单调递增，在$x=0$处取得极小值$1$，无极大值"
+            ],
+            [
+              "$f(x)=x\\ln x$，$x\\in(0,+\\infty)$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r3-left",
+                "width": 480,
+                "height": 810
+              },
+              "在$\\left(0,\\frac1e\\right)$上单调递减，在$\\left(\\frac1e,+\\infty\\right)$上单调递增，在$x=\\frac1e$处取得极小值$-\\frac1e$，无极大值",
+              "$f(x)=xe^x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r3-right",
+                "width": 435,
+                "height": 810
+              },
+              "在$(-\\infty,-1)$上单调递减，在$(-1,+\\infty)$上单调递增，在$x=-1$处取得极小值$-\\frac1e$，无极大值"
+            ],
+            [
+              "$f(x)=\\frac{\\ln x}{x}$，$x\\in(0,+\\infty)$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r4-left",
+                "width": 480,
+                "height": 600
+              },
+              "在$(0,e)$上单调递增，在$(e,+\\infty)$上单调递减，在$x=e$处取得极大值$\\frac1e$，无极小值",
+              "$f(x)=\\frac{e^x}{x}$，$x\\ne0$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r4-right",
+                "width": 435,
+                "height": 600
+              },
+              "在$(-\\infty,0),(0,1)$上单调递减，在$(1,+\\infty)$上单调递增，在$x=1$处取得极小值$e$，无极大值"
+            ],
+            [
+              "$f(x)=\\frac{x}{\\ln x}$，$x\\in(0,1)\\cup(1,+\\infty)$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r5-left",
+                "width": 480,
+                "height": 480
+              },
+              "在$(0,1),(1,e)$上单调递减，在$(e,+\\infty)$上单调递增，在$x=e$处取得极小值$e$，无极大值",
+              "$f(x)=\\frac{x}{e^x}$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r5-right",
+                "width": 435,
+                "height": 480
+              },
+              "在$(-\\infty,1)$上单调递增，在$(1,+\\infty)$上单调递减，在$x=1$处取得极大值$\\frac1e$，无极小值"
+            ],
+            [
+              "$f(x)=\\sin x+x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r6-left",
+                "width": 480,
+                "height": 570
+              },
+              "在$\\mathbf R$上单调递增，无极值",
+              "$f(x)=\\cos x+x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p07-r6-right",
+                "width": 435,
+                "height": 570
+              },
+              "在$\\mathbf R$上单调递增，无极值"
+            ]
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "续表"
+        },
+        {
+          "type": "table",
+          "columns": ["函数", "图象", "单调性与极值情况", "函数", "图象", "单调性与极值情况"],
+          "rows": [
+            [
+              "$f(x)=x-\\sin x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r1-left",
+                "width": 480,
+                "height": 405
+              },
+              "在$\\mathbf R$上单调递增，无极值",
+              "$f(x)=x-\\cos x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r1-right",
+                "width": 510,
+                "height": 405
+              },
+              "在$\\mathbf R$上单调递增，无极值"
+            ],
+            [
+              "$f(x)=x\\sin x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r2-left",
+                "width": 480,
+                "height": 540
+              },
+              "单调性与极值情况如图所示",
+              "$f(x)=x\\cos x$，$x\\in\\mathbf R$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r2-right",
+                "width": 510,
+                "height": 540
+              },
+              "单调性与极值情况如图所示"
+            ],
+            [
+              "$f(x)=\\frac{\\sin x}{x}$，$x\\ne0$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r3-left",
+                "width": 480,
+                "height": 480
+              },
+              "单调性与极值情况如图所示",
+              "$f(x)=\\frac{\\cos x}{x}$，$x\\ne0$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r3-right",
+                "width": 510,
+                "height": 480
+              },
+              "单调性与极值情况如图所示"
+            ],
+            [
+              "$f(x)=\\frac{x}{\\sin x}$，$x\\ne k\\pi,k\\in\\mathbf Z$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r4-left",
+                "width": 480,
+                "height": 375
+              },
+              "单调性与极值情况如图所示",
+              "$f(x)=\\frac{x}{\\cos x}$，$x\\ne\\frac{\\pi}{2}+k\\pi,k\\in\\mathbf Z$",
+              {
+                "type": "figure",
+                "assetKey": "k04-p08-r4-right",
+                "width": 510,
+                "height": 375
+              },
+              "单调性与极值情况如图所示"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

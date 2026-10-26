@@ -1,5 +1,5 @@
 Page({
-  onReady() {
+  onLoad() {
     wx.switchTab({
       url: '/pages/index/index'
     })

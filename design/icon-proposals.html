@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>公式记忆助手 · 小程序图标推荐</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #15171A; }
+  body {
+    padding: 42px;
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .grid { display: grid; grid-template-columns: repeat(3, 330px); gap: 42px 36px; }
+  .item {
+    padding: 22px 22px 20px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 22px;
+    background: #202328;
+  }
+  .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 288px;
+    border-radius: 18px;
+    background: #EBE7DE;
+  }
+  .icon-wrap img {
+    display: block;
+    width: 252px;
+    height: 252px;
+    filter: drop-shadow(0 17px 18px rgba(67,50,37,.16));
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+  .name {
+    color: #F4F5F7;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .key {
+    color: #8C95A3;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+  }
+  .desc {
+    margin-top: 8px;
+    color: #A5ADB9;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .small-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 17px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.07);
+  }
+  .small-row img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+    filter: drop-shadow(0 4px 5px rgba(0,0,0,.18));
+  }
+  .small-label {
+    color: #737D8C;
+    font-size: 11px;
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<script>
+const icons = [
+  ['A', '原版珊瑚', 'icon-01-original.svg', '白底、珊瑚色 Π，完全保留你发来的原版方向。'],
+  ['B', '日落渐变', 'icon-02-sunset.svg', '珊瑚到琥珀渐变，暖而不腻，最适合日常使用。'],
+  ['C', '三色分段', 'icon-03-tricolor.svg', '三段分别使用珊瑚、琥珀、青绿，CC Switch 感最直接。'],
+  ['D', '三色流光', 'icon-04-prism.svg', '一条连续的三色渐变，视觉更统一、更有层次。'],
+  ['E', 'CC 星芒', 'icon-05-starburst.svg', '低透明度放射星芒包围 Π，最接近 CC Switch 的能量感。'],
+  ['F', '三色轨道', 'icon-06-orbit.svg', '用三段细弧线框住 Π，比星芒更克制，更像成熟软件图标。']
+];
+
+document.getElementById('grid').innerHTML = icons.map(([key, name, file, desc]) => `
+  <div class="item">
+    <div class="icon-wrap"><img src="icons-v2/${file}" alt="${name}"></div>
+    <div class="head"><div class="name">${name}</div><div class="key">方案 ${key}</div></div>
+    <div class="desc">${desc}</div>
+    <div class="small-row">
+      <img src="icons-v2/${file}" alt="${name} 48px 小尺寸预览">
+      <div class="small-label">48 px 实际显示<br>检查小尺寸辨识度</div>
+    </div>
+  </div>`).join('');
+</script>
+</body>
+</html>

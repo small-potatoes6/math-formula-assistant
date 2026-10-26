@@ -1,0 +1,2 @@
+page { background: #f5f6f8; }
+.loader-bridge { min-height: 100vh; }

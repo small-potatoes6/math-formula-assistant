@@ -1,0 +1,107 @@
+{
+  "id": "K06",
+  "order": 6,
+  "packageRoot": "topic-package-a",
+  "title": "三角函数的公式、图象与性质",
+  "sourcePages": [10],
+  "sections": [
+    {
+      "id": "K06-01",
+      "title": "一、拓展公式",
+      "sourcePages": [10],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "常见的三角不等式："
+        },
+        {
+          "type": "formula",
+          "tex": "(1)\\text{若 }x\\in\\left(0,\\frac{\\pi}{2}\\right),\\text{则}\\sin x<x<\\tan x;\\quad(2)\\text{若 }x\\in\\left(0,\\frac{\\pi}{2}\\right),\\text{则}1<\\sin x+\\cos x\\leqslant\\sqrt2;\\quad(3)1\\leqslant|\\sin x|+|\\cos x|\\leqslant\\sqrt2."
+        },
+        {
+          "type": "paragraph",
+          "text": "万能公式："
+        },
+        {
+          "type": "formula",
+          "tex": "\\sin\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}};\\quad\\cos\\alpha=\\frac{1-\\tan^2\\frac{\\alpha}{2}}{1+\\tan^2\\frac{\\alpha}{2}};\\quad\\tan\\alpha=\\frac{2\\tan\\frac{\\alpha}{2}}{1-\\tan^2\\frac{\\alpha}{2}}."
+        },
+        {
+          "type": "paragraph",
+          "text": "和差化积公式："
+        },
+        {
+          "type": "formula",
+          "tex": "\\sin\\alpha+\\sin\\beta=2\\sin\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2};\\quad\\sin\\alpha-\\sin\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\alpha-\\beta}{2};"
+        },
+        {
+          "type": "formula",
+          "tex": "\\cos\\alpha+\\cos\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2};\\quad\\cos\\alpha-\\cos\\beta=-2\\sin\\frac{\\alpha+\\beta}{2}\\sin\\frac{\\alpha-\\beta}{2}."
+        },
+        {
+          "type": "paragraph",
+          "text": "积化和差公式："
+        },
+        {
+          "type": "formula",
+          "tex": "\\sin\\alpha\\cos\\beta=\\frac12[\\sin(\\alpha+\\beta)+\\sin(\\alpha-\\beta)];\\quad\\cos\\alpha\\sin\\beta=\\frac12[\\sin(\\alpha+\\beta)-\\sin(\\alpha-\\beta)];"
+        },
+        {
+          "type": "formula",
+          "tex": "\\cos\\alpha\\cos\\beta=\\frac12[\\cos(\\alpha+\\beta)+\\cos(\\alpha-\\beta)];\\quad\\sin\\alpha\\sin\\beta=-\\frac12[\\cos(\\alpha+\\beta)-\\cos(\\alpha-\\beta)]."
+        },
+        {
+          "type": "paragraph",
+          "text": "三倍角公式：$\\sin3\\alpha=3\\sin\\alpha-4\\sin^3\\alpha;\\quad\\cos3\\alpha=4\\cos^3\\alpha-3\\cos\\alpha;\\quad\\tan3\\alpha=\\frac{3\\tan\\alpha-\\tan^3\\alpha}{1-3\\tan^2\\alpha}=\\tan\\alpha\\tan\\left(\\frac{\\pi}{3}-\\alpha\\right)\\tan\\left(\\frac{\\pi}{3}+\\alpha\\right).$"
+        },
+        {
+          "type": "paragraph",
+          "text": "正弦平方差公式：$\\sin^2\\alpha-\\sin^2\\beta=\\sin(\\alpha-\\beta)\\sin(\\alpha+\\beta)=\\cos^2\\beta-\\cos^2\\alpha.$"
+        }
+      ]
+    },
+    {
+      "id": "K06-02",
+      "title": "二、与三角函数的图象、性质有关的结论",
+      "sourcePages": [10],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "已知$f(x)=A\\sin(\\omega x+\\varphi)$，其中$A\\ne0,\\omega>0,(x_1,f(x_1)),(x_2,f(x_2))$在$y=f(x)$的图象上，则"
+        },
+        {
+          "type": "paragraph",
+          "text": "（1）对称轴：过函数的最值点且与$x$轴垂直的直线."
+        },
+        {
+          "type": "paragraph",
+          "text": "（2）对称中心：满足$A\\sin(\\omega x+\\varphi)=0$的点."
+        },
+        {
+          "type": "paragraph",
+          "text": "（3）单调区间：沿$x$轴正方向，最大值点到相邻最小值点为单调递减区间，最小值点到相邻最大值点为单调递增区间."
+        },
+        {
+          "type": "paragraph",
+          "text": "（4）周期：①两对称轴之间的距离为$\\frac{T}{2}$的正整数倍，表示为$\\frac{nT}{2},n\\in\\mathbf N^*$，当$n=1$时，两对称轴相邻；"
+        },
+        {
+          "type": "paragraph",
+          "text": "②两对称中心之间的距离为$\\frac{T}{2}$的正整数倍，表示为$\\frac{nT}{2},n\\in\\mathbf N^*$，当$n=1$时，两对称中心相邻；"
+        },
+        {
+          "type": "paragraph",
+          "text": "③对称轴和对称中心之间的距离为$\\frac{T}{4}$的正奇数倍，表示为$\\frac{(2n-1)T}{4},n\\in\\mathbf N^*$，当$n=1$时，对称轴与对称中心相邻."
+        },
+        {
+          "type": "paragraph",
+          "text": "（5）函数值相等：若$x_1,x_2$在一个周期内，且$f(x_1)=f(x_2)$，则直线$x=\\frac{x_1+x_2}{2}$为$f(x)$图象的对称轴."
+        },
+        {
+          "type": "paragraph",
+          "text": "（6）函数值相反：若$x_1,x_2$在同一单调区间上，且$f(x_1)=-f(x_2)$，则$\\left(\\frac{x_1+x_2}{2},f\\left(\\frac{x_1+x_2}{2}\\right)\\right)$为$f(x)$图象的对称中心."
+        }
+      ]
+    }
+  ]
+}

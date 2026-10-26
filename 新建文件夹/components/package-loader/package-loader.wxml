@@ -1,11 +1,17 @@
 <view class="package-loader">
-  <view class="loader-brand">
-    <view class="loader-mark">∑</view>
-    <view class="loader-title">公式记忆助手</view>
+  <view class="loader-main">
+    <image
+      class="loader-mark"
+      src="/assets/startup/pi-mark.png"
+      mode="aspectFit"
+    />
+    <image
+      class="loader-title-art"
+      src="/assets/startup/title-math-universe.png"
+      mode="widthFix"
+    />
+    <view class="loader-progress-track">
+      <view class="loader-progress-value" style="width: {{progress}}%;"></view>
+    </view>
   </view>
-  <view class="loader-label">{{label}}</view>
-  <view class="loader-track">
-    <view class="loader-value" style="width: {{progress}}%;"></view>
-  </view>
-  <view class="loader-detail">{{detail}}</view>
 </view>

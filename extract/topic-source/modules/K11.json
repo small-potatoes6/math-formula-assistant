@@ -1,0 +1,75 @@
+{
+  "id": "K11",
+  "order": 11,
+  "packageRoot": "topic-package-b",
+  "title": "等差、等比数列的性质及二级结论",
+  "sourcePages": [16],
+  "sections": [
+    {
+      "id": "K11-01",
+      "title": "项的性质",
+      "sourcePages": [16],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["分类", "内容"],
+          "rows": [
+            [
+              "项的性质",
+              "在等差数列$\\{a_n\\}$中，$a_n,a_{n+m},a_{n+2m},\\cdots$为等差数列，公差为$md$；在等比数列$\\{a_n\\}$中，$a_n,a_{n+m},a_{n+2m},\\cdots$为等比数列，公比为$q^m$."
+            ],
+            [
+              "项的性质",
+              "在等差数列$\\{a_n\\}$中，$2a_n=a_{n-1}+a_{n+1}(n\\geqslant2),2a_n=a_{n-k}+a_{n+k}(n>k)$；在等比数列$\\{a_n\\}$中，$a_n^2=a_{n-1}\\cdot a_{n+1}(n\\geqslant2),a_n^2=a_{n-k}\\cdot a_{n+k}(n>k)$."
+            ],
+            [
+              "项的性质",
+              "在等差数列$\\{a_n\\}$中，若$m+n=r+s$，则$a_m+a_n=a_r+a_s$(多项和也成立)；在等比数列$\\{a_n\\}$中，若$m+n=r+s$，则$a_ma_n=a_ra_s$(多项积也成立)."
+            ],
+            [
+              "项的性质",
+              "若$\\{a_n\\},\\{b_n\\}$为项数相同的等差数列，则①$\\{ka_n\\pm lb_n\\}$($k,l$为常数)仍为等差数列；②$\\{c^{a_n}\\}$($c>0,c\\ne1$)为等比数列.若$\\{a_n\\},\\{b_n\\}$为项数相同的等比数列，则①$\\{ka_n\\},\\{a_nb_n\\},\\left\\{\\frac1{a_n}\\right\\},\\left\\{\\frac{a_n}{b_n}\\right\\},\\{\\sqrt{a_n}\\},\\{a_n^k\\},\\{|a_n|\\}$(其中$a_n>0,k\\ne0$)为等比数列；②$\\{\\log_c a_n\\}$(其中$a_n>0,c>0,c\\ne1$)为等差数列."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K11-02",
+      "title": "和的性质",
+      "sourcePages": [16],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["分类", "内容"],
+          "rows": [
+            [
+              "和的性质",
+              "在等差数列中，$S_n,S_{2n}-S_n,S_{3n}-S_{2n},\\cdots$也成等差数列，且公差为$n^2d$；在公比$q\\ne-1$的等比数列中，$S_n,S_{2n}-S_n,S_{3n}-S_{2n},\\cdots$也成等比数列，且公比为$q^n$."
+            ],
+            [
+              "和的性质",
+              "在等差数列中，$\\frac{S_n}{n}=\\frac d2n+\\left(a_1-\\frac d2\\right)$是关于$n$的一次函数或常数函数，数列$\\left\\{\\frac{S_n}{n}\\right\\}$也是等差数列."
+            ],
+            [
+              "和的性质",
+              "若$\\{a_n\\},\\{b_n\\}$为项数相同的等差数列，且前$n$项和分别为$S_n$与$T_n$，则$\\frac{a_m}{b_m}=\\frac{S_{2m-1}}{T_{2m-1}},\\frac{a_n}{b_m}=\\frac{(2m-1)S_{2n-1}}{(2n-1)T_{2m-1}}.$"
+            ],
+            [
+              "和的性质",
+              "在公差为$d$的等差数列中，$S_{m+n}=S_m+S_n+mnd$；在公比为$q$的等比数列中，$S_{m+n}=S_m+q^mS_n=S_n+q^nS_m$."
+            ],
+            [
+              "和的性质",
+              "在公比为$q$的等比数列中，当$q=1$时，$\\frac{S_n}{S_m}=\\frac nm$；当$q\\ne1$时，$\\frac{S_n}{S_m}=\\frac{1-q^n}{1-q^m}$."
+            ],
+            [
+              "和的性质",
+              "等差数列中的绝对值求和问题：①设等差数列$\\{a_n\\}$中，$a_1,a_2,\\cdots,a_k>0,a_{k+1},\\cdots,a_n<0,S_n$为$\\{a_n\\}$的前$n$项和，则$|a_1|+|a_2|+|a_3|+\\cdots+|a_n|=\\begin{cases}\\frac{n(a_1+a_n)}2,n\\leqslant k,\\\\2S_k-S_n,n>k.\\end{cases}$②设等差数列$\\{a_n\\}$中，$a_1,a_2,\\cdots,a_k<0,a_{k+1},\\cdots,a_n>0,S_n$为$\\{a_n\\}$的前$n$项和，则$|a_1|+|a_2|+|a_3|+\\cdots+|a_n|=\\begin{cases}-\\frac{n(a_1+a_n)}2,n\\leqslant k,\\\\-2S_k+S_n,n>k.\\end{cases}$"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

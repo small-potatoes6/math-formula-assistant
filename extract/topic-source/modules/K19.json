@@ -1,0 +1,114 @@
+{
+  "id": "K19",
+  "order": 19,
+  "packageRoot": "topic-package-c",
+  "title": "抛物线的焦点弦",
+  "sourcePages": [26],
+  "sections": [
+    {
+      "id": "K19-01",
+      "title": "抛物线的焦点弦",
+      "sourcePages": [26],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "过抛物线$y^2=2px(p>0)$的焦点$F$的直线与抛物线交于$A,B$两点，$G$为弦$AB$的中点，分别过点$A,B$作准线$l:x=-\\frac{p}{2}$的垂线，垂足分别为$M,N$，$H$为$MN$的中点. 设$A(x_1,y_1),B(x_2,y_2)$，直线$AB$的倾斜角为$\\alpha$($\\alpha$为锐角)，则有如下结论："
+        },
+        {
+          "type": "figure",
+          "assetKey": "k19-p26-focus-chord",
+          "width": 711,
+          "height": 1020
+        },
+        {
+          "type": "subheading",
+          "text": "1. 焦半径、焦点弦相关公式"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)焦半径：$|AF|=x_1+\\frac{p}{2}=\\frac{p}{1-\\cos\\alpha}$；$|BF|=x_2+\\frac{p}{2}=\\frac{p}{1+\\cos\\alpha}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)焦点弦：$|AB|=x_1+x_2+p=\\frac{2p}{\\sin^2\\alpha}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)焦半径之比：$\\frac{|AF|}{|BF|}=\\frac{1+\\cos\\alpha}{1-\\cos\\alpha}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)三个定值：$x_1x_2=\\frac{p^2}{4}$；$y_1y_2=-p^2$；$\\frac{1}{|AF|}+\\frac{1}{|BF|}=\\frac{2}{p}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. $S_{\\triangle OAB}=\\frac{1}{2}\\cdot|OF|\\cdot|AB|\\sin\\alpha=\\frac{p^2}{2\\sin\\alpha}$"
+        },
+        {
+          "type": "figure",
+          "assetKey": "k19-p26-tangent-circles",
+          "width": 726,
+          "height": 600
+        },
+        {
+          "type": "subheading",
+          "text": "3. 四种相切"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)以$AB$为直径的圆与$MN$切于点$H$，即$\\angle AHB=90^\\circ$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)以$MN$为直径的圆与$AB$切于焦点$F$，即$\\angle MFN=90^\\circ$."
+        },
+        {
+          "type": "paragraph",
+          "text": "(3)以焦半径$AF$为直径的圆与$y$轴相切."
+        },
+        {
+          "type": "paragraph",
+          "text": "(4)以焦半径$BF$为直径的圆与$y$轴相切."
+        },
+        {
+          "type": "figure",
+          "assetKey": "k19-p26-triangles",
+          "width": 786,
+          "height": 930
+        },
+        {
+          "type": "subheading",
+          "text": "4. 两对全等的三角形"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1)$\\triangle AMH\\cong\\triangle AFH$，∴$AH$平分$\\angle MAF$和$\\angle MHF$，$AH\\perp MF$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2)$\\triangle BNH\\cong\\triangle BFH$，∴$BH$平分$\\angle NHF$和$\\angle NBF$，$BH\\perp NF$."
+        },
+        {
+          "type": "paragraph",
+          "text": "5. $A,O,N$三点共线；$B,O,M$三点共线."
+        },
+        {
+          "type": "paragraph",
+          "text": "6. 记$\\triangle AMF,\\triangle FMN,\\triangle BNF$的面积分别为$S_1,S_2,S_3$，则$S_2^2=4S_1S_3$."
+        },
+        {
+          "type": "paragraph",
+          "text": "$S_1=\\frac{1}{2}|AF||AM|\\sin\\alpha=\\frac{\\sin\\alpha}{2}\\cdot\\left(\\frac{p}{1-\\cos\\alpha}\\right)^2$，"
+        },
+        {
+          "type": "paragraph",
+          "text": "$S_3=\\frac{1}{2}|BF||BN|\\sin\\alpha=\\frac{\\sin\\alpha}{2}\\cdot\\left(\\frac{p}{1+\\cos\\alpha}\\right)^2$，"
+        },
+        {
+          "type": "paragraph",
+          "text": "$S_2=\\frac{1}{2}\\cdot p\\cdot|MN|=\\frac{1}{2}\\cdot p\\cdot|AB|\\sin\\alpha=\\frac{p^2}{\\sin\\alpha}$"
+        }
+      ]
+    }
+  ]
+}

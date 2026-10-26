@@ -1,0 +1,99 @@
+{
+  "id": "K03",
+  "order": 3,
+  "packageRoot": "topic-package-a",
+  "title": "抽象函数问题",
+  "sourcePages": [6],
+  "sections": [
+    {
+      "id": "K03-01",
+      "title": "一、赋值法在抽象函数中的应用",
+      "sourcePages": [6],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "赋值法是求解抽象函数问题最基本的方法，赋值时一般将$0,\\pm1,\\pm2$等特殊值代入，结合给定的抽象函数的单调性、奇偶性、周期性、图象的对称性等性质进行求解."
+        },
+        {
+          "type": "label",
+          "text": "点拨"
+        },
+        {
+          "type": "subheading",
+          "text": "判断抽象函数单调性的方法"
+        },
+        {
+          "type": "paragraph",
+          "text": "（1）凑：凑定义或凑已知，利用定义或已知条件得出结论."
+        },
+        {
+          "type": "paragraph",
+          "text": "（2）赋值：给变量赋值要根据条件与结论的关系.有时可能要进行多次尝试."
+        },
+        {
+          "type": "paragraph",
+          "text": "①若给出的是“和型”抽象函数$f(x+y)=\\cdots$，比较大小时要变形为$f(x_2)-f(x_1)=f((x_2-x_1)+x_1)-f(x_1)$或$f(x_2)-f(x_1)=f(x_2)-f((x_1-x_2)+x_2)$；"
+        },
+        {
+          "type": "paragraph",
+          "text": "②若给出的是“积型”抽象函数$f(xy)=\\cdots$，比较大小时要变形为$f(x_2)-f(x_1)=f\\left(x_1\\cdot\\frac{x_2}{x_1}\\right)-f(x_1)$或$f(x_2)-f(x_1)=f(x_2)-f\\left(x_2\\cdot\\frac{x_1}{x_2}\\right)$."
+        }
+      ]
+    },
+    {
+      "id": "K03-02",
+      "title": "二、常见的抽象函数模型",
+      "sourcePages": [6],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "（1）一次函数：$f(x)=kx+b(k\\ne0)$，其对应的抽象函数为$f(x\\pm y)=f(x)\\pm f(y)\\mp b$."
+        },
+        {
+          "type": "paragraph",
+          "text": "（2）二次函数：$f(x)=ax^2+bx+c(a\\ne0)$，其对应的抽象函数为$f(x+y)=f(x)+f(y)+2axy-c$."
+        },
+        {
+          "type": "paragraph",
+          "text": "（3）幂函数：$f(x)=x^\\alpha$，其对应的抽象函数为$f(xy)=f(x)f(y)$或$f\\left(\\frac{x}{y}\\right)=\\frac{f(x)}{f(y)}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "（4）指数函数：$f(x)=a^x(a>0,a\\ne1)$，其对应的抽象函数为$f(x+y)=f(x)f(y)$或$f(x-y)=\\frac{f(x)}{f(y)}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "（5）对数函数：$f(x)=\\log_a x(a>0,a\\ne1)$，其对应的抽象函数为$f(xy)=f(x)+f(y)$或$f\\left(\\frac{x}{y}\\right)=f(x)-f(y)$或$f(x^n)=nf(x)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "（6）三角函数：①正弦函数$f(x)=\\sin x$，对应的抽象函数为$f(x+y)f(x-y)=f^2(x)-f^2(y)$."
+        },
+        {
+          "type": "note",
+          "text": "【提示】对应正弦的平方差公式：$\\sin^2\\alpha-\\sin^2\\beta=\\sin(\\alpha+\\beta)\\sin(\\alpha-\\beta)$."
+        },
+        {
+          "type": "paragraph",
+          "text": "②余弦函数$f(x)=\\cos x$，对应的抽象函数为$f(x)+f(y)=2f\\left(\\frac{x+y}{2}\\right)f\\left(\\frac{x-y}{2}\\right)$或$f(x)f(y)=\\frac12[f(x+y)+f(x-y)]$."
+        },
+        {
+          "type": "note",
+          "text": "【提示】分别对应余弦的和差化积公式：$\\cos\\alpha+\\cos\\beta=2\\cos\\frac{\\alpha+\\beta}{2}\\cos\\frac{\\alpha-\\beta}{2}$；"
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{余弦的积化和差公式：}\\cos\\alpha\\cos\\beta=\\frac{\\cos(\\alpha+\\beta)+\\cos(\\alpha-\\beta)}2."
+        },
+        {
+          "type": "paragraph",
+          "text": "③正切函数$f(x)=\\tan x\\left(x\\ne\\frac{\\pi}{2}+k\\pi,k\\in\\mathbf Z\\right)$，对应的抽象函数为$f(x\\pm y)=\\frac{f(x)\\pm f(y)}{1\\mp f(x)f(y)}$."
+        },
+        {
+          "type": "note",
+          "text": "【提示】对应正切函数的和差角公式：$\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}$."
+        }
+      ]
+    }
+  ]
+}

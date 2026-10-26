@@ -1,0 +1,128 @@
+{
+  "id": "K01",
+  "order": 1,
+  "packageRoot": "topic-package-a",
+  "visualTheme": "soft",
+  "layoutVariant": "feature-cards",
+  "title": "基本不等式、柯西不等式、权方和不等式",
+  "sourcePages": [3, 4],
+  "sections": [
+    {
+      "id": "K01-01",
+      "title": "一、基本不等式",
+      "sourcePages": [3],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "基本不等式及几个重要的不等式："
+        },
+        {
+          "type": "formula",
+          "tex": "(1)\\sqrt{ab}\\le\\frac{a+b}{2}(a>0,b>0);\\quad(2)a+b\\ge2\\sqrt{ab}(a>0,b>0);\\quad(3)a^2+b^2\\ge2ab;\\quad(4)\\frac{b}{a}+\\frac{a}{b}\\ge2(ab\\ne0,\\text{且 }a,b\\text{同号});"
+        },
+        {
+          "type": "formula",
+          "tex": "(5)ab\\le\\left(\\frac{a+b}{2}\\right)^2;\\quad(6)\\left(\\frac{a+b}{2}\\right)^2\\le\\frac{a^2+b^2}{2};\\quad(7)\\sqrt{\\frac{a^2+b^2}{2}}\\ge\\frac{a+b}{2}\\ge\\sqrt{ab}\\ge\\frac{2}{\\frac1a+\\frac1b}(a>0,b>0)."
+        },
+        {
+          "type": "note",
+          "text": "注：以上不等式均在$a=b$时取等号."
+        },
+        {
+          "type": "label",
+          "text": "常用模型"
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{模型一：}mx+\\frac{n}{x}\\ge2\\sqrt{mn}(m>0,n>0,x>0),\\text{当且仅当 }x=\\sqrt{\\frac{n}{m}}\\text{ 时，等号成立}."
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{模型二：}mx+\\frac{n}{x-a}=m(x-a)+\\frac{n}{x-a}+ma\\ge2\\sqrt{mn}+ma(m>0,n>0,x>a),\\text{当且仅当 }x-a=\\sqrt{\\frac{n}{m}}\\text{ 时，等号成立}."
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{模型三：}\\frac{x}{ax^2+bx+c}=\\frac1{ax+b+\\frac{c}{x}}\\le\\frac1{2\\sqrt{ac}+b}(a>0,c>0,x>0,2\\sqrt{ac}+b\\ne0),\\text{当且仅当 }x=\\sqrt{\\frac{c}{a}}\\text{ 时，等号成立}."
+        },
+        {
+          "type": "formula",
+          "tex": "\\text{模型四：}x(n-mx)=\\frac{mx(n-mx)}{m}\\le\\frac1m\\left[\\frac{mx+(n-mx)}2\\right]^2=\\frac{n^2}{4m}(m>0,n>0,0<x<\\frac{n}{m}),\\text{当且仅当 }x=\\frac{n}{2m}\\text{ 时，等号成立}."
+        }
+      ]
+    },
+    {
+      "id": "K01-02",
+      "title": "二、柯西不等式",
+      "sourcePages": [3],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "二维形式的柯西不等式：若$a,b,c,d$都是实数，则$(a^2+b^2)(c^2+d^2)\\ge(ac+bd)^2$，当且仅当$ad=bc$时，等号成立."
+        },
+        {
+          "type": "label",
+          "text": "常用模型"
+        },
+        {
+          "type": "paragraph",
+          "text": "模型一：（1）“一高一低和式”配凑类型：已知$x^2+y^2$的值，求$x+y$的取值范围，或已知$x+y$的值，求$2x^2+3y^2$的最值或求$\\sqrt{x}+\\sqrt{y}$的最值."
+        },
+        {
+          "type": "paragraph",
+          "text": "例如，$(a^2+b^2)(1+1)\\ge(a+b)^2$，当且仅当$a=b$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "（2）“同次积式”配凑类型：已知$xy$的值，求$(x+m)(y+n)(x,y,m,n\\in\\mathbf R_+)$的最值."
+        },
+        {
+          "type": "paragraph",
+          "text": "模型二：$(a+b)\\left(\\frac{m}{a}+\\frac{n}{b}\\right)\\ge(\\sqrt m+\\sqrt n)^2$，其中$a>0,b>0,m>0,n>0$，当且仅当$\\frac{an}{b}=\\frac{bm}{a}$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "例如，当$a>0,b>0$时，$(a+b)\\left(\\frac1a+\\frac1b\\right)\\ge\\left(\\sqrt{a\\cdot\\frac1a}+\\sqrt{b\\cdot\\frac1b}\\right)^2=4$，当且仅当$a=b$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "模型三：$\\frac{a}{x}+\\frac{b}{1-x}=[x+(1-x)]\\left(\\frac{a}{x}+\\frac{b}{1-x}\\right)\\ge(\\sqrt a+\\sqrt b)^2$，其中$a>0,b>0,0<x<1$，当且仅当$\\frac{bx}{1-x}=\\frac{a(1-x)}{x}$时，等号成立."
+        }
+      ]
+    },
+    {
+      "id": "K01-03",
+      "title": "三、权方和不等式",
+      "sourcePages": [4],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "若$a,b,x,y>0$，则$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，当且仅当$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "要证$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，即证$\\frac{ya^2+xb^2}{xy}\\ge\\frac{(a+b)^2}{x+y}$."
+        },
+        {
+          "type": "paragraph",
+          "text": "因为$a,b,x,y>0$，即证$xya^2+y^2a^2+x^2b^2+xyb^2\\ge xya^2+2xyab+xyb^2$，故只需证$y^2a^2+x^2b^2\\ge2xyab$，即$(ya-xb)^2\\ge0$，当且仅当$ya-xb=0$，即$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "因此$\\frac{a^2}{x}+\\frac{b^2}{y}\\ge\\frac{(a+b)^2}{x+y}$，当且仅当$\\frac{a}{x}=\\frac{b}{y}$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "推论1：若$a_i>0,b_i>0(i=1,2,\\cdots,n)$，则$\\frac{a_1^2}{b_1}+\\frac{a_2^2}{b_2}+\\cdots+\\frac{a_n^2}{b_n}\\ge\\frac{(a_1+a_2+\\cdots+a_n)^2}{b_1+b_2+\\cdots+b_n}$，当且仅当$a_i=\\lambda b_i(\\lambda>0)$时，等号成立."
+        },
+        {
+          "type": "paragraph",
+          "text": "推论2：若$a_i>0,b_i>0(i=1,2,\\cdots,n),m>0$，则$\\frac{a_1^{m+1}}{b_1^m}+\\frac{a_2^{m+1}}{b_2^m}+\\cdots+\\frac{a_n^{m+1}}{b_n^m}\\ge\\frac{(a_1+a_2+\\cdots+a_n)^{m+1}}{(b_1+b_2+\\cdots+b_n)^m}$，当且仅当$a_i=\\lambda b_i(\\lambda>0)$时，等号成立."
+        }
+      ]
+    }
+  ]
+}

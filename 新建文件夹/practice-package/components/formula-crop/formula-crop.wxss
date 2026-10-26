@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  max-width: 100%;
+}
+
+.crop-root {
+  position: relative;
+  max-width: 100%;
+}
+
+.crop-root.is-scrollable {
+  overflow: hidden;
+}
+
+.crop-scroll,
+.crop-canvas {
+  position: relative;
+}
+
+.crop-scroll {
+  touch-action: pan-x;
+}
+
+.crop-canvas {
+  overflow: hidden;
+}
+
+.crop-sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  max-width: none;
+  transform-origin: 0 0;
+  will-change: transform;
+}

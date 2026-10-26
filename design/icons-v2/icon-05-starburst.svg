@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">CC 星芒 Π</title>
+  <defs>
+    <linearGradient id="prism" gradientUnits="userSpaceOnUse" x1="210" y1="250" x2="820" y2="770">
+      <stop offset="0" stop-color="#F07A55"/>
+      <stop offset="0.50" stop-color="#F3BE43"/>
+      <stop offset="1" stop-color="#23AE9F"/>
+    </linearGradient>
+    <filter id="shadow" x="-35%" y="-35%" width="170%" height="185%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#7A6655" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect x="12" y="12" width="1000" height="1000" rx="232" fill="#FFFDF9"/>
+  <g stroke-linecap="round" opacity="0.14">
+    <g transform="rotate(0 512 512)"><line x1="512" y1="512" x2="512" y2="138" stroke="#E86F45" stroke-width="15"/></g>
+    <g transform="rotate(22.5 512 512)"><line x1="512" y1="512" x2="512" y2="100" stroke="#F3B93B" stroke-width="15"/></g>
+    <g transform="rotate(45 512 512)"><line x1="512" y1="512" x2="512" y2="154" stroke="#2FA79B" stroke-width="15"/></g>
+    <g transform="rotate(67.5 512 512)"><line x1="512" y1="512" x2="512" y2="112" stroke="#E86F45" stroke-width="15"/></g>
+    <g transform="rotate(90 512 512)"><line x1="512" y1="512" x2="512" y2="154" stroke="#F3B93B" stroke-width="15"/></g>
+    <g transform="rotate(112.5 512 512)"><line x1="512" y1="512" x2="512" y2="124" stroke="#2FA79B" stroke-width="15"/></g>
+    <g transform="rotate(135 512 512)"><line x1="512" y1="512" x2="512" y2="164" stroke="#E86F45" stroke-width="15"/></g>
+    <g transform="rotate(157.5 512 512)"><line x1="512" y1="512" x2="512" y2="104" stroke="#F3B93B" stroke-width="15"/></g>
+    <g transform="rotate(180 512 512)"><line x1="512" y1="512" x2="512" y2="146" stroke="#2FA79B" stroke-width="15"/></g>
+    <g transform="rotate(202.5 512 512)"><line x1="512" y1="512" x2="512" y2="116" stroke="#E86F45" stroke-width="15"/></g>
+    <g transform="rotate(225 512 512)"><line x1="512" y1="512" x2="512" y2="154" stroke="#F3B93B" stroke-width="15"/></g>
+    <g transform="rotate(247.5 512 512)"><line x1="512" y1="512" x2="512" y2="122" stroke="#2FA79B" stroke-width="15"/></g>
+    <g transform="rotate(270 512 512)"><line x1="512" y1="512" x2="512" y2="148" stroke="#E86F45" stroke-width="15"/></g>
+    <g transform="rotate(292.5 512 512)"><line x1="512" y1="512" x2="512" y2="104" stroke="#F3B93B" stroke-width="15"/></g>
+    <g transform="rotate(315 512 512)"><line x1="512" y1="512" x2="512" y2="158" stroke="#2FA79B" stroke-width="15"/></g>
+    <g transform="rotate(337.5 512 512)"><line x1="512" y1="512" x2="512" y2="118" stroke="#E86F45" stroke-width="15"/></g>
+  </g>
+  <g fill="none" stroke="url(#prism)" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke-width="98"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke-width="90"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke-width="90"/>
+  </g>
+</svg>

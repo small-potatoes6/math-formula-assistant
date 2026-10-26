@@ -2,9 +2,8 @@
   <view class="page-hero">
     <view class="hero-top">
       <view class="hero-copy">
-        <view class="hero-eyebrow">FORMULA LIBRARY</view>
         <view class="hero-title">公式库</view>
-        <view class="hero-subtitle">366 条 · 离线可用 · 17 个章节</view>
+        <view class="hero-subtitle">351 条 · 离线可用 · 16 个章节</view>
       </view>
       <view class="hero-stats">
         <view class="hero-stat due-stat" bindtap="openPractice">
@@ -60,9 +59,7 @@
       <view
         wx:for="{{items}}"
         wx:key="id"
-        class="formula-card pressable"
-        data-id="{{item.id}}"
-        bindtap="openDetail"
+        class="formula-card"
       >
         <view class="card-head">
           <view class="id-pill {{item.type}}">{{item.id}}</view>
@@ -82,10 +79,16 @@
             asset-width="{{item.formulaWidth}}"
             asset-height="{{item.formulaHeight}}"
             max-width="620"
+            mode="scroll"
           ></formula-image>
         </view>
         <view class="card-foot">
           <text class="type-label {{item.type}}">{{item.typeLabel}}</text>
+          <view
+            class="detail-link pressable"
+            data-id="{{item.id}}"
+            catchtap="openDetail"
+          >详情</view>
         </view>
       </view>
     </view>

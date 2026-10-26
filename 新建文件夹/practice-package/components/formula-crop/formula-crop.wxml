@@ -1,0 +1,40 @@
+<view
+  wx:if="{{ready}}"
+  class="crop-root {{scrollable ? 'is-scrollable' : 'is-fixed'}}"
+  style="width:{{viewportWidth}}rpx;height:{{viewportHeight}}rpx;"
+>
+  <scroll-view
+    wx:if="{{scrollable}}"
+    class="crop-scroll"
+    scroll-x="true"
+    scroll-with-animation
+    enhanced
+    enable-flex
+    show-scrollbar="{{false}}"
+    bindtouchstart="onScrollTouchStart"
+    bindtouchmove="onScrollTouchMove"
+    bindtouchend="onScrollTouchEnd"
+    bindtouchcancel="onScrollTouchEnd"
+    style="width:{{viewportWidth}}rpx;height:{{viewportHeight}}rpx;"
+  >
+    <view class="crop-canvas" style="{{canvasStyle}}">
+      <image
+        class="crop-sheet"
+        src="{{imageAsset}}"
+        mode="scaleToFill"
+        binderror="onImageError"
+        style="{{imageStyle}}"
+      />
+    </view>
+  </scroll-view>
+
+  <view wx:else class="crop-canvas" style="{{canvasStyle}}">
+    <image
+      class="crop-sheet"
+      src="{{imageAsset}}"
+      mode="scaleToFill"
+      binderror="onImageError"
+      style="{{imageStyle}}"
+    />
+  </view>
+</view>

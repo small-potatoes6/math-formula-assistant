@@ -1,0 +1,46 @@
+{
+  "id": "K13",
+  "order": 13,
+  "packageRoot": "topic-package-b",
+  "title": "数列求和的“裂项”技巧",
+  "sourcePages": [18],
+  "sections": [
+    {
+      "id": "K13-01",
+      "title": "",
+      "sourcePages": [18],
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["基本模型", "常见裂项形式"],
+          "rows": [
+            [
+              "已知$\\{a_n\\}$为等差数列，则$\\frac1{a_n\\cdot a_{n+k}}=\\frac1{a_{n+k}-a_n}\\cdot\\left(\\frac1{a_n}-\\frac1{a_{n+k}}\\right)$",
+              "$\\frac1{n(n+1)}=\\frac1n-\\frac1{n+1};\\frac1{n(n+k)}=\\frac1k\\left(\\frac1n-\\frac1{n+k}\\right)$；$\\frac1{4n^2-1}=\\frac12\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right)$；$\\frac1{n(n+1)(n+2)}=\\frac12\\left[\\frac1{n(n+1)}-\\frac1{(n+1)(n+2)}\\right]$；$\\sqrt{1+\\frac1{n^2}+\\frac1{(n+1)^2}}=\\frac{n(n+1)+1}{n(n+1)}=1+\\frac1n-\\frac1{n+1}$"
+            ],
+            [
+              "含根式型：已知$\\{a_n\\}$为等差数列，则$\\frac1{\\sqrt{a_n}+\\sqrt{a_{n+k}}}=\\frac{\\sqrt{a_{n+k}}-\\sqrt{a_n}}{a_{n+k}-a_n}$",
+              "$\\frac1{\\sqrt{n+1}+\\sqrt n}=\\sqrt{n+1}-\\sqrt n;\\frac1{\\sqrt{n+k}+\\sqrt n}=\\frac1k(\\sqrt{n+k}-\\sqrt n)$；$\\frac1{\\sqrt{2n-1}+\\sqrt{2n+1}}=\\frac12(\\sqrt{2n+1}-\\sqrt{2n-1})$；$\\frac1{(n+1)\\sqrt n+n\\sqrt{n+1}}=\\frac1{\\sqrt{n(n+1)}(\\sqrt{n+1}+\\sqrt n)}=\\frac{\\sqrt{n+1}-\\sqrt n}{\\sqrt{n(n+1)}}=\\frac1{\\sqrt n}-\\frac1{\\sqrt{n+1}}$"
+            ],
+            [
+              "含指数式型：$\\frac{a_{n+1}\\cdot q-a_n}{a_n\\cdot a_{n+1}\\cdot q^{n+1}}=\\frac1{a_n\\cdot q^n}-\\frac1{a_{n+1}\\cdot q^{n+1}}$",
+              "$\\frac{2^n}{(2^{n+1}-1)(2^n-1)}=\\frac{(2^{n+1}-1)-(2^n-1)}{(2^{n+1}-1)(2^n-1)}=\\frac1{2^n-1}-\\frac1{2^{n+1}-1}$；$\\frac{n+2}{n(n+1)\\cdot2^n}=\\frac1{n\\cdot2^{n-1}}-\\frac1{(n+1)\\cdot2^n}$"
+            ],
+            [
+              "含对数式型：已知$\\{a_n\\}$为正项数列，则$\\log_a\\frac{a_{n+1}}{a_n}=\\log_a a_{n+1}-\\log_a a_n(a>0$且$a\\ne1)$",
+              "$\\log_a\\left(1+\\frac1n\\right)=\\log_a(n+1)-\\log_a n$；$\\log_a\\left(2+\\frac1{2^n-1}\\right)=\\log_a\\frac{2^{n+1}-1}{2^n-1}=\\log_a(2^{n+1}-1)-\\log_a(2^n-1)$"
+            ],
+            [
+              "含排列组合式的裂项",
+              "$n^2\\cdot(n-1)!=n\\cdot n!=(n+1)!-n!$；$\\frac n{(n+1)!}=\\frac1{n!}-\\frac1{(n+1)!}$；$\\frac1{n!(n+2)}=\\frac{n+1}{(n+2)!}=\\frac1{(n+1)!}-\\frac1{(n+2)!}$；$\\mathrm C_n^k=\\mathrm C_{n+1}^{k+1}-\\mathrm C_n^{k+1}$"
+            ],
+            [
+              "其他常用裂项公式",
+              "$\\frac{2n+1}{n^2(n+1)^2}=\\frac1{n^2}-\\frac1{(n+1)^2}$；$\\frac{(-1)^n(2n+1)}{n(n+1)}=(-1)^n\\left(\\frac1n+\\frac1{n+1}\\right)$；$(-1)^n\\log_2[n(n+1)]=(-1)^n[\\log_2n+\\log_2(n+1)]$；在非零数列$\\{a_n\\}$中，$a_{n+1}=a_n^2+a_n\\Leftrightarrow\\frac1{1+a_n}=\\frac1{a_n}-\\frac1{a_{n+1}}$"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

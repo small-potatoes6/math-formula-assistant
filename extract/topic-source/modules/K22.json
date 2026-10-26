@@ -1,0 +1,90 @@
+{
+  "id": "K22",
+  "order": 22,
+  "packageRoot": "topic-package-c",
+  "title": "排列组合的题型识别与解题方法",
+  "sourcePages": [30],
+  "sections": [
+    {
+      "id": "K22-01",
+      "title": "排列组合的题型识别与解题方法",
+      "sourcePages": [30],
+      "blocks": [
+        {
+          "type": "subheading",
+          "text": "1. 特殊元素、特殊位置——优先安排"
+        },
+        {
+          "type": "paragraph",
+          "text": "首先考虑问题中的特殊元素（或位置），然后排列其他的一般元素（或位置）."
+        },
+        {
+          "type": "subheading",
+          "text": "2. 相邻问题——捆绑法"
+        },
+        {
+          "type": "paragraph",
+          "text": "将$n$个不同的元素排列成一排，其中$k(k\\leqslant n)$个元素排在相邻位置上，求不同排法种数的步骤：①先将这$k$个元素“捆绑”在一起，看成一个整体；②把这个整体当作一个元素与其他元素一起排列，其排列方法有$\\mathrm{A}_{n-k+1}^{n-k+1}$种；③然后“松绑”，将“捆绑”在一起的元素内部进行排列，其排列方法有$\\mathrm{A}_k^k$种；④根据分步乘法计数原理，符合条件的排列方法有$\\mathrm{A}_{n-k+1}^{n-k+1}\\cdot \\mathrm{A}_k^k$种."
+        },
+        {
+          "type": "subheading",
+          "text": "3. 不相邻问题——插空法"
+        },
+        {
+          "type": "paragraph",
+          "text": "将$n$个不同的元素排成一排，其中$k(k\\leqslant n-k+1)$个元素互不相邻，求不同排法种数的步骤：①先将没有不相邻要求的$n-k$个元素排成一排，其排列方法有$\\mathrm{A}_{n-k}^{n-k}$种；②然后将要求两两不相邻的$k$个元素插入$n-k+1$个空隙中（包括两端），相当于从$n-k+1$个空隙中选出$k$个，分别分配给两两不相邻的$k$个元素，其排列方法有$\\mathrm{A}_{n-k+1}^{k}$种；③根据分步乘法计数原理，符合条件的排列方法有$\\mathrm{A}_{n-k}^{n-k}\\cdot \\mathrm{A}_{n-k+1}^{k}$种."
+        },
+        {
+          "type": "subheading",
+          "text": "4. 定序问题——倍缩法"
+        },
+        {
+          "type": "paragraph",
+          "text": "$n$个不同元素排列成一排共有$\\mathrm{A}_n^n$种排法，$m$个不同元素排列成一排共有$\\mathrm{A}_m^m$种排法，因为$m$个不同元素顺序已定的排法只占排法总数的$\\frac{1}{\\mathrm{A}_m^m}$，所以$n$个不同元素中$m(m\\leqslant n)$个元素顺序已定的排法共有$\\frac{\\mathrm{A}_n^n}{\\mathrm{A}_m^m}$种（即定序问题先不考虑顺序限制，排列后再除以定序元素的全排列）."
+        },
+        {
+          "type": "subheading",
+          "text": "5. 分排问题——合并法"
+        },
+        {
+          "type": "paragraph",
+          "text": "分排问题可以忽略分排，直接看成一排处理."
+        },
+        {
+          "type": "subheading",
+          "text": "6. 相同元素分组——隔板法"
+        },
+        {
+          "type": "paragraph",
+          "text": "将$n$个相同元素排成一排，元素之间共形成$n-1$个空隙，从中挑出$m-1(m\\leqslant n)$个空隙插入$m-1$个隔板，就可以将$n$个相同元素分为$m$组（每组至少含1个元素），共有$\\mathrm{C}_{n-1}^{m-1}$种方法."
+        },
+        {
+          "type": "subheading",
+          "text": "7. 不同元素分组"
+        },
+        {
+          "type": "table",
+          "columns": ["常见形式", "处理方法"],
+          "rows": [
+            [
+              "非均匀不编号分组",
+              "$n$个不同元素分成$m$组，每组元素数目均不相等，且不考虑各组间的顺序，不管是否分尽，分法种数$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$"
+            ],
+            [
+              "均匀不编号分组",
+              "$n$个不同元素分成不编号的$m$组，假定其中$r$组元素个数相等，不管是否分尽，其分法种数为$\\frac{N}{\\mathrm{A}_r^r}$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）．如果再有$k$组均匀分组，应再除以$\\mathrm{A}_k^k$"
+            ],
+            [
+              "非均匀编号分组",
+              "$n$个不同元素分成$m$组，各组元素数目均不相等，且考虑各组间的顺序，其分法种数为$N\\cdot \\mathrm{A}_m^m$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）"
+            ],
+            [
+              "均匀编号分组",
+              "$n$个不同元素分成$m$组，其中$r$组元素个数相同，且考虑各组间的顺序，其分法种数为$\\frac{N\\cdot \\mathrm{A}_m^m}{\\mathrm{A}_r^r}$（其中$N=\\mathrm{C}_{n}^{m_1}\\cdot\\mathrm{C}_{n-m_1}^{m_2}\\cdot\\mathrm{C}_{n-(m_1+m_2)}^{m_3}\\cdot\\cdots\\cdot\\mathrm{C}_{n-(m_1+m_2+\\cdots+m_{m-1})}^{m_m}$）"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

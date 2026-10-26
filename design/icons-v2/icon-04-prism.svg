@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">三色流光 Π</title>
+  <defs>
+    <linearGradient id="prism" gradientUnits="userSpaceOnUse" x1="210" y1="250" x2="820" y2="770">
+      <stop offset="0" stop-color="#F07A55"/>
+      <stop offset="0.50" stop-color="#F3BE43"/>
+      <stop offset="1" stop-color="#23AE9F"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-35%" y="-35%" width="170%" height="185%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#6F675A" flood-opacity="0.15"/>
+    </filter>
+    <filter id="color-soft-shadow" x="-45%" y="-45%" width="190%" height="205%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#D97757" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect x="12" y="12" width="1000" height="1000" rx="232" fill="#FFFDF9"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" filter="url(#color-soft-shadow)" transform="translate(0 8)">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke="url(#prism)" stroke-width="122"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke="url(#prism)" stroke-width="114"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke="url(#prism)" stroke-width="114"/>
+  </g>
+  <g fill="none" stroke="url(#prism)" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-shadow)">
+    <path d="M262 354C289 326 317 315 353 315H674C719 315 751 331 772 360" stroke-width="94"/>
+    <path d="M376 366C355 427 346 496 350 568V714" stroke-width="86"/>
+    <path d="M650 363C642 449 643 530 647 610C649 671 620 712 562 724" stroke-width="86"/>
+  </g>
+</svg>

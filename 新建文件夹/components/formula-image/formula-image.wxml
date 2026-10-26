@@ -1,7 +1,7 @@
 <view
   wx:if="{{ready}}"
-  class="formula-image-root {{scrollable ? 'is-scrollable' : 'is-fit'}}"
-  style="width: {{viewportWidth}}rpx; height: {{displayHeight}}rpx;"
+  class="formula-image-root {{scrollable ? 'is-scrollable' : 'is-fit'}} {{align == 'center' ? 'is-center' : ''}}"
+  style="width: {{viewportWidth}}rpx; height: {{viewportHeight}}rpx;"
 >
   <scroll-view
     wx:if="{{scrollable}}"
@@ -9,7 +9,7 @@
     scroll-x
     enhanced
     show-scrollbar="{{false}}"
-    style="width: {{viewportWidth}}rpx; height: {{displayHeight}}rpx;"
+    style="width: {{viewportWidth}}rpx; height: {{viewportHeight}}rpx;"
   >
     <view
       class="formula-canvas"
@@ -19,6 +19,7 @@
         class="formula-svg"
         src="{{imageAsset}}"
         mode="aspectFit"
+        binderror="onImageError"
         style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
       />
     </view>
@@ -33,6 +34,7 @@
       class="formula-svg"
       src="{{imageAsset}}"
       mode="aspectFit"
+      binderror="onImageError"
       style="width: {{displayWidth}}rpx; height: {{displayHeight}}rpx;"
     />
   </view>

@@ -2,20 +2,7 @@
   "compileType": "miniprogram",
   "libVersion": "trial",
   "packOptions": {
-    "ignore": [
-      {
-        "value": "assets/formulas",
-        "type": "folder"
-      },
-      {
-        "value": "assets/sprites",
-        "type": "folder"
-      },
-      {
-        "value": "data/sprite-map.js",
-        "type": "file"
-      }
-    ],
+    "ignore": [],
     "include": []
   },
   "setting": {

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>第六款 · 三色蓝光轨道</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 52px;
+    background: #15171A;
+    font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 44px 36px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 28px;
+    background: #202328;
+  }
+  .icon-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 454px;
+    height: 454px;
+    overflow: hidden;
+    background: #FFFDFC;
+  }
+  .icon-stage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .title { margin-top: 25px; color: #F4F5F7; font-size: 22px; font-weight: 750; }
+  .desc { margin-top: 9px; color: #9FA8B5; font-size: 13px; }
+  .side { width: 250px; }
+  .side h2 { color: #F4F5F7; font-size: 18px; }
+  .side p { margin-top: 12px; color: #9FA8B5; font-size: 13px; line-height: 1.75; }
+  .small {
+    display: flex;
+    align-items: flex-end;
+    gap: 22px;
+    margin-top: 31px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .small figure { text-align: center; }
+  .small img { display: block; border-radius: 16px; }
+  .small figcaption { margin-top: 8px; color: #7E8998; font-size: 10px; }
+  .swatches { display: flex; gap: 9px; margin-top: 23px; }
+  .swatch { width: 34px; height: 34px; border-radius: 10px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="icon-stage"><img src="icons-v3/icon-06-blue-orbit.svg" alt="三色蓝光轨道 Π"></div>
+    <div class="title">第六款 · 三色蓝光轨道</div>
+    <div class="desc">新增 CC Switch 蓝，轨道为约 20% 透明渐变</div>
+  </div>
+  <aside class="side">
+    <h2>最终调整</h2>
+    <p>主 Π 采用蓝、珊瑚、琥珀三色渐变，不再使用绿色。透明层改为清晰的 20% 半透明渐变描边，不做模糊处理，并直接按 144×144 导出。</p>
+    <div class="swatches">
+      <div class="swatch" style="background:#459FD3"></div>
+      <div class="swatch" style="background:#EE8267"></div>
+      <div class="swatch" style="background:#F2C24D"></div>
+    </div>
+    <div class="small">
+      <figure><img src="icons-v3/icon-06-blue-orbit.svg" width="96" height="96" alt="96px"><figcaption>96 px</figcaption></figure>
+      <figure><img src="icons-v3/icon-06-blue-orbit.svg" width="64" height="64" alt="64px"><figcaption>64 px</figcaption></figure>
+      <figure><img src="icons-v3/icon-06-blue-orbit.svg" width="48" height="48" alt="48px"><figcaption>48 px</figcaption></figure>
+    </div>
+  </aside>
+</body>
+</html>

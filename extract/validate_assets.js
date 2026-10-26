@@ -1,5 +1,5 @@
 /*
- * Validate the mini program data and its generated formula assets.
+ * Validate the mini program formula data and its generated SVG assets.
  *
  * Usage: node extract/validate_assets.js
  */
@@ -9,19 +9,42 @@ const path = require('path')
 const ROOT = path.resolve(__dirname, '..')
 const PROJECT = path.join(ROOT, '新建文件夹')
 const DATA_FILE = path.join(PROJECT, 'data', 'formulas.js')
-const EXPECTED_COUNT = 366
+const EXPECTED_COUNT = 351
+const PACKAGE_NAMES = [
+  'formula-package-a',
+  'formula-package-b',
+  'formula-package-c'
+]
 const ASSET_FIELDS = [
   ['formulaImage', 'formulaWidth', 'formulaHeight'],
   ['blankImage', 'blankWidth', 'blankHeight'],
   ['exampleImage', 'exampleWidth', 'exampleHeight']
 ]
 const ASSET_PATH = /^\/formula-package-[abc]\/assets\/formulas\/[a-z0-9-]+\.svg$/
+const FORMULA_ID = /^([CS])(\d{3})$/
 
 const errors = []
 const warnings = []
+const referencedAssets = new Set()
 
 function fail(message) {
   errors.push(message)
+}
+
+function validateId(item) {
+  const match = FORMULA_ID.exec(item.id)
+  if (!match) {
+    fail(`Invalid formula id: ${item.id}`)
+    return
+  }
+
+  const number = Number(match[2])
+  if (match[1] === 'C' && (number < 1 || number > 253)) {
+    fail(`Core formula id is out of range: ${item.id}`)
+  }
+  if (match[1] === 'S' && (number < 1 || number > 113)) {
+    fail(`Conclusion id is out of range: ${item.id}`)
+  }
 }
 
 function validateDimensions(item, label, asset, widthField, heightField) {
@@ -30,18 +53,20 @@ function validateDimensions(item, label, asset, widthField, heightField) {
 
   if (!asset) {
     if (width || height) {
-      warnings.push(`${item.id} ${label}: empty asset has non-zero dimensions ${width}x${height}`)
+      warnings.push(
+        `${item.id} ${label}: empty asset has non-zero dimensions ${width}x${height}`
+      )
     }
-    return
-  }
-
-  if (!width || !height) {
-    fail(`${item.id} ${label}: missing logical dimensions`)
     return
   }
 
   if (!ASSET_PATH.test(asset)) {
     fail(`${item.id} ${label}: invalid asset path ${asset}`)
+    return
+  }
+
+  if (!width || !height) {
+    fail(`${item.id} ${label}: missing logical dimensions`)
     return
   }
 
@@ -52,6 +77,7 @@ function validateDimensions(item, label, asset, widthField, heightField) {
     return
   }
 
+  referencedAssets.add(asset)
   if (!fs.existsSync(absolute)) {
     fail(`${item.id} ${label}: missing file ${asset}`)
     return
@@ -105,14 +131,6 @@ if (FORMULAS.length !== EXPECTED_COUNT) {
 }
 
 const ids = new Set()
-const expectedIds = new Set()
-for (let index = 1; index <= 253; index++) {
-  expectedIds.add(`C${String(index).padStart(3, '0')}`)
-}
-for (let index = 1; index <= 113; index++) {
-  expectedIds.add(`S${String(index).padStart(3, '0')}`)
-}
-
 for (const item of FORMULAS) {
   if (!item || typeof item.id !== 'string') {
     fail('Found a formula without a string id')
@@ -122,6 +140,7 @@ for (const item of FORMULAS) {
     fail(`Duplicate formula id: ${item.id}`)
   }
   ids.add(item.id)
+  validateId(item)
 
   if (!item.formulaImage) {
     fail(`${item.id}: missing formulaImage`)
@@ -132,33 +151,40 @@ for (const item of FORMULAS) {
   }
 }
 
-for (const id of expectedIds) {
-  if (!ids.has(id)) fail(`Missing expected formula id: ${id}`)
-}
-for (const id of ids) {
-  if (!expectedIds.has(id)) fail(`Unexpected formula id: ${id}`)
-}
-
 let assetBytes = 0
-let assetFiles = 0
-for (const packageName of ['formula-package-a', 'formula-package-b', 'formula-package-c']) {
+const assetFiles = new Set()
+for (const packageName of PACKAGE_NAMES) {
   const dir = path.join(PROJECT, packageName, 'assets', 'formulas')
   if (!fs.existsSync(dir)) {
     fail(`Missing package directory: /${packageName}/assets/formulas`)
     continue
   }
 
-  const files = fs.readdirSync(dir).filter(name => name.endsWith('.svg'))
-  assetFiles += files.length
-  for (const name of files) {
-    assetBytes += fs.statSync(path.join(dir, name)).size
+  for (const name of fs.readdirSync(dir)) {
+    const file = path.join(dir, name)
+    if (!name.endsWith('.svg') || !fs.statSync(file).isFile()) continue
+    const asset = `/${packageName}/assets/formulas/${name}`
+    assetFiles.add(asset)
+    assetBytes += fs.statSync(file).size
+  }
+}
+
+for (const asset of assetFiles) {
+  if (!referencedAssets.has(asset)) {
+    warnings.push(`Unreferenced SVG asset: ${asset}`)
+  }
+}
+for (const asset of referencedAssets) {
+  if (!assetFiles.has(asset)) {
+    fail(`Referenced asset is outside package files: ${asset}`)
   }
 }
 
 const result = {
   formulas: FORMULAS.length,
   uniqueIds: ids.size,
-  assetFiles,
+  referencedAssets: referencedAssets.size,
+  assetFiles: assetFiles.size,
   assetMB: Number((assetBytes / 1024 / 1024).toFixed(2)),
   errorCount: errors.length,
   errors: errors.slice(0, 30),

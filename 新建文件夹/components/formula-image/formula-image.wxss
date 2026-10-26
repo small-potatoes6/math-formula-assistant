@@ -6,6 +6,10 @@
 .formula-image-root.is-fit {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.formula-image-root.is-fit.is-center {
   justify-content: center;
 }
 

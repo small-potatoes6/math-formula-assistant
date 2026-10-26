@@ -1,0 +1,109 @@
+{
+  "id": "K07",
+  "order": 7,
+  "packageRoot": "topic-package-a",
+  "title": "三角形面积问题",
+  "sourcePages": [11],
+  "sections": [
+    {
+      "id": "K07-01",
+      "title": "一、三角形面积公式",
+      "sourcePages": [11],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "已知$\\triangle ABC$的内角$A,B,C$所对的边的长分别为$a,b,c$，则$\\triangle ABC$的面积可以表示为："
+        },
+        {
+          "type": "formula",
+          "tex": "(1)S_{\\triangle ABC}=\\frac12ab\\sin C=\\frac12bc\\sin A=\\frac12ac\\sin B;"
+        },
+        {
+          "type": "formula",
+          "tex": "(2)S_{\\triangle ABC}=\\frac12a\\cdot h_a=\\frac12b\\cdot h_b=\\frac12c\\cdot h_c\\ (h_a,h_b,h_c\\text{ 分别表示边 }a,b,c\\text{ 上的高});"
+        },
+        {
+          "type": "formula",
+          "tex": "(3)S_{\\triangle ABC}=\\frac12r(a+b+c)=\\frac12rl,\\text{其中 }r,l\\text{ 分别为 }\\triangle ABC\\text{ 的内切圆半径及 }\\triangle ABC\\text{ 的周长};"
+        },
+        {
+          "type": "formula",
+          "tex": "(4)S_{\\triangle ABC}=\\frac12a^2\\frac{\\sin B\\sin C}{\\sin A},S_{\\triangle ABC}=\\frac12b^2\\frac{\\sin A\\sin C}{\\sin B},S_{\\triangle ABC}=\\frac12c^2\\frac{\\sin A\\sin B}{\\sin C};"
+        },
+        {
+          "type": "formula",
+          "tex": "(5)S_{\\triangle ABC}=2R^2\\sin A\\sin B\\sin C=\\frac{abc}{4R}(R\\text{ 为 }\\triangle ABC\\text{ 外接圆的半径});"
+        },
+        {
+          "type": "formula",
+          "tex": "(6)\\text{海伦公式：}S_{\\triangle ABC}=\\sqrt{p(p-a)(p-b)(p-c)},\\text{其中 }p=\\frac12(a+b+c);"
+        },
+        {
+          "type": "label",
+          "text": "证明"
+        },
+        {
+          "type": "paragraph",
+          "text": "由余弦定理得$\\cos C=\\frac{a^2+b^2-c^2}{2ab}$，所以$S_{\\triangle ABC}=\\frac12ab\\sin C=\\frac12ab\\sqrt{1-\\cos^2C}=\\frac12ab\\sqrt{1-\\left(\\frac{a^2+b^2-c^2}{2ab}\\right)^2}$. 令$p=\\frac12(a+b+c)$，整理得$S_{\\triangle ABC}=\\sqrt{p(p-a)(p-b)(p-c)}$."
+        },
+        {
+          "type": "formula",
+          "tex": "(7)S_{\\triangle ABC}=\\frac12\\sqrt{|\\boldsymbol a|^2|\\boldsymbol b|^2-(\\boldsymbol a\\cdot\\boldsymbol b)^2},\\text{其中 }\\boldsymbol b=\\overrightarrow{CA},\\boldsymbol a=\\overrightarrow{CB};"
+        },
+        {
+          "type": "formula",
+          "tex": "(8)S_{\\triangle ABC}=\\frac12|a_1b_2-a_2b_1|,\\text{其中 }\\overrightarrow{AB}=(a_1,a_2),\\overrightarrow{AC}=(b_1,b_2)."
+        },
+        {
+          "type": "note",
+          "text": "【说明】公式(7)可视为三角形面积公式的向量形式，公式(8)则是三角形面积公式的向量坐标形式."
+        }
+      ]
+    },
+    {
+      "id": "K07-02",
+      "title": "二、三角形面积比的处理方法",
+      "sourcePages": [11],
+      "blocks": [
+        {
+          "type": "label",
+          "text": "对顶角模型"
+        },
+        {
+          "type": "table",
+          "columns": ["公式", "图示"],
+          "rows": [
+            [
+              "$\\frac{S_{\\triangle OAC}}{S_{\\triangle OBD}}=\\frac{\\frac12OA\\cdot OC\\cdot\\sin\\alpha}{\\frac12OB\\cdot OD\\cdot\\sin\\alpha}=\\frac{OA\\cdot OC}{OB\\cdot OD};$",
+              {
+                "type": "figure",
+                "assetKey": "k07-p11-top-angle",
+                "width": 750,
+                "height": 510
+              }
+            ]
+          ]
+        },
+        {
+          "type": "label",
+          "text": "等角、共角模型"
+        },
+        {
+          "type": "table",
+          "columns": ["公式", "图示"],
+          "rows": [
+            [
+              "$\\frac{S_{\\triangle OAC}}{S_{\\triangle OBD}}=\\frac{\\frac12OA\\cdot OC\\cdot\\sin\\alpha}{\\frac12OB\\cdot OD\\cdot\\sin\\alpha}=\\frac{OA\\cdot OC}{OB\\cdot OD}.$",
+              {
+                "type": "figure",
+                "assetKey": "k07-p11-shared-angle",
+                "width": 900,
+                "height": 795
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

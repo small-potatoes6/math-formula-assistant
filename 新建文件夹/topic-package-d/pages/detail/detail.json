@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专项详解",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "formula-image": "/components/formula-image/formula-image"
+  }
+}

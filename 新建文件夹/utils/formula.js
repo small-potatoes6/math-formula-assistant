@@ -31,14 +31,31 @@ function shuffle(items) {
   return result
 }
 
-function getDistractors(item, count) {
-  const sameChapter = shuffle(
-    FORMULAS.filter(candidate => candidate.id !== item.id && candidate.chapter === item.chapter)
-  )
-  const otherChapters = shuffle(
-    FORMULAS.filter(candidate => candidate.id !== item.id && candidate.chapter !== item.chapter)
-  )
-  return sameChapter.concat(otherChapters).slice(0, count)
+function sizeDistance(a, b) {
+  const widthA = Math.max(1, Number(a.formulaWidth) || 1)
+  const widthB = Math.max(1, Number(b.formulaWidth) || 1)
+  const heightA = Math.max(1, Number(a.formulaHeight) || 1)
+  const heightB = Math.max(1, Number(b.formulaHeight) || 1)
+  return Math.abs(Math.log(widthA / widthB)) * 1.35
+    + Math.abs(Math.log(heightA / heightB))
+}
+
+function getDistractors(item, count, pool) {
+  const candidates = (pool || FORMULAS).filter(candidate => candidate.id !== item.id)
+  const ranked = candidates
+    .map((candidate, index) => {
+      const chapterPenalty = candidate.chapter === item.chapter ? 0 : 0.7
+      const typePenalty = candidate.type === item.type ? 0 : 0.12
+      return {
+        candidate,
+        index,
+        score: chapterPenalty + typePenalty + sizeDistance(item, candidate) * 0.72 + Math.random() * 0.08
+      }
+    })
+    .sort((a, b) => a.score - b.score || a.index - b.index)
+
+  const shortlistSize = Math.min(ranked.length, Math.max(count * 4, count))
+  return shuffle(ranked.slice(0, shortlistSize).map(entry => entry.candidate)).slice(0, count)
 }
 
 module.exports = {

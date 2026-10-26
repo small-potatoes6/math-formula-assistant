@@ -1,0 +1,88 @@
+{
+  "id": "K20",
+  "order": 20,
+  "packageRoot": "topic-package-c",
+  "title": "弦中点与点差法",
+  "sourcePages": [27],
+  "sections": [
+    {
+      "id": "K20-01",
+      "title": "圆：x²+y²=r²(r>0)",
+      "sourcePages": [27],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "$AB$为圆的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=-1$."
+        }
+      ]
+    },
+    {
+      "id": "K20-02",
+      "title": "椭圆：x²/m²+y²/n²=1(m>0，n>0，m≠n)",
+      "sourcePages": [27],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "$AB$为椭圆的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=-\\frac{n^2}{m^2}$(焦点在$x$轴或$y$轴均成立)."
+        },
+        {
+          "type": "label",
+          "text": "【证明】"
+        },
+        {
+          "type": "paragraph",
+          "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入椭圆方程得$\\begin{cases}\\frac{x_1^2}{m^2}+\\frac{y_1^2}{n^2}=1,\\\\\\frac{x_2^2}{m^2}+\\frac{y_2^2}{n^2}=1,\\end{cases}$两式作差得$\\frac{x_1^2-x_2^2}{m^2}+\\frac{y_1^2-y_2^2}{n^2}=0$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{\\frac{y_1+y_2}{2}}{\\frac{x_1+x_2}{2}}=-\\frac{n^2}{m^2}$，从而$k_{AB}\\cdot k_{OM}=-\\frac{n^2}{m^2}$."
+        }
+      ]
+    },
+    {
+      "id": "K20-03",
+      "title": "双曲线：x²/m²-y²/n²=±1(m>0，n>0)",
+      "sourcePages": [27],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "$AB$为双曲线的弦，$M$为弦$AB$的中点，$O$为坐标原点，若$AB,OM$的斜率存在，则$k_{AB}\\cdot k_{OM}=\\frac{n^2}{m^2}$(焦点在$x$轴或$y$轴均成立)."
+        },
+        {
+          "type": "label",
+          "text": "【证明】"
+        },
+        {
+          "type": "paragraph",
+          "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入双曲线方程得$\\begin{cases}\\frac{x_1^2}{m^2}-\\frac{y_1^2}{n^2}=\\pm1,\\\\\\frac{x_2^2}{m^2}-\\frac{y_2^2}{n^2}=\\pm1,\\end{cases}$两式作差得$\\frac{x_1^2-x_2^2}{m^2}-\\frac{y_1^2-y_2^2}{n^2}=0$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{\\frac{y_1+y_2}{2}}{\\frac{x_1+x_2}{2}}=\\frac{n^2}{m^2}$，从而$k_{AB}\\cdot k_{OM}=\\frac{n^2}{m^2}$."
+        }
+      ]
+    },
+    {
+      "id": "K20-04",
+      "title": "抛物线：y²=2px(p≠0)",
+      "sourcePages": [27],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "$AB$为抛物线的弦，$M$为弦$AB$的中点，若直线$AB$的斜率存在，则$k_{AB}\\cdot y_M=p$."
+        },
+        {
+          "type": "label",
+          "text": "【证明】"
+        },
+        {
+          "type": "paragraph",
+          "text": "设点$A(x_1,y_1),B(x_2,y_2)$，则$M\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)$. 将$A,B$坐标代入抛物线方程得$\\begin{cases}y_1^2=2px_1,\\\\y_2^2=2px_2,\\end{cases}$两式作差得$y_1^2-y_2^2=2p(x_1-x_2)$，即$\\frac{y_1-y_2}{x_1-x_2}\\cdot\\frac{y_1+y_2}{2}=p$，从而$k_{AB}\\cdot y_M=p$."
+        }
+      ]
+    },
+    {
+      "id": "K20-05",
+      "title": "抛物线：x²=2py(p≠0)",
+      "sourcePages": [27],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "$AB$为抛物线的弦，$M$为弦$AB$的中点，则$x_M=p\\cdot k_{AB}$."
+        }
+      ]
+    }
+  ]
+}
